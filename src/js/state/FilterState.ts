@@ -150,7 +150,7 @@ export class PlaceFilterManager {
       matchedPlaceTypes.add(this.entries[placeId].place.type);
       if (match.type === "any") {
         if (match.hasDefault) matchedNudgeTypes.add("plant-based default");
-        if (match.hasRatio) matchedNudgeTypes.add("climate-positive ratio");
+        if (match.hasRatio) matchedNudgeTypes.add("climate-friendly ratio");
         if (match.hasSub) matchedNudgeTypes.add("subtle substitution");
         if (match.hasTitles) matchedNudgeTypes.add("tasty titles");
         if (match.hasPlacement) matchedNudgeTypes.add("prime placement");
@@ -224,7 +224,7 @@ export class PlaceFilterManager {
         ? {
             type: "any",
             hasDefault: nudgeTypes.includes("plant-based default"),
-            hasRatio: nudgeTypes.includes("climate-positive ratio"),
+            hasRatio: nudgeTypes.includes("climate-friendly ratio"),
             hasSub: nudgeTypes.includes("subtle substitution"),
             hasTitles: nudgeTypes.includes("tasty titles"),
             hasPlacement: nudgeTypes.includes("prime placement"),
@@ -247,7 +247,7 @@ export class PlaceFilterManager {
         : null;
     }
 
-    if (filterState.nudgeTypeFilter === "climate-positive ratio") {
+    if (filterState.nudgeTypeFilter === "climate-friendly ratio") {
       const matchingNudges = getFilteredIndexes(
         entry.ratio ?? [],
         (nudgeRecord) => this.matchesNudge(nudgeRecord),
@@ -255,7 +255,7 @@ export class PlaceFilterManager {
       return matchingNudges.length
         ? {
             type: "single nudge",
-            nudgeType: "climate-positive ratio",
+            nudgeType: "climate-friendly ratio",
             matchingIndexes: matchingNudges,
           }
         : null;

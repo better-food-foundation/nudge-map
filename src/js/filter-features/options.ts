@@ -75,7 +75,7 @@ export const FILTER_OPTIONS: FilterOptions = {
         ...optionValuesData.defaultPledged,
       },
     },
-    "climate-positive ratio": {
+    "climate-friendly ratio": {
       adopted: {
         includedNudges: [],
         ...optionValuesData.ratioAdopted,

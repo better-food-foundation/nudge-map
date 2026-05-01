@@ -41,7 +41,7 @@ const TESTS: EdgeCase[] = [
   },
   {
     desc: "default: ratio",
-    nudgeTypeFilter: "climate-positive ratio",
+    nudgeTypeFilter: "climate-friendly ratio",
     expectedRange: [1, 8],
   },
   {

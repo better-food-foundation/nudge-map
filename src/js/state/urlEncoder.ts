@@ -85,7 +85,7 @@ export const CONSUMER_BASE_NAME = "cb";
 export const NUDGE_TYPE_MAP = BidirectionalMap.from([
   ["any nudge", "any"],
   ["plant-based default", "pbd"],
-  ["climate-positive ratio", "cpr"],
+  ["climate-friendly ratio", "cpr"],
   ["subtle substitution", "ss"],
   ["tasty titles", "tt"],
   ["prime placement", "pp"],
