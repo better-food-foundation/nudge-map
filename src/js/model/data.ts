@@ -61,9 +61,9 @@ export function determineAllNudgeTypes(
 
   const result: NudgeType[] = [];
   if (hasNudge(entry.default)) result.push("plant-based default");
-  if (hasNudge(entry.ratio)) result.push("climate-positive ratio");
+  if (hasNudge(entry.ratio)) result.push("climate-friendly ratio");
   if (hasNudge(entry.sub)) result.push("subtle substitution");
-  if (hasNudge(entry.titles)) result.push("tasty titles");
+  if (hasNudge(entry.titles)) result.push("tasty titles & descriptions");
   if (hasNudge(entry.placement)) result.push("prime placement");
   if (hasNudge(entry.other)) result.push("other");
   return result;
@@ -76,9 +76,9 @@ export function determineNudgeTypeStatuses(
     new Set(nudges?.map((nudge) => nudge.status) ?? []);
   return {
     "plant-based default": getStatuses(entry.default),
-    "climate-positive ratio": getStatuses(entry.ratio),
+    "climate-friendly ratio": getStatuses(entry.ratio),
     "subtle substitution": getStatuses(entry.sub),
-    "tasty titles": getStatuses(entry.titles),
+    "tasty titles & descriptions": getStatuses(entry.titles),
     "prime placement": getStatuses(entry.placement),
     other: getStatuses(entry.other),
   };

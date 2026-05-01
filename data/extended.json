@@ -26,8 +26,8 @@
     ],
     "titles": [
       {
-        "summary": "Abbeville University tasty titles & descriptions summary.",
-        "notes": "Abbeville University tasty titles & descriptions notes.",
+        "summary": "Abbeville University tasty titles & descriptions & descriptions summary.",
+        "notes": "Abbeville University tasty titles & descriptions & descriptions notes.",
         "strategy": ["guide"],
         "policy_url": ["https://www.example.com"]
       }
@@ -64,8 +64,8 @@
   "Aberdeen Hotel": {
     "titles": [
       {
-        "summary": "Aberdeen Hotel tasty titles summary.",
-        "notes": "Aberdeen Hotel tasty titles notes.",
+        "summary": "Aberdeen Hotel tasty titles & descriptions summary.",
+        "notes": "Aberdeen Hotel tasty titles & descriptions notes.",
         "strategy": ["guide"],
         "policy_url": ["https://www.example.com"]
       }

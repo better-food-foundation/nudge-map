@@ -69,9 +69,9 @@ export type ProcessedPlace = RawPlace & { url: string };
 
 export const ALL_NUDGE_TYPE = [
   "plant-based default",
-  "climate-positive ratio",
+  "climate-friendly ratio",
   "subtle substitution",
-  "tasty titles",
+  "tasty titles & descriptions",
   "prime placement",
   "other",
 ] as const;

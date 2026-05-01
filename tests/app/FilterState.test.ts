@@ -199,10 +199,10 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
     manager.update({ year: defaultState().year });
   });
 
-  test("climate-positive ratio", () => {
+  test("climate-friendly ratio", () => {
     const manager = new PlaceFilterManager(defaultEntries(), {
       ...defaultState(),
-      nudgeTypeFilter: "climate-positive ratio",
+      nudgeTypeFilter: "climate-friendly ratio",
       // Should be ignored.
       includedNudges: new Set(),
     });
@@ -212,7 +212,7 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
     expect(manager.matchedPlaces).toEqual({
       "Place 2": {
         type: "single nudge",
-        nudgeType: "climate-positive ratio",
+        nudgeType: "climate-friendly ratio",
         matchingIndexes: [0],
       },
     });
@@ -245,10 +245,10 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
     manager.update({ year: defaultState().year });
   });
 
-  test("tasty titles", () => {
+  test("tasty titles & descriptions", () => {
     const manager = new PlaceFilterManager(defaultEntries(), {
       ...defaultState(),
-      nudgeTypeFilter: "tasty titles",
+      nudgeTypeFilter: "tasty titles & descriptions",
       // Should be ignored.
       includedNudges: new Set(),
     });
@@ -256,7 +256,7 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
     expect(manager.matchedPlaces).toEqual({
       "Place 2": {
         type: "single nudge",
-        nudgeType: "tasty titles",
+        nudgeType: "tasty titles & descriptions",
         matchingIndexes: [0],
       },
     });
