@@ -152,7 +152,8 @@ export class PlaceFilterManager {
         if (match.hasDefault) matchedNudgeTypes.add("plant-based default");
         if (match.hasRatio) matchedNudgeTypes.add("climate-friendly ratio");
         if (match.hasSub) matchedNudgeTypes.add("subtle substitution");
-        if (match.hasTitles) matchedNudgeTypes.add("tasty titles & descriptions");
+        if (match.hasTitles)
+          matchedNudgeTypes.add("tasty titles & descriptions");
         if (match.hasPlacement) matchedNudgeTypes.add("prime placement");
         if (match.hasOther) matchedNudgeTypes.add("other");
       }
