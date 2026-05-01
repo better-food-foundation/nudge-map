@@ -95,7 +95,7 @@ export const FILTER_OPTIONS: FilterOptions = {
         ...optionValuesData.subPledged,
       },
     },
-    "tasty titles": {
+    "tasty titles & descriptions": {
       adopted: {
         includedNudges: [],
         ...optionValuesData.titlesAdopted,

@@ -87,7 +87,7 @@ export const NUDGE_TYPE_MAP = BidirectionalMap.from([
   ["plant-based default", "pbd"],
   ["climate-friendly ratio", "cpr"],
   ["subtle substitution", "ss"],
-  ["tasty titles", "tt"],
+  ["tasty titles & descriptions", "tt"],
   ["prime placement", "pp"],
   ["other", "oth"],
 ]);

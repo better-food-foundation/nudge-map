@@ -51,7 +51,7 @@ const TESTS: EdgeCase[] = [
   },
   {
     desc: "default: titles",
-    nudgeTypeFilter: "tasty titles",
+    nudgeTypeFilter: "tasty titles & descriptions",
     expectedRange: [1, 8],
   },
   {
