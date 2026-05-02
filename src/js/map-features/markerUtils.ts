@@ -1,5 +1,4 @@
-export function radiusGivenZoom(options: { zoom: number }): number {
-  const { zoom } = options;
+export function radiusGivenZoom(zoom: number): number {
   // This formula comes from Claude to go from radius 5 to 21 between zoom 3 to 10
   // with roughly linear growth.
   //
