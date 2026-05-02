@@ -6,7 +6,7 @@ import type { PlaceId } from "../model/types";
 import { radiusGivenZoom } from "./markerUtils";
 import { determinePlaceIdWithoutCountry } from "../model/placeId";
 
-const PRIMARY_MARKER_STYLE = {
+const MARKER_STYLE = {
   weight: 1,
   color: "white",
   fillColor: "#F05B43",
@@ -47,10 +47,9 @@ export default function initPlaceMarkers(
     filterManager.entries,
   ).reduce((acc: Record<string, MarkerWithPlaceId>, [placeId, entry]) => {
     const [long, lat] = entry.place.coord;
-    const style = PRIMARY_MARKER_STYLE;
     const marker = new CircleMarker([lat, long], {
-      ...style,
-      radius: radiusGivenZoom({ zoom: map.getZoom() }),
+      ...MARKER_STYLE,
+      radius: radiusGivenZoom(map.getZoom()),
     }) as MarkerWithPlaceId;
     marker.placeId = placeId;
 
@@ -102,10 +101,10 @@ export default function initPlaceMarkers(
     const zoom = map.getZoom();
     // TODO: remove placeId since we're just accessing marker
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    Object.entries(placesToMarkers).forEach(([_placeId, marker]) => {
-      const newRadius = radiusGivenZoom({
+    Object.values(placesToMarkers).forEach((marker) => {
+      const newRadius = radiusGivenZoom(
         zoom,
-      });
+      );
       marker.setRadius(newRadius);
     });
   });
