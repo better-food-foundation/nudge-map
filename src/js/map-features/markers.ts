@@ -102,9 +102,7 @@ export default function initPlaceMarkers(
     // TODO: remove placeId since we're just accessing marker
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     Object.values(placesToMarkers).forEach((marker) => {
-      const newRadius = radiusGivenZoom(
-        zoom,
-      );
+      const newRadius = radiusGivenZoom(zoom);
       marker.setRadius(newRadius);
     });
   });
