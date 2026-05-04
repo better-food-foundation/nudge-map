@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-await-in-loop */
 
-import nodeFetch, { RequestInfo, RequestInit, Response } from "node-fetch";
+import nodeFetch from "node-fetch";
 import NodeGeocoder from "node-geocoder";
 
 export async function fetch(
-  url: RequestInfo,
+  url: RequestInfo | URL,
   options: RequestInit = {},
 ): Promise<Response> {
   return nodeFetch(url, {
