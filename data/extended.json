@@ -1,6 +1,6 @@
 {
   "North Vancouver District": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "North Vancouver District Council passed a commitment to prioritize plant-based municipial food procurement.",
         "link": "North Vancouver District to prioritize plant-based foods",
@@ -9,7 +9,7 @@
     ]
   },
   "California State Los Angeles": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "At California State Los Angeles, the nutritional science department's graduation event menu was plant-based by default.",
         "link": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
@@ -18,7 +18,7 @@
     ]
   },
   "University of North Texas": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "UNT signed the Forward Food Pledge, pledging to increase its plant-based meal offerings to 60% by 2027.",
         "link": "https://vegoutmag.com/news/university-of-north-texas-plant-based-dining/\nhttps://vegconomist.com/society/university-of-north-texas-commits-to-60-plant-based-dining-by-2027/",
@@ -27,7 +27,7 @@
     ]
   },
   "City of Sammamish": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "Sammamish City Council serves plant-based food by default at city events, specifically those where the City serves food to the public.",
         "link": "https://sammamishindependent.com/2025/02/council-mandates-vegan-catering-for-city-provided-food/"
@@ -35,7 +35,7 @@
     ]
   },
   "University of Michigan (MDining)": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "University of Michigan offers oat milk by default in its dining services. MDining also has an ongoing commitment to a 55% plant-based menu because of the associated emissions reductions and cost savings.",
         "link": "https://www.michigandaily.com/news/campus-life/at-mdining-regular-milk-now-means-oat-milk-unless-otherwise-stated/ \n\nhttps://nacas.org/hubfs/MDining_Plant-Rich%20Champion%20Story_03182026.pdf?hsLang=en",
@@ -44,7 +44,7 @@
     ]
   },
   "The Briar Bar": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "The Briar Bar is the first café to offer oat milk by default in Minnesota.",
         "link": "https://www.instagram.com/reel/DF0JbQ4xDQY/#"
@@ -52,7 +52,7 @@
     ]
   },
   "University of Northern Colorado": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "University of North Colorado expanded plant-based offerings in dining in spring 2025.",
         "link": "https://patch.com/colorado/across-co/university-northern-colorado-welcomes-spring-2025"
@@ -60,13 +60,13 @@
     ]
   },
   "Nuffield Health + Sodexo": {
-    "Prime Placement": [
+    "placement": [
       {
         "summary": "In early 2025, Nuffield Health and its catering provider Sodexo collaborated with Greener by Default to offer more plant-forward menus. \n\nIn 37 hospitals, menus that were previously 24% meat, 42% vegetarian and 34% vegan dishes were shifted dramatically to 18% meat, 41% vegetarian and 41% vegan. More than half of the patient menu was updated, introducing new options such as vegan soup rolls and removing the grill bar to place greater emphasis on plant-based meals. Processed meats such as bacon and ham were reduced or removed, and dairy-free options were expanded. Plant-based dishes were given prime placement on menus and flavour-focused names to make them more appealing to patients.",
         "link": "https://uk.sodexo.com/newsroom/2026/sodexo-partners-with-greener-by-default"
       }
     ],
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "In early 2025, Nuffield Health and its catering provider Sodexo collaborated with Greener by Default to offer more plant-forward menus. \n\nIn 37 hospitals, menus that were previously 24% meat, 42% vegetarian and 34% vegan dishes were shifted dramatically to 18% meat, 41% vegetarian and 41% vegan. More than half of the patient menu was updated, introducing new options such as vegan soup rolls and removing the grill bar to place greater emphasis on plant-based meals. Processed meats such as bacon and ham were reduced or removed, and dairy-free options were expanded. Plant-based dishes were given prime placement on menus and flavour-focused names to make them more appealing to patients.",
         "link": "https://uk.sodexo.com/newsroom/2026/sodexo-partners-with-greener-by-default"
@@ -80,7 +80,7 @@
     ]
   },
   "Paquebot Café": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "Since February 2024, Pacquebot Cafe has offered oat milk by default.",
         "link": "https://www.instagram.com/reel/DE5FhScx4iw/"
@@ -88,7 +88,7 @@
     ]
   },
   "University of Exeter": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "University of Exeter is increasing its plant-based options in its dining. Its 2023 Sustainable Food Policy states a goal of at least 50% plant-based meals in the university's menus.",
         "link": "https://news.exeter.ac.uk/faculty-of-health-and-life-sciences/planning-veganuary-sign-up-to-research-study-before-christmas/\nhttps://event.exeter.ac.uk/storage/816/Sustainable-Food-Policy-2023.pdf",
@@ -97,7 +97,7 @@
     ]
   },
   "Austin Office of Sustainability": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "Austin’s Office of Sustainability committed to offering plant-based meals by default.",
         "link": "City of Austin Raises Redesigned Texas Flag Celebrating Plant-Based Food Commitment | by DefaultVeg | Medium"
@@ -105,7 +105,7 @@
     ]
   },
   "Pomona College": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "Pomona College's Cafe 47 instituted an oat milk default pilot in April 2023.",
         "link": "https://vegnews.com/college-cafes-oat-milk-default\nhttps://www.newrootsinstitute.org/articles/ffac-students-secure-campaign-victory-in-campus-cafes"
@@ -121,7 +121,7 @@
     ]
   },
   "NYC Health + Hospitals": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "NYC Health + Hospitals serves plant-based meals by default to its patients. It has served over 2 million plant-based meals from March 2022 to Feburary 2025.",
         "link": "Mayor Adams, NYC H+H CEO Katz Announce Successful Rollout and Expansion of Plant-Based Meals as Default Option for Patients in NYC Public Hospitals - NYC Mayor's Office\nhttps://www.nyc.gov/assets/foodpolicy/downloads/pdf/NYCHospitals_PlantBasedDefaults_2025.pdf"
@@ -129,7 +129,7 @@
     ]
   },
   "Stumptown Roasters": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "Stumptown Roasters offers oat milk by default at all cafes.",
         "link": "https://vegnews.com/stumptown-coffee-oat-milk-default"
@@ -145,7 +145,7 @@
     ]
   },
   "District of Columbia Department of Corrections": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "Need more info",
         "link": "https://doee.dc.gov/sites/default/files/dc/sites/doee/service_content/attachments/Green%20Food%20Report%202025.pdf",
@@ -154,7 +154,7 @@
     ]
   },
   "University College London (Students' Union - four cafes)": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "All four cafes in Students' Union at University College London offer oat milk by default.",
         "link": "https://studentsunionucl.org/articles/why-is-oat-milk-our-default"
@@ -162,7 +162,7 @@
     ]
   },
   "University of California Riverside": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "University of California Riverside signed the Forward Food Pledge, pledging to increase its plant-based meal offerings to 50% by 2027.",
         "link": "University of California Riverside Sets 50% Plant-Based Meal Target by 2027 - vegconomist - the vegan business magazine"
@@ -170,7 +170,7 @@
     ]
   },
   "Western Oregon University": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "Western Oregon University signed the Forward Food Pledge, pledging to increase its plant-based meal offerings to 50% by 2027.",
         "link": "Western Oregon University Commits to 50% Plant-Based Meals by 2027 - vegconomist - the vegan business magazine"
@@ -178,7 +178,7 @@
     ]
   },
   "Hennepin County, Minnesota": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "Hennepin County adopted a plant-based by default catering policy for county-sponsored events and meetings.",
         "link": "Instagram"
@@ -186,7 +186,7 @@
     ]
   },
   "Stanford University": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "At Stanford University, 50% of all menu items offered at dining halls are entirely plant-based. Mixed meat dishes are also served with a 30% vegetable blend.",
         "link": "All You Can Eat: Stanford dining pushes for plant-based"
@@ -202,7 +202,7 @@
     ]
   },
   "Barcelona": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "As part of its 2020 Climate Emergency Declaration, Barcelona is reducing consumption of animal proteins at public schools. Now, the presence of vegetable protein has increased on school menus, while red meat is served once a month.",
         "link": "https://www.barcelona.cat/infobarcelona/en/tema/city-council/no-pork-consumption-prohibition-by-the-city-council-in-nursery-schools_1607511.html\n\nhttps://www.uoc.edu/en/news/2025/replace-animal-protein-to-reduce-environmental-impact-in-school-diets \n\nhttps://www.barcelona.cat/barcelona-pel-clima/sites/default/files/Climate_Emergency_Declaration_en.pdf"
@@ -210,7 +210,7 @@
     ]
   },
   "Amsterdam, Netherlands": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "Amsterdam City Council serves plant-based food by default at all council events. The city also aims to encourage residents to adopt a diet that is at least 60% plant-based by 2030.",
         "link": "https://vegconomist.com/politics-law/amsterdam-passes-new-motion-building-endorsement-plant-based-treaty/\n\nhttps://defaultveg.medium.com/in-europe-everyday-is-veggiedag-5532fc660f85 \n\nhttps://www.iamsterdam.com/en/business/amsterdam-first-eu-capital-to-embrace-the-plant-based-treaty",
@@ -226,7 +226,7 @@
     ]
   },
   "West Hollywood, California": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "The City of West Hollywood serves plant-based food by default catering at all city-produced events and meetings.",
         "link": "West Hollywood Announces ‘Groundbreaking’ Plant-Based Policy"
@@ -240,7 +240,7 @@
         "link": "Kingston adopts plant-based food policy | The Kingston Whig Standard"
       }
     ],
-    "Prime Placement": [
+    "placement": [
       {
         "summary": "In 2024, Kingston City Council passed a motion for the city to promote plant-based foods by prioritizing them in its procurement process and placing them in higher-profile locations at city events.",
         "link": "Kingston adopts plant-based food policy | The Kingston Whig Standard"
@@ -248,7 +248,7 @@
     ]
   },
   "Helsinki, Finland": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "Helsinki declared itself a “Fair Trade city” in 2013 and has been using fair-trade-related criteria in its procurement. In March 2026, the City Council voted to halve its procurement of meat and dairy products by 2030 and replace it with plant-based food options in schools, hospitals and municipal institutions. There has already been some progress: since 2019, the amount of red meat served has already been cut by half. From 2029, meat dishes will be served only once or twice a week.",
         "link": "Helsinki ditches meat and cow’s milk from the menu | Euractiv (not using bc no further proof)\n\nhttps://yle.fi/a/74-20213319 \n\nhttps://www.greenqueen.com.hk/helsinki-puloet-parempaa-meat-dairy-plant-based-food-policy-2030/"
@@ -256,7 +256,7 @@
     ]
   },
   "Brampton, Ontario": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "In August 2022, Brampton's City Council approved a motion for Brampton to transition 50% of city food purchases to plant-based options by re-evaluating its current procurement.",
         "link": "https://pub-brampton.escribemeetings.com/Meeting.aspx?Id=692d53a9-cfcd-4e04-9258-111138df4985&Agenda=PostMinutes&lang=English"
@@ -264,7 +264,7 @@
     ]
   },
   "Berkeley, CA, USA": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "In July 2021, Berkeley's City Council adopted a goal to achieve a 50% decrease in animal-based food products served by the city by 2024.",
         "link": "https://www.cityofberkeley.info/Clerk/City_Council/2021/03_Mar/Documents/2021-03-09_Item_19_Support_Vision_2025_for_Sustainable.aspx\n\nhttps://berkeleyca.gov/sites/default/files/documents/2021-07-27%20Item%2022%20Accelerating%20transition%20to%20Plant-Based%20Foods%20-%20Rev%20Hahn.pdf \n\nhttps://berkeleyca.gov/sites/default/files/documents/2021-07-27%20Item%2022%20Accelerating%20transition%20to%20Plant-Based%20Foods.pdf \n\nhttps://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/",
@@ -273,7 +273,7 @@
     ]
   },
   "Los Angeles County, CA, USA": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "In March 2024, Los Angeles County passed a motion requiring all departmental food procurement to be plant-based by default.",
         "link": "https://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/\n\nhttps://laclimateweek.com/event/measuring-what-matters-how-local-food-policy-is-changing-la/\n\nhttps://plantbasedfoods.org/latest/plant-based-by-default-wins-in-la-county#:~:text=Los%20Angeles%20County%20passed%20a%20motion%20that,and%20increasing%20awareness%20of%20plant%2Dbased%20food%20procurement.\n\nhttps://mercyforanimals.org/blog/los-angeles-county-passes-groundbreaking-policy-requiring-plant-based-food-purchases/#:~:text=We%20look%20forward%20to%20working,and%20have%20far%2Dreaching%20effects.",
@@ -282,7 +282,7 @@
     ]
   },
   "San Francisco Jails": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "In 2020, the San Francisco City Board of Supervisors passed a motion requiring San Francisco jails to reduce purchases of animal products by 50 percent in 2024.",
         "link": "San Francisco to reduce meat and dairy served in hospitals and jails | Eurogroup for Animals\n\nhttps://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/"
@@ -290,7 +290,7 @@
     ]
   },
   "San Francisco Hospitals": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "In 2020, the San Francisco City Board of Supervisors passed a motion requiring San Francisco public hospitals to reduce purchases of animal products by 15% in 2023.",
         "link": "San Francisco to reduce meat and dairy served in hospitals and jails | Eurogroup for Animals"
@@ -298,7 +298,7 @@
     ]
   },
   "Ikea Germany": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "In 2020, IKEA committed 50% of its restaurant meals and 80% of its packaged foods to be plant-based by 2025.",
         "link": "https://www.ikea.com/global/en/newsroom/sustainability/ikea-restaurant-meals-50-plantbased-by-2025-201123/ \n\nhttps://www.ikea.com/in/en/this-is-ikea/sustainable-everyday/sustainable-eating/plant-based-goodness-pub378a44c0/#:~:text=IKEA%20restaurant%20meals:%2050%25%20plant%2Dbased%20by%202025.,a%20wooden%20spoon%20whilst%20they're%20being%20fried.",
@@ -307,7 +307,7 @@
     ]
   },
   "Galaxy Hut": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "At Galaxy Hut, all meals are plant-based by default, and cheese is available upon request.",
         "link": "galaxy hut – vegan friendly grill and good beer bar"
@@ -315,7 +315,7 @@
     ]
   },
   "Tony's": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "Tony's has a plant-based by default menu with dairy products available upon request.",
         "link": "MAIN | Tony's Darts Away"
@@ -323,7 +323,7 @@
     ]
   },
   "Ocean Beach People's Food Co-Op": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "Ocean Beach People's Food Co-Op is a vegan deli and plant-forward grocery store, with some dairy and eggs products available, but not sold in the deli.",
         "link": "OB People's Food Co-op | San Diego's community-owned organic grocery store since 1971\n\nhttps://obpeoplesfood.storebyweb.com/s/1000-1/b?g=CGP-1000-2185"
@@ -331,13 +331,13 @@
     ]
   },
   "Google Headquarters": {
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "summary": "Google has a Food Choice Architecture program, a research-based team within Food at Google designed to make “the healthiest choice the easiest choice” for employees. Fruits and vegetables \"take center stage\" in Google's network of 380 cafes and 1,500 MicroKitchens to encourage a more balanced and plant-forward diet.",
         "link": "Inside Google's Efforts to Engineer Its Food for Healthiness | OneZero\n\nhttps://workforcenutrition.org/employee-wellbeing-far-beyond-technology-googles-approach-to-workforce-nutrition/#:~:text=Google's%20Food%20at%20Google%20program%20aims%20to,in%20the%20garden%20*%20**MicroKitchens**%20Number%201%2C500 \n\nhttps://www.wbcsd.org/resources/foodwork-program/#:~:text=Google's%20Food@Work%20program%20aims%20to%20encourage%20healthier,footprint%20from%20food%20between%202017%20and%202019."
       }
     ],
-    "Prime Placement": [
+    "placement": [
       {
         "summary": "Google has a Food Choice Architecture program, a research-based team within Food at Google designed to make “the healthiest choice the easiest choice” for employees. Fruits and vegetables \"take center stage\" in Google's network of 380 cafes and 1,500 MicroKitchens to encourage a more balanced and plant-forward diet.",
         "link": "Inside Google's Efforts to Engineer Its Food for Healthiness | OneZero\n\nhttps://workforcenutrition.org/employee-wellbeing-far-beyond-technology-googles-approach-to-workforce-nutrition/#:~:text=Google's%20Food%20at%20Google%20program%20aims%20to,in%20the%20garden%20*%20**MicroKitchens**%20Number%201%2C500 \n\nhttps://www.wbcsd.org/resources/foodwork-program/#:~:text=Google's%20Food@Work%20program%20aims%20to%20encourage%20healthier,footprint%20from%20food%20between%202017%20and%202019."
@@ -345,7 +345,7 @@
     ]
   },
   "Four Berlin Universities": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "In Fall 2021, Studierendenwerk, which runs 34 canteens at Berlin's universities and colleges, began offering menus that are 68% vegan, 28% vegetarian, and 4% meat and fish (a single meat option is offered four days a week). This change was made to make their menus more climate-friendly and serve increasing student demand for plant-based options.",
         "link": "Berlin’s university canteens go almost meat-free as students prioritise climate | Germany | The Guardian\n\nhttps://www.bbc.com/news/world-europe-58393847 \n\nhttps://plantbasednews.org/news/environment/34-university-cafeterias-in-berlin-to-drastically-lower-meat-options/"
@@ -353,7 +353,7 @@
     ]
   },
   "Beacon House Catering Services": {
-    "Plant-Based Default": [
+    "default": [
       {
         "summary": "No information about nudges on their website.",
         "link": "Notes - BFF x BeaconHouse - Google Docs"

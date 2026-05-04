@@ -1,40 +1,23 @@
 {
   "merged": {
-    "placeType": [
-      "cafe",
-      "chain_restaurant",
-      "event",
-      "gov_facility",
-      "hospital",
-      "hotel",
-      "stadium",
-      "uni_dining"
-    ],
-    "country": ["United States", "Canada"],
-    "year": ["unknown", "2025", "2024", "2023", "2020"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "anyAdopted": {
-    "placeType": [
-      "cafe",
-      "chain_restaurant",
-      "event",
-      "gov_facility",
-      "hotel",
-      "stadium",
-      "uni_dining"
-    ],
-    "country": ["United States", "Canada"],
-    "year": ["unknown", "2025", "2024", "2023", "2020"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "anyPledged": {
-    "placeType": ["hospital", "uni_dining"],
-    "country": ["United States"],
-    "year": ["unknown"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "defaultAdopted": {
-    "placeType": ["cafe", "event", "stadium", "uni_dining"],
-    "country": ["United States", "Canada"],
-    "year": ["unknown", "2025", "2020"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "defaultPledged": {
     "placeType": [],
@@ -42,9 +25,9 @@
     "year": []
   },
   "ratioAdopted": {
-    "placeType": ["chain_restaurant", "event", "stadium", "uni_dining"],
-    "country": ["United States", "Canada"],
-    "year": ["unknown", "2024"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "ratioPledged": {
     "placeType": [],
@@ -52,29 +35,29 @@
     "year": []
   },
   "subAdopted": {
-    "placeType": ["uni_dining"],
-    "country": ["United States"],
-    "year": ["unknown"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "subPledged": {
-    "placeType": ["hospital"],
-    "country": ["United States"],
-    "year": ["unknown"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "titlesAdopted": {
-    "placeType": ["hotel"],
-    "country": ["United States"],
-    "year": ["unknown"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "titlesPledged": {
-    "placeType": ["uni_dining"],
-    "country": ["United States"],
-    "year": ["unknown"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "placementAdopted": {
-    "placeType": ["gov_facility", "hotel", "uni_dining"],
-    "country": ["United States"],
-    "year": ["unknown", "2023"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "placementPledged": {
     "placeType": [],
@@ -82,9 +65,9 @@
     "year": []
   },
   "otherAdopted": {
-    "placeType": ["gov_facility"],
-    "country": ["United States"],
-    "year": ["unknown"]
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "otherPledged": {
     "placeType": [],

@@ -3,12 +3,12 @@ import * as fs from "fs";
 import * as path from "path";
 import { parse } from "csv-parse/sync";
 import NodeGeocoder from "node-geocoder";
-import { initGeocoder, getLongLat } from "./lib/geocoder.ts";
+import { initGeocoder, getLongLat } from "./lib/geocoder";
 
 // ─── Rate limiting ────────────────────────────────────────────────────────────
- 
+
 const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
- 
+
 async function geocodeWithRetry(
   name: string,
   state: string | null,
@@ -27,9 +27,9 @@ async function geocodeWithRetry(
   }
   return null;
 }
- 
+
 // ─── Types ────────────────────────────────────────────────────────────────────
- 
+
 interface NudgeEntry {
   status: string;
   org_credit_filter?: string[];
@@ -37,7 +37,7 @@ interface NudgeEntry {
   date: string;
   deadline?: string;
 }
- 
+
 interface PlaceEntry {
   name: string;
   state: string | null;
@@ -48,22 +48,35 @@ interface PlaceEntry {
   consumer_base: number | null;
   coord: [number, number] | null;
 }
- 
+
 interface CoreRecord {
   place: PlaceEntry;
   [nudge: string]: NudgeEntry[] | PlaceEntry;
 }
- 
+
 interface ExtendedNudgeEntry {
   summary: string;
   link?: string;
   notes?: string;
 }
- 
+
 interface ExtendedRecord {
   [nudge: string]: ExtendedNudgeEntry[];
 }
- 
+
+// ─── Nudge name map ───────────────────────────────────────────────────────────
+
+const NUDGE_MAP: Record<string, string> = {
+  "plant-based default": "default",
+  "climate-friendly ratio": "ratio",
+  "prime placement": "placement",
+  "tasty titles & descriptions": "titles",
+};
+
+function normalizeNudge(raw: string): string {
+  return NUDGE_MAP[raw.toLowerCase()] ?? raw;
+}
+
 // ─── Column indices (0-based) ─────────────────────────────────────────────────
 // Name, Nudge, Specific Nudge, Status, Public vs. Private, Institution,
 // Address, Consumer Base, Year, Deadline, Policy Summary, Org Credit (filter),
@@ -84,9 +97,9 @@ const COL = {
   LINK: 13,
   NOTES: 14,
 };
- 
+
 // ─── Helpers ──────────────────────────────────────────────────────────────────
- 
+
 function toSlug(name: string): string {
   return name
     .toLowerCase()
@@ -94,14 +107,14 @@ function toSlug(name: string): string {
     .trim()
     .replace(/\s+/g, "_");
 }
- 
+
 function parseConsumerBase(raw: string): number | null {
   if (!raw || raw.trim() === "") return null;
   const cleaned = raw.replace(/,/g, "").trim();
   const n = parseInt(cleaned, 10);
   return isNaN(n) ? null : n;
 }
- 
+
 function parseOrgCredit(raw: string): string[] | undefined {
   if (!raw || raw.trim() === "") return undefined;
   return raw
@@ -109,13 +122,13 @@ function parseOrgCredit(raw: string): string[] | undefined {
     .map((s) => s.trim())
     .filter(Boolean);
 }
- 
+
 function parseDeadline(raw: string): string | undefined {
   if (!raw || raw.trim() === "" || raw.trim().toLowerCase() === "n/a")
     return undefined;
   return raw.trim();
 }
- 
+
 /**
  * Attempt to extract state/region and country from a freeform address string.
  *
@@ -130,7 +143,7 @@ function parseAddressForStateCountry(address: string): {
 } {
   // Flatten multiline addresses
   const flat = address.replace(/\n/g, " ").trim();
- 
+
   // Pattern: ends with known country name
   const knownCountries: Record<string, string> = {
     "United Kingdom": "United Kingdom",
@@ -159,13 +172,13 @@ function parseAddressForStateCountry(address: string): {
       return { state: null, country: val };
     }
   }
- 
+
   // Canadian postal code without explicit "Canada" suffix: "City, BC V7N 4N5"
   const caImplicit = flat.match(/,\s+([A-Z]{2})\s+[A-Z]\d[A-Z]\s*\d[A-Z]\d/);
   if (caImplicit && CA_PROVINCES[caImplicit[1]]) {
     return { state: expandProvince(caImplicit[1]), country: "Canada" };
   }
- 
+
   // Default to USA — look for "City, ST ZIP" at the end
   const usMatch = flat.match(/,\s*([A-Za-z\s]+),?\s+([A-Z]{2})\s+\d{5}/);
   if (usMatch) {
@@ -176,10 +189,10 @@ function parseAddressForStateCountry(address: string): {
   if (usSimple) {
     return { state: expandState(usSimple[1]), country: "United States" };
   }
- 
+
   return { state: null, country: "United States" };
 }
- 
+
 const US_STATES: Record<string, string> = {
   AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
   CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
@@ -193,62 +206,62 @@ const US_STATES: Record<string, string> = {
   TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia", WA: "Washington",
   WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming", DC: "District of Columbia",
 };
- 
+
 const CA_PROVINCES: Record<string, string> = {
   AB: "Alberta", BC: "British Columbia", MB: "Manitoba", NB: "New Brunswick",
   NL: "Newfoundland and Labrador", NS: "Nova Scotia", NT: "Northwest Territories",
   NU: "Nunavut", ON: "Ontario", PE: "Prince Edward Island", QC: "Quebec",
   SK: "Saskatchewan", YT: "Yukon",
 };
- 
+
 function expandState(abbr: string): string {
   return US_STATES[abbr] ?? abbr;
 }
- 
+
 function expandProvince(abbr: string): string {
   return CA_PROVINCES[abbr] ?? abbr;
 }
- 
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
- 
+
 async function main() {
   const csvPath = process.argv[2];
   if (!csvPath) {
-    console.error("Usage: ts-node src/convert.ts <path-to-csv>");
+    console.error("Usage: tsx src/convertJsonFromCsv.ts <path-to-csv>");
     process.exit(1);
   }
- 
+
   const outputDir = path.join(__dirname, '../data');
   fs.mkdirSync(outputDir, { recursive: true });
- 
+
   const rawCsv = fs.readFileSync(csvPath, "utf-8");
- 
+
   // Parse CSV — columns beyond index 14 (Private Notes) will still be parsed
   // but we simply ignore them.
   const rows: string[][] = parse(rawCsv, {
     relax_column_count: true,
     skip_empty_lines: false,
   });
- 
+
   // Drop header row
   const [_header, ...dataRows] = rows;
- 
+
   // Filter: skip blank rows and rows with no nudge
   const validRows = dataRows.filter((row) => {
     const name = row[COL.NAME]?.trim();
-    const nudge = row[COL.NUDGE]?.trim();
+    const nudge = normalizeNudge(row[COL.NUDGE]?.trim() ?? "");
     return name && nudge;
   });
- 
+
   if (validRows.length === 0) {
     console.error("No valid rows found.");
     process.exit(1);
   }
- 
+
   console.log(`Processing ${validRows.length} valid rows…`);
- 
+
   const geocoder = initGeocoder();
- 
+
   // Persistent coordinate cache — survives between runs so addresses are never re-geocoded
   const cacheFile = path.join(outputDir, ".geocache.json");
   const coordCache = new Map<string, [number, number] | null>(
@@ -262,13 +275,13 @@ async function main() {
       JSON.stringify(Object.fromEntries(coordCache), null, 2),
     );
   console.log(`  Loaded ${coordCache.size} cached coordinates from ${cacheFile}`);
- 
+
   const coreOutput: Record<string, CoreRecord> = {};
   const extendedOutput: Record<string, ExtendedRecord> = {};
- 
+
   for (const row of validRows) {
     const name = row[COL.NAME].trim();
-    const nudge = row[COL.NUDGE].trim();
+    const nudge = normalizeNudge(row[COL.NUDGE].trim());
     const status = row[COL.STATUS]?.trim() ?? "";
     const publicPrivate = row[COL.PUBLIC]?.trim().toLowerCase() ?? "";
     const institution = row[COL.INSTITUTION]?.trim() ?? "";
@@ -281,7 +294,7 @@ async function main() {
     const orgExpanded = parseOrgCredit(row[COL.ORG_EXPANDED] ?? "");
     const link = row[COL.LINK]?.trim() || undefined;
     const notes = row[COL.NOTES]?.trim() || undefined;
- 
+
     // ── Geocode (with cache) ──────────────────────────────────────────────────
     let coord: [number, number] | null = null;
     if (address) {
@@ -310,7 +323,7 @@ async function main() {
         saveCache(); // persist after each new result so progress isn't lost on interruption
       }
     }
- 
+
     // ── Build place info (only on first encounter) ────────────────────────────
     if (!coreOutput[name]) {
       const { state, country } = parseAddressForStateCountry(address);
@@ -328,7 +341,7 @@ async function main() {
       };
       extendedOutput[name] = {};
     }
- 
+
     // ── Core nudge entry ──────────────────────────────────────────────────────
     const coreNudgeEntry: NudgeEntry = {
       status,
@@ -337,37 +350,37 @@ async function main() {
       date: year === "unknown" ? "unknown" : year,
       ...(deadline ? { deadline } : {}),
     };
- 
+
     if (!coreOutput[name][nudge]) {
       coreOutput[name][nudge] = [];
     }
     (coreOutput[name][nudge] as NudgeEntry[]).push(coreNudgeEntry);
- 
+
     // ── Extended nudge entry ──────────────────────────────────────────────────
     const extendedNudgeEntry: ExtendedNudgeEntry = {
       summary,
       ...(link ? { link } : {}),
       ...(notes ? { notes } : {}),
     };
- 
+
     if (!extendedOutput[name][nudge]) {
       extendedOutput[name][nudge] = [];
     }
     extendedOutput[name][nudge].push(extendedNudgeEntry);
   }
- 
+
   // ── Write output files ────────────────────────────────────────────────────
   const corePath = path.join(outputDir, "core.json");
   const extendedPath = path.join(outputDir, "extended.json");
- 
+
   fs.writeFileSync(corePath, JSON.stringify(coreOutput, null, 2), "utf-8");
   fs.writeFileSync(extendedPath, JSON.stringify(extendedOutput, null, 2), "utf-8");
- 
+
   console.log(`\n✓ core.json     → ${corePath}`);
   console.log(`✓ extended.json → ${extendedPath}`);
   console.log(`  Entities: ${Object.keys(coreOutput).length}`);
 }
- 
+
 main().catch((err) => {
   console.error("Fatal error:", err);
   process.exit(1);

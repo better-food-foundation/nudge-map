@@ -8,12 +8,9 @@
       "public": "public",
       "encoded": "north_vancouver_district",
       "consumer_base": 58120,
-      "coord": [
-        -123.0737925,
-        49.3206294
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -35,12 +32,9 @@
       "public": "public",
       "encoded": "california_state_los_angeles",
       "consumer_base": 21708,
-      "coord": [
-        -118.1671415,
-        34.0664949
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "org_credit_filter": [
@@ -62,12 +56,9 @@
       "public": "public",
       "encoded": "university_of_north_texas",
       "consumer_base": 43567,
-      "coord": [
-        -97.1514762,
-        33.2098926
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -90,12 +81,9 @@
       "public": "public",
       "encoded": "city_of_sammamish",
       "consumer_base": 65986,
-      "coord": [
-        -122.0416844,
-        47.6017554
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -119,7 +107,7 @@
       "consumer_base": 35358,
       "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "org_credit_filter": [
@@ -141,12 +129,9 @@
       "public": "private",
       "encoded": "the_briar_bar",
       "consumer_base": null,
-      "coord": [
-        -1.9001993,
-        52.4799005
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Implemented",
         "date": "2025"
@@ -162,12 +147,9 @@
       "public": "public",
       "encoded": "university_of_northern_colorado",
       "consumer_base": 8561,
-      "coord": [
-        -104.7017242,
-        40.4028503
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Implemented",
         "date": "2025"
@@ -185,7 +167,7 @@
       "consumer_base": null,
       "coord": null
     },
-    "Prime Placement": [
+    "placement": [
       {
         "status": "Implemented",
         "org_credit_filter": [
@@ -199,7 +181,7 @@
         "date": "2025"
       }
     ],
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Implemented",
         "org_credit_filter": [
@@ -237,12 +219,9 @@
       "public": "private",
       "encoded": "paquebot_caf",
       "consumer_base": null,
-      "coord": [
-        -73.6011456,
-        45.5488035
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "date": "2024"
@@ -258,12 +237,9 @@
       "public": "private",
       "encoded": "university_of_exeter",
       "consumer_base": 29777,
-      "coord": [
-        -75.8307357,
-        40.3164553
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pilot",
         "date": "2025"
@@ -281,7 +257,7 @@
       "consumer_base": 1007435,
       "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -305,12 +281,9 @@
       "public": "private",
       "encoded": "pomona_college",
       "consumer_base": 1732,
-      "coord": [
-        -117.7117275,
-        34.0974775
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Pilot",
         "org_credit_filter": [
@@ -350,12 +323,9 @@
       "public": "public",
       "encoded": "nyc_health_hospitals",
       "consumer_base": 15000,
-      "coord": [
-        -73.9792716,
-        40.7288192
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "org_credit_filter": [
@@ -381,12 +351,9 @@
       "public": "private",
       "encoded": "stumptown_roasters",
       "consumer_base": null,
-      "coord": [
-        -122.6732913,
-        45.5217396
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "date": "2023"
@@ -430,7 +397,7 @@
       "consumer_base": null,
       "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "date": "2024"
@@ -448,7 +415,7 @@
       "consumer_base": 51315,
       "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "org_credit_filter": [
@@ -470,12 +437,9 @@
       "public": "public",
       "encoded": "university_of_california_riverside",
       "consumer_base": 18279,
-      "coord": [
-        -117.3398097,
-        33.9642576
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -498,12 +462,9 @@
       "public": "public",
       "encoded": "western_oregon_university",
       "consumer_base": 3857,
-      "coord": [
-        -123.2415064,
-        44.8530112
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -526,12 +487,9 @@
       "public": "public",
       "encoded": "hennepin_county_minnesota",
       "consumer_base": 1293582,
-      "coord": [
-        -93.4865052,
-        45.0257232
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -551,12 +509,9 @@
       "public": "private",
       "encoded": "stanford_university",
       "consumer_base": 17289,
-      "coord": [
-        -122.1693654,
-        37.4313138
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Implemented",
         "date": "2025"
@@ -590,12 +545,9 @@
       "public": "public",
       "encoded": "barcelona",
       "consumer_base": 5750000,
-      "coord": [
-        -121.4579869,
-        37.7323608
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "date": "2021"
@@ -611,12 +563,9 @@
       "public": "public",
       "encoded": "amsterdam_netherlands",
       "consumer_base": 1200000,
-      "coord": [
-        4.8924534,
-        52.3730796
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -650,12 +599,9 @@
       "public": "public",
       "encoded": "west_hollywood_california",
       "consumer_base": 33700,
-      "coord": [
-        -118.3692894,
-        34.0923014
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -677,10 +623,7 @@
       "public": "public",
       "encoded": "kingston_ontario",
       "consumer_base": 153346,
-      "coord": [
-        -76.4283781,
-        44.3054151
-      ]
+      "coord": null
     },
     "Other": [
       {
@@ -694,7 +637,7 @@
         "date": "2024"
       }
     ],
-    "Prime Placement": [
+    "placement": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -716,12 +659,9 @@
       "public": "public",
       "encoded": "helsinki_finland",
       "consumer_base": 1400000,
-      "coord": [
-        24.8695565,
-        60.3045338
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "date": "2026",
@@ -738,12 +678,9 @@
       "public": "public",
       "encoded": "brampton_ontario",
       "consumer_base": 833365,
-      "coord": [
-        -79.7599366,
-        43.685832
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -767,12 +704,9 @@
       "public": "public",
       "encoded": "berkeley_ca_usa",
       "consumer_base": 120500,
-      "coord": [
-        -122.272863,
-        37.8708393
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "date": "2021",
@@ -789,12 +723,9 @@
       "public": "public",
       "encoded": "los_angeles_county_ca_usa",
       "consumer_base": 9757179,
-      "coord": [
-        -118.209681,
-        34.3155072
-      ]
+      "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -818,7 +749,7 @@
       "consumer_base": null,
       "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -843,12 +774,9 @@
       "public": "public",
       "encoded": "san_francisco_hospitals",
       "consumer_base": null,
-      "coord": [
-        -122.4052532,
-        37.7568103
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Pledged",
         "org_credit_filter": [
@@ -873,12 +801,9 @@
       "public": "private",
       "encoded": "ikea_germany",
       "consumer_base": null,
-      "coord": [
-        8.3714213,
-        50.0580184
-      ]
+      "coord": null
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Unknown",
         "date": "unknown",
@@ -900,7 +825,7 @@
         38.8896232
       ]
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "date": "unknown"
@@ -921,7 +846,7 @@
         33.8393004
       ]
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "date": "unknown"
@@ -942,7 +867,7 @@
         32.7495327
       ]
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Implemented",
         "date": "unknown"
@@ -963,13 +888,13 @@
         37.4217636
       ]
     },
-    "Climate-Friendly Ratio": [
+    "ratio": [
       {
         "status": "Implemented",
         "date": "unknown"
       }
     ],
-    "Prime Placement": [
+    "placement": [
       {
         "status": "Implemented",
         "date": "unknown"
@@ -987,7 +912,7 @@
       "consumer_base": null,
       "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "Implemented",
         "date": "2021"
@@ -1005,7 +930,7 @@
       "consumer_base": null,
       "coord": null
     },
-    "Plant-Based Default": [
+    "default": [
       {
         "status": "",
         "date": "unknown"
