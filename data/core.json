@@ -8,11 +8,14 @@
       "public": "public",
       "encoded": "north_vancouver_district",
       "consumer_base": 58120,
-      "coord": null
+      "coord": [
+        -123.0737925,
+        49.3206294
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Cities Movement"
         ],
@@ -32,11 +35,14 @@
       "public": "public",
       "encoded": "california_state_los_angeles",
       "consumer_base": 21708,
-      "coord": null
+      "coord": [
+        -118.1671415,
+        34.0664949
+      ]
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "org_credit_filter": [
           "BFF"
         ],
@@ -56,11 +62,14 @@
       "public": "public",
       "encoded": "university_of_north_texas",
       "consumer_base": 43567,
-      "coord": null
+      "coord": [
+        -97.1514762,
+        33.2098926
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Humane World for Animals"
         ],
@@ -81,40 +90,19 @@
       "public": "public",
       "encoded": "city_of_sammamish",
       "consumer_base": 65986,
-      "coord": null
+      "coord": [
+        -122.0416844,
+        47.6017554
+      ]
     },
     "default": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "MFA"
         ],
         "org_credit_expanded": [
           "Mercy for Animals"
-        ],
-        "date": "2025"
-      }
-    ]
-  },
-  "University of Michigan (MDining)": {
-    "place": {
-      "name": "University of Michigan (MDining)",
-      "state": "Michigan",
-      "country": "United States",
-      "type": "University Dining Hall",
-      "public": "public",
-      "encoded": "university_of_michigan_mdining",
-      "consumer_base": 35358,
-      "coord": null
-    },
-    "default": [
-      {
-        "status": "Implemented",
-        "org_credit_filter": [
-          "BFF"
-        ],
-        "org_credit_expanded": [
-          "Better Food Foundation (influenced via MCURC & dining director contact)"
         ],
         "date": "2025"
       }
@@ -129,11 +117,14 @@
       "public": "private",
       "encoded": "the_briar_bar",
       "consumer_base": null,
-      "coord": null
+      "coord": [
+        -1.9001993,
+        52.4799005
+      ]
     },
     "ratio": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "2025"
       }
     ]
@@ -147,65 +138,14 @@
       "public": "public",
       "encoded": "university_of_northern_colorado",
       "consumer_base": 8561,
-      "coord": null
+      "coord": [
+        -104.7017242,
+        40.4028503
+      ]
     },
     "ratio": [
       {
-        "status": "Implemented",
-        "date": "2025"
-      }
-    ]
-  },
-  "Nuffield Health + Sodexo": {
-    "place": {
-      "name": "Nuffield Health + Sodexo",
-      "state": null,
-      "country": "United Kingdom",
-      "type": "Hospital",
-      "public": "private",
-      "encoded": "nuffield_health_sodexo",
-      "consumer_base": null,
-      "coord": null
-    },
-    "placement": [
-      {
-        "status": "Implemented",
-        "org_credit_filter": [
-          "GBD",
-          "Sodexo UK & Ireland"
-        ],
-        "org_credit_expanded": [
-          "Greener by Default",
-          "Sodexo UK & Ireland"
-        ],
-        "date": "2025"
-      }
-    ],
-    "ratio": [
-      {
-        "status": "Implemented",
-        "org_credit_filter": [
-          "GBD",
-          "Sodexo UK & Ireland"
-        ],
-        "org_credit_expanded": [
-          "Greener by Default",
-          "Sodexo UK & Ireland"
-        ],
-        "date": "2025"
-      }
-    ],
-    "Tasty Titles and Descriptions": [
-      {
-        "status": "Implemented",
-        "org_credit_filter": [
-          "GBD",
-          "Sodexo UK & Ireland"
-        ],
-        "org_credit_expanded": [
-          "Greener by Default",
-          "Sodexo UK & Ireland"
-        ],
+        "status": "adopted",
         "date": "2025"
       }
     ]
@@ -219,97 +159,14 @@
       "public": "private",
       "encoded": "paquebot_caf",
       "consumer_base": null,
-      "coord": null
+      "coord": [
+        -64.483515,
+        48.8295949
+      ]
     },
     "default": [
       {
-        "status": "Implemented",
-        "date": "2024"
-      }
-    ]
-  },
-  "University of Exeter": {
-    "place": {
-      "name": "University of Exeter",
-      "state": null,
-      "country": "United States",
-      "type": "University Dining Hall",
-      "public": "private",
-      "encoded": "university_of_exeter",
-      "consumer_base": 29777,
-      "coord": null
-    },
-    "ratio": [
-      {
-        "status": "Pilot",
-        "date": "2025"
-      }
-    ]
-  },
-  "Austin Office of Sustainability": {
-    "place": {
-      "name": "Austin Office of Sustainability",
-      "state": null,
-      "country": "United States",
-      "type": "City/Government",
-      "public": "public",
-      "encoded": "austin_office_of_sustainability",
-      "consumer_base": 1007435,
-      "coord": null
-    },
-    "default": [
-      {
-        "status": "Pledged",
-        "org_credit_filter": [
-          "BFF",
-          "Planted Society"
-        ],
-        "org_credit_expanded": [
-          "Better Food Foundation",
-          "Planted Society"
-        ],
-        "date": "2023"
-      }
-    ]
-  },
-  "Pomona College": {
-    "place": {
-      "name": "Pomona College",
-      "state": "California",
-      "country": "United States",
-      "type": "University Cafe",
-      "public": "private",
-      "encoded": "pomona_college",
-      "consumer_base": 1732,
-      "coord": null
-    },
-    "default": [
-      {
-        "status": "Pilot",
-        "org_credit_filter": [
-          "BFF"
-        ],
-        "org_credit_expanded": [
-          "Better Food Foundation Student Advocate"
-        ],
-        "date": "2023"
-      }
-    ]
-  },
-  "Victoria College at University of Toronto": {
-    "place": {
-      "name": "Victoria College at University of Toronto",
-      "state": "Ontario",
-      "country": "Canada",
-      "type": "University Dining Hall",
-      "public": "public",
-      "encoded": "victoria_college_at_university_of_toronto",
-      "consumer_base": 3274,
-      "coord": null
-    },
-    "Subtle Substitutions": [
-      {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "2024"
       }
     ]
@@ -323,11 +180,14 @@
       "public": "public",
       "encoded": "nyc_health_hospitals",
       "consumer_base": 15000,
-      "coord": null
+      "coord": [
+        -73.9792716,
+        40.7288192
+      ]
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "org_credit_filter": [
           "GBD",
           "BFF",
@@ -351,80 +211,15 @@
       "public": "private",
       "encoded": "stumptown_roasters",
       "consumer_base": null,
-      "coord": null
+      "coord": [
+        -122.6732913,
+        45.5217396
+      ]
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "2023"
-      }
-    ]
-  },
-  "Washington, DC Department of Youth and Rehabilitation Services": {
-    "place": {
-      "name": "Washington, DC Department of Youth and Rehabilitation Services",
-      "state": "District of Columbia",
-      "country": "United States",
-      "type": "City/Government",
-      "public": "public",
-      "encoded": "washington_dc_department_of_youth_and_rehabilitation_services",
-      "consumer_base": null,
-      "coord": null
-    },
-    "Other": [
-      {
-        "status": "Pledged",
-        "org_credit_filter": [
-          "GBD",
-          "BFF"
-        ],
-        "org_credit_expanded": [
-          "Greener by Default",
-          "Better Food Foundation"
-        ],
-        "date": "2024"
-      }
-    ]
-  },
-  "District of Columbia Department of Corrections": {
-    "place": {
-      "name": "District of Columbia Department of Corrections",
-      "state": null,
-      "country": "United States",
-      "type": "City/Government",
-      "public": "public",
-      "encoded": "district_of_columbia_department_of_corrections",
-      "consumer_base": null,
-      "coord": null
-    },
-    "ratio": [
-      {
-        "status": "Pledged",
-        "date": "2024"
-      }
-    ]
-  },
-  "University College London (Students' Union - four cafes)": {
-    "place": {
-      "name": "University College London (Students' Union - four cafes)",
-      "state": null,
-      "country": "United States",
-      "type": "University Cafe",
-      "public": "private",
-      "encoded": "university_college_london_students_union_four_cafes",
-      "consumer_base": 51315,
-      "coord": null
-    },
-    "default": [
-      {
-        "status": "Implemented",
-        "org_credit_filter": [
-          "GBD"
-        ],
-        "org_credit_expanded": [
-          "Greener by Default"
-        ],
-        "date": "2022"
       }
     ]
   },
@@ -437,11 +232,14 @@
       "public": "public",
       "encoded": "university_of_california_riverside",
       "consumer_base": 18279,
-      "coord": null
+      "coord": [
+        -117.3398097,
+        33.9642576
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Humane World for Animals"
         ],
@@ -462,11 +260,14 @@
       "public": "public",
       "encoded": "western_oregon_university",
       "consumer_base": 3857,
-      "coord": null
+      "coord": [
+        -123.2415064,
+        44.8530112
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Humane World for Animals"
         ],
@@ -487,11 +288,14 @@
       "public": "public",
       "encoded": "hennepin_county_minnesota",
       "consumer_base": 1293582,
-      "coord": null
+      "coord": [
+        -93.4865052,
+        45.0257232
+      ]
     },
     "default": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Wholesome Minnesota of Compassionate Action for Animals",
           "Civic Plate (a project of @MercyForAnimals)"
@@ -509,30 +313,15 @@
       "public": "private",
       "encoded": "stanford_university",
       "consumer_base": 17289,
-      "coord": null
+      "coord": [
+        -122.1693654,
+        37.4313138
+      ]
     },
     "ratio": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "2025"
-      }
-    ]
-  },
-  "Merri-bek City Council (Melbourne)": {
-    "place": {
-      "name": "Merri-bek City Council (Melbourne)",
-      "state": null,
-      "country": "Australia",
-      "type": "City/Government",
-      "public": "public",
-      "encoded": "merribek_city_council_melbourne",
-      "consumer_base": 186534,
-      "coord": null
-    },
-    "Other": [
-      {
-        "status": "Pledged",
-        "date": "2019"
       }
     ]
   },
@@ -545,11 +334,14 @@
       "public": "public",
       "encoded": "barcelona",
       "consumer_base": 5750000,
-      "coord": null
+      "coord": [
+        -121.4579869,
+        37.7323608
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "date": "2021"
       }
     ]
@@ -563,11 +355,14 @@
       "public": "public",
       "encoded": "amsterdam_netherlands",
       "consumer_base": 1200000,
-      "coord": null
+      "coord": [
+        4.8924534,
+        52.3730796
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Treaty"
         ],
@@ -579,7 +374,7 @@
     ],
     "Other": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Treaty"
         ],
@@ -599,11 +394,14 @@
       "public": "public",
       "encoded": "west_hollywood_california",
       "consumer_base": 33700,
-      "coord": null
+      "coord": [
+        -118.3692894,
+        34.0923014
+      ]
     },
     "default": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "MFA"
         ],
@@ -623,11 +421,14 @@
       "public": "public",
       "encoded": "kingston_ontario",
       "consumer_base": 153346,
-      "coord": null
+      "coord": [
+        -76.4283781,
+        44.3054151
+      ]
     },
     "Other": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Cities Movement"
         ],
@@ -639,7 +440,7 @@
     ],
     "placement": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Cities Movement"
         ],
@@ -659,11 +460,14 @@
       "public": "public",
       "encoded": "helsinki_finland",
       "consumer_base": 1400000,
-      "coord": null
+      "coord": [
+        24.8695565,
+        60.3045338
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "date": "2026",
         "deadline": "2030"
       }
@@ -678,11 +482,14 @@
       "public": "public",
       "encoded": "brampton_ontario",
       "consumer_base": 833365,
-      "coord": null
+      "coord": [
+        -79.7599366,
+        43.685832
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Cities Movement",
           "Earthsave Canada"
@@ -704,11 +511,14 @@
       "public": "public",
       "encoded": "berkeley_ca_usa",
       "consumer_base": 120500,
-      "coord": null
+      "coord": [
+        -122.272863,
+        37.8708393
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "date": "2021",
         "deadline": "2024"
       }
@@ -723,11 +533,14 @@
       "public": "public",
       "encoded": "los_angeles_county_ca_usa",
       "consumer_base": 9757179,
-      "coord": null
+      "coord": [
+        -118.209681,
+        34.3155072
+      ]
     },
     "default": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "MFA"
         ],
@@ -735,33 +548,6 @@
           "Mercy for Animals"
         ],
         "date": "2024"
-      }
-    ]
-  },
-  "San Francisco Jails": {
-    "place": {
-      "name": "San Francisco Jails",
-      "state": "California",
-      "country": "United States",
-      "type": "Prison",
-      "public": "public",
-      "encoded": "san_francisco_jails",
-      "consumer_base": null,
-      "coord": null
-    },
-    "ratio": [
-      {
-        "status": "Pledged",
-        "org_credit_filter": [
-          "FoE",
-          "FF"
-        ],
-        "org_credit_expanded": [
-          "Friends of the Earth",
-          "Farm Forward"
-        ],
-        "date": "2020",
-        "deadline": "2024"
       }
     ]
   },
@@ -774,11 +560,14 @@
       "public": "public",
       "encoded": "san_francisco_hospitals",
       "consumer_base": null,
-      "coord": null
+      "coord": [
+        -122.4052532,
+        37.7568103
+      ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "FoE",
           "FF"
@@ -801,7 +590,10 @@
       "public": "private",
       "encoded": "ikea_germany",
       "consumer_base": null,
-      "coord": null
+      "coord": [
+        8.3714213,
+        50.0580184
+      ]
     },
     "ratio": [
       {
@@ -827,7 +619,7 @@
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "unknown"
       }
     ]
@@ -848,7 +640,7 @@
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "unknown"
       }
     ]
@@ -869,7 +661,7 @@
     },
     "ratio": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "unknown"
       }
     ]
@@ -890,49 +682,13 @@
     },
     "ratio": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "unknown"
       }
     ],
     "placement": [
       {
-        "status": "Implemented",
-        "date": "unknown"
-      }
-    ]
-  },
-  "Four Berlin Universities": {
-    "place": {
-      "name": "Four Berlin Universities",
-      "state": null,
-      "country": "United States",
-      "type": "University Dining Hall",
-      "public": "private",
-      "encoded": "four_berlin_universities",
-      "consumer_base": null,
-      "coord": null
-    },
-    "default": [
-      {
-        "status": "Implemented",
-        "date": "2021"
-      }
-    ]
-  },
-  "Beacon House Catering Services": {
-    "place": {
-      "name": "Beacon House Catering Services",
-      "state": null,
-      "country": "United States",
-      "type": "Other",
-      "public": "private",
-      "encoded": "beacon_house_catering_services",
-      "consumer_base": null,
-      "coord": null
-    },
-    "default": [
-      {
-        "status": "",
+        "status": "adopted",
         "date": "unknown"
       }
     ]
