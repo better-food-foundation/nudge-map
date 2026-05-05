@@ -1,13 +1,25 @@
 {
   "merged": {
-    "placeType": [],
-    "country": [],
-    "year": []
+    "placeType": [
+      "City/Government"
+    ],
+    "country": [
+      "Canada"
+    ],
+    "year": [
+      "2024"
+    ]
   },
   "anyAdopted": {
-    "placeType": [],
-    "country": [],
-    "year": []
+    "placeType": [
+      "City/Government"
+    ],
+    "country": [
+      "Canada"
+    ],
+    "year": [
+      "2024"
+    ]
   },
   "anyPledged": {
     "placeType": [],
@@ -25,9 +37,15 @@
     "year": []
   },
   "ratioAdopted": {
-    "placeType": [],
-    "country": [],
-    "year": []
+    "placeType": [
+      "City/Government"
+    ],
+    "country": [
+      "Canada"
+    ],
+    "year": [
+      "2024"
+    ]
   },
   "ratioPledged": {
     "placeType": [],
