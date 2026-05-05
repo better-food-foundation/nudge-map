@@ -32,22 +32,22 @@ export class Date {
 export type PlaceId = string;
 
 export const ALL_PLACE_TYPES = [
-  "uni_dining",
-  "uni_cafe",
-  "uni_event",
-  "k12",
-  "work_cafeteria",
-  "ind_restaurant",
-  "chain_restaurant",
-  "cafe",
-  "stadium",
-  "event",
-  "hotel",
-  "transit_station",
-  "hospital",
-  "religious_center",
-  "gov_facility",
-  "other",
+  "University Dining Hall",
+  "University Cafe",
+  "University Event",
+  "K-12",
+  "Workplace Cafeteria",
+  "Ind. Restaurant",
+  "Chain Restaurant",
+  "Cafe",
+  "Stadium",
+  "Event",
+  "Hotel",
+  "Transit Station",
+  "Hospital",
+  "Religious Center",
+  "City/Government",
+  "Other",
 ] as const;
 export type PlaceType = (typeof ALL_PLACE_TYPES)[number];
 
