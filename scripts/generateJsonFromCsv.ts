@@ -5,6 +5,7 @@ import { parse } from "csv-parse/sync";
 import NodeGeocoder from "node-geocoder";
 import { initGeocoder, getLongLat } from "./lib/geocoder";
 import { fileURLToPath } from 'url';
+import * as readline from "readline";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,6 +13,26 @@ const __dirname = path.dirname(__filename);
 // ─── Rate limiting ────────────────────────────────────────────────────────────
  
 const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
+ 
+// Persistent state overrides entered by the user during a run
+const stateOverrideCache = new Map<string, string>();
+ 
+async function promptState(placeName: string, country: string): Promise<string> {
+  if (stateOverrideCache.has(placeName)) return stateOverrideCache.get(placeName)!;
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  return new Promise((resolve) => {
+    rl.question(
+      `  ⚠ Could not determine state/region for "${placeName}" (${country}).\n`
+      + `    Enter state/region manually (or press Enter to leave blank): `,
+      (answer) => {
+        rl.close();
+        const val = answer.trim();
+        stateOverrideCache.set(placeName, val);
+        resolve(val);
+      },
+    );
+  });
+}
  
 async function geocodeWithRetry(
   name: string,
@@ -334,7 +355,10 @@ async function main() {
       if (coordCache.has(address) && coordCache.get(address) !== null) {
         coord = coordCache.get(address)!;
       } else {
-        const { state, country } = parseAddressForStateCountry(address);
+        const parsed = parseAddressForStateCountry(address);
+        const country = parsed.country;
+        const prompted = parsed.state === null ? await promptState(name, country) : null;
+        const state = parsed.state ?? (prompted || null);
         // Map country name to ISO code for geocoder
         const countryCodeMap: Record<string, string> = {
           "United States": "US",
@@ -359,7 +383,8 @@ async function main() {
  
     // ── Build place info (only on first encounter) ────────────────────────────
     if (!coreOutput[name]) {
-      const { state, country } = parseAddressForStateCountry(address);
+      const { state: parsedState, country } = parseAddressForStateCountry(address);
+      const state = parsedState ?? (stateOverrideCache.get(name) || null);
       coreOutput[name] = {
         place: {
           name,
