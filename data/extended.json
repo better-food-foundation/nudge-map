@@ -43,14 +43,6 @@
       }
     ]
   },
-  "The Briar Bar": {
-    "ratio": [
-      {
-        "summary": "The Briar Bar is the first café to offer oat milk by default in Minnesota.",
-        "link": "https://www.instagram.com/reel/DF0JbQ4xDQY/#"
-      }
-    ]
-  },
   "University of Northern Colorado": {
     "ratio": [
       {
@@ -59,97 +51,11 @@
       }
     ]
   },
-  "Nuffield Health + Sodexo": {
-    "placement": [
-      {
-        "summary": "In early 2025, Nuffield Health and its catering provider Sodexo collaborated with Greener by Default to offer more plant-forward menus. \n\nIn 37 hospitals, menus that were previously 24% meat, 42% vegetarian and 34% vegan dishes were shifted dramatically to 18% meat, 41% vegetarian and 41% vegan. More than half of the patient menu was updated, introducing new options such as vegan soup rolls and removing the grill bar to place greater emphasis on plant-based meals. Processed meats such as bacon and ham were reduced or removed, and dairy-free options were expanded. Plant-based dishes were given prime placement on menus and flavour-focused names to make them more appealing to patients.",
-        "link": "https://uk.sodexo.com/newsroom/2026/sodexo-partners-with-greener-by-default"
-      }
-    ],
-    "ratio": [
-      {
-        "summary": "In early 2025, Nuffield Health and its catering provider Sodexo collaborated with Greener by Default to offer more plant-forward menus. \n\nIn 37 hospitals, menus that were previously 24% meat, 42% vegetarian and 34% vegan dishes were shifted dramatically to 18% meat, 41% vegetarian and 41% vegan. More than half of the patient menu was updated, introducing new options such as vegan soup rolls and removing the grill bar to place greater emphasis on plant-based meals. Processed meats such as bacon and ham were reduced or removed, and dairy-free options were expanded. Plant-based dishes were given prime placement on menus and flavour-focused names to make them more appealing to patients.",
-        "link": "https://uk.sodexo.com/newsroom/2026/sodexo-partners-with-greener-by-default"
-      }
-    ],
-    "Tasty Titles and Descriptions": [
-      {
-        "summary": "In early 2025, Nuffield Health and its catering provider Sodexo collaborated with Greener by Default to offer more plant-forward menus. \n\nIn 37 hospitals, menus that were previously 24% meat, 42% vegetarian and 34% vegan dishes were shifted dramatically to 18% meat, 41% vegetarian and 41% vegan. More than half of the patient menu was updated, introducing new options such as vegan soup rolls and removing the grill bar to place greater emphasis on plant-based meals. Processed meats such as bacon and ham were reduced or removed, and dairy-free options were expanded. Plant-based dishes were given prime placement on menus and flavour-focused names to make them more appealing to patients.",
-        "link": "https://uk.sodexo.com/newsroom/2026/sodexo-partners-with-greener-by-default"
-      }
-    ]
-  },
-  "Paquebot Café": {
-    "default": [
-      {
-        "summary": "Since February 2024, Pacquebot Cafe has offered oat milk by default.",
-        "link": "https://www.instagram.com/reel/DE5FhScx4iw/"
-      }
-    ]
-  },
-  "University of Exeter": {
-    "ratio": [
-      {
-        "summary": "University of Exeter is increasing its plant-based options in its dining. Its 2023 Sustainable Food Policy states a goal of at least 50% plant-based meals in the university's menus.",
-        "link": "https://news.exeter.ac.uk/faculty-of-health-and-life-sciences/planning-veganuary-sign-up-to-research-study-before-christmas/\nhttps://event.exeter.ac.uk/storage/816/Sustainable-Food-Policy-2023.pdf",
-        "notes": "University of Exeter's food policy has a commitment to offering 50% plant-based food, but with no timeline associated with that goal. Its Sustainable Food Policy report does say there was progress on this front in 2021, but it's not specific."
-      }
-    ]
-  },
-  "Austin Office of Sustainability": {
-    "default": [
-      {
-        "summary": "Austin’s Office of Sustainability committed to offering plant-based meals by default.",
-        "link": "City of Austin Raises Redesigned Texas Flag Celebrating Plant-Based Food Commitment | by DefaultVeg | Medium"
-      }
-    ]
-  },
-  "Pomona College": {
-    "default": [
-      {
-        "summary": "Pomona College's Cafe 47 instituted an oat milk default pilot in April 2023.",
-        "link": "https://vegnews.com/college-cafes-oat-milk-default\nhttps://www.newrootsinstitute.org/articles/ffac-students-secure-campaign-victory-in-campus-cafes"
-      }
-    ]
-  },
-  "Victoria College at University of Toronto": {
-    "Subtle Substitutions": [
-      {
-        "summary": "In Victoria College's dining, vegan margarine and vegan mayo are the default and there is no upcharge for nondairy milk at all coffee bars.",
-        "link": "Jul 24, 2024 | UT/VIC"
-      }
-    ]
-  },
   "NYC Health + Hospitals": {
     "default": [
       {
         "summary": "NYC Health + Hospitals serves plant-based meals by default to its patients. It has served over 2 million plant-based meals from March 2022 to Feburary 2025.",
         "link": "Mayor Adams, NYC H+H CEO Katz Announce Successful Rollout and Expansion of Plant-Based Meals as Default Option for Patients in NYC Public Hospitals - NYC Mayor's Office\nhttps://www.nyc.gov/assets/foodpolicy/downloads/pdf/NYCHospitals_PlantBasedDefaults_2025.pdf"
-      }
-    ]
-  },
-  "Stumptown Roasters": {
-    "default": [
-      {
-        "summary": "Stumptown Roasters offers oat milk by default at all cafes.",
-        "link": "https://vegnews.com/stumptown-coffee-oat-milk-default"
-      }
-    ]
-  },
-  "Washington, DC Department of Youth and Rehabilitation Services": {
-    "Other": [
-      {
-        "summary": "Need more info",
-        "link": "DC - DYRS call notes - Google Docs"
-      }
-    ]
-  },
-  "District of Columbia Department of Corrections": {
-    "ratio": [
-      {
-        "summary": "Need more info",
-        "link": "https://doee.dc.gov/sites/default/files/dc/sites/doee/service_content/attachments/Green%20Food%20Report%202025.pdf",
-        "notes": "In December 2024, DOC piloted two plant-based meals: curry potatoes and chickpeas, and creamy rotini pasta with vegetables. Food service staff distributed a survey to gather feedback on the meals from residents at the facility, which received 28 responses. While some residents gave high ratings to the meals, the overall consensus was that they preferred meals with meat. In the future, DOC plans to pilot more plant-based recipes, although taste tests are currently on hold as the DC jail kitchen facility undergoes renovations. \n\nTo meet its Green Food and other values-aligned procurement goals, DCPS has taken several steps to reduce red and processed meat and increase procurement of plant-based foods. Self-operated DCPS facilities have limited red meat to two servings a week, in alignment with the Green Food guidelines, and have incorporated one weekly non-meat day in elementary schools. DCPS vendors have also held taste tests to introduce students to new plant-based menu items and products. In August 2024, DCPS gave a presentation on plant-based meals to all cafeteria staff and held a smaller training on plant-based cooking to a small group of school chefs, focusing on the health, environmental, and equity reasons for incorporating plant-based foods. DCPS is planning to continue and build out the training in future years."
       }
     ]
   },
@@ -281,55 +187,6 @@
       }
     ]
   },
-  "San Francisco Jails": {
-    "ratio": [
-      {
-        "summary": "In 2020, the San Francisco City Board of Supervisors passed a motion requiring San Francisco jails to reduce purchases of animal products by 50 percent in 2024.",
-        "link": "San Francisco to reduce meat and dairy served in hospitals and jails | Eurogroup for Animals\n\nhttps://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/"
-      }
-    ]
-  },
-  "San Francisco Hospitals": {
-    "ratio": [
-      {
-        "summary": "In 2020, the San Francisco City Board of Supervisors passed a motion requiring San Francisco public hospitals to reduce purchases of animal products by 15% in 2023.",
-        "link": "San Francisco to reduce meat and dairy served in hospitals and jails | Eurogroup for Animals"
-      }
-    ]
-  },
-  "Ikea Germany": {
-    "ratio": [
-      {
-        "summary": "In 2020, IKEA committed 50% of its restaurant meals and 80% of its packaged foods to be plant-based by 2025.",
-        "link": "https://www.ikea.com/global/en/newsroom/sustainability/ikea-restaurant-meals-50-plantbased-by-2025-201123/ \n\nhttps://www.ikea.com/in/en/this-is-ikea/sustainable-everyday/sustainable-eating/plant-based-goodness-pub378a44c0/#:~:text=IKEA%20restaurant%20meals:%2050%25%20plant%2Dbased%20by%202025.,a%20wooden%20spoon%20whilst%20they're%20being%20fried.",
-        "notes": "*No public update since 2025"
-      }
-    ]
-  },
-  "Galaxy Hut": {
-    "default": [
-      {
-        "summary": "At Galaxy Hut, all meals are plant-based by default, and cheese is available upon request.",
-        "link": "galaxy hut – vegan friendly grill and good beer bar"
-      }
-    ]
-  },
-  "Tony's": {
-    "default": [
-      {
-        "summary": "Tony's has a plant-based by default menu with dairy products available upon request.",
-        "link": "MAIN | Tony's Darts Away"
-      }
-    ]
-  },
-  "Ocean Beach People's Food Co-Op": {
-    "ratio": [
-      {
-        "summary": "Ocean Beach People's Food Co-Op is a vegan deli and plant-forward grocery store, with some dairy and eggs products available, but not sold in the deli.",
-        "link": "OB People's Food Co-op | San Diego's community-owned organic grocery store since 1971\n\nhttps://obpeoplesfood.storebyweb.com/s/1000-1/b?g=CGP-1000-2185"
-      }
-    ]
-  },
   "Google Headquarters": {
     "ratio": [
       {
@@ -341,22 +198,6 @@
       {
         "summary": "Google has a Food Choice Architecture program, a research-based team within Food at Google designed to make “the healthiest choice the easiest choice” for employees. Fruits and vegetables \"take center stage\" in Google's network of 380 cafes and 1,500 MicroKitchens to encourage a more balanced and plant-forward diet.",
         "link": "Inside Google's Efforts to Engineer Its Food for Healthiness | OneZero\n\nhttps://workforcenutrition.org/employee-wellbeing-far-beyond-technology-googles-approach-to-workforce-nutrition/#:~:text=Google's%20Food%20at%20Google%20program%20aims%20to,in%20the%20garden%20*%20**MicroKitchens**%20Number%201%2C500 \n\nhttps://www.wbcsd.org/resources/foodwork-program/#:~:text=Google's%20Food@Work%20program%20aims%20to%20encourage%20healthier,footprint%20from%20food%20between%202017%20and%202019."
-      }
-    ]
-  },
-  "Four Berlin Universities": {
-    "default": [
-      {
-        "summary": "In Fall 2021, Studierendenwerk, which runs 34 canteens at Berlin's universities and colleges, began offering menus that are 68% vegan, 28% vegetarian, and 4% meat and fish (a single meat option is offered four days a week). This change was made to make their menus more climate-friendly and serve increasing student demand for plant-based options.",
-        "link": "Berlin’s university canteens go almost meat-free as students prioritise climate | Germany | The Guardian\n\nhttps://www.bbc.com/news/world-europe-58393847 \n\nhttps://plantbasednews.org/news/environment/34-university-cafeterias-in-berlin-to-drastically-lower-meat-options/"
-      }
-    ]
-  },
-  "Beacon House Catering Services": {
-    "default": [
-      {
-        "summary": "No information about nudges on their website.",
-        "link": "Notes - BFF x BeaconHouse - Google Docs"
       }
     ]
   }
