@@ -57,7 +57,7 @@
     "place": {
       "name": "University of North Texas",
       "state": "Texas",
-      "country": "Texas",
+      "country": "United States",
       "type": "University Dining Hall",
       "public": "public",
       "encoded": "university_of_north_texas",
@@ -246,7 +246,7 @@
     "place": {
       "name": "Western Oregon University",
       "state": "Oregon",
-      "country": "Oregon",
+      "country": "United States",
       "type": "University Dining Hall",
       "public": "public",
       "encoded": "western_oregon_university",
@@ -320,7 +320,7 @@
     "place": {
       "name": "Merri-bek City Council (Melbourne)",
       "state": "Victoria",
-      "country": "Victoria",
+      "country": "Australia",
       "type": "City/Government",
       "public": "public",
       "encoded": "merribek_city_council_melbourne",
@@ -341,7 +341,7 @@
     "place": {
       "name": "Barcelona",
       "state": "Barcelona",
-      "country": "Barcelona",
+      "country": "Spain",
       "type": "City/Government",
       "public": "public",
       "encoded": "barcelona",
