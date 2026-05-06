@@ -17,21 +17,43 @@ const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
 // Persistent state overrides entered by the user during a run
 const stateOverrideCache = new Map<string, string>();
  
-async function promptState(placeName: string, country: string): Promise<string> {
-  if (stateOverrideCache.has(placeName)) return stateOverrideCache.get(placeName)!;
+async function promptLine(rl: readline.Interface, question: string): Promise<string> {
+  return new Promise((resolve) => rl.question(question, (ans) => resolve(ans.trim())));
+}
+ 
+const countryOverrideCache = new Map<string, string>();
+ 
+async function promptMissingLocation(
+  placeName: string,
+  parsed: { state: string | null; country: string },
+): Promise<{ state: string | null; country: string }> {
+  const cacheKey = placeName;
+  if (stateOverrideCache.has(cacheKey) || countryOverrideCache.has(cacheKey)) {
+    return {
+      state: stateOverrideCache.get(cacheKey) || null,
+      country: countryOverrideCache.get(cacheKey) ?? parsed.country,
+    };
+  }
+ 
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-  return new Promise((resolve) => {
-    rl.question(
-      `  ⚠ Could not determine state/region for "${placeName}" (${country}).\n`
-      + `    Enter state/region manually (or press Enter to leave blank): `,
-      (answer) => {
-        rl.close();
-        const val = answer.trim();
-        stateOverrideCache.set(placeName, val);
-        resolve(val);
-      },
-    );
-  });
+  let { state, country } = parsed;
+ 
+  if (country === "Unknown") {
+    console.warn(`  ⚠ Could not determine country for "${placeName}".`);
+    const ans = await promptLine(rl, `    Enter country manually (or press Enter to leave as Unknown): `);
+    country = ans || "Unknown";
+    countryOverrideCache.set(cacheKey, country);
+  }
+ 
+  if (state === null) {
+    console.warn(`  ⚠ Could not determine state/region for "${placeName}" (${country}).`);
+    const ans = await promptLine(rl, `    Enter state/region manually (or press Enter to leave blank): `);
+    state = ans || null;
+    stateOverrideCache.set(cacheKey, ans);
+  }
+ 
+  rl.close();
+  return { state, country };
 }
  
 async function geocodeWithRetry(
@@ -183,16 +205,33 @@ function parseAddressForStateCountry(address: string): {
   // Flatten multiline addresses
   const flat = address.replace(/\n/g, " ").trim();
  
-  // Pattern: ends with known country name
+  // Pattern: ends with known country name (expanded list)
   const knownCountries: Record<string, string> = {
     "United Kingdom": "United Kingdom",
     "U.K.": "United Kingdom",
     UK: "United Kingdom",
+    England: "United Kingdom",
+    Scotland: "United Kingdom",
+    Wales: "United Kingdom",
     Canada: "Canada",
     Germany: "Germany",
     France: "France",
     Australia: "Australia",
     Netherlands: "Netherlands",
+    Finland: "Finland",
+    Sweden: "Sweden",
+    Norway: "Norway",
+    Denmark: "Denmark",
+    Belgium: "Belgium",
+    Switzerland: "Switzerland",
+    Austria: "Austria",
+    Ireland: "Ireland",
+    Italy: "Italy",
+    Spain: "Spain",
+    Portugal: "Portugal",
+    "New Zealand": "New Zealand",
+    Japan: "Japan",
+    Singapore: "Singapore",
   };
   for (const [key, val] of Object.entries(knownCountries)) {
     if (flat.endsWith(key) || flat.includes(`, ${key}`)) {
@@ -212,9 +251,15 @@ function parseAddressForStateCountry(address: string): {
       if (auMatch && AU_STATES[auMatch[1].toUpperCase()]) {
         return { state: AU_STATES[auMatch[1].toUpperCase()], country: val };
       }
-      // German/other — try second-to-last part as city, nothing obvious for state
+      // Other country — no state extractable
       return { state: null, country: val };
     }
+  }
+ 
+  // UK postcode without explicit country suffix (e.g. "London WC1E 6BT")
+  const ukImplicit = flat.match(/\b[A-Z]{1,2}\d{1,2}\s*\d[A-Z]{2}\b/);
+  if (ukImplicit) {
+    return { state: null, country: "United Kingdom" };
   }
  
   // Canadian postal code without explicit "Canada" suffix: "City, BC V7N 4N5"
@@ -223,7 +268,7 @@ function parseAddressForStateCountry(address: string): {
     return { state: expandProvince(caImplicit[1]), country: "Canada" };
   }
  
-  // Default to USA — look for "City, ST ZIP" at the end
+  // USA — look for "City, ST ZIP" at the end
   const usMatch = flat.match(/,\s*([A-Za-z\s]+),?\s+([A-Z]{2})\s+\d{5}/);
   if (usMatch) {
     return { state: expandState(usMatch[2]), country: "United States" };
@@ -234,7 +279,8 @@ function parseAddressForStateCountry(address: string): {
     return { state: expandState(usSimple[1]), country: "United States" };
   }
  
-  return { state: null, country: "United States" };
+  // Nothing matched — return null for both so the user gets prompted
+  return { state: null, country: "Unknown" };
 }
  
 const US_STATES: Record<string, string> = {
@@ -355,10 +401,8 @@ async function main() {
       if (coordCache.has(address) && coordCache.get(address) !== null) {
         coord = coordCache.get(address)!;
       } else {
-        const parsed = parseAddressForStateCountry(address);
-        const country = parsed.country;
-        const prompted = parsed.state === null ? await promptState(name, country) : null;
-        const state = parsed.state ?? (prompted || null);
+        const rawParsed = parseAddressForStateCountry(address);
+        const { state, country } = await promptMissingLocation(name, rawParsed);
         // Map country name to ISO code for geocoder
         const countryCodeMap: Record<string, string> = {
           "United States": "US",
@@ -368,8 +412,22 @@ async function main() {
           France: "FR",
           Australia: "AU",
           Netherlands: "NL",
+          Finland: "FI",
+          Sweden: "SE",
+          Norway: "NO",
+          Denmark: "DK",
+          Belgium: "BE",
+          Switzerland: "CH",
+          Austria: "AT",
+          Ireland: "IE",
+          Italy: "IT",
+          Spain: "ES",
+          Portugal: "PT",
+          "New Zealand": "NZ",
+          Japan: "JP",
+          Singapore: "SG",
         };
-        const countryCode = countryCodeMap[country] ?? "US";
+        const countryCode = countryCodeMap[country] ?? country.slice(0, 2).toUpperCase();
         try {
           console.log(`  Geocoding: ${name} (${address.split("\n")[0]})`);
           coord = await geocodeWithRetry(name, address, state, countryCode, geocoder);
@@ -383,8 +441,11 @@ async function main() {
  
     // ── Build place info (only on first encounter) ────────────────────────────
     if (!coreOutput[name]) {
-      const { state: parsedState, country } = parseAddressForStateCountry(address);
-      const state = parsedState ?? (stateOverrideCache.get(name) || null);
+      const rawParsed2 = parseAddressForStateCountry(address);
+      const { state, country } = {
+        state: rawParsed2.state ?? (stateOverrideCache.get(name) || null),
+        country: countryOverrideCache.get(name) ?? rawParsed2.country,
+      };
       coreOutput[name] = {
         place: {
           name,

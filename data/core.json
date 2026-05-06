@@ -9,13 +9,13 @@
       "encoded": "north_vancouver_district",
       "consumer_base": 58120,
       "coord": [
-        -123.0737925,
-        49.3206294
+        -123.0781375,
+        49.3360952
       ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Cities Movement"
         ],
@@ -42,7 +42,7 @@
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "org_credit_filter": [
           "BFF"
         ],
@@ -57,7 +57,7 @@
     "place": {
       "name": "University of North Texas",
       "state": "Texas",
-      "country": "United States",
+      "country": "Texas",
       "type": "University Dining Hall",
       "public": "public",
       "encoded": "university_of_north_texas",
@@ -69,7 +69,7 @@
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Humane World for Animals"
         ],
@@ -91,13 +91,13 @@
       "encoded": "city_of_sammamish",
       "consumer_base": 65986,
       "coord": [
-        -122.0416844,
-        47.6017554
+        -122.0367582,
+        47.6013674
       ]
     },
     "default": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "MFA"
         ],
@@ -124,7 +124,7 @@
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "org_credit_filter": [
           "BFF"
         ],
@@ -151,7 +151,7 @@
     },
     "ratio": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "2025"
       }
     ]
@@ -166,13 +166,13 @@
       "encoded": "nyc_health_hospitals",
       "consumer_base": 15000,
       "coord": [
-        -73.9792716,
-        40.7288192
+        -73.9356551,
+        40.6734444
       ]
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "org_credit_filter": [
           "GBD",
           "BFF",
@@ -191,7 +191,7 @@
     "place": {
       "name": "University College London (Students' Union - four cafes)",
       "state": "England",
-      "country": "United States",
+      "country": "United Kingdom",
       "type": "University Cafe",
       "public": "private",
       "encoded": "university_college_london_students_union_four_cafes",
@@ -203,7 +203,7 @@
     },
     "default": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "org_credit_filter": [
           "GBD"
         ],
@@ -230,7 +230,7 @@
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Humane World for Animals"
         ],
@@ -246,7 +246,7 @@
     "place": {
       "name": "Western Oregon University",
       "state": "Oregon",
-      "country": "United States",
+      "country": "Oregon",
       "type": "University Dining Hall",
       "public": "public",
       "encoded": "western_oregon_university",
@@ -258,7 +258,7 @@
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Humane World for Animals"
         ],
@@ -280,13 +280,13 @@
       "encoded": "hennepin_county_minnesota",
       "consumer_base": 1293582,
       "coord": [
-        -93.4865052,
-        45.0257232
+        -93.2666616,
+        44.9758533
       ]
     },
     "default": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Wholesome Minnesota of Compassionate Action for Animals",
           "Civic Plate (a project of @MercyForAnimals)"
@@ -311,7 +311,7 @@
     },
     "ratio": [
       {
-        "status": "Implemented",
+        "status": "adopted",
         "date": "2025"
       }
     ]
@@ -320,7 +320,7 @@
     "place": {
       "name": "Merri-bek City Council (Melbourne)",
       "state": "Victoria",
-      "country": "Australia",
+      "country": "Victoria",
       "type": "City/Government",
       "public": "public",
       "encoded": "merribek_city_council_melbourne",
@@ -332,7 +332,7 @@
     },
     "Other": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "date": "2019"
       }
     ]
@@ -340,20 +340,20 @@
   "Barcelona": {
     "place": {
       "name": "Barcelona",
-      "state": "Spain",
-      "country": "United States",
+      "state": "Barcelona",
+      "country": "Barcelona",
       "type": "City/Government",
       "public": "public",
       "encoded": "barcelona",
       "consumer_base": 5750000,
       "coord": [
-        -121.4579869,
-        37.7323608
+        2.1772738,
+        41.3823178
       ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "date": "2021"
       }
     ]
@@ -361,20 +361,20 @@
   "Amsterdam, Netherlands": {
     "place": {
       "name": "Amsterdam, Netherlands",
-      "state": "NL",
+      "state": "Amsterdam",
       "country": "Netherlands",
       "type": "City/Government",
       "public": "public",
       "encoded": "amsterdam_netherlands",
       "consumer_base": 1200000,
       "coord": [
-        4.8924534,
-        52.3730796
+        4.9002256,
+        52.3676842
       ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Treaty"
         ],
@@ -386,7 +386,7 @@
     ],
     "Other": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Treaty"
         ],
@@ -407,13 +407,13 @@
       "encoded": "west_hollywood_california",
       "consumer_base": 33700,
       "coord": [
-        -118.3692894,
-        34.0923014
+        -118.372853,
+        34.090567
       ]
     },
     "default": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "MFA"
         ],
@@ -440,7 +440,7 @@
     },
     "Other": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Cities Movement"
         ],
@@ -452,7 +452,7 @@
     ],
     "placement": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Cities Movement"
         ],
@@ -466,20 +466,20 @@
   "Helsinki, Finland": {
     "place": {
       "name": "Helsinki, Finland",
-      "state": "FN",
-      "country": "United States",
+      "state": "Helsinki",
+      "country": "Finland",
       "type": "City/Government",
       "public": "public",
       "encoded": "helsinki_finland",
       "consumer_base": 1400000,
       "coord": [
-        24.8695565,
-        60.3045338
+        24.9528649,
+        60.1683175
       ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "date": "2026",
         "deadline": "2030"
       }
@@ -495,13 +495,13 @@
       "encoded": "brampton_ontario",
       "consumer_base": 833365,
       "coord": [
-        -79.7599366,
-        43.685832
+        -79.7595042,
+        43.6849825
       ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "Plant-Based Cities Movement",
           "Earthsave Canada"
@@ -524,13 +524,13 @@
       "encoded": "berkeley_ca_usa",
       "consumer_base": 120500,
       "coord": [
-        -122.272863,
-        37.8708393
+        -122.2707951,
+        37.8694472
       ]
     },
     "ratio": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "date": "2021",
         "deadline": "2024"
       }
@@ -546,13 +546,13 @@
       "encoded": "los_angeles_county_ca_usa",
       "consumer_base": 9757179,
       "coord": [
-        -118.209681,
-        34.3155072
+        -118.2462025,
+        34.0568474
       ]
     },
     "default": [
       {
-        "status": "Pledged",
+        "status": "pledged",
         "org_credit_filter": [
           "MFA"
         ],
@@ -573,18 +573,18 @@
       "encoded": "google_headquarters",
       "consumer_base": 187103,
       "coord": [
-        -122.084614,
-        37.4217636
+        -74.0020865,
+        40.7408812
       ]
     },
     "ratio": [
       {
-        "status": "Implemented"
+        "status": "adopted"
       }
     ],
     "placement": [
       {
-        "status": "Implemented"
+        "status": "adopted"
       }
     ]
   }

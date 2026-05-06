@@ -126,5 +126,97 @@
   "90 Bell Street, Coburg Vic. 3058, Australia": [
     144.9695238,
     -37.7410304
+  ],
+  "355 West Queens Road\nNorth Vancouver, BC V7N 4N5, CA": [
+    -123.0781375,
+    49.3360952
+  ],
+  "5151 State University Drive\nLos Angeles, CA 90032, US": [
+    -118.1671415,
+    34.0664949
+  ],
+  "1155 Union Circle\nDenton, Texas 76203-5017, US": [
+    -97.1514762,
+    33.2098926
+  ],
+  "801 228th Avenue SE\nSammamish, WA 98075, US": [
+    -122.0367582,
+    47.6013674
+  ],
+  "1109 Geddes Ave., Ann Arbor, MI 48109-1079, US": [
+    -83.7347356,
+    42.2781548
+  ],
+  "501 20th St. Greeley, CO 80639, US": [
+    -104.7017242,
+    40.4028503
+  ],
+  "1218 Prospect Pl, Brooklyn, NY 11213, US": [
+    -73.9356551,
+    40.6734444
+  ],
+  "Gower Street, London, WC1E 6BT, UK": [
+    -0.1341274,
+    51.5238591
+  ],
+  "900 University Ave.\nRiverside, CA 92521, US": [
+    -117.3398097,
+    33.9642576
+  ],
+  "345 Monmouth Ave. N.\nMonmouth OR 97361, US": [
+    -123.2415064,
+    44.8530112
+  ],
+  "300 South 6th Street\nMinneapolis, MN 55487, US": [
+    -93.2666616,
+    44.9758533
+  ],
+  "450 Jane Stanford Way, Stanford, CA 94305, US": [
+    -122.1693654,
+    37.4313138
+  ],
+  "90 Bell Street, Coburg Vic. 3058, AU": [
+    144.9695238,
+    -37.7410304
+  ],
+  "Pl. Sant Jaume, 1, 08002 Barcelona, ES": [
+    2.1772738,
+    41.3823178
+  ],
+  "Amstel 1, 1011 PN Amsterdam, NL": [
+    4.9002256,
+    52.3676842
+  ],
+  "8300 Santa Monica Boulevard\nWest Hollywood, CA 90069, US": [
+    -118.372853,
+    34.090567
+  ],
+  "216 Ontario Street\nKingston, ON, Canada  K7L 2Z3, CA": [
+    -76.4283781,
+    44.3054151
+  ],
+  "216 Ontario Street\nKingston, ON, CA K7L 2Z3": [
+    -76.4801367,
+    44.2301058
+  ],
+  "Pohjoisesplanadi 11-13, 00170 Helsinki, FI": [
+    24.9528649,
+    60.1683175
+  ],
+  "2 Wellington St W, Brampton, ON L6Y 4R2, CA": [
+    -79.7595042,
+    43.6849825
+  ],
+  "2180 Milvia St, Berkeley, CA 94704, US": [
+    -122.2707951,
+    37.8694472
+  ],
+  "500 W Temple St, Los Angeles, CA 90012, US": [
+    -118.2462025,
+    34.0568474
+  ],
+  "111 8th Ave, New York, NY 10011, US": [
+    -74.0020865,
+    40.7408812
   ]
 }
