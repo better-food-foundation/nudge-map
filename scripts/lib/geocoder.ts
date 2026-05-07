@@ -4,12 +4,11 @@
 import nodeFetch from "node-fetch";
 import NodeGeocoder from "node-geocoder";
 
-const customFetch = async (url: any, options?: any): Promise<any> => {
-  return nodeFetch(url, {
+const customFetch = async (url: any, options?: any): Promise<any> =>
+  nodeFetch(url, {
     ...options,
     headers: { "User-Agent": "prn-update-map-data" },
   });
-};
 
 export function initGeocoder(): NodeGeocoder.Geocoder {
   return NodeGeocoder({ provider: "openstreetmap", fetch: customFetch });
