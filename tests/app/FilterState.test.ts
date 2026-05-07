@@ -36,7 +36,7 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
           encoded: "",
           coord: [0, 0],
           url: "",
-          type: "cafe",
+          type: "Cafe",
           consumer_base: 48100,
         },
         default: [
@@ -54,7 +54,7 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
           encoded: "",
           coord: [0, 0],
           url: "",
-          type: "transit_station",
+          type: "Transit Station",
           consumer_base: 400,
         },
         ratio: [

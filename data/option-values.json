@@ -18,15 +18,7 @@
       "Texas",
       "United Kingdom"
     ],
-    "year": [
-      "unknown",
-      "2027",
-      "2026",
-      "2025",
-      "2024",
-      "2022",
-      "2021"
-    ]
+    "year": ["unknown", "2027", "2026", "2025", "2024", "2022", "2021"]
   },
   "anyAdopted": {
     "placeType": [
@@ -36,21 +28,11 @@
       "University Event",
       "Workplace Cafeteria"
     ],
-    "country": [
-      "United States",
-      "United Kingdom"
-    ],
-    "year": [
-      "unknown",
-      "2025",
-      "2022"
-    ]
+    "country": ["United States", "United Kingdom"],
+    "year": ["unknown", "2025", "2022"]
   },
   "anyPledged": {
-    "placeType": [
-      "City/Government",
-      "University Dining Hall"
-    ],
+    "placeType": ["City/Government", "University Dining Hall"],
     "country": [
       "United States",
       "Barcelona",
@@ -60,14 +42,7 @@
       "Oregon",
       "Texas"
     ],
-    "year": [
-      "2027",
-      "2026",
-      "2025",
-      "2024",
-      "2022",
-      "2021"
-    ]
+    "year": ["2027", "2026", "2025", "2024", "2022", "2021"]
   },
   "defaultAdopted": {
     "placeType": [
@@ -76,45 +51,21 @@
       "University Dining Hall",
       "University Event"
     ],
-    "country": [
-      "United States",
-      "United Kingdom"
-    ],
-    "year": [
-      "2025",
-      "2022"
-    ]
+    "country": ["United States", "United Kingdom"],
+    "year": ["2025", "2022"]
   },
   "defaultPledged": {
-    "placeType": [
-      "City/Government"
-    ],
-    "country": [
-      "United States"
-    ],
-    "year": [
-      "2025",
-      "2024"
-    ]
+    "placeType": ["City/Government"],
+    "country": ["United States"],
+    "year": ["2025", "2024"]
   },
   "ratioAdopted": {
-    "placeType": [
-      "University Dining Hall",
-      "Workplace Cafeteria"
-    ],
-    "country": [
-      "United States"
-    ],
-    "year": [
-      "unknown",
-      "2025"
-    ]
+    "placeType": ["University Dining Hall", "Workplace Cafeteria"],
+    "country": ["United States"],
+    "year": ["unknown", "2025"]
   },
   "ratioPledged": {
-    "placeType": [
-      "City/Government",
-      "University Dining Hall"
-    ],
+    "placeType": ["City/Government", "University Dining Hall"],
     "country": [
       "United States",
       "Barcelona",
@@ -124,14 +75,7 @@
       "Oregon",
       "Texas"
     ],
-    "year": [
-      "2027",
-      "2026",
-      "2025",
-      "2024",
-      "2022",
-      "2021"
-    ]
+    "year": ["2027", "2026", "2025", "2024", "2022", "2021"]
   },
   "subAdopted": {
     "placeType": [],
@@ -154,26 +98,14 @@
     "year": []
   },
   "placementAdopted": {
-    "placeType": [
-      "Workplace Cafeteria"
-    ],
-    "country": [
-      "United States"
-    ],
-    "year": [
-      "unknown"
-    ]
+    "placeType": ["Workplace Cafeteria"],
+    "country": ["United States"],
+    "year": ["unknown"]
   },
   "placementPledged": {
-    "placeType": [
-      "City/Government"
-    ],
-    "country": [
-      "Canada"
-    ],
-    "year": [
-      "2024"
-    ]
+    "placeType": ["City/Government"],
+    "country": ["Canada"],
+    "year": ["2024"]
   },
   "otherAdopted": {
     "placeType": [],

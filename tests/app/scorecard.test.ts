@@ -47,7 +47,7 @@ test("generateScorecard()", () => {
     encoded: "",
     coord: [0, 0],
     url: "https://my-site.org",
-    type: "gov_facility",
+    type: "City/Government",
     consumer_base: 245132,
   };
 

@@ -19,7 +19,7 @@ test("determineOptionValues()", () => {
       place: {
         ...commonPlace,
         country: "United States",
-        type: "hotel",
+        type: "Hotel",
       },
       default: [
         {
@@ -38,7 +38,7 @@ test("determineOptionValues()", () => {
       place: {
         ...commonPlace,
         country: "Brazil",
-        type: "cafe",
+        type: "Cafe",
       },
       sub: [
         {

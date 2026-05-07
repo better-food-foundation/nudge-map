@@ -4,18 +4,15 @@
 import nodeFetch from "node-fetch";
 import NodeGeocoder from "node-geocoder";
 
-export async function fetch(
-  url: RequestInfo | URL,
-  options: RequestInit = {},
-): Promise<Response> {
+const customFetch = async (url: any, options?: any): Promise<any> => {
   return nodeFetch(url, {
     ...options,
     headers: { "User-Agent": "prn-update-map-data" },
   });
-}
+};
 
 export function initGeocoder(): NodeGeocoder.Geocoder {
-  return NodeGeocoder({ provider: "openstreetmap", fetch });
+  return NodeGeocoder({ provider: "openstreetmap", fetch: customFetch });
 }
 
 export async function getLongLat(
@@ -25,7 +22,6 @@ export async function getLongLat(
   geocoder: NodeGeocoder.Geocoder,
 ): Promise<[number, number] | null> {
   const stateQuery = state ? `${state}, ` : "";
-  // We try the most precise query first, then fall back to less precise queries.
   const locationMethods = [() => `${placeName}, ${stateQuery}, ${countryCode}`];
   if (stateQuery) {
     locationMethods.push(() => `${placeName}, ${stateQuery}`);

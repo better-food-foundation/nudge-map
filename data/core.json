@@ -8,20 +8,13 @@
       "public": "public",
       "encoded": "north_vancouver_district",
       "consumer_base": 58120,
-      "coord": [
-        -123.0781375,
-        49.3360952
-      ]
+      "coord": [-123.0781375, 49.3360952]
     },
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "Plant-Based Cities Movement"
-        ],
-        "org_credit_expanded": [
-          "Plant-Based Cities Movement"
-        ],
+        "org_credit_filter": ["Plant-Based Cities Movement"],
+        "org_credit_expanded": ["Plant-Based Cities Movement"],
         "date": "2024"
       }
     ]
@@ -35,17 +28,12 @@
       "public": "public",
       "encoded": "california_state_los_angeles",
       "consumer_base": 21708,
-      "coord": [
-        -118.1671415,
-        34.0664949
-      ]
+      "coord": [-118.1671415, 34.0664949]
     },
     "default": [
       {
         "status": "adopted",
-        "org_credit_filter": [
-          "BFF"
-        ],
+        "org_credit_filter": ["BFF"],
         "org_credit_expanded": [
           "Better Food Foundation Student Advocate (Susan Oseguera)"
         ],
@@ -62,20 +50,13 @@
       "public": "public",
       "encoded": "university_of_north_texas",
       "consumer_base": 43567,
-      "coord": [
-        -97.1514762,
-        33.2098926
-      ]
+      "coord": [-97.1514762, 33.2098926]
     },
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "Humane World for Animals"
-        ],
-        "org_credit_expanded": [
-          "Humane World for Animals"
-        ],
+        "org_credit_filter": ["Humane World for Animals"],
+        "org_credit_expanded": ["Humane World for Animals"],
         "date": "2025",
         "deadline": "2027"
       }
@@ -90,20 +71,13 @@
       "public": "public",
       "encoded": "city_of_sammamish",
       "consumer_base": 65986,
-      "coord": [
-        -122.0367582,
-        47.6013674
-      ]
+      "coord": [-122.0367582, 47.6013674]
     },
     "default": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "MFA"
-        ],
-        "org_credit_expanded": [
-          "Mercy for Animals"
-        ],
+        "org_credit_filter": ["MFA"],
+        "org_credit_expanded": ["Mercy for Animals"],
         "date": "2025"
       }
     ]
@@ -117,17 +91,12 @@
       "public": "public",
       "encoded": "university_of_michigan_mdining",
       "consumer_base": 35358,
-      "coord": [
-        -83.7347356,
-        42.2781548
-      ]
+      "coord": [-83.7347356, 42.2781548]
     },
     "default": [
       {
         "status": "adopted",
-        "org_credit_filter": [
-          "BFF"
-        ],
+        "org_credit_filter": ["BFF"],
         "org_credit_expanded": [
           "Better Food Foundation (influenced via MCURC & dining director contact)"
         ],
@@ -144,10 +113,7 @@
       "public": "public",
       "encoded": "university_of_northern_colorado",
       "consumer_base": 8561,
-      "coord": [
-        -104.7017242,
-        40.4028503
-      ]
+      "coord": [-104.7017242, 40.4028503]
     },
     "ratio": [
       {
@@ -165,19 +131,12 @@
       "public": "public",
       "encoded": "nyc_health_hospitals",
       "consumer_base": 15000,
-      "coord": [
-        -73.9356551,
-        40.6734444
-      ]
+      "coord": [-73.9356551, 40.6734444]
     },
     "default": [
       {
         "status": "adopted",
-        "org_credit_filter": [
-          "GBD",
-          "BFF",
-          "Rachel Atcheson"
-        ],
+        "org_credit_filter": ["GBD", "BFF", "Rachel Atcheson"],
         "org_credit_expanded": [
           "Greener by Default",
           "Better Food Foundation",
@@ -196,20 +155,13 @@
       "public": "private",
       "encoded": "university_college_london_students_union_four_cafes",
       "consumer_base": 51315,
-      "coord": [
-        -0.1341274,
-        51.5238591
-      ]
+      "coord": [-0.1341274, 51.5238591]
     },
     "default": [
       {
         "status": "adopted",
-        "org_credit_filter": [
-          "GBD"
-        ],
-        "org_credit_expanded": [
-          "Greener by Default"
-        ],
+        "org_credit_filter": ["GBD"],
+        "org_credit_expanded": ["Greener by Default"],
         "date": "2022"
       }
     ]
@@ -223,20 +175,13 @@
       "public": "public",
       "encoded": "university_of_california_riverside",
       "consumer_base": 18279,
-      "coord": [
-        -117.3398097,
-        33.9642576
-      ]
+      "coord": [-117.3398097, 33.9642576]
     },
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "Humane World for Animals"
-        ],
-        "org_credit_expanded": [
-          "Humane World for Animals"
-        ],
+        "org_credit_filter": ["Humane World for Animals"],
+        "org_credit_expanded": ["Humane World for Animals"],
         "date": "2027",
         "deadline": "2027"
       }
@@ -251,20 +196,13 @@
       "public": "public",
       "encoded": "western_oregon_university",
       "consumer_base": 3857,
-      "coord": [
-        -123.2415064,
-        44.8530112
-      ]
+      "coord": [-123.2415064, 44.8530112]
     },
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "Humane World for Animals"
-        ],
-        "org_credit_expanded": [
-          "Humane World for Animals"
-        ],
+        "org_credit_filter": ["Humane World for Animals"],
+        "org_credit_expanded": ["Humane World for Animals"],
         "date": "2027",
         "deadline": "2027"
       }
@@ -279,10 +217,7 @@
       "public": "public",
       "encoded": "hennepin_county_minnesota",
       "consumer_base": 1293582,
-      "coord": [
-        -93.2666616,
-        44.9758533
-      ]
+      "coord": [-93.2666616, 44.9758533]
     },
     "default": [
       {
@@ -304,10 +239,7 @@
       "public": "private",
       "encoded": "stanford_university",
       "consumer_base": 17289,
-      "coord": [
-        -122.1693654,
-        37.4313138
-      ]
+      "coord": [-122.1693654, 37.4313138]
     },
     "ratio": [
       {
@@ -325,10 +257,7 @@
       "public": "public",
       "encoded": "merribek_city_council_melbourne",
       "consumer_base": 186534,
-      "coord": [
-        144.9695238,
-        -37.7410304
-      ]
+      "coord": [144.9695238, -37.7410304]
     },
     "Other": [
       {
@@ -346,10 +275,7 @@
       "public": "public",
       "encoded": "barcelona",
       "consumer_base": 5750000,
-      "coord": [
-        2.1772738,
-        41.3823178
-      ]
+      "coord": [2.1772738, 41.3823178]
     },
     "ratio": [
       {
@@ -367,32 +293,21 @@
       "public": "public",
       "encoded": "amsterdam_netherlands",
       "consumer_base": 1200000,
-      "coord": [
-        4.9002256,
-        52.3676842
-      ]
+      "coord": [4.9002256, 52.3676842]
     },
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "Plant-Based Treaty"
-        ],
-        "org_credit_expanded": [
-          "Plant-Based Treaty"
-        ],
+        "org_credit_filter": ["Plant-Based Treaty"],
+        "org_credit_expanded": ["Plant-Based Treaty"],
         "date": "2021"
       }
     ],
     "Other": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "Plant-Based Treaty"
-        ],
-        "org_credit_expanded": [
-          "Plant-Based Treaty"
-        ],
+        "org_credit_filter": ["Plant-Based Treaty"],
+        "org_credit_expanded": ["Plant-Based Treaty"],
         "date": "2021"
       }
     ]
@@ -406,20 +321,13 @@
       "public": "public",
       "encoded": "west_hollywood_california",
       "consumer_base": 33700,
-      "coord": [
-        -118.372853,
-        34.090567
-      ]
+      "coord": [-118.372853, 34.090567]
     },
     "default": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "MFA"
-        ],
-        "org_credit_expanded": [
-          "Mercy for Animals"
-        ],
+        "org_credit_filter": ["MFA"],
+        "org_credit_expanded": ["Mercy for Animals"],
         "date": "2024"
       }
     ]
@@ -433,32 +341,21 @@
       "public": "public",
       "encoded": "kingston_ontario",
       "consumer_base": 153346,
-      "coord": [
-        -76.4283781,
-        44.3054151
-      ]
+      "coord": [-76.4283781, 44.3054151]
     },
     "Other": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "Plant-Based Cities Movement"
-        ],
-        "org_credit_expanded": [
-          "Plant-Based Cities Movement"
-        ],
+        "org_credit_filter": ["Plant-Based Cities Movement"],
+        "org_credit_expanded": ["Plant-Based Cities Movement"],
         "date": "2024"
       }
     ],
     "placement": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "Plant-Based Cities Movement"
-        ],
-        "org_credit_expanded": [
-          "Plant-Based Cities Movement"
-        ],
+        "org_credit_filter": ["Plant-Based Cities Movement"],
+        "org_credit_expanded": ["Plant-Based Cities Movement"],
         "date": "2024"
       }
     ]
@@ -472,10 +369,7 @@
       "public": "public",
       "encoded": "helsinki_finland",
       "consumer_base": 1400000,
-      "coord": [
-        24.9528649,
-        60.1683175
-      ]
+      "coord": [24.9528649, 60.1683175]
     },
     "ratio": [
       {
@@ -494,10 +388,7 @@
       "public": "public",
       "encoded": "brampton_ontario",
       "consumer_base": 833365,
-      "coord": [
-        -79.7595042,
-        43.6849825
-      ]
+      "coord": [-79.7595042, 43.6849825]
     },
     "ratio": [
       {
@@ -523,10 +414,7 @@
       "public": "public",
       "encoded": "berkeley_ca_usa",
       "consumer_base": 120500,
-      "coord": [
-        -122.2707951,
-        37.8694472
-      ]
+      "coord": [-122.2707951, 37.8694472]
     },
     "ratio": [
       {
@@ -545,20 +433,13 @@
       "public": "public",
       "encoded": "los_angeles_county_ca_usa",
       "consumer_base": 9757179,
-      "coord": [
-        -118.2462025,
-        34.0568474
-      ]
+      "coord": [-118.2462025, 34.0568474]
     },
     "default": [
       {
         "status": "pledged",
-        "org_credit_filter": [
-          "MFA"
-        ],
-        "org_credit_expanded": [
-          "Mercy for Animals"
-        ],
+        "org_credit_filter": ["MFA"],
+        "org_credit_expanded": ["Mercy for Animals"],
         "date": "2024"
       }
     ]
@@ -572,10 +453,7 @@
       "public": "private",
       "encoded": "google_headquarters",
       "consumer_base": 187103,
-      "coord": [
-        -74.0020865,
-        40.7408812
-      ]
+      "coord": [-74.0020865, 40.7408812]
     },
     "ratio": [
       {
