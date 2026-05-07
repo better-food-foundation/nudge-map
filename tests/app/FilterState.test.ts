@@ -18,7 +18,7 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
       searchInput: null,
       nudgeTypeFilter: "any nudge",
       status: "adopted",
-      placeType: new Set(["transit_station", "cafe"]),
+      placeType: new Set(["Transit Station", "Cafe"]),
       includedNudges: new Set(ALL_NUDGE_TYPE),
       year: new Set(["1997", "2023", "2024"]),
       country: new Set(["United States", "Brazil"]),
@@ -150,7 +150,7 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
       consumerBaseSliderIndexes: defaultState().consumerBaseSliderIndexes,
     });
 
-    manager.update({ placeType: new Set(["transit_station"]) });
+    manager.update({ placeType: new Set(["Transit Station"]) });
     expect(manager.matchedPlaces).toEqual({
       "Place 2": expectedPlace2Match,
     });

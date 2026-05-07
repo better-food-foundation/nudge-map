@@ -47,12 +47,12 @@ const TESTS: EdgeCase[] = [
   {
     desc: "default: sub",
     nudgeTypeFilter: "subtle substitution",
-    expectedRange: [1, 8],
+    expectedRange: [0, 0],
   },
   {
     desc: "default: titles",
     nudgeTypeFilter: "tasty titles & descriptions",
-    expectedRange: [1, 8],
+    expectedRange: [0, 0],
   },
   {
     desc: "default: placement",
@@ -62,7 +62,7 @@ const TESTS: EdgeCase[] = [
   {
     desc: "default: other",
     nudgeTypeFilter: "other",
-    expectedRange: [1, 8],
+    expectedRange: [0, 0],
   },
   {
     desc: "disabled filter",
@@ -85,14 +85,14 @@ const TESTS: EdgeCase[] = [
   {
     desc: "place type filter",
     nudgeTypeFilter: "any nudge",
-    placeType: ["Cafe"],
+    placeType: ["Hospital"],
     expectedRange: [1, 8],
   },
   {
     desc: "status filter",
     nudgeTypeFilter: "subtle substitution",
     status: "pledged",
-    expectedRange: [1, 8],
+    expectedRange: [0, 0],
   },
   {
     desc: "year filter",

@@ -55,22 +55,22 @@ test("determineOptionValues()", () => {
   ];
   const expected = {
     merged: {
-      placeType: ["cafe", "hotel"],
+      placeType: ["Cafe", "Hotel"],
       country: ["United States", "Brazil"],
       year: [UNKNOWN_YEAR, "2025", "2022", "1997"],
     },
     anyAdopted: {
-      placeType: ["cafe", "hotel"],
+      placeType: ["Cafe", "Hotel"],
       country: ["United States", "Brazil"],
       year: [UNKNOWN_YEAR, "1997"],
     },
     anyPledged: {
-      placeType: ["cafe", "hotel"],
+      placeType: ["Cafe", "Hotel"],
       country: ["United States", "Brazil"],
       year: ["2025", "2022"],
     },
     defaultAdopted: {
-      placeType: ["hotel"],
+      placeType: ["Hotel"],
       country: ["United States"],
       year: [UNKNOWN_YEAR],
     },
@@ -85,22 +85,22 @@ test("determineOptionValues()", () => {
       year: [],
     },
     ratioPledged: {
-      placeType: ["hotel"],
+      placeType: ["Hotel"],
       country: ["United States"],
       year: ["2022"],
     },
     subAdopted: {
-      placeType: ["cafe"],
+      placeType: ["Cafe"],
       country: ["Brazil"],
       year: [UNKNOWN_YEAR],
     },
     subPledged: {
-      placeType: ["cafe"],
+      placeType: ["Cafe"],
       country: ["Brazil"],
       year: ["2025"],
     },
     titlesAdopted: {
-      placeType: ["cafe"],
+      placeType: ["Cafe"],
       country: ["Brazil"],
       year: ["1997"],
     },
