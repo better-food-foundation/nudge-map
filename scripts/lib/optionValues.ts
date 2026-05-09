@@ -38,7 +38,7 @@ class OptionValues {
   }
 
   #addOrgCredit(orgCredit: string[] | undefined): void {
-    if ( orgCredit && orgCredit.length > 0) {
+    if (orgCredit && orgCredit.length > 0) {
       orgCredit.forEach((org) => this.orgCredit.add(org));
     } else {
       this.orgCredit.add(UNKNOWN_ORG);

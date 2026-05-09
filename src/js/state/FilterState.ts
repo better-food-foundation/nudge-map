@@ -199,7 +199,7 @@ export class PlaceFilterManager {
     if (!isYear) return false;
 
     const nudgeOrgs = nudgeRecord.org_credit ?? [];
-    const isOrgCredit = 
+    const isOrgCredit =
       nudgeOrgs.length > 0
         ? nudgeOrgs.some((org) => filterState.orgCredit.has(org))
         : filterState.orgCredit.has(UNKNOWN_ORG);
