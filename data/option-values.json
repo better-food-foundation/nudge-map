@@ -80,7 +80,8 @@
   "subAdopted": {
     "placeType": [],
     "country": [],
-    "year": []
+    "year": [],
+    "orgCredit": []
   },
   "subPledged": {
     "placeType": [],
@@ -110,11 +111,13 @@
   "otherAdopted": {
     "placeType": [],
     "country": [],
-    "year": []
+    "year": [],
+    "orgCredit": []
   },
   "otherPledged": {
     "placeType": [],
     "country": [],
-    "year": []
+    "year": [],
+    "orgCredit": []
   }
 }

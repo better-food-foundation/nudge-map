@@ -33,6 +33,7 @@ type DataSetSpecificOptions = {
   country: string[];
   year: string[];
   placeType: string[];
+  orgCredit: string[];
 };
 
 export interface FilterOptions {
@@ -533,6 +534,13 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
       };
       return mapping[status];
     },
+    useTwoColumns: true,
+    hide: ({ nudgeTypeFilter }) => nudgeTypeFilter === "any nudge",
+  });
+  initFilterGroup(filterManager, optionsDiv, {
+    htmlName: "org-credit",
+    filterStateKey: "orgCredit",
+    legend: "Organization credit",
     useTwoColumns: true,
     hide: ({ nudgeTypeFilter }) => nudgeTypeFilter === "any nudge",
   });
