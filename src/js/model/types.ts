@@ -113,7 +113,7 @@ export interface ProcessedCoreEntry {
   other?: ProcessedNudge[];
 }
 export const UNKNOWN_YEAR = "unknown";
-export const UNKNOWN_ORG = "unknown";
+export const UNKNOWN_ORG = "Unknown";
 
 /// The types from `data/option-values.json`.
 export interface OptionValues {
