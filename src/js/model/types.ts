@@ -87,12 +87,12 @@ export interface BaseNudge {
 
 export type RawNudge = BaseNudge & {
   date: string | undefined;
-  orgCredit: string[] | undefined;
+  org_credit: string[] | undefined;
 };
 
 export type ProcessedNudge = BaseNudge & {
   date: Date | undefined;
-  orgCredit: string[] | undefined;
+  org_credit: string[] | undefined;
 };
 export interface RawCoreEntry {
   place: RawPlace;

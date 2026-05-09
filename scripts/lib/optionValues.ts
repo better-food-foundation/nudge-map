@@ -8,6 +8,7 @@ import {
   RawPlace,
   RawCoreEntry,
   RawNudge,
+  UNKNOWN_ORG,
 } from "../../src/js/model/types";
 
 /** The option values for a single dataset. */
@@ -18,10 +19,13 @@ class OptionValues {
 
   readonly year: Set<string>;
 
+  readonly orgCredit: Set<string>;
+
   constructor() {
     this.placeType = new Set();
     this.country = new Set();
     this.year = new Set();
+    this.orgCredit = new Set();
   }
 
   #addPlace(place: RawPlace): void {
@@ -33,9 +37,18 @@ class OptionValues {
     this.year.add(date ? new Date(date).parsed.year.toString() : UNKNOWN_YEAR);
   }
 
+  #addOrgCredit(orgCredit: string[] | undefined): void {
+    if ( orgCredit && orgCredit.length > 0) {
+      orgCredit.forEach((org) => this.orgCredit.add(org));
+    } else {
+      this.orgCredit.add(UNKNOWN_ORG);
+    }
+  }
+
   addNudge(place: RawPlace, nudge: RawNudge): void {
     this.#addPlace(place);
     this.#addDate(nudge.date);
+    this.#addOrgCredit(nudge.org_credit);
   }
 
   export() {
@@ -43,6 +56,7 @@ class OptionValues {
       placeType: Array.from(this.placeType).sort(),
       country: sortCountries(this.country),
       year: Array.from(this.year).sort().reverse(),
+      orgCredit: Array.from(this.orgCredit).sort(),
     };
   }
 }
