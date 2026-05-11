@@ -7,7 +7,7 @@ import NodeGeocoder from "node-geocoder";
 const customFetch = async (url: any, options?: any): Promise<any> =>
   nodeFetch(url, {
     ...options,
-    headers: { "User-Agent": "prn-update-map-data" },
+    headers: { "User-Agent": "better-food-foundation-update-map-data" },
   });
 
 export function initGeocoder(): NodeGeocoder.Geocoder {
