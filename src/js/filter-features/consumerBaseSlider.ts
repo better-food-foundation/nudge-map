@@ -66,7 +66,7 @@ function generateSliders(
     {
       hidden: false,
       expanded: false,
-      title: "Consumer Base",
+      title: "Consumer base",
       supplementalTitle: determineSupplementalTitle(
         initialPopulationSliderIndexes,
       ),

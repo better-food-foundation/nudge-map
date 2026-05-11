@@ -87,10 +87,12 @@ export interface BaseNudge {
 
 export type RawNudge = BaseNudge & {
   date: string | undefined;
+  org_credit: string[] | undefined;
 };
 
 export type ProcessedNudge = BaseNudge & {
   date: Date | undefined;
+  org_credit: string[] | undefined;
 };
 export interface RawCoreEntry {
   place: RawPlace;
@@ -111,6 +113,7 @@ export interface ProcessedCoreEntry {
   other?: ProcessedNudge[];
 }
 export const UNKNOWN_YEAR = "unknown";
+export const UNKNOWN_ORG = "Unknown";
 
 /// The types from `data/option-values.json`.
 export interface OptionValues {
@@ -118,4 +121,5 @@ export interface OptionValues {
   placeType: PlaceType[];
   nudge: NudgeType[];
   year: string[];
+  orgCredit: string[];
 }

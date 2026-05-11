@@ -10,6 +10,7 @@ export const MERGED_STRING_SET_OPTIONS = {
   includedNudges: new Set(FILTER_OPTIONS.merged.includedNudges),
   country: new Set(FILTER_OPTIONS.merged.country),
   year: new Set(FILTER_OPTIONS.merged.year),
+  orgCredit: new Set(FILTER_OPTIONS.merged.orgCredit),
 };
 
 export const DEFAULT_FILTER_STATE: FilterState = {
@@ -123,6 +124,10 @@ export const YEAR_MAP = BidirectionalMap.from(
   Array.from(MERGED_STRING_SET_OPTIONS.year).map((year) => [year, year]),
 );
 
+export const ORG_CREDIT_MAP = BidirectionalMap.from(
+  Array.from(MERGED_STRING_SET_OPTIONS.orgCredit).map((org) => [org, org]),
+);
+
 export function encodeFilterState(filterState: FilterState): URLSearchParams {
   const result = new URLSearchParams();
 
@@ -188,6 +193,9 @@ export function decodeFilterState(queryString: string): FilterState {
     consumerBaseSliderIndexes: decodeConsumerBase(
       params.get(CONSUMER_BASE_NAME),
     ),
-    // TODO: add orgCredit mapping and data in model/data.ts.
+    orgCredit: ORG_CREDIT_MAP.decodeSet(
+      params.get(ORG_NAME),
+      DEFAULT_FILTER_STATE.orgCredit,
+    ),
   };
 }

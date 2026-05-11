@@ -23,6 +23,7 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
       year: new Set(["1997", "2023", "2024"]),
       country: new Set(["United States", "Brazil"]),
       consumerBaseSliderIndexes: [0, POPULATION_MAX_INDEX],
+      orgCredit: new Set(["org1", "org2"]),
     };
   }
 
@@ -43,6 +44,7 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
           {
             status: "adopted",
             date: new Date("2024"),
+            org_credit: ["org1"],
           },
         ],
       },
@@ -61,30 +63,35 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
           {
             status: "pledged",
             date: new Date("2023"),
+            org_credit: ["org2"],
           },
         ],
         sub: [
           {
             status: "adopted",
             date: new Date("2023"),
+            org_credit: ["org2"],
           },
         ],
         titles: [
           {
             status: "adopted",
             date: new Date("2023"),
+            org_credit: ["org2"],
           },
         ],
         placement: [
           {
             status: "adopted",
             date: new Date("2023"),
+            org_credit: ["org2"],
           },
         ],
         other: [
           {
             status: "adopted",
             date: new Date("2023"),
+            org_credit: ["org2"],
           },
         ],
       },

@@ -20,6 +20,7 @@ test.describe("determineHtml", () => {
     placeType: new Set(),
     year: new Set(),
     consumerBaseSliderIndexes: [0, 0],
+    orgCredit: new Set(),
   };
 
   test("no places", () => {

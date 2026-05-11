@@ -9,6 +9,7 @@ import {
   NudgeType,
   ProcessedNudge,
   UNKNOWN_YEAR,
+  UNKNOWN_ORG,
 } from "../model/types";
 import Observable from "./Observable";
 import { determineAllNudgeTypes, getFilteredIndexes } from "../model/data";
@@ -47,7 +48,7 @@ export interface FilterState {
   country: Set<string>;
   year: Set<string>;
   consumerBaseSliderIndexes: [number, number];
-  // TODO: add orgCredit
+  orgCredit: Set<string>;
 }
 
 interface PlaceMatchSearch {
@@ -196,6 +197,13 @@ export class PlaceFilterManager {
       nudgeRecord.date?.parsed.year.toString() || UNKNOWN_YEAR,
     );
     if (!isYear) return false;
+
+    const nudgeOrgs = nudgeRecord.org_credit ?? [];
+    const isOrgCredit =
+      nudgeOrgs.length > 0
+        ? nudgeOrgs.some((org) => filterState.orgCredit.has(org))
+        : filterState.orgCredit.has(UNKNOWN_ORG);
+    if (!isOrgCredit) return false;
 
     return true;
   }
