@@ -13,7 +13,7 @@
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": ["Plant-Based Cities Movement"],
+        "org_credit": ["Plant-Based Cities Movement"],
         "org_credit_expanded": ["Plant-Based Cities Movement"],
         "date": "2024"
       }
@@ -33,7 +33,7 @@
     "default": [
       {
         "status": "adopted",
-        "org_credit_filter": ["BFF"],
+        "org_credit": ["BFF"],
         "org_credit_expanded": [
           "Better Food Foundation Student Advocate (Susan Oseguera)"
         ],
@@ -55,7 +55,7 @@
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": ["Humane World for Animals"],
+        "org_credit": ["Humane World for Animals"],
         "org_credit_expanded": ["Humane World for Animals"],
         "date": "2025",
         "deadline": "2027"
@@ -76,7 +76,7 @@
     "default": [
       {
         "status": "pledged",
-        "org_credit_filter": ["MFA"],
+        "org_credit": ["MFA"],
         "org_credit_expanded": ["Mercy for Animals"],
         "date": "2025"
       }
@@ -96,7 +96,7 @@
     "default": [
       {
         "status": "adopted",
-        "org_credit_filter": ["BFF"],
+        "org_credit": ["BFF"],
         "org_credit_expanded": [
           "Better Food Foundation (influenced via MCURC & dining director contact)"
         ],
@@ -136,7 +136,7 @@
     "default": [
       {
         "status": "adopted",
-        "org_credit_filter": ["GBD", "BFF", "Rachel Atcheson"],
+        "org_credit": ["GBD", "BFF", "Rachel Atcheson"],
         "org_credit_expanded": [
           "Greener by Default",
           "Better Food Foundation",
@@ -160,7 +160,7 @@
     "default": [
       {
         "status": "adopted",
-        "org_credit_filter": ["GBD"],
+        "org_credit": ["GBD"],
         "org_credit_expanded": ["Greener by Default"],
         "date": "2022"
       }
@@ -180,7 +180,7 @@
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": ["Humane World for Animals"],
+        "org_credit": ["Humane World for Animals"],
         "org_credit_expanded": ["Humane World for Animals"],
         "date": "2027",
         "deadline": "2027"
@@ -201,7 +201,7 @@
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": ["Humane World for Animals"],
+        "org_credit": ["Humane World for Animals"],
         "org_credit_expanded": ["Humane World for Animals"],
         "date": "2027",
         "deadline": "2027"
@@ -222,7 +222,7 @@
     "default": [
       {
         "status": "pledged",
-        "org_credit_filter": [
+        "org_credit": [
           "Wholesome Minnesota of Compassionate Action for Animals",
           "Civic Plate (a project of @MercyForAnimals)"
         ],
@@ -298,7 +298,7 @@
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": ["Plant-Based Treaty"],
+        "org_credit": ["Plant-Based Treaty"],
         "org_credit_expanded": ["Plant-Based Treaty"],
         "date": "2021"
       }
@@ -306,7 +306,7 @@
     "Other": [
       {
         "status": "pledged",
-        "org_credit_filter": ["Plant-Based Treaty"],
+        "org_credit": ["Plant-Based Treaty"],
         "org_credit_expanded": ["Plant-Based Treaty"],
         "date": "2021"
       }
@@ -326,7 +326,7 @@
     "default": [
       {
         "status": "pledged",
-        "org_credit_filter": ["MFA"],
+        "org_credit": ["MFA"],
         "org_credit_expanded": ["Mercy for Animals"],
         "date": "2024"
       }
@@ -346,7 +346,7 @@
     "Other": [
       {
         "status": "pledged",
-        "org_credit_filter": ["Plant-Based Cities Movement"],
+        "org_credit": ["Plant-Based Cities Movement"],
         "org_credit_expanded": ["Plant-Based Cities Movement"],
         "date": "2024"
       }
@@ -354,7 +354,7 @@
     "placement": [
       {
         "status": "pledged",
-        "org_credit_filter": ["Plant-Based Cities Movement"],
+        "org_credit": ["Plant-Based Cities Movement"],
         "org_credit_expanded": ["Plant-Based Cities Movement"],
         "date": "2024"
       }
@@ -393,7 +393,7 @@
     "ratio": [
       {
         "status": "pledged",
-        "org_credit_filter": [
+        "org_credit": [
           "Plant-Based Cities Movement",
           "Earthsave Canada"
         ],
@@ -438,7 +438,7 @@
     "default": [
       {
         "status": "pledged",
-        "org_credit_filter": ["MFA"],
+        "org_credit": ["MFA"],
         "org_credit_expanded": ["Mercy for Animals"],
         "date": "2024"
       }

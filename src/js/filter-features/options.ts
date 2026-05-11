@@ -542,7 +542,7 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
     filterStateKey: "orgCredit",
     legend: "Organization credit",
     preserveCapitalization: true,
-    useTwoColumns: true,
+    useTwoColumns: false,
     hide: ({ nudgeTypeFilter }) => nudgeTypeFilter === "any nudge",
   });
 
