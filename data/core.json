@@ -393,10 +393,7 @@
     "ratio": [
       {
         "status": "pledged",
-        "org_credit": [
-          "Plant-Based Cities Movement",
-          "Earthsave Canada"
-        ],
+        "org_credit": ["Plant-Based Cities Movement", "Earthsave Canada"],
         "org_credit_expanded": [
           "Plant-Based Cities Movement",
           "Earthsave Canada"
