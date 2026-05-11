@@ -37,13 +37,13 @@
     "@typescript-eslint/eslint-plugin": "^8.19.0",
     "@typescript-eslint/parser": "^8.19.0",
     "clean-css": "^5.3.3",
+    "csv-parse": "^6.2.1",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "happy-dom": "^20.0.2",
     "http-server": "^14.1.1",
     "node-fetch": "^3.3.2",
-    "node-geocoder": "^4.4.1",
     "papaparse": "^5.4.1",
     "parcel": "^2.16.4",
     "playwright": "^1.56.1",
@@ -67,6 +67,7 @@
     "leaflet": "^1.9.4",
     "lodash-es": "^4.17.21",
     "luxon": "^3.3.0",
+    "node-geocoder": "^4.4.1",
     "tabulator-tables": "^6.3.0",
     "term-size": "^3.0.2"
   }

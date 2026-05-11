@@ -1,21 +1,17 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-await-in-loop */
 
-import nodeFetch, { RequestInfo, RequestInit, Response } from "node-fetch";
+import nodeFetch from "node-fetch";
 import NodeGeocoder from "node-geocoder";
 
-export async function fetch(
-  url: RequestInfo,
-  options: RequestInit = {},
-): Promise<Response> {
-  return nodeFetch(url, {
+const customFetch = async (url: any, options?: any): Promise<any> =>
+  nodeFetch(url, {
     ...options,
-    headers: { "User-Agent": "prn-update-map-data" },
+    headers: { "User-Agent": "better-food-foundation-update-map-data" },
   });
-}
 
 export function initGeocoder(): NodeGeocoder.Geocoder {
-  return NodeGeocoder({ provider: "openstreetmap", fetch });
+  return NodeGeocoder({ provider: "openstreetmap", fetch: customFetch });
 }
 
 export async function getLongLat(
@@ -25,7 +21,6 @@ export async function getLongLat(
   geocoder: NodeGeocoder.Geocoder,
 ): Promise<[number, number] | null> {
   const stateQuery = state ? `${state}, ` : "";
-  // We try the most precise query first, then fall back to less precise queries.
   const locationMethods = [() => `${placeName}, ${stateQuery}, ${countryCode}`];
   if (stateQuery) {
     locationMethods.push(() => `${placeName}, ${stateQuery}`);

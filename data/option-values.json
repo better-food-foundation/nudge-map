@@ -1,90 +1,116 @@
 {
   "merged": {
     "placeType": [
-      "cafe",
-      "chain_restaurant",
-      "event",
-      "gov_facility",
-      "hospital",
-      "hotel",
-      "stadium",
-      "uni_dining"
+      "City/Government",
+      "Hospital",
+      "University Cafe",
+      "University Dining Hall",
+      "University Event",
+      "Workplace Cafeteria"
     ],
-    "country": ["United States", "Canada"],
-    "year": ["unknown", "2025", "2024", "2023", "2020"]
+    "country": [
+      "United States",
+      "Barcelona",
+      "Canada",
+      "Finland",
+      "Netherlands",
+      "Oregon",
+      "Texas",
+      "United Kingdom"
+    ],
+    "year": ["unknown", "2027", "2026", "2025", "2024", "2022", "2021"]
   },
   "anyAdopted": {
     "placeType": [
-      "cafe",
-      "chain_restaurant",
-      "event",
-      "gov_facility",
-      "hotel",
-      "stadium",
-      "uni_dining"
+      "Hospital",
+      "University Cafe",
+      "University Dining Hall",
+      "University Event",
+      "Workplace Cafeteria"
     ],
-    "country": ["United States", "Canada"],
-    "year": ["unknown", "2025", "2024", "2023", "2020"]
+    "country": ["United States", "United Kingdom"],
+    "year": ["unknown", "2025", "2022"]
   },
   "anyPledged": {
-    "placeType": ["hospital", "uni_dining"],
-    "country": ["United States"],
-    "year": ["unknown"]
+    "placeType": ["City/Government", "University Dining Hall"],
+    "country": [
+      "United States",
+      "Barcelona",
+      "Canada",
+      "Finland",
+      "Netherlands",
+      "Oregon",
+      "Texas"
+    ],
+    "year": ["2027", "2026", "2025", "2024", "2022", "2021"]
   },
   "defaultAdopted": {
-    "placeType": ["cafe", "event", "stadium", "uni_dining"],
-    "country": ["United States", "Canada"],
-    "year": ["unknown", "2025", "2020"]
+    "placeType": [
+      "Hospital",
+      "University Cafe",
+      "University Dining Hall",
+      "University Event"
+    ],
+    "country": ["United States", "United Kingdom"],
+    "year": ["2025", "2022"]
   },
   "defaultPledged": {
-    "placeType": [],
-    "country": [],
-    "year": []
+    "placeType": ["City/Government"],
+    "country": ["United States"],
+    "year": ["2025", "2024"]
   },
   "ratioAdopted": {
-    "placeType": ["chain_restaurant", "event", "stadium", "uni_dining"],
-    "country": ["United States", "Canada"],
-    "year": ["unknown", "2024"]
+    "placeType": ["University Dining Hall", "Workplace Cafeteria"],
+    "country": ["United States"],
+    "year": ["unknown", "2025"]
   },
   "ratioPledged": {
-    "placeType": [],
-    "country": [],
-    "year": []
+    "placeType": ["City/Government", "University Dining Hall"],
+    "country": [
+      "United States",
+      "Barcelona",
+      "Canada",
+      "Finland",
+      "Netherlands",
+      "Oregon",
+      "Texas"
+    ],
+    "year": ["2027", "2026", "2025", "2024", "2022", "2021"]
   },
   "subAdopted": {
-    "placeType": ["uni_dining"],
-    "country": ["United States"],
-    "year": ["unknown"]
-  },
-  "subPledged": {
-    "placeType": ["hospital"],
-    "country": ["United States"],
-    "year": ["unknown"]
-  },
-  "titlesAdopted": {
-    "placeType": ["hotel"],
-    "country": ["United States"],
-    "year": ["unknown"]
-  },
-  "titlesPledged": {
-    "placeType": ["uni_dining"],
-    "country": ["United States"],
-    "year": ["unknown"]
-  },
-  "placementAdopted": {
-    "placeType": ["gov_facility", "hotel", "uni_dining"],
-    "country": ["United States"],
-    "year": ["unknown", "2023"]
-  },
-  "placementPledged": {
     "placeType": [],
     "country": [],
     "year": []
   },
-  "otherAdopted": {
-    "placeType": ["gov_facility"],
+  "subPledged": {
+    "placeType": [],
+    "country": [],
+    "year": []
+  },
+  "titlesAdopted": {
+    "placeType": [],
+    "country": [],
+    "year": []
+  },
+  "titlesPledged": {
+    "placeType": [],
+    "country": [],
+    "year": []
+  },
+  "placementAdopted": {
+    "placeType": ["Workplace Cafeteria"],
     "country": ["United States"],
     "year": ["unknown"]
+  },
+  "placementPledged": {
+    "placeType": ["City/Government"],
+    "country": ["Canada"],
+    "year": ["2024"]
+  },
+  "otherAdopted": {
+    "placeType": [],
+    "country": [],
+    "year": []
   },
   "otherPledged": {
     "placeType": [],

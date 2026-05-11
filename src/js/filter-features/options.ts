@@ -548,6 +548,7 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
     htmlName: "place-type",
     filterStateKey: "placeType",
     legend: "Institution types",
+    preserveCapitalization: true,
     useTwoColumns: true,
   });
 

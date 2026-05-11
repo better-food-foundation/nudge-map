@@ -1,145 +1,203 @@
 {
-  "Abbeville University": {
-    "default": [
-      {
-        "summary": "Abbeville University plant-based default nudge summary.",
-        "notes": "Abbeville University plant-based default nudge notes.",
-        "strategy": ["social_media", "ally"],
-        "policy_url": ["https://www.example.com", "https://www.example.com"]
-      }
-    ],
+  "North Vancouver District": {
     "ratio": [
       {
-        "summary": "Abbeville University ratio summary.",
-        "notes": "Abbeville University ratio notes.",
-        "strategy": ["survey", "ambassador"],
-        "policy_url": ["https://www.example.com"]
+        "summary": "North Vancouver District Council passed a commitment to prioritize plant-based municipial food procurement.",
+        "link": "North Vancouver District to prioritize plant-based foods",
+        "notes": "Official record of passing: https://www.bing.com/ck/a?!&&p=94f058ee545ed2b78ff393d0d563e81043819f1f4717ab627bc48d42eb0d9b4fJmltdHM9MTc1NjMzOTIwMA&ptn=3&ver=2&hsh=4&fclid=1d86bc03-2669-6c2d-2896-aa3827d06df6&psq=District+of+North+Vancouver+plant-based+meal+policy&u=a1aHR0cHM6Ly9hcHAuZG52Lm9yZy9PcGVuRG9jdW1lbnQvRGVmYXVsdC5hc3B4P2RvY051bT02MzEwNTI3"
+      }
+    ]
+  },
+  "California State Los Angeles": {
+    "default": [
+      {
+        "summary": "At California State Los Angeles, the nutritional science department's graduation event menu was plant-based by default.",
+        "link": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
+        "notes": "Through months of conversations, Susan Oseguera successfully advocated for the Department of Nutrition and Food Science to adopt a plant-based default menu for their annual Honors Graduation Celebration.\n\nWhile animal product options remained available, plant-based dishes took center stage. Susan’s pitch emphasized inclusivity across dietary needs, helping create allergen information cards to ensure all students can dine safely and confidently."
+      }
+    ]
+  },
+  "University of North Texas": {
+    "ratio": [
+      {
+        "summary": "UNT signed the Forward Food Pledge, pledging to increase its plant-based meal offerings to 60% by 2027.",
+        "link": "https://vegoutmag.com/news/university-of-north-texas-plant-based-dining/\nhttps://vegconomist.com/society/university-of-north-texas-commits-to-60-plant-based-dining-by-2027/",
+        "notes": "UNT was previously recognized for its efforts to increase the availability of plant-based meals in the Humane World for Animal's College and University Protein Sustainability Scorecard. UNT ranked second in the nation behind the University of Colorado Boulder and just above the University of Texas Austin."
+      }
+    ]
+  },
+  "City of Sammamish": {
+    "default": [
+      {
+        "summary": "Sammamish City Council serves plant-based food by default at city events, specifically those where the City serves food to the public.",
+        "link": "https://sammamishindependent.com/2025/02/council-mandates-vegan-catering-for-city-provided-food/"
+      }
+    ]
+  },
+  "University of Michigan (MDining)": {
+    "default": [
+      {
+        "summary": "University of Michigan offers oat milk by default in its dining services. MDining also has an ongoing commitment to a 55% plant-based menu because of the associated emissions reductions and cost savings.",
+        "link": "https://www.michigandaily.com/news/campus-life/at-mdining-regular-milk-now-means-oat-milk-unless-otherwise-stated/ \n\nhttps://nacas.org/hubfs/MDining_Plant-Rich%20Champion%20Story_03182026.pdf?hsLang=en",
+        "notes": "University of Michigan's plant-forward menu was driven by its students, who work closely with dining staff, conduct research studies on the emissions reductions of plant-based menus, and give feedback on new menu items."
+      }
+    ]
+  },
+  "University of Northern Colorado": {
+    "ratio": [
+      {
+        "summary": "University of North Colorado expanded plant-based offerings in dining in spring 2025.",
+        "link": "https://patch.com/colorado/across-co/university-northern-colorado-welcomes-spring-2025"
+      }
+    ]
+  },
+  "NYC Health + Hospitals": {
+    "default": [
+      {
+        "summary": "NYC Health + Hospitals serves plant-based meals by default to its patients. It has served over 2 million plant-based meals from March 2022 to Feburary 2025.",
+        "link": "Mayor Adams, NYC H+H CEO Katz Announce Successful Rollout and Expansion of Plant-Based Meals as Default Option for Patients in NYC Public Hospitals - NYC Mayor's Office\nhttps://www.nyc.gov/assets/foodpolicy/downloads/pdf/NYCHospitals_PlantBasedDefaults_2025.pdf"
+      }
+    ]
+  },
+  "University College London (Students' Union - four cafes)": {
+    "default": [
+      {
+        "summary": "All four cafes in Students' Union at University College London offer oat milk by default.",
+        "link": "https://studentsunionucl.org/articles/why-is-oat-milk-our-default"
+      }
+    ]
+  },
+  "University of California Riverside": {
+    "ratio": [
+      {
+        "summary": "University of California Riverside signed the Forward Food Pledge, pledging to increase its plant-based meal offerings to 50% by 2027.",
+        "link": "University of California Riverside Sets 50% Plant-Based Meal Target by 2027 - vegconomist - the vegan business magazine"
+      }
+    ]
+  },
+  "Western Oregon University": {
+    "ratio": [
+      {
+        "summary": "Western Oregon University signed the Forward Food Pledge, pledging to increase its plant-based meal offerings to 50% by 2027.",
+        "link": "Western Oregon University Commits to 50% Plant-Based Meals by 2027 - vegconomist - the vegan business magazine"
+      }
+    ]
+  },
+  "Hennepin County, Minnesota": {
+    "default": [
+      {
+        "summary": "Hennepin County adopted a plant-based by default catering policy for county-sponsored events and meetings.",
+        "link": "Instagram"
+      }
+    ]
+  },
+  "Stanford University": {
+    "ratio": [
+      {
+        "summary": "At Stanford University, 50% of all menu items offered at dining halls are entirely plant-based. Mixed meat dishes are also served with a 30% vegetable blend.",
+        "link": "All You Can Eat: Stanford dining pushes for plant-based"
+      }
+    ]
+  },
+  "Merri-bek City Council (Melbourne)": {
+    "Other": [
+      {
+        "summary": "Moreland Council adopted a policy of offering entirely plant-based food options at government events on Mondays.",
+        "link": "Moreland Council’s eat less meat climate debate #MeatlessMonday | Climate Action Merribek: people in Brunswick, Coburg, Fawkner and Glenroy wanting action on climate change"
+      }
+    ]
+  },
+  "Barcelona": {
+    "ratio": [
+      {
+        "summary": "As part of its 2020 Climate Emergency Declaration, Barcelona is reducing consumption of animal proteins at public schools. Now, the presence of vegetable protein has increased on school menus, while red meat is served once a month.",
+        "link": "https://www.barcelona.cat/infobarcelona/en/tema/city-council/no-pork-consumption-prohibition-by-the-city-council-in-nursery-schools_1607511.html\n\nhttps://www.uoc.edu/en/news/2025/replace-animal-protein-to-reduce-environmental-impact-in-school-diets \n\nhttps://www.barcelona.cat/barcelona-pel-clima/sites/default/files/Climate_Emergency_Declaration_en.pdf"
+      }
+    ]
+  },
+  "Amsterdam, Netherlands": {
+    "ratio": [
+      {
+        "summary": "Amsterdam City Council serves plant-based food by default at all council events. The city also aims to encourage residents to adopt a diet that is at least 60% plant-based by 2030.",
+        "link": "https://vegconomist.com/politics-law/amsterdam-passes-new-motion-building-endorsement-plant-based-treaty/\n\nhttps://defaultveg.medium.com/in-europe-everyday-is-veggiedag-5532fc660f85 \n\nhttps://www.iamsterdam.com/en/business/amsterdam-first-eu-capital-to-embrace-the-plant-based-treaty",
+        "notes": "In 2021, Amsterdam committed to increasing the proportion of plant-based food in its citizens’ diets to at least 50% by 2030 and 60% by 2040. Now, this goal has reportedly been brought forward, and the city aims to increase the share of plant-based protein in local diets to 60% by 2030.\n\nAdditionally, Amsterdam became the first EU capital city to endorse the Plant-Based Treaty in 2024."
       }
     ],
-    "sub": [
+    "Other": [
       {
-        "summary": "Abbeville University subtle substitution summary.",
-        "notes": "Abbeville University subtle substitution notes.",
-        "strategy": ["food_rep"],
-        "policy_url": ["https://www.example.com"]
+        "summary": "Amsterdam City Council serves plant-based food by default at all council events. The city also aims to encourage residents to adopt a diet that is at least 60% plant-based by 2030.",
+        "link": "https://vegconomist.com/politics-law/amsterdam-passes-new-motion-building-endorsement-plant-based-treaty/\n\nhttps://defaultveg.medium.com/in-europe-everyday-is-veggiedag-5532fc660f85 \n\nhttps://www.iamsterdam.com/en/business/amsterdam-first-eu-capital-to-embrace-the-plant-based-treaty",
+        "notes": "In 2021, Amsterdam committed to increasing the proportion of plant-based food in its citizens’ diets to at least 50% by 2030 and 60% by 2040. Now, this goal has reportedly been brought forward, and the city aims to increase the share of plant-based protein in local diets to 60% by 2030.\n\nAdditionally, Amsterdam became the first EU capital city to endorse the Plant-Based Treaty in 2024."
       }
-    ],
-    "titles": [
+    ]
+  },
+  "West Hollywood, California": {
+    "default": [
       {
-        "summary": "Abbeville University tasty titles & descriptions & descriptions summary.",
-        "notes": "Abbeville University tasty titles & descriptions & descriptions notes.",
-        "strategy": ["guide"],
-        "policy_url": ["https://www.example.com"]
+        "summary": "The City of West Hollywood serves plant-based food by default catering at all city-produced events and meetings.",
+        "link": "West Hollywood Announces ‘Groundbreaking’ Plant-Based Policy"
+      }
+    ]
+  },
+  "Kingston, Ontario": {
+    "Other": [
+      {
+        "summary": "In 2024, Kingston City Council passed a motion for the city to promote plant-based foods by prioritizing them in its procurement process and placing them in higher-profile locations at city events.",
+        "link": "Kingston adopts plant-based food policy | The Kingston Whig Standard"
       }
     ],
     "placement": [
       {
-        "summary": "Abbeville University prime placement summary.",
-        "notes": "Abbeville University prime placement notes.",
-        "strategy": ["ed_pres", "letter", "article"],
-        "policy_url": ["https://www.example.com"]
+        "summary": "In 2024, Kingston City Council passed a motion for the city to promote plant-based foods by prioritizing them in its procurement process and placing them in higher-profile locations at city events.",
+        "link": "Kingston adopts plant-based food policy | The Kingston Whig Standard"
       }
     ]
   },
-  "Abbottstown Cafe": {
+  "Helsinki, Finland": {
+    "ratio": [
+      {
+        "summary": "Helsinki declared itself a “Fair Trade city” in 2013 and has been using fair-trade-related criteria in its procurement. In March 2026, the City Council voted to halve its procurement of meat and dairy products by 2030 and replace it with plant-based food options in schools, hospitals and municipal institutions. There has already been some progress: since 2019, the amount of red meat served has already been cut by half. From 2029, meat dishes will be served only once or twice a week.",
+        "link": "Helsinki ditches meat and cow’s milk from the menu | Euractiv (not using bc no further proof)\n\nhttps://yle.fi/a/74-20213319 \n\nhttps://www.greenqueen.com.hk/helsinki-puloet-parempaa-meat-dairy-plant-based-food-policy-2030/"
+      }
+    ]
+  },
+  "Brampton, Ontario": {
+    "ratio": [
+      {
+        "summary": "In August 2022, Brampton's City Council approved a motion for Brampton to transition 50% of city food purchases to plant-based options by re-evaluating its current procurement.",
+        "link": "https://pub-brampton.escribemeetings.com/Meeting.aspx?Id=692d53a9-cfcd-4e04-9258-111138df4985&Agenda=PostMinutes&lang=English"
+      }
+    ]
+  },
+  "Berkeley, CA, USA": {
+    "ratio": [
+      {
+        "summary": "In July 2021, Berkeley's City Council adopted a goal to achieve a 50% decrease in animal-based food products served by the city by 2024.",
+        "link": "https://www.cityofberkeley.info/Clerk/City_Council/2021/03_Mar/Documents/2021-03-09_Item_19_Support_Vision_2025_for_Sustainable.aspx\n\nhttps://berkeleyca.gov/sites/default/files/documents/2021-07-27%20Item%2022%20Accelerating%20transition%20to%20Plant-Based%20Foods%20-%20Rev%20Hahn.pdf \n\nhttps://berkeleyca.gov/sites/default/files/documents/2021-07-27%20Item%2022%20Accelerating%20transition%20to%20Plant-Based%20Foods.pdf \n\nhttps://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/",
+        "notes": "*No public update since 2024"
+      }
+    ]
+  },
+  "Los Angeles County, CA, USA": {
     "default": [
       {
-        "summary": "Abbottstown Cafe plant-based default nudge summary.",
-        "notes": "Abbottstown Cafe plant-based default nudge notes.",
-        "strategy": ["ally"],
-        "policy_url": ["https://www.example.com"]
+        "summary": "In March 2024, Los Angeles County passed a motion requiring all departmental food procurement to be plant-based by default.",
+        "link": "https://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/\n\nhttps://laclimateweek.com/event/measuring-what-matters-how-local-food-policy-is-changing-la/\n\nhttps://plantbasedfoods.org/latest/plant-based-by-default-wins-in-la-county#:~:text=Los%20Angeles%20County%20passed%20a%20motion%20that,and%20increasing%20awareness%20of%20plant%2Dbased%20food%20procurement.\n\nhttps://mercyforanimals.org/blog/los-angeles-county-passes-groundbreaking-policy-requiring-plant-based-food-purchases/#:~:text=We%20look%20forward%20to%20working,and%20have%20far%2Dreaching%20effects.",
+        "notes": "More recently, Los Angeles committed to achieving the Planetary Health Diet by cutting their dairy and meat consumption to around 250 grams and 50 grams per day per person, respectively, while the San Francisco Board of Supervisors voted to reduce animal product consumption by 15 percent and 50 percent in hospitals and jails.\n\nIn November 2025, the County joined the World Resources Institute’s Coolfood Pledge, committing to reduce food-based emissions by at least 25% by 2030 and produce its first food procurement climate impact report."
       }
     ]
   },
-  "Aberdeen Hospital": {
-    "sub": [
+  "Google Headquarters": {
+    "ratio": [
       {
-        "summary": "Aberdeen Hospital subtle substitution summary.",
-        "notes": "Aberdeen Hospital subtle substitution notes.",
-        "strategy": ["guide"],
-        "policy_url": ["https://www.example.com"]
-      }
-    ]
-  },
-  "Aberdeen Hotel": {
-    "titles": [
-      {
-        "summary": "Aberdeen Hotel tasty titles & descriptions summary.",
-        "notes": "Aberdeen Hotel tasty titles & descriptions notes.",
-        "strategy": ["guide"],
-        "policy_url": ["https://www.example.com"]
+        "summary": "Google has a Food Choice Architecture program, a research-based team within Food at Google designed to make “the healthiest choice the easiest choice” for employees. Fruits and vegetables \"take center stage\" in Google's network of 380 cafes and 1,500 MicroKitchens to encourage a more balanced and plant-forward diet.",
+        "link": "Inside Google's Efforts to Engineer Its Food for Healthiness | OneZero\n\nhttps://workforcenutrition.org/employee-wellbeing-far-beyond-technology-googles-approach-to-workforce-nutrition/#:~:text=Google's%20Food%20at%20Google%20program%20aims%20to,in%20the%20garden%20*%20**MicroKitchens**%20Number%201%2C500 \n\nhttps://www.wbcsd.org/resources/foodwork-program/#:~:text=Google's%20Food@Work%20program%20aims%20to%20encourage%20healthier,footprint%20from%20food%20between%202017%20and%202019."
       }
     ],
     "placement": [
       {
-        "summary": "Aberdeen placement summary.",
-        "notes": "Aberdeen placement notes.",
-        "strategy": ["letter"],
-        "policy_url": ["https://www.example.com"]
-      }
-    ]
-  },
-  "Aberdeen City Hall": {
-    "placement": [
-      {
-        "summary": "Aberdeen City Hall placement summary.",
-        "notes": "Aberdeen City Hall placement notes.",
-        "strategy": ["letter"],
-        "policy_url": ["https://www.example.com"]
-      }
-    ],
-    "other": [
-      {
-        "summary": "Aberdeen other summary.",
-        "notes": "Aberdeen other notes.",
-        "strategy": ["letter"],
-        "policy_url": ["https://www.example.com"]
-      }
-    ]
-  },
-  "Aberdeen Stadium": {
-    "default": [
-      {
-        "summary": "Aberdeen Stadium default summary.",
-        "notes": "Aberdeen Stadium default notes.",
-        "strategy": ["event"],
-        "policy_url": ["https://www.example.com"]
-      }
-    ],
-    "ratio": [
-      {
-        "summary": "Aberdeen Stadium ratio summary.",
-        "notes": "Aberdeen Stadium ratio notes.",
-        "strategy": ["event"],
-        "policy_url": ["https://www.example.com"]
-      }
-    ]
-  },
-  "Aberdeen Conference": {
-    "default": [
-      {
-        "summary": "Aberdeen Conference default summary.",
-        "notes": "Aberdeen Conference default notes.",
-        "strategy": ["event"],
-        "policy_url": ["https://www.example.com"]
-      }
-    ],
-    "ratio": [
-      {
-        "summary": "Aberdeen Conference ratio summary.",
-        "notes": "Aberdeen Conference ratio notes.",
-        "strategy": ["event"],
-        "policy_url": ["https://www.example.com"]
-      }
-    ]
-  },
-  "Aberdeen Restaurant": {
-    "ratio": [
-      {
-        "summary": "Aberdeen Restaurant ratio summary.",
-        "notes": "Aberdeen Restaurant ratio notes.",
-        "strategy": ["event"],
-        "policy_url": ["https://www.example.com"]
+        "summary": "Google has a Food Choice Architecture program, a research-based team within Food at Google designed to make “the healthiest choice the easiest choice” for employees. Fruits and vegetables \"take center stage\" in Google's network of 380 cafes and 1,500 MicroKitchens to encourage a more balanced and plant-forward diet.",
+        "link": "Inside Google's Efforts to Engineer Its Food for Healthiness | OneZero\n\nhttps://workforcenutrition.org/employee-wellbeing-far-beyond-technology-googles-approach-to-workforce-nutrition/#:~:text=Google's%20Food%20at%20Google%20program%20aims%20to,in%20the%20garden%20*%20**MicroKitchens**%20Number%201%2C500 \n\nhttps://www.wbcsd.org/resources/foodwork-program/#:~:text=Google's%20Food@Work%20program%20aims%20to%20encourage%20healthier,footprint%20from%20food%20between%202017%20and%202019."
       }
     ]
   }
