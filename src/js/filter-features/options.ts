@@ -1,10 +1,12 @@
 import { capitalize } from "lodash-es";
 
 import {
+  ALL_NUDGE_STATUS_FILTER,
   ALL_NUDGE_TYPE_FILTER,
   FilterState,
   PlaceFilterManager,
   NudgeTypeFilter,
+  NudgeStatusFilter,
 } from "../state/FilterState";
 import Observable from "../state/Observable";
 import {
@@ -17,7 +19,7 @@ import {
 
 import optionValuesData from "../../../data/option-values.json" with { type: "json" };
 
-import { ALL_NUDGE_STATUS, ALL_NUDGE_TYPE, NudgeStatus } from "../model/types";
+import { ALL_NUDGE_TYPE, NudgeStatus } from "../model/types";
 
 import { initConsumerBaseSlider } from "./consumerBaseSlider";
 
@@ -44,9 +46,22 @@ export interface FilterOptions {
   >;
   getOptions(
     nudgeType: NudgeTypeFilter,
-    status: NudgeStatus,
+    status: NudgeStatusFilter,
   ): DataSetSpecificOptions;
-  enabled(nudgeType: NudgeTypeFilter, status: NudgeStatus): boolean;
+  enabled(nudgeType: NudgeTypeFilter, status: NudgeStatusFilter): boolean;
+}
+
+function mergeDataSetOptions(
+  adopted: DataSetSpecificOptions,
+  pledged: DataSetSpecificOptions,
+): DataSetSpecificOptions {
+  return {
+    includedNudges: [...new Set([...adopted.includedNudges, ...pledged.includedNudges])],
+    country: [...new Set([...adopted.country, ...pledged.country])],
+    year: [...new Set([...adopted.year, ...pledged.year])],
+    placeType: [...new Set([...adopted.placeType, ...pledged.placeType])],
+    orgCredit: [...new Set([...adopted.orgCredit, ...pledged.orgCredit])],
+  };
 }
 
 export const FILTER_OPTIONS: FilterOptions = {
@@ -130,12 +145,23 @@ export const FILTER_OPTIONS: FilterOptions = {
 
   getOptions(
     nudgeType: NudgeTypeFilter,
-    status: NudgeStatus,
+    status: NudgeStatusFilter,
   ): DataSetSpecificOptions {
+    if (status === "any status") {
+      return mergeDataSetOptions(
+        this.datasets[nudgeType]["adopted"],
+        this.datasets[nudgeType]["pledged"],
+      );
+    }
     return this.datasets[nudgeType][status];
   },
 
-  enabled(nudgeType: NudgeTypeFilter, status: NudgeStatus): boolean {
+  enabled(nudgeType: NudgeTypeFilter, status: NudgeStatusFilter): boolean {
+    if (status === "any status") {
+      const adopted = this.datasets[nudgeType]["adopted"].placeType.length > 0;
+      const pledged = this.datasets[nudgeType]["pledged"].placeType.length > 0;
+      return adopted || pledged;
+    }
     return this.datasets[nudgeType][status].placeType.length > 0;
   },
 } as const;
@@ -483,7 +509,7 @@ function initStatusDropdown(
   select.id = id;
   select.name = id;
 
-  ALL_NUDGE_STATUS.forEach((option) => {
+  ALL_NUDGE_STATUS_FILTER.forEach((option) => {
     const element = document.createElement("option");
     element.value = option;
     element.textContent = capitalize(option);
@@ -532,6 +558,9 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
         adopted: "Adoption years",
         pledged: "Pledge years",
       };
+      if (status === "any status") {
+        return "Years";
+      }
       return mapping[status];
     },
     useTwoColumns: true,
