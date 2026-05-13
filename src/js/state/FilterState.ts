@@ -26,7 +26,10 @@ export const POPULATION_INTERVALS: Array<[string, number]> = [
   ["10M", 10000000],
 ];
 
-export const ALL_NUDGE_STATUS_FILTER = ["any status", ...ALL_NUDGE_STATUS] as const;
+export const ALL_NUDGE_STATUS_FILTER = [
+  "any status",
+  ...ALL_NUDGE_STATUS,
+] as const;
 export type NudgeStatusFilter = (typeof ALL_NUDGE_STATUS_FILTER)[number];
 
 export const ALL_NUDGE_TYPE_FILTER = ["any nudge", ...ALL_NUDGE_TYPE] as const;
@@ -194,7 +197,9 @@ export class PlaceFilterManager {
   private matchesNudge(nudgeRecord: ProcessedNudge): boolean {
     const filterState = this.state.getValue();
 
-    const isStatus = filterState.status === "any status" || nudgeRecord.status === filterState.status;
+    const isStatus =
+      filterState.status === "any status" ||
+      nudgeRecord.status === filterState.status;
     if (!isStatus) return false;
 
     const isYear = filterState.year.has(
@@ -236,11 +241,15 @@ export class PlaceFilterManager {
         if (entry.default?.length) nudgeTypes.push("plant-based default");
         if (entry.ratio?.length) nudgeTypes.push("climate-friendly ratio");
         if (entry.sub?.length) nudgeTypes.push("subtle substitution");
-        if (entry.titles?.length) nudgeTypes.push("tasty titles & descriptions");
+        if (entry.titles?.length)
+          nudgeTypes.push("tasty titles & descriptions");
         if (entry.placement?.length) nudgeTypes.push("prime placement");
         if (entry.other?.length) nudgeTypes.push("other");
       } else {
-        nudgeTypes = determineAllNudgeTypes(entry, filterState.status as NudgeStatus);
+        nudgeTypes = determineAllNudgeTypes(
+          entry,
+          filterState.status as NudgeStatus,
+        );
       }
       const isNudgeType = nudgeTypes.some((v) =>
         filterState.includedNudges.has(v),

@@ -56,7 +56,9 @@ function mergeDataSetOptions(
   pledged: DataSetSpecificOptions,
 ): DataSetSpecificOptions {
   return {
-    includedNudges: [...new Set([...adopted.includedNudges, ...pledged.includedNudges])],
+    includedNudges: [
+      ...new Set([...adopted.includedNudges, ...pledged.includedNudges]),
+    ],
     country: [...new Set([...adopted.country, ...pledged.country])],
     year: [...new Set([...adopted.year, ...pledged.year])],
     placeType: [...new Set([...adopted.placeType, ...pledged.placeType])],
@@ -149,8 +151,8 @@ export const FILTER_OPTIONS: FilterOptions = {
   ): DataSetSpecificOptions {
     if (status === "any status") {
       return mergeDataSetOptions(
-        this.datasets[nudgeType]["adopted"],
-        this.datasets[nudgeType]["pledged"],
+        this.datasets[nudgeType].adopted,
+        this.datasets[nudgeType].pledged,
       );
     }
     return this.datasets[nudgeType][status];
@@ -158,8 +160,8 @@ export const FILTER_OPTIONS: FilterOptions = {
 
   enabled(nudgeType: NudgeTypeFilter, status: NudgeStatusFilter): boolean {
     if (status === "any status") {
-      const adopted = this.datasets[nudgeType]["adopted"].placeType.length > 0;
-      const pledged = this.datasets[nudgeType]["pledged"].placeType.length > 0;
+      const adopted = this.datasets[nudgeType].adopted.placeType.length > 0;
+      const pledged = this.datasets[nudgeType].pledged.placeType.length > 0;
       return adopted || pledged;
     }
     return this.datasets[nudgeType][status].placeType.length > 0;
