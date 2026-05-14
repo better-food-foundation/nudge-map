@@ -318,6 +318,55 @@ test.describe("PlaceFilterManager.matchedNudgeRecords()", () => {
     manager.update({ year: defaultState().year });
   });
 
+  test("any status with any nudge", () => {
+    // With "any status", both adopted and pledged nudges should be included
+    const manager = new PlaceFilterManager(defaultEntries(), {
+      ...defaultState(),
+      status: "any status",
+    });
+    expect(manager.matchedPlaces).toEqual({
+      "Place 1": {
+        type: "any",
+        hasDefault: true,
+        hasRatio: false,
+        hasSub: false,
+        hasTitles: false,
+        hasPlacement: false,
+        hasOther: false,
+      },
+      "Place 2": {
+        type: "any",
+        hasDefault: false,
+        hasRatio: true,
+        hasSub: true,
+        hasTitles: true,
+        hasPlacement: true,
+        hasOther: true,
+      },
+    });
+  });
+
+  test("any status with specific nudge type", () => {
+    // With "any status" and a specific nudge type, should match places with that nudge type regardless of status
+    const manager = new PlaceFilterManager(defaultEntries(), {
+      ...defaultState(),
+      nudgeTypeFilter: "climate-friendly ratio",
+      status: "any status",
+    });
+    // Place 2 has a pledged ratio, which should be included with "any status"
+    expect(manager.matchedPlaces).toEqual({
+      "Place 2": {
+        type: "single nudge",
+        nudgeType: "climate-friendly ratio",
+        matchingIndexes: [0],
+      },
+    });
+
+    // Switch to a specific status to verify "any status" was actually combining
+    manager.update({ status: "adopted" });
+    expect(manager.matchedPlaces).toEqual({});
+  });
+
   test("search", () => {
     // Start with a state that does not match anything to prove that search overrides filters.
     const manager = new PlaceFilterManager(defaultEntries(), {
