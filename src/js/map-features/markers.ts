@@ -55,7 +55,7 @@ export default function initPlaceMarkers(
 
     // The tooltip is the text shown on hover. We strip the country
     // to make it less verbose.
-    marker.bindTooltip(determinePlaceIdWithoutCountry(entry.place));
+    marker.bindTooltip(entry.place.name);
 
     acc[placeId] = marker;
     return acc;
@@ -99,7 +99,6 @@ export default function initPlaceMarkers(
   // Adjust marker size on zoom changes.
   map.addEventListener("zoomend", () => {
     const zoom = map.getZoom();
-    // TODO: remove placeId since we're just accessing marker
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     Object.values(placesToMarkers).forEach((marker) => {
       const newRadius = radiusGivenZoom(zoom);
