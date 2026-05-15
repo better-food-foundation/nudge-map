@@ -33,14 +33,6 @@ export function determinesupplementalPlaceInfo(place: {
   return state ? `${state}, ${country}` : country;
 }
 
-export function determinePlaceIdWithoutCountry(place: {
-  name: string;
-  state: string | null;
-}): string {
-  const { name, state } = place;
-  return state ? `${name}, ${state}` : name;
-}
-
 /**
  * Normalize the place ID for being used in a URL.
  */

@@ -4,7 +4,6 @@ import { PlaceFilterManager } from "../state/FilterState";
 import { ViewStateObservable } from "../layout/viewToggle";
 import type { PlaceId } from "../model/types";
 import { radiusGivenZoom } from "./markerUtils";
-import { determinePlaceIdWithoutCountry } from "../model/placeId";
 
 const MARKER_STYLE = {
   weight: 1,
