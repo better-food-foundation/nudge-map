@@ -19,7 +19,7 @@ import {
 
 import optionValuesData from "../../../data/option-values.json" with { type: "json" };
 
-import { ALL_NUDGE_TYPE, NudgeStatus } from "../model/types";
+import { ALL_NUDGE_STATUS, ALL_NUDGE_TYPE, NudgeStatus } from "../model/types";
 
 import { initConsumerBaseSlider } from "./consumerBaseSlider";
 
@@ -52,18 +52,13 @@ export interface FilterOptions {
 }
 
 function mergeDataSetOptions(
-  adopted: DataSetSpecificOptions,
-  pledged: DataSetSpecificOptions,
+  ...datasets: DataSetSpecificOptions[]
 ): DataSetSpecificOptions {
-  return {
-    includedNudges: [
-      ...new Set([...adopted.includedNudges, ...pledged.includedNudges]),
-    ],
-    country: [...new Set([...adopted.country, ...pledged.country])],
-    year: [...new Set([...adopted.year, ...pledged.year])],
-    placeType: [...new Set([...adopted.placeType, ...pledged.placeType])],
-    orgCredit: [...new Set([...adopted.orgCredit, ...pledged.orgCredit])],
-  };
+  const keys = Object.keys(datasets[0]) as (keyof DataSetSpecificOptions)[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return Object.fromEntries(
+    keys.map((key) => [key, [...new Set(datasets.flatMap((d) => d[key]))]]),
+  ) as unknown as DataSetSpecificOptions;
 }
 
 export const FILTER_OPTIONS: FilterOptions = {
@@ -151,8 +146,7 @@ export const FILTER_OPTIONS: FilterOptions = {
   ): DataSetSpecificOptions {
     if (status === "any status") {
       return mergeDataSetOptions(
-        this.datasets[nudgeType].adopted,
-        this.datasets[nudgeType].pledged,
+        ...ALL_NUDGE_STATUS.map((s) => this.datasets[nudgeType][s]),
       );
     }
     return this.datasets[nudgeType][status];
@@ -160,9 +154,9 @@ export const FILTER_OPTIONS: FilterOptions = {
 
   enabled(nudgeType: NudgeTypeFilter, status: NudgeStatusFilter): boolean {
     if (status === "any status") {
-      const adopted = this.datasets[nudgeType].adopted.placeType.length > 0;
-      const pledged = this.datasets[nudgeType].pledged.placeType.length > 0;
-      return adopted || pledged;
+      return ALL_NUDGE_STATUS.some(
+        (s) => this.datasets[nudgeType][s].placeType.length > 0,
+      );
     }
     return this.datasets[nudgeType][status].placeType.length > 0;
   },
@@ -556,13 +550,11 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
     htmlName: "year",
     filterStateKey: "year",
     legend: ({ status }) => {
-      const mapping: Record<NudgeStatus, string> = {
+      const mapping: Record<NudgeStatus | "any status", string> = {
+        "any status": "Years",
         adopted: "Adoption years",
         pledged: "Pledge years",
       };
-      if (status === "any status") {
-        return "Years";
-      }
       return mapping[status];
     },
     useTwoColumns: true,

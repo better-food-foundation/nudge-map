@@ -237,14 +237,12 @@ export class PlaceFilterManager {
       let nudgeTypes: NudgeType[];
       if (filterState.status === "any status") {
         // When "any status" is selected, include all nudge types that have at least one nudge
-        nudgeTypes = [];
-        if (entry.default?.length) nudgeTypes.push("plant-based default");
-        if (entry.ratio?.length) nudgeTypes.push("climate-friendly ratio");
-        if (entry.sub?.length) nudgeTypes.push("subtle substitution");
-        if (entry.titles?.length)
-          nudgeTypes.push("tasty titles & descriptions");
-        if (entry.placement?.length) nudgeTypes.push("prime placement");
-        if (entry.other?.length) nudgeTypes.push("other");
+        nudgeTypes = [
+          ...new Set([
+            ...determineAllNudgeTypes(entry, "adopted"),
+            ...determineAllNudgeTypes(entry, "pledged"),
+          ]),
+        ];
       } else {
         nudgeTypes = determineAllNudgeTypes(
           entry,
