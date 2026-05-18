@@ -9,15 +9,17 @@ import {
   getTotalNumPlaces,
   openFilter,
 } from "./utils";
-import { NudgeTypeFilter } from "../../src/js/state/FilterState";
-import { NudgeStatus } from "../../src/js/model/types";
+import {
+  NudgeTypeFilter,
+  NudgeStatusFilter,
+} from "../../src/js/state/FilterState";
 
 type StringArrayOption = string[] | "all";
 
 interface EdgeCase {
   desc: string;
   nudgeTypeFilter: NudgeTypeFilter;
-  status?: NudgeStatus;
+  nudgeStatusFilter?: NudgeStatusFilter;
   includedNudge?: StringArrayOption;
   country?: StringArrayOption;
   year?: StringArrayOption;
@@ -91,7 +93,7 @@ const TESTS: EdgeCase[] = [
   {
     desc: "status filter",
     nudgeTypeFilter: "subtle substitution",
-    status: "pledged",
+    nudgeStatusFilter: "pledged",
     expectedRange: [0, 0],
   },
   {
@@ -99,6 +101,12 @@ const TESTS: EdgeCase[] = [
     nudgeTypeFilter: "prime placement",
     year: ["Unknown", "2023"],
     expectedRange: [1, 4],
+  },
+  {
+    desc: "any status",
+    nudgeTypeFilter: "any nudge",
+    nudgeStatusFilter: "any status",
+    expectedRange: [20, 30],
   },
 ];
 
@@ -159,10 +167,13 @@ for (const edgeCase of TESTS) {
         .selectOption(edgeCase.nudgeTypeFilter);
     }
 
-    if (edgeCase.status && edgeCase.status !== "adopted") {
+    if (
+      edgeCase.nudgeStatusFilter &&
+      edgeCase.nudgeStatusFilter !== "adopted"
+    ) {
       await page
         .locator("#filter-status-dropdown")
-        .selectOption(edgeCase.status);
+        .selectOption(edgeCase.nudgeStatusFilter);
     }
 
     await selectIfSet(page, "country", edgeCase.country);

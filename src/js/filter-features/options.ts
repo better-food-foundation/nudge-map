@@ -1,10 +1,12 @@
 import { capitalize } from "lodash-es";
 
 import {
+  ALL_NUDGE_STATUS_FILTER,
   ALL_NUDGE_TYPE_FILTER,
   FilterState,
   PlaceFilterManager,
   NudgeTypeFilter,
+  NudgeStatusFilter,
 } from "../state/FilterState";
 import Observable from "../state/Observable";
 import {
@@ -44,9 +46,19 @@ export interface FilterOptions {
   >;
   getOptions(
     nudgeType: NudgeTypeFilter,
-    status: NudgeStatus,
+    status: NudgeStatusFilter,
   ): DataSetSpecificOptions;
-  enabled(nudgeType: NudgeTypeFilter, status: NudgeStatus): boolean;
+  enabled(nudgeType: NudgeTypeFilter, status: NudgeStatusFilter): boolean;
+}
+
+function mergeDataSetOptions(
+  ...datasets: DataSetSpecificOptions[]
+): DataSetSpecificOptions {
+  const keys = Object.keys(datasets[0]) as (keyof DataSetSpecificOptions)[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return Object.fromEntries(
+    keys.map((key) => [key, [...new Set(datasets.flatMap((d) => d[key]))]]),
+  ) as unknown as DataSetSpecificOptions;
 }
 
 export const FILTER_OPTIONS: FilterOptions = {
@@ -130,12 +142,22 @@ export const FILTER_OPTIONS: FilterOptions = {
 
   getOptions(
     nudgeType: NudgeTypeFilter,
-    status: NudgeStatus,
+    status: NudgeStatusFilter,
   ): DataSetSpecificOptions {
+    if (status === "any status") {
+      return mergeDataSetOptions(
+        ...ALL_NUDGE_STATUS.map((s) => this.datasets[nudgeType][s]),
+      );
+    }
     return this.datasets[nudgeType][status];
   },
 
-  enabled(nudgeType: NudgeTypeFilter, status: NudgeStatus): boolean {
+  enabled(nudgeType: NudgeTypeFilter, status: NudgeStatusFilter): boolean {
+    if (status === "any status") {
+      return ALL_NUDGE_STATUS.some(
+        (s) => this.datasets[nudgeType][s].placeType.length > 0,
+      );
+    }
     return this.datasets[nudgeType][status].placeType.length > 0;
   },
 } as const;
@@ -483,7 +505,7 @@ function initStatusDropdown(
   select.id = id;
   select.name = id;
 
-  ALL_NUDGE_STATUS.forEach((option) => {
+  ALL_NUDGE_STATUS_FILTER.forEach((option) => {
     const element = document.createElement("option");
     element.value = option;
     element.textContent = capitalize(option);
@@ -528,7 +550,8 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
     htmlName: "year",
     filterStateKey: "year",
     legend: ({ status }) => {
-      const mapping: Record<NudgeStatus, string> = {
+      const mapping: Record<NudgeStatus | "any status", string> = {
+        "any status": "Years",
         adopted: "Adoption years",
         pledged: "Pledge years",
       };
