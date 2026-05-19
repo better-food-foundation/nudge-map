@@ -236,12 +236,12 @@ export class PlaceFilterManager {
     if (filterState.nudgeTypeFilter === "any nudge") {
       let nudgeTypes: NudgeType[];
       if (filterState.status === "any status") {
-        // When "any status" is selected, include all nudge types that have at least one nudge
         nudgeTypes = [
-          ...new Set([
-            ...determineAllNudgeTypes(entry, "adopted"),
-            ...determineAllNudgeTypes(entry, "pledged"),
-          ]),
+          ...new Set(
+            ALL_NUDGE_STATUS.flatMap((status) =>
+              determineAllNudgeTypes(entry, status),
+            ),
+          ),
         ];
       } else {
         nudgeTypes = determineAllNudgeTypes(
