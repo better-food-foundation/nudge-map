@@ -16,7 +16,7 @@ import {
   CellComponent,
 } from "tabulator-tables";
 
-import { PlaceFilterManager, NudgeTypeFilter } from "./state/FilterState";
+import { PlaceFilterManager, NudgeTypeFilter, ALL_NUDGE_STATUS_FILTER } from "./state/FilterState";
 import { Date, NudgeStatus, ProcessedNudge } from "./model/types";
 import { ViewStateObservable } from "./layout/viewToggle";
 import { determineAllNudgeTypes } from "./model/data";
@@ -149,10 +149,10 @@ const ANY_NUDGE_COLUMNS: ColumnDefinition[] = [
 
 
 export function tableDownloadFileName(
-  policyType: NudgeTypeFilter,
+  nudgeType: NudgeTypeFilter,
   status: NudgeStatus,
 ): string {
-  const policy = {
+  const nudge = {
     "any nudge": "overview",
     "plant-based default": "defaults",
     "climate-friendly ratio": "ratios",
@@ -160,19 +160,19 @@ export function tableDownloadFileName(
     "tasty titles & descriptions": "titles-descriptions",
     "prime placement": "placement",
     "other": "other",
-  }[policyType];
-  return `nudges--${policy}--${status}.csv`;
+  }[nudgeType];
+  return `nudges--${nudge}--${status}.csv`;
 }
 
 function updateCounterDownload(
   table: Tabulator,
-  policyType: NudgeTypeFilter,
+  nudgeType: NudgeTypeFilter,
   status: NudgeStatus,
 ): void {
   const button = document.querySelector(".counter-table-download");
   if (!button) return;
   button.addEventListener("click", () =>
-    table.download("csv", tableDownloadFileName(policyType, status)),
+    table.download("csv", tableDownloadFileName(nudgeType, status)),
   );
 }
 
@@ -194,6 +194,7 @@ export default function initTable(
   
 const dataAnyAdopted: any[] = [];
 const dataAnyPledged: any[] = [];
+const dataAnyAll: any[] = [];
 const dataDefault: any[] = [];
 const dataRatio: any[] = [];
 const dataSub: any[] = [];
@@ -232,6 +233,19 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
       placement: pledged.includes("prime placement"),
       other: pledged.includes("other"),
   });
+  const allAdoptedAndPledged = [
+  ...determineAllNudgeTypes(entry, "adopted"),
+  ...determineAllNudgeTypes(entry, "pledged"),
+  ];
+  dataAnyAll.push({
+    ...common,
+    default: allAdoptedAndPledged.includes("plant-based default"),
+    ratio: allAdoptedAndPledged.includes("climate-friendly ratio"),
+    sub: allAdoptedAndPledged.includes("subtle substitution"),
+    titles: allAdoptedAndPledged.includes("tasty titles & descriptions"),
+    placement: allAdoptedAndPledged.includes("prime placement"),
+    other: allAdoptedAndPledged.includes("other"),
+  });
 
   const saveNudge = (
     collection: any[],
@@ -257,23 +271,27 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
 
   const filterStateToConfig: Record<
     NudgeTypeFilter,
-    Record<NudgeStatus, [ColumnDefinition[], any[]]>
+    Record<string, [ColumnDefinition[], any[]]>
   > = {
     "any nudge": {
       adopted: [ANY_NUDGE_COLUMNS, dataAnyAdopted],
       pledged: [ANY_NUDGE_COLUMNS, dataAnyPledged],
+      "any status": [ANY_NUDGE_COLUMNS, dataAnyAll],
     },
     "plant-based default": {
       adopted: [ANY_NUDGE_COLUMNS, dataDefault],
       pledged: [ANY_NUDGE_COLUMNS, dataDefault],
+      "any status": [ANY_NUDGE_COLUMNS, dataDefault],
     },
     "climate-friendly ratio": {
       adopted: [ANY_NUDGE_COLUMNS, dataRatio],
       pledged: [ANY_NUDGE_COLUMNS, dataRatio],
+      "any status": [ANY_NUDGE_COLUMNS, dataRatio],
     },
     "subtle substitution": {
       adopted: [ANY_NUDGE_COLUMNS, dataSub],
       pledged: [ANY_NUDGE_COLUMNS, dataSub],
+      "any status": [ANY_NUDGE_COLUMNS, dataSub],
     },
     "tasty titles & descriptions": {
       adopted: [ANY_NUDGE_COLUMNS, dataTitles],
@@ -282,10 +300,12 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
     "prime placement": {
       adopted: [ANY_NUDGE_COLUMNS, dataPlacement],
       pledged: [ANY_NUDGE_COLUMNS, dataPlacement],
+      "any status": [ANY_NUDGE_COLUMNS, dataPlacement],
     },
     "other": {
       adopted: [ANY_NUDGE_COLUMNS, dataOther],
       pledged: [ANY_NUDGE_COLUMNS, dataOther],
+      "any status": [ANY_NUDGE_COLUMNS, dataOther],
     },
   };
   
@@ -298,7 +318,7 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
     filterStateToConfig[currentNudgeTypeFilter][currentStatus];
   const table = new Tabulator("#table", {
     data,
-    columns: PLACE_COLUMNS,
+    columns: columns,
     layout: "fitColumns",
     movableColumns: true,
     // We use pagination to avoid performance issues.
@@ -329,7 +349,7 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
       }
       // With search, we ignore the normal filters like country. However,
       // we do still have to pay attention to what dataset is loaded
-      // (policy type x status).
+      // (nudge type x status).
       if (entry.type === "search") {
         // With 'any nudge', each nudge status has a different dataset already.
         // So, it's safe to include the entry from search.
@@ -338,25 +358,25 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
         }
         return row.status === currentStatus;
       }
-      return entry.matchingIndexes.includes(row.policyIdx);
+      return entry.matchingIndexes.includes(row.nudgeIdx);
     });
   });
 
   // Either re-filter the data or load an entirely new dataset.
   const updateData = (
-    newPolicyTypeFilter: NudgeTypeFilter,
+    newNudgeTypeFilter: NudgeTypeFilter,
     newStatus: NudgeStatus,
   ): void => {
     if (
-      newPolicyTypeFilter === currentNudgeTypeFilter &&
+      newNudgeTypeFilter === currentNudgeTypeFilter &&
       newStatus === currentStatus
     ) {
       table.refreshFilter();
     } else {
-      currentNudgeTypeFilter = newPolicyTypeFilter;
+      currentNudgeTypeFilter = newNudgeTypeFilter;
       currentStatus = newStatus;
       const [columns2, data2] =
-        filterStateToConfig[newPolicyTypeFilter][newStatus];
+        filterStateToConfig[newNudgeTypeFilter][newStatus];
       table.setColumns(columns2);
       table.setData(data2);
     }
