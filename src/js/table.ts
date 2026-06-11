@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 import {
   Tabulator,
   FilterModule,
@@ -16,11 +13,23 @@ import {
   RowComponent,
   SortDirection,
   ColumnComponent,
+  CellComponent,
 } from "tabulator-tables";
 
-import { PlaceFilterManager } from "./state/FilterState";
-import { Date } from "./model/types";
+import { PlaceFilterManager, NudgeTypeFilter } from "./state/FilterState";
+import { Date, NudgeStatus } from "./model/types";
 import { ViewStateObservable } from "./layout/viewToggle";
+import { determineAllNudgeTypes } from "./model/data";
+
+function formatBoolean(cell: CellComponent): string {
+  const v = cell.getValue() as boolean;
+  return v ? "✓" : "";
+}
+
+function formatDate(cell: CellComponent): string {
+  const v = cell.getValue() as Date | null;
+  return v ? v.format() : "";
+}
 
 export function compareDates(
   a: Date | undefined,
@@ -41,6 +50,15 @@ export function compareDates(
   return a.parsed.valueOf() - b.parsed.valueOf();
 }
 
+function compareStringArrays(a: string[], b: string[]): number {
+  return a.join(",").localeCompare(b.join(","));
+}
+
+function formatStringArrays(cell: CellComponent): string {
+  const v = cell.getValue() as string[] | null;
+  return v ? v.join("; ") : "";
+}
+
 const PLACE_COLUMNS: ColumnDefinition[] = [
   {
     title: "Place",
@@ -56,26 +74,93 @@ const PLACE_COLUMNS: ColumnDefinition[] = [
   },
   { title: "State", field: "state", width: 120 },
   { title: "Country", field: "country", width: 120 },
+  {
+    title: "Consumer Base",
+    field: "consumer_base",
+    sorter: "number",
+    sorterParams: {
+      // @ts-expect-error type hint is wrong
+      thousandSeparator: ",",
+    },
+    width: 90,
+  },
 ];
 
+const DATE_COLUMN: ColumnDefinition = {
+  title: "Date",
+  field: "date",
+  width: 110,
+  formatter: formatDate,
+  sorter: compareDates,
+};
+
+const ANY_NUDGE_COLUMNS: ColumnDefinition[] = [
+  ...PLACE_COLUMNS,
+  {
+    title: "Plant-based default",
+    field: "default",
+    width: 120,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Climate-friendly ratio",
+    field: "ratio",
+    width: 120,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Subtle substitution",
+    field: "sub",
+    width: 120,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Tasty titles & descriptions",
+    field: "titles",
+    width: 120,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Prime placement",
+    field: "placement",
+    width: 120,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Other",
+    field: "other",
+    width: 120,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+];
+
+
 export function tableDownloadFileName(
-  policyType: PolicyTypeFilter,
-  status: ReformStatus,
+  policyType: NudgeTypeFilter,
+  status: NudgeStatus,
 ): string {
   const policy = {
-    "any parking reform": "overview",
-    "add parking maximums": "maximums",
-    "remove parking minimums": "remove-minimums",
-    "reduce parking minimums": "reduce-minimums",
-    "parking benefit district": "benefit-district",
+    "any nudge": "overview",
+    "plant-based default": "defaults",
+    "climate-friendly ratio": "ratios",
+    "subtle substitution": "substitutions",
+    "tasty titles & descriptions": "titles-descriptions",
+    "prime placement": "placement",
+    "other": "other",
   }[policyType];
-  return `parking-reforms--${policy}--${status}.csv`;
+  return `nudges--${policy}--${status}.csv`;
 }
 
 function updateCounterDownload(
   table: Tabulator,
-  policyType: PolicyTypeFilter,
-  status: ReformStatus,
+  policyType: NudgeTypeFilter,
+  status: NudgeStatus,
 ): void {
   const button = document.querySelector(".counter-table-download");
   if (!button) return;
@@ -99,17 +184,90 @@ export default function initTable(
     ExportModule,
     DownloadModule,
   ]);
+  
+  const dataAnyAdopted: any[] = [];
+  const dataAnyPledged: any[] = [];
+  const dataDefault: any[] = [];
+  const dataRatio: any[] = [];
+  const dataSub: any[] = [];
+  const dataTitles: any[] = [];
+  const dataPlacement: any[] = [];
+  const dataOther: any[] = [];
+  
+Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
+  const common = {
+    placeId,
+    place: entry.place.name,
+    state: entry.place.state,
+    country: entry.place.country,
+    placeType: entry.place.type,
+    consumer_base: entry.place.consumer_base.toLocaleString("en-us"),
+    url: entry.place.url,
+  };
+  
+  const adopted = determineAllNudgeTypes(entry, "adopted");
+  dataAnyAdopted.push({
+      ...common,
+      default: adopted.includes("plant-based default"),
+      ratio: adopted.includes("climate-friendly ratio"),
+      sub: adopted.includes("subtle substitution"),
+      titles: adopted.includes("tasty titles & descriptions"),
+      placement: adopted.includes("prime placement"),
+      other: adopted.includes("other"),
+    });
+  const pledged = determineAllNudgeTypes(entry, "pledged");
+  dataAnyPledged.push({
+      ...common,
+      default: pledged.includes("plant-based default"),
+      ratio: pledged.includes("climate-friendly ratio"),
+      sub: pledged.includes("subtle substitution"),
+      titles: pledged.includes("tasty titles & descriptions"),
+      placement: pledged.includes("prime placement"),
+      other: pledged.includes("other"),
+  });
+});
 
-  const data = Object.entries(filterManager.entries).map(
-    ([placeId, entry]) => ({
-      placeId,
-      place: entry.place.name,
-      state: entry.place.state,
-      country: entry.place.country,
-      url: entry.place.url,
-    }),
-  );
+  const filterStateToConfig: Record<
+    NudgeTypeFilter,
+    Record<NudgeStatus, [ColumnDefinition[], any[]]>
+  > = {
+    "any nudge": {
+      adopted: [ANY_NUDGE_COLUMNS, dataAnyAdopted],
+      pledged: [ANY_NUDGE_COLUMNS, dataAnyPledged],
+    },
+    "plant-based default": {
+      adopted: [ANY_NUDGE_COLUMNS, dataDefault],
+      pledged: [ANY_NUDGE_COLUMNS, dataDefault],
+    },
+    "climate-friendly ratio": {
+      adopted: [ANY_NUDGE_COLUMNS, dataRatio],
+      pledged: [ANY_NUDGE_COLUMNS, dataRatio],
+    },
+    "subtle substitution": {
+      adopted: [ANY_NUDGE_COLUMNS, dataSub],
+      pledged: [ANY_NUDGE_COLUMNS, dataSub],
+    },
+    "tasty titles & descriptions": {
+      adopted: [ANY_NUDGE_COLUMNS, dataTitles],
+      pledged: [ANY_NUDGE_COLUMNS, dataTitles],
+    },
+    "prime placement": {
+      adopted: [ANY_NUDGE_COLUMNS, dataPlacement],
+      pledged: [ANY_NUDGE_COLUMNS, dataPlacement],
+    },
+    "other": {
+      adopted: [ANY_NUDGE_COLUMNS, dataOther],
+      pledged: [ANY_NUDGE_COLUMNS, dataOther],
+    },
+  };
+  
+  // We track what the filter is currently set to. When the filter changes,
+  // we need to load the new columns and data.
+  let currentNudgeTypeFilter = filterManager.getState().nudgeTypeFilter;
+  let currentStatus = filterManager.getState().status;
 
+  const [columns, data] =
+    filterStateToConfig[currentNudgeTypeFilter][currentStatus];
   const table = new Tabulator("#table", {
     data,
     columns: PLACE_COLUMNS,
@@ -130,7 +288,7 @@ export default function initTable(
   // We use Tabulator's filter to add/remove records based on FilterState,
   // as it's much faster than resetting the data.
   //
-  // Note that the same filter works for every PolicyTypeFilter, meaning we
+  // Note that the same filter works for every NudgeTypeFilter, meaning we
   // don't need to re-set this up based on which is chosen.
   let tableBuilt = false;
   table.on("tableBuilt", () => {
@@ -141,13 +299,13 @@ export default function initTable(
       if (entry.type === "any") {
         return true;
       }
-      // With search, we ignore the normal filters like jurisdiction. However,
+      // With search, we ignore the normal filters like country. However,
       // we do still have to pay attention to what dataset is loaded
       // (policy type x status).
       if (entry.type === "search") {
-        // With 'any parking reform', each reform status has a different dataset already.
+        // With 'any nudge', each nudge status has a different dataset already.
         // So, it's safe to include the entry from search.
-        if (currentPolicyTypeFilter === "any parking reform") {
+        if (currentNudgeTypeFilter === "any nudge") {
           return true;
         }
         return row.status === currentStatus;
@@ -158,16 +316,16 @@ export default function initTable(
 
   // Either re-filter the data or load an entirely new dataset.
   const updateData = (
-    newPolicyTypeFilter: PolicyTypeFilter,
-    newStatus: ReformStatus,
+    newPolicyTypeFilter: NudgeTypeFilter,
+    newStatus: NudgeStatus,
   ): void => {
     if (
-      newPolicyTypeFilter === currentPolicyTypeFilter &&
+      newPolicyTypeFilter === currentNudgeTypeFilter &&
       newStatus === currentStatus
     ) {
       table.refreshFilter();
     } else {
-      currentPolicyTypeFilter = newPolicyTypeFilter;
+      currentNudgeTypeFilter = newPolicyTypeFilter;
       currentStatus = newStatus;
       const [columns2, data2] =
         filterStateToConfig[newPolicyTypeFilter][newStatus];
@@ -182,15 +340,15 @@ export default function initTable(
 
   filterManager.subscribe(
     "update table's records",
-    ({ policyTypeFilter, status }) => {
-      updateCounterDownload(table, policyTypeFilter, status);
+    ({ nudgeTypeFilter, status }) => {
+      updateCounterDownload(table, nudgeTypeFilter, status);
       if (!tableBuilt) return;
       if (viewToggle.getValue() === "map") {
         dataRefreshQueued = true;
         return;
       }
 
-      updateData(policyTypeFilter, status);
+      updateData(nudgeTypeFilter, status);
     },
   );
 
@@ -198,7 +356,7 @@ export default function initTable(
     if (view === "map" || !dataRefreshQueued) return;
     dataRefreshQueued = false;
     const state = filterManager.getState();
-    updateData(state.policyTypeFilter, state.status);
+    updateData(state.nudgeTypeFilter, state.status);
   }, "apply queued table data refresh");
 
   return table;
