@@ -6,7 +6,7 @@ export default function maybeHideMapOverlays(queryString: string) {
 
   // We cannot use `.hidden` because viewToggle already uses hidden to control if the elements are shown,
   // and that gets re-set every time viewToggle is called.
-  document.querySelector<HTMLElement>(".prn-logo-map")!.style.display = "none";
+  document.querySelector<HTMLElement>(".bff-logo-map")!.style.display = "none";
   document.querySelector<HTMLElement>("#map-counter")!.style.display = "none";
 
   document.querySelector<HTMLElement>(".leaflet-control-zoom")!.hidden = true;
