@@ -94,15 +94,24 @@ const DATE_COLUMN: ColumnDefinition = {
   sorter: compareDates,
 };
 
-const ANY_NUDGE_COLUMNS: ColumnDefinition[] = [
+const SINGLE_NUDGE_COLUMNS: ColumnDefinition[] = [
   ...PLACE_COLUMNS,
   DATE_COLUMN,
+  {
+    title: "Status",
+    field: "status",
+    width: 120,
+  },
   {
     title: "Org credit",
     field: "org_credit",
     formatter: formatStringArrays,
     sorter: compareStringArrays,
   },
+]
+
+const ANY_NUDGE_COLUMNS: ColumnDefinition[] = [
+  ...PLACE_COLUMNS,
   {
     title: "Plant-based default",
     field: "default",
@@ -279,33 +288,34 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
       "any status": [ANY_NUDGE_COLUMNS, dataAnyAll],
     },
     "plant-based default": {
-      adopted: [ANY_NUDGE_COLUMNS, dataDefault],
-      pledged: [ANY_NUDGE_COLUMNS, dataDefault],
-      "any status": [ANY_NUDGE_COLUMNS, dataDefault],
+      adopted: [SINGLE_NUDGE_COLUMNS, dataDefault],
+      pledged: [SINGLE_NUDGE_COLUMNS, dataDefault],
+      "any status": [SINGLE_NUDGE_COLUMNS, dataDefault],
     },
     "climate-friendly ratio": {
-      adopted: [ANY_NUDGE_COLUMNS, dataRatio],
-      pledged: [ANY_NUDGE_COLUMNS, dataRatio],
-      "any status": [ANY_NUDGE_COLUMNS, dataRatio],
+      adopted: [SINGLE_NUDGE_COLUMNS, dataRatio],
+      pledged: [SINGLE_NUDGE_COLUMNS, dataRatio],
+      "any status": [SINGLE_NUDGE_COLUMNS, dataRatio],
     },
     "subtle substitution": {
-      adopted: [ANY_NUDGE_COLUMNS, dataSub],
-      pledged: [ANY_NUDGE_COLUMNS, dataSub],
-      "any status": [ANY_NUDGE_COLUMNS, dataSub],
+      adopted: [SINGLE_NUDGE_COLUMNS, dataSub],
+      pledged: [SINGLE_NUDGE_COLUMNS, dataSub],
+      "any status": [SINGLE_NUDGE_COLUMNS, dataSub],
     },
     "tasty titles & descriptions": {
-      adopted: [ANY_NUDGE_COLUMNS, dataTitles],
-      pledged: [ANY_NUDGE_COLUMNS, dataTitles],
+      adopted: [SINGLE_NUDGE_COLUMNS, dataTitles],
+      pledged: [SINGLE_NUDGE_COLUMNS, dataTitles],
+      "any status": [SINGLE_NUDGE_COLUMNS, dataTitles],
     },
     "prime placement": {
-      adopted: [ANY_NUDGE_COLUMNS, dataPlacement],
-      pledged: [ANY_NUDGE_COLUMNS, dataPlacement],
-      "any status": [ANY_NUDGE_COLUMNS, dataPlacement],
+      adopted: [SINGLE_NUDGE_COLUMNS, dataPlacement],
+      pledged: [SINGLE_NUDGE_COLUMNS, dataPlacement],
+      "any status": [SINGLE_NUDGE_COLUMNS, dataPlacement],
     },
     "other": {
-      adopted: [ANY_NUDGE_COLUMNS, dataOther],
-      pledged: [ANY_NUDGE_COLUMNS, dataOther],
-      "any status": [ANY_NUDGE_COLUMNS, dataOther],
+      adopted: [SINGLE_NUDGE_COLUMNS, dataOther],
+      pledged: [SINGLE_NUDGE_COLUMNS, dataOther],
+      "any status": [SINGLE_NUDGE_COLUMNS, dataOther],
     },
   };
   
