@@ -17,7 +17,7 @@ import {
 } from "tabulator-tables";
 
 import { PlaceFilterManager, NudgeTypeFilter } from "./state/FilterState";
-import { Date, NudgeStatus } from "./model/types";
+import { Date, NudgeStatus, ProcessedNudge } from "./model/types";
 import { ViewStateObservable } from "./layout/viewToggle";
 import { determineAllNudgeTypes } from "./model/data";
 
@@ -96,6 +96,13 @@ const DATE_COLUMN: ColumnDefinition = {
 
 const ANY_NUDGE_COLUMNS: ColumnDefinition[] = [
   ...PLACE_COLUMNS,
+  DATE_COLUMN,
+  {
+    title: "Org credit",
+    field: "org_credit",
+    formatter: formatStringArrays,
+    sorter: compareStringArrays,
+  },
   {
     title: "Plant-based default",
     field: "default",
@@ -185,14 +192,14 @@ export default function initTable(
     DownloadModule,
   ]);
   
-  const dataAnyAdopted: any[] = [];
-  const dataAnyPledged: any[] = [];
-  const dataDefault: any[] = [];
-  const dataRatio: any[] = [];
-  const dataSub: any[] = [];
-  const dataTitles: any[] = [];
-  const dataPlacement: any[] = [];
-  const dataOther: any[] = [];
+const dataAnyAdopted: any[] = [];
+const dataAnyPledged: any[] = [];
+const dataDefault: any[] = [];
+const dataRatio: any[] = [];
+const dataSub: any[] = [];
+const dataTitles: any[] = [];
+const dataPlacement: any[] = [];
+const dataOther: any[] = [];
   
 Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
   const common = {
@@ -225,6 +232,27 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
       placement: pledged.includes("prime placement"),
       other: pledged.includes("other"),
   });
+
+  const saveNudge = (
+    collection: any[],
+    nudges: ProcessedNudge[] | undefined,
+  ): void =>
+    nudges?.forEach((nudge, i) =>
+      collection.push({
+        ...common,
+        nudgeIdx: i,
+        date: nudge.date,
+        status: nudge.status,
+        org_credit: nudge.org_credit,
+      }),
+    );
+
+  saveNudge(dataDefault, entry.default);
+  saveNudge(dataRatio, entry.ratio);
+  saveNudge(dataSub, entry.sub);
+  saveNudge(dataTitles, entry.titles);
+  saveNudge(dataPlacement, entry.placement);
+  saveNudge(dataOther, entry.other);
 });
 
   const filterStateToConfig: Record<
