@@ -63,7 +63,7 @@ const PLACE_COLUMNS: ColumnDefinition[] = [
   {
     title: "Place",
     field: "place",
-    width: 180,
+    width: 200,
     frozen: true,
     formatter: "link",
     formatterParams: {
@@ -71,6 +71,11 @@ const PLACE_COLUMNS: ColumnDefinition[] = [
       labelField: "place",
       target: "_blank",
     },
+  },
+  {
+    title: "Type",
+    field: "placeType",
+    width: 150,
   },
   { title: "State", field: "state", width: 120 },
   { title: "Country", field: "country", width: 120 },
