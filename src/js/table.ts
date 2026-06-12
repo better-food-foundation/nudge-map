@@ -16,8 +16,8 @@ import {
   CellComponent,
 } from "tabulator-tables";
 
-import { PlaceFilterManager, NudgeTypeFilter, ALL_NUDGE_STATUS_FILTER } from "./state/FilterState";
-import { Date, NudgeStatus, ProcessedNudge } from "./model/types";
+import { PlaceFilterManager, NudgeTypeFilter, NudgeStatusFilter } from "./state/FilterState";
+import { Date, ProcessedNudge } from "./model/types";
 import { ViewStateObservable } from "./layout/viewToggle";
 import { determineAllNudgeTypes } from "./model/data";
 
@@ -105,6 +105,7 @@ const SINGLE_NUDGE_COLUMNS: ColumnDefinition[] = [
   {
     title: "Org credit",
     field: "org_credit",
+    width: 200,
     formatter: formatStringArrays,
     sorter: compareStringArrays,
   },
@@ -159,7 +160,7 @@ const ANY_NUDGE_COLUMNS: ColumnDefinition[] = [
 
 export function tableDownloadFileName(
   nudgeType: NudgeTypeFilter,
-  status: NudgeStatus,
+  status: NudgeStatusFilter,
 ): string {
   const nudge = {
     "any nudge": "overview",
@@ -176,7 +177,7 @@ export function tableDownloadFileName(
 function updateCounterDownload(
   table: Tabulator,
   nudgeType: NudgeTypeFilter,
-  status: NudgeStatus,
+  status: NudgeStatusFilter,
 ): void {
   const button = document.querySelector(".counter-table-download");
   if (!button) return;
@@ -375,7 +376,7 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
   // Either re-filter the data or load an entirely new dataset.
   const updateData = (
     newNudgeTypeFilter: NudgeTypeFilter,
-    newStatus: NudgeStatus,
+    newStatus: NudgeStatusFilter,
   ): void => {
     if (
       newNudgeTypeFilter === currentNudgeTypeFilter &&
