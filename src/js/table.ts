@@ -16,7 +16,11 @@ import {
   CellComponent,
 } from "tabulator-tables";
 
-import { PlaceFilterManager, NudgeTypeFilter, NudgeStatusFilter } from "./state/FilterState";
+import {
+  PlaceFilterManager,
+  NudgeTypeFilter,
+  NudgeStatusFilter,
+} from "./state/FilterState";
 import { Date, ProcessedNudge } from "./model/types";
 import { ViewStateObservable } from "./layout/viewToggle";
 import { determineAllNudgeTypes } from "./model/data";
@@ -114,7 +118,7 @@ const SINGLE_NUDGE_COLUMNS: ColumnDefinition[] = [
     formatter: formatStringArrays,
     sorter: compareStringArrays,
   },
-]
+];
 
 const ANY_NUDGE_COLUMNS: ColumnDefinition[] = [
   ...PLACE_COLUMNS,
@@ -162,7 +166,6 @@ const ANY_NUDGE_COLUMNS: ColumnDefinition[] = [
   },
 ];
 
-
 export function tableDownloadFileName(
   nudgeType: NudgeTypeFilter,
   status: NudgeStatusFilter,
@@ -174,7 +177,7 @@ export function tableDownloadFileName(
     "subtle substitution": "substitutions",
     "tasty titles & descriptions": "titles-descriptions",
     "prime placement": "placement",
-    "other": "other",
+    other: "other",
   }[nudgeType];
   return `nudges--${nudge}--${status}.csv`;
 }
@@ -206,30 +209,30 @@ export default function initTable(
     ExportModule,
     DownloadModule,
   ]);
-  
-const dataAnyAdopted: any[] = [];
-const dataAnyPledged: any[] = [];
-const dataAnyAll: any[] = [];
-const dataDefault: any[] = [];
-const dataRatio: any[] = [];
-const dataSub: any[] = [];
-const dataTitles: any[] = [];
-const dataPlacement: any[] = [];
-const dataOther: any[] = [];
-  
-Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
-  const common = {
-    placeId,
-    place: entry.place.name,
-    state: entry.place.state,
-    country: entry.place.country,
-    placeType: entry.place.type,
-    consumer_base: entry.place.consumer_base.toLocaleString("en-us"),
-    url: entry.place.url,
-  };
-  
-  const adopted = determineAllNudgeTypes(entry, "adopted");
-  dataAnyAdopted.push({
+
+  const dataAnyAdopted: any[] = [];
+  const dataAnyPledged: any[] = [];
+  const dataAnyAll: any[] = [];
+  const dataDefault: any[] = [];
+  const dataRatio: any[] = [];
+  const dataSub: any[] = [];
+  const dataTitles: any[] = [];
+  const dataPlacement: any[] = [];
+  const dataOther: any[] = [];
+
+  Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
+    const common = {
+      placeId,
+      place: entry.place.name,
+      state: entry.place.state,
+      country: entry.place.country,
+      placeType: entry.place.type,
+      consumer_base: entry.place.consumer_base.toLocaleString("en-us"),
+      url: entry.place.url,
+    };
+
+    const adopted = determineAllNudgeTypes(entry, "adopted");
+    dataAnyAdopted.push({
       ...common,
       default: adopted.includes("plant-based default"),
       ratio: adopted.includes("climate-friendly ratio"),
@@ -238,8 +241,8 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
       placement: adopted.includes("prime placement"),
       other: adopted.includes("other"),
     });
-  const pledged = determineAllNudgeTypes(entry, "pledged");
-  dataAnyPledged.push({
+    const pledged = determineAllNudgeTypes(entry, "pledged");
+    dataAnyPledged.push({
       ...common,
       default: pledged.includes("plant-based default"),
       ratio: pledged.includes("climate-friendly ratio"),
@@ -247,42 +250,42 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
       titles: pledged.includes("tasty titles & descriptions"),
       placement: pledged.includes("prime placement"),
       other: pledged.includes("other"),
-  });
-  const allAdoptedAndPledged = [
-  ...determineAllNudgeTypes(entry, "adopted"),
-  ...determineAllNudgeTypes(entry, "pledged"),
-  ];
-  dataAnyAll.push({
-    ...common,
-    default: allAdoptedAndPledged.includes("plant-based default"),
-    ratio: allAdoptedAndPledged.includes("climate-friendly ratio"),
-    sub: allAdoptedAndPledged.includes("subtle substitution"),
-    titles: allAdoptedAndPledged.includes("tasty titles & descriptions"),
-    placement: allAdoptedAndPledged.includes("prime placement"),
-    other: allAdoptedAndPledged.includes("other"),
-  });
+    });
+    const allAdoptedAndPledged = [
+      ...determineAllNudgeTypes(entry, "adopted"),
+      ...determineAllNudgeTypes(entry, "pledged"),
+    ];
+    dataAnyAll.push({
+      ...common,
+      default: allAdoptedAndPledged.includes("plant-based default"),
+      ratio: allAdoptedAndPledged.includes("climate-friendly ratio"),
+      sub: allAdoptedAndPledged.includes("subtle substitution"),
+      titles: allAdoptedAndPledged.includes("tasty titles & descriptions"),
+      placement: allAdoptedAndPledged.includes("prime placement"),
+      other: allAdoptedAndPledged.includes("other"),
+    });
 
-  const saveNudge = (
-    collection: any[],
-    nudges: ProcessedNudge[] | undefined,
-  ): void =>
-    nudges?.forEach((nudge, i) =>
-      collection.push({
-        ...common,
-        nudgeIdx: i,
-        date: nudge.date,
-        status: nudge.status,
-        org_credit: nudge.org_credit,
-      }),
-    );
+    const saveNudge = (
+      collection: any[],
+      nudges: ProcessedNudge[] | undefined,
+    ): void =>
+      nudges?.forEach((nudge, i) =>
+        collection.push({
+          ...common,
+          nudgeIdx: i,
+          date: nudge.date,
+          status: nudge.status,
+          org_credit: nudge.org_credit,
+        }),
+      );
 
-  saveNudge(dataDefault, entry.default);
-  saveNudge(dataRatio, entry.ratio);
-  saveNudge(dataSub, entry.sub);
-  saveNudge(dataTitles, entry.titles);
-  saveNudge(dataPlacement, entry.placement);
-  saveNudge(dataOther, entry.other);
-});
+    saveNudge(dataDefault, entry.default);
+    saveNudge(dataRatio, entry.ratio);
+    saveNudge(dataSub, entry.sub);
+    saveNudge(dataTitles, entry.titles);
+    saveNudge(dataPlacement, entry.placement);
+    saveNudge(dataOther, entry.other);
+  });
 
   const filterStateToConfig: Record<
     NudgeTypeFilter,
@@ -318,13 +321,13 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
       pledged: [SINGLE_NUDGE_COLUMNS, dataPlacement],
       "any status": [SINGLE_NUDGE_COLUMNS, dataPlacement],
     },
-    "other": {
+    other: {
       adopted: [SINGLE_NUDGE_COLUMNS, dataOther],
       pledged: [SINGLE_NUDGE_COLUMNS, dataOther],
       "any status": [SINGLE_NUDGE_COLUMNS, dataOther],
     },
   };
-  
+
   // We track what the filter is currently set to. When the filter changes,
   // we need to load the new columns and data.
   let currentNudgeTypeFilter = filterManager.getState().nudgeTypeFilter;
@@ -334,7 +337,7 @@ Object.entries(filterManager.entries).forEach(([placeId, entry]) => {
     filterStateToConfig[currentNudgeTypeFilter][currentStatus];
   const table = new Tabulator("#table", {
     data,
-    columns: columns,
+    columns,
     layout: "fitColumns",
     movableColumns: true,
     // We use pagination to avoid performance issues.

@@ -20,11 +20,11 @@ test("tableDownloadFileName()", () => {
   expect(tableDownloadFileName("subtle substitution", "adopted")).toEqual(
     "nudges--substitutions--adopted.csv",
   );
-  expect(tableDownloadFileName("tasty titles & descriptions", "adopted")).toEqual(
-    "nudges--titles-descriptions--adopted.csv",
-  );
+  expect(
+    tableDownloadFileName("tasty titles & descriptions", "adopted"),
+  ).toEqual("nudges--titles-descriptions--adopted.csv");
   expect(tableDownloadFileName("prime placement", "adopted")).toEqual(
-    "nudges--prime-placement--adopted.csv",
+    "nudges--placement--adopted.csv",
   );
   expect(tableDownloadFileName("other", "adopted")).toEqual(
     "nudges--other--adopted.csv",
