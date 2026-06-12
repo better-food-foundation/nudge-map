@@ -15,14 +15,14 @@ function updateUI(table: Tabulator, state: ViewState): void {
   const tableView = document.querySelector<HTMLElement>("#table-view");
   const mapView = document.querySelector<HTMLElement>("#map");
   const mapCounter = document.querySelector<HTMLElement>("#map-counter");
-  const prnLogo = document.querySelector<HTMLElement>(".prn-logo-map");
+  const bffLogo = document.querySelector<HTMLElement>(".bff-logo-map");
   if (
     !mapIcon ||
     !tableIcon ||
     !tableView ||
     !mapView ||
     !mapCounter ||
-    !prnLogo
+    !bffLogo
   )
     return;
 
@@ -32,14 +32,14 @@ function updateUI(table: Tabulator, state: ViewState): void {
     tableView.hidden = true;
     mapView.hidden = false;
     mapCounter.hidden = false;
-    prnLogo.hidden = false;
+    bffLogo.hidden = false;
   } else {
     tableIcon.style.display = "none";
     mapIcon.style.display = "inline-flex";
     tableView.hidden = false;
     mapView.hidden = true;
     mapCounter.hidden = true;
-    prnLogo.hidden = true;
+    bffLogo.hidden = true;
     table.redraw();
   }
 }

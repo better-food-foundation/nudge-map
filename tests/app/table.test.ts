@@ -5,26 +5,29 @@ import { compareDates, tableDownloadFileName } from "../../src/js/table";
 import { Date } from "../../src/js/model/types";
 
 test("tableDownloadFileName()", () => {
-  expect(tableDownloadFileName("any parking reform", "adopted")).toEqual(
-    "parking-reforms--overview--adopted.csv",
+  expect(tableDownloadFileName("any nudge", "adopted")).toEqual(
+    "nudges--overview--adopted.csv",
   );
-  expect(tableDownloadFileName("any parking reform", "proposed")).toEqual(
-    "parking-reforms--overview--proposed.csv",
+  expect(tableDownloadFileName("any nudge", "pledged")).toEqual(
+    "nudges--overview--pledged.csv",
   );
-  expect(tableDownloadFileName("any parking reform", "repealed")).toEqual(
-    "parking-reforms--overview--repealed.csv",
+  expect(tableDownloadFileName("plant-based default", "adopted")).toEqual(
+    "nudges--defaults--adopted.csv",
   );
-  expect(tableDownloadFileName("add parking maximums", "adopted")).toEqual(
-    "parking-reforms--maximums--adopted.csv",
+  expect(tableDownloadFileName("climate-friendly ratio", "adopted")).toEqual(
+    "nudges--ratios--adopted.csv",
   );
-  expect(tableDownloadFileName("reduce parking minimums", "adopted")).toEqual(
-    "parking-reforms--reduce-minimums--adopted.csv",
+  expect(tableDownloadFileName("subtle substitution", "adopted")).toEqual(
+    "nudges--substitutions--adopted.csv",
   );
-  expect(tableDownloadFileName("remove parking minimums", "adopted")).toEqual(
-    "parking-reforms--remove-minimums--adopted.csv",
+  expect(
+    tableDownloadFileName("tasty titles & descriptions", "adopted"),
+  ).toEqual("nudges--titles-descriptions--adopted.csv");
+  expect(tableDownloadFileName("prime placement", "adopted")).toEqual(
+    "nudges--placement--adopted.csv",
   );
-  expect(tableDownloadFileName("parking benefit district", "adopted")).toEqual(
-    "parking-reforms--benefit-district--adopted.csv",
+  expect(tableDownloadFileName("other", "adopted")).toEqual(
+    "nudges--other--adopted.csv",
   );
 });
 
