@@ -1,6 +1,6 @@
 import { isEqual } from "lodash-es";
 
-import { FilterState, PlaceFilterManager, NudgeTypeFilter, NudgeStatusFilter } from "../state/FilterState";
+import { FilterState, PlaceFilterManager, NudgeTypeFilter, NudgeStatusFilter, ALL_NUDGE_STATUS_FILTER } from "../state/FilterState";
 import { PlaceId, ProcessedCoreEntry, PlaceType, NudgeType, NudgeStatus } from "../model/types";
 import { COUNTRIES_PREFIXED_BY_THE } from "../model/data";
 import { encodedPlaceToUrl } from "../model/placeId";
@@ -25,6 +25,9 @@ export function determinePlaceDescription(
 export const SEARCH_RESET_HTML = `<button class="counter-search-reset" role="button" aria-label="reset search">reset search</button>`;
 export const TABLE_DOWNLOAD_HTML = `<button class="counter-table-download" role="button" aria-label="download table as CSV">download as CSV</button>`;
 
+const getStatusLabel = (status: NudgeStatusFilter): string =>
+  status === "any status" ? "adopted or pledged" : status;
+
 export function determineSearch(
   view: ViewState,
   placeId: string,
@@ -40,23 +43,22 @@ export function determineSearch(
     return `Showing ${placeLink} — ${SEARCH_RESET_HTML}`;
   }
 
-  const statusLabel = status === "any status" ? "adopeted and pledged" : status;
   const suffix = `in ${placeLink} — ${SEARCH_RESET_HTML}`;
   switch (nudgeType) {
     case "any nudge":
-      return `Showing an overview of ${statusLabel} nudges ${suffix}`;
+      return `Showing an overview of ${getStatusLabel(status)} nudges ${suffix}`;
     case "plant-based default":
-      return `Showing ${statusLabel} plant-based default nudges ${suffix}`;
+      return `Showing ${getStatusLabel(status)} plant-based default nudges ${suffix}`;
     case "climate-friendly ratio":
-      return `Showing ${statusLabel} climate-friendly ratio nudges ${suffix}`;
+      return `Showing ${getStatusLabel(status)} climate-friendly ratio nudges ${suffix}`;
     case "subtle substitution":
-      return `Showing ${statusLabel} subtle substitution nudges ${suffix}`;
+      return `Showing ${getStatusLabel(status)} subtle substitution nudges ${suffix}`;
     case "tasty titles & descriptions":
-      return `Showing ${statusLabel} tasty titles & descriptions nudges ${suffix}`;
+      return `Showing ${getStatusLabel(status)} tasty titles & descriptions nudges ${suffix}`;
     case "prime placement":
-      return `Showing ${statusLabel} prime placement nudges ${suffix}`;
+      return `Showing ${getStatusLabel(status)} prime placement nudges ${suffix}`;
     case "other":
-      return `Showing ${statusLabel} other nudges ${suffix}`;
+      return `Showing ${getStatusLabel(status)} other nudges ${suffix}`;
   }
 }
 
@@ -68,7 +70,7 @@ export function determineAnyNudge(
   state: NudgeStatusFilter,
 ): string {
   if (view === "table") {
-    return `Showing an overview of ${state} nudges in ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
+    return `Showing an overview of ${getStatusLabel(state)} nudges in ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
   }
 
   interface Description {
@@ -110,7 +112,7 @@ export function determineAnyNudge(
     throw new Error(`Expected state.includedNudgeChanges to be set`);
   }
   if (nudgeDescriptions.length === 1) {
-    return `${prefix} ${state} ${nudgeDescriptions[0].singleNudge}`;
+    return `${prefix} ${getStatusLabel(state)} ${nudgeDescriptions[0].singleNudge}`;
   }
 
   // Else, multiple nudges. Format as a list.
@@ -118,7 +120,7 @@ export function determineAnyNudge(
     .map((description) => `<li>${description.multipleNudges}</li>`)
     .sort()
     .join("");
-  return `${prefix} 1+ ${state} parking reforms:<ul>${listItems}</ul>`;
+  return `${prefix} 1+ ${getStatusLabel(state)} nudges:<ul>${listItems}</ul>`;
 }
 
 export function determineDefault(
@@ -127,8 +129,8 @@ export function determineDefault(
   status: NudgeStatusFilter,
 ): string {
   return view === "map"
-    ? `Showing ${placeDescription} with ${status} plant-based defaults`
-    : `Showing details about ${status} plant-based defaults for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
+    ? `Showing ${placeDescription} with ${getStatusLabel(status)} plant-based defaults`
+    : `Showing details about ${getStatusLabel(status)} plant-based defaults for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
 }
 
 export function determineRatio(
@@ -137,8 +139,8 @@ export function determineRatio(
   status: NudgeStatusFilter,
 ): string {
   return view === "map"
-    ? `Showing ${placeDescription} with ${status} climate-friendly ratios`
-    : `Showing details about ${status} climate-friendly ratios for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
+    ? `Showing ${placeDescription} with ${getStatusLabel(status)} climate-friendly ratios`
+    : `Showing details about ${getStatusLabel(status)} climate-friendly ratios for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
 }
 
 export function determineSubstitution(
@@ -147,8 +149,8 @@ export function determineSubstitution(
   status: NudgeStatusFilter,
 ): string {
   return view === "map"
-    ? `Showing ${placeDescription} with ${status} subtle substitutions`
-    : `Showing details about ${status} subtle substitutions for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
+    ? `Showing ${placeDescription} with ${getStatusLabel(status)} subtle substitutions`
+    : `Showing details about ${getStatusLabel(status)} subtle substitutions for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
 }
 
 export function determineTitles(
@@ -157,8 +159,8 @@ export function determineTitles(
   status: NudgeStatusFilter,
 ): string {
   return view === "map"
-    ? `Showing ${placeDescription} with ${status} tasty titles & descriptions`
-    : `Showing details about ${status} tasty titles & descriptions for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
+    ? `Showing ${placeDescription} with ${getStatusLabel(status)} tasty titles & descriptions`
+    : `Showing details about ${getStatusLabel(status)} tasty titles & descriptions for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
 }
 
 export function determinePlacement(
@@ -167,8 +169,8 @@ export function determinePlacement(
   status: NudgeStatusFilter,
 ): string {
   return view === "map"
-    ? `Showing ${placeDescription} with ${status} prime placements`
-    : `Showing details about ${status} prime placements for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
+    ? `Showing ${placeDescription} with ${getStatusLabel(status)} prime placements`
+    : `Showing details about ${getStatusLabel(status)} prime placements for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
 }
 
 export function determineOther(
@@ -177,8 +179,8 @@ export function determineOther(
   status: NudgeStatusFilter,
 ): string {
   return view === "map"
-    ? `Showing ${placeDescription} with ${status} other nudges`
-    : `Showing details about ${status} other nudges for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
+    ? `Showing ${placeDescription} with ${getStatusLabel(status)} other nudges`
+    : `Showing details about ${getStatusLabel(status)} other nudges for ${placeDescription} - ${TABLE_DOWNLOAD_HTML}`;
 }
 
 export function determineHtml(
