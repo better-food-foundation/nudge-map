@@ -14,8 +14,16 @@ import {
   TABLE_DOWNLOAD_HTML,
   determineAnyNudge,
 } from "../../src/js/filter-features/counters";
-import { FilterState, ALL_NUDGE_TYPE_FILTER } from "../../src/js/state/FilterState";
-import { ALL_NUDGE_STATUS, ALL_NUDGE_TYPE, NudgeType, NudgeStatus } from "../../src/js/model/types";
+import {
+  FilterState,
+  ALL_NUDGE_TYPE_FILTER,
+} from "../../src/js/state/FilterState";
+import {
+  ALL_NUDGE_STATUS,
+  ALL_NUDGE_TYPE,
+  NudgeType,
+  NudgeStatus,
+} from "../../src/js/model/types";
 import { ViewState } from "../../src/js/layout/viewToggle";
 
 test.describe("determineHtml", () => {
@@ -33,7 +41,14 @@ test.describe("determineHtml", () => {
   };
 
   test("no places", () => {
-    const result = determineHtml("map", DEFAULT_STATE, {}, 0, new Set(), new Set());
+    const result = determineHtml(
+      "map",
+      DEFAULT_STATE,
+      {},
+      0,
+      new Set(),
+      new Set(),
+    );
     expect(result).toEqual(
       "No places selected — use the filter or search icons",
     );
@@ -73,13 +88,7 @@ test("determineSearch()", () => {
   }
 
   expect(
-    determineSearch(
-      "table",
-      placeId,
-      encodedPlace,
-      "any nudge",
-      "adopted",
-    ),
+    determineSearch("table", placeId, encodedPlace, "any nudge", "adopted"),
   ).toEqual(
     `Showing an overview of adopted nudges in ${placeLink} — ${SEARCH_RESET_HTML}`,
   );
@@ -147,10 +156,14 @@ test("determineSubstitution()", () => {
     "Showing 2 places in Mexico with pledged subtle substitutions",
   );
 
-  expect(determineSubstitution("table", "2 places in Mexico", "adopted")).toEqual(
+  expect(
+    determineSubstitution("table", "2 places in Mexico", "adopted"),
+  ).toEqual(
     `Showing details about adopted subtle substitutions for 2 places in Mexico - ${TABLE_DOWNLOAD_HTML}`,
   );
-  expect(determineSubstitution("table", "2 places in Mexico", "pledged")).toEqual(
+  expect(
+    determineSubstitution("table", "2 places in Mexico", "pledged"),
+  ).toEqual(
     `Showing details about pledged subtle substitutions for 2 places in Mexico - ${TABLE_DOWNLOAD_HTML}`,
   );
 });

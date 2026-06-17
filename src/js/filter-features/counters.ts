@@ -1,7 +1,10 @@
-import { isEqual } from "lodash-es";
-
-import { FilterState, PlaceFilterManager, NudgeTypeFilter, NudgeStatusFilter, ALL_NUDGE_STATUS_FILTER } from "../state/FilterState";
-import { PlaceId, ProcessedCoreEntry, PlaceType, NudgeType, NudgeStatus } from "../model/types";
+import {
+  FilterState,
+  PlaceFilterManager,
+  NudgeTypeFilter,
+  NudgeStatusFilter,
+} from "../state/FilterState";
+import { PlaceId, ProcessedCoreEntry, NudgeType } from "../model/types";
 import { COUNTRIES_PREFIXED_BY_THE } from "../model/data";
 import { encodedPlaceToUrl } from "../model/placeId";
 import type { ViewState } from "../layout/viewToggle";
@@ -59,6 +62,8 @@ export function determineSearch(
       return `Showing details about ${getStatusLabel(status)} prime placements ${suffix}`;
     case "other":
       return `Showing details about ${getStatusLabel(status)} other nudges ${suffix}`;
+    default:
+      throw new Error(`Unexpected nudge type: ${nudgeType}`);
   }
 }
 
@@ -100,7 +105,7 @@ export function determineAnyNudge(
       singleNudge: "prime placements",
       multipleNudges: "placements",
     },
-    "other": {
+    other: {
       singleNudge: "other nudges",
       multipleNudges: "other nudges",
     },
