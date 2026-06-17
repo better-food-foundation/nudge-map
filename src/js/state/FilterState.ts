@@ -122,6 +122,14 @@ export class PlaceFilterManager {
     return this.ensureCache().matchedCountries;
   }
 
+  get matchedPlaceTypes(): Set<PlaceType> {
+    return this.ensureCache().matchedPlaceTypes;
+  }
+
+  get matchedNudgeTypes(): Set<NudgeType> {
+    return this.ensureCache().matchedNudgeTypesForAnyNudge;
+  }
+
   getState(): FilterState {
     return this.state.getValue();
   }
