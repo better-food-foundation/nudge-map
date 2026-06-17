@@ -48,17 +48,17 @@ export function determineSearch(
     case "any nudge":
       return `Showing an overview of ${getStatusLabel(status)} nudges ${suffix}`;
     case "plant-based default":
-      return `Showing ${getStatusLabel(status)} plant-based default nudges ${suffix}`;
+      return `Showing details about ${getStatusLabel(status)} plant-based defaults ${suffix}`;
     case "climate-friendly ratio":
-      return `Showing ${getStatusLabel(status)} climate-friendly ratio nudges ${suffix}`;
+      return `Showing details about ${getStatusLabel(status)} climate-friendly ratios ${suffix}`;
     case "subtle substitution":
-      return `Showing ${getStatusLabel(status)} subtle substitution nudges ${suffix}`;
+      return `Showing details about ${getStatusLabel(status)} subtle substitutions ${suffix}`;
     case "tasty titles & descriptions":
-      return `Showing ${getStatusLabel(status)} tasty titles & descriptions nudges ${suffix}`;
+      return `Showing ${getStatusLabel(status)} tasty titles & descriptions ${suffix}`;
     case "prime placement":
-      return `Showing ${getStatusLabel(status)} prime placement nudges ${suffix}`;
+      return `Showing details about ${getStatusLabel(status)} prime placements ${suffix}`;
     case "other":
-      return `Showing ${getStatusLabel(status)} other nudges ${suffix}`;
+      return `Showing details about ${getStatusLabel(status)} other nudges ${suffix}`;
   }
 }
 
@@ -109,7 +109,7 @@ export function determineAnyNudge(
     .filter((nudge) => matchedNudgeTypes.has(nudge as NudgeType))
     .map((nudge) => nudgeDescriptionMap[nudge as NudgeType]);
   if (!nudgeDescriptions.length) {
-    throw new Error(`Expected state.includedNudgeChanges to be set`);
+    throw new Error(`Expected state.includedNudges to be set`);
   }
   if (nudgeDescriptions.length === 1) {
     return `${prefix} ${getStatusLabel(state)} ${nudgeDescriptions[0].singleNudge}`;
