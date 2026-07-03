@@ -43,7 +43,7 @@ export function generateSEO(placeId: PlaceId, entry: ProcessedCoreEntry): SEO {
     );
     nudgeDescription = `proposed ${listFormatter.format(mapped)}`;
   } else {
-    throw new Error(`No reforms found for ${placeId}`);
+    throw new Error(`No nudges found for ${placeId}`);
   }
 
   const description = `${entry.place.name} ${nudgeDescription}. View implementation details.`;
