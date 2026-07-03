@@ -1,7 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 import type { PlaceId, ProcessedCoreEntry } from "../../src/js/model/types";
+import { determineAllNudgeTypes } from "../../src/js/model/data";
 
 interface SEO {
   title: string;
@@ -9,24 +7,25 @@ interface SEO {
 }
 
 export function generateSEO(placeId: PlaceId, entry: ProcessedCoreEntry): SEO {
-  const adopted = determineAllPolicyTypes(entry, "adopted");
-  const proposed = determineAllPolicyTypes(entry, "proposed");
-  const repealed = determineAllPolicyTypes(entry, "repealed");
+  const adopted = determineAllNudgeTypes(entry, "adopted");
+  const proposed = determineAllNudgeTypes(entry, "pledged");
 
   const listFormatter = new Intl.ListFormat("en", {
     style: "long",
     type: "conjunction",
   });
-  let policyDescription: string;
+  let nudgeDescription: string;
   if (adopted.length) {
-    policyDescription = listFormatter.format(
+    nudgeDescription = listFormatter.format(
       adopted.map(
         (v) =>
           ({
-            "add parking maximums": "added parking maximums",
-            "parking benefit district": "created a parking benefit district",
-            "remove parking minimums": "removed parking minimums",
-            "reduce parking minimums": "reduced parking minimums",
+            "plant-based default": "implemented plant-based defaults",
+            "climate-friendly ratio": "implemented climate-friendly ratios",
+            "subtle substitution": "implemented subtle substitutions",
+            "tasty titles & descriptions": "implemented tasty titles and descriptions",
+            "prime placement": "implemented prime placement",
+            "other": "implemented other nudges",
           })[v],
       ),
     );
@@ -34,33 +33,22 @@ export function generateSEO(placeId: PlaceId, entry: ProcessedCoreEntry): SEO {
     const mapped = proposed.map(
       (v) =>
         ({
-          "add parking maximums": "adding parking maximums",
-          "parking benefit district": "creating a parking benefit district",
-          "remove parking minimums": "removing parking minimums",
-          "reduce parking minimums": "reducing parking minimums",
+          "plant-based default": "implementing plant-based defaults",
+          "climate-friendly ratio": "implementing climate-friendly ratios",
+          "subtle substitution": "implementing subtle substitutions",
+          "tasty titles & descriptions": "implementing tasty titles and descriptions",
+          "prime placement": "implementing prime placement",
+          "other": "implementing other nudges",
         })[v],
     );
-    policyDescription = `proposed ${listFormatter.format(mapped)}`;
-  } else if (repealed.length) {
-    policyDescription = listFormatter.format(
-      repealed.map(
-        (v) =>
-          ({
-            "add parking maximums": "removed parking maximums",
-            "parking benefit district":
-              "removed their parking benefit district",
-            "remove parking minimums": "reinstated parking minimums",
-            "reduce parking minimums": "reversed parking minimum reductions",
-          })[v],
-      ),
-    );
+    nudgeDescription = `proposed ${listFormatter.format(mapped)}`;
   } else {
     throw new Error(`No reforms found for ${placeId}`);
   }
 
-  const description = `${entry.place.name} ${policyDescription}. View zoning code and implementation details.`;
+  const description = `${entry.place.name} ${nudgeDescription}. View implementation details.`;
   return {
-    title: `Parking reforms in ${placeId} | Parking Reform Network`,
+    title: `Nudges in ${placeId} | Better Food Foundation`,
     description,
   };
 }
