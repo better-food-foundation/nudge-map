@@ -4,7 +4,25 @@
       {
         "summary": "North Vancouver District Council passed a commitment to prioritize plant-based municipial food procurement.",
         "link": "North Vancouver District to prioritize plant-based foods",
-        "notes": "Official record of passing: https://www.bing.com/ck/a?!&&p=94f058ee545ed2b78ff393d0d563e81043819f1f4717ab627bc48d42eb0d9b4fJmltdHM9MTc1NjMzOTIwMA&ptn=3&ver=2&hsh=4&fclid=1d86bc03-2669-6c2d-2896-aa3827d06df6&psq=District+of+North+Vancouver+plant-based+meal+policy&u=a1aHR0cHM6Ly9hcHAuZG52Lm9yZy9PcGVuRG9jdW1lbnQvRGVmYXVsdC5hc3B4P2RvY051bT02MzEwNTI3"
+        "notes": "Official record of passing: https://www.bing.com/ck/a?!&&p=94f058ee545ed2b78ff393d0d563e81043819f1f4717ab627bc48d42eb0d9b4fJmltdHM9MTc1NjMzOTIwMA&ptn=3&ver=2&hsh=4&fclid=1d86bc03-2669-6c2d-2896-aa3827d06df6&psq=District+of+North+Vancouver+plant-based+meal+policy&u=a1aHR0cHM6Ly9hcHAuZG52Lm9yZy9PcGVuRG9jdW1lbnQvRGVmYXVsdC5hc3B4P2RvY051bT02MzEwNTI3",
+        "citations": [
+          {
+            "id": 11056,
+            "description": "City Press Release",
+            "url": "https://www.toronto.ca/news/city-council-approves-changes-to-regulations-for-car-and-bike-parking-spaces-in-new-developments/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          },
+          {
+            "id": 11057,
+            "description": "Article about the nudge",
+            "url": "https://storeys.com/toronto-removes-parking-minimums-residential-developments/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
       }
     ]
   },
@@ -13,7 +31,17 @@
       {
         "summary": "At California State Los Angeles, the nutritional science department's graduation event menu was plant-based by default.",
         "link": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
-        "notes": "Through months of conversations, Susan Oseguera successfully advocated for the Department of Nutrition and Food Science to adopt a plant-based default menu for their annual Honors Graduation Celebration.\n\nWhile animal product options remained available, plant-based dishes took center stage. Susan’s pitch emphasized inclusivity across dietary needs, helping create allergen information cards to ensure all students can dine safely and confidently."
+        "notes": "Through months of conversations, Susan Oseguera successfully advocated for the Department of Nutrition and Food Science to adopt a plant-based default menu for their annual Honors Graduation Celebration.\n\nWhile animal product options remained available, plant-based dishes took center stage. Susan’s pitch emphasized inclusivity across dietary needs, helping create allergen information cards to ensure all students can dine safely and confidently.",
+        "citations": [
+          {
+            "id": 12698,
+            "description": "Torrington Zoning Code",
+            "url": "https://www.torringtonct.gov/DocumentCenter/View/389/Full-Zoning-Regulations-Revised-to-December-29-2022-PDF",
+            "notes": "5.13.4.C.\nPages 90",
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
       }
     ]
   },
