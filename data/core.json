@@ -259,7 +259,7 @@
       "consumer_base": 186534,
       "coord": [144.9695238, -37.7410304]
     },
-    "Other": [
+    "other": [
       {
         "status": "pledged",
         "date": "2019"
@@ -303,7 +303,7 @@
         "date": "2021"
       }
     ],
-    "Other": [
+    "other": [
       {
         "status": "pledged",
         "org_credit": ["Plant-Based Treaty"],
@@ -343,7 +343,7 @@
       "consumer_base": 153346,
       "coord": [-76.4283781, 44.3054151]
     },
-    "Other": [
+    "other": [
       {
         "status": "pledged",
         "org_credit": ["Plant-Based Cities Movement"],
