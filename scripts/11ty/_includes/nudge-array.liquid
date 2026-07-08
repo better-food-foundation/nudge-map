@@ -1,0 +1,10 @@
+{%- if array.size == 1 -%}
+  {% render "nudge-body" record: array[0] %}
+{%- else -%}
+  {%- for item in array -%}
+    <section>
+      <h3>Nudge record {{forloop.index}}</h3>
+      {% render "nudge-body" record: item %}
+    </section>
+  {%- endfor -%}
+{%- endif -%}
