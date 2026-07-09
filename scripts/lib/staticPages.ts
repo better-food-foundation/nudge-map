@@ -33,15 +33,15 @@ export function generateSEO(placeId: PlaceId, entry: ProcessedCoreEntry): SEO {
     const mapped = proposed.map(
       (v) =>
         ({
-          "plant-based default": "implementing plant-based defaults",
-          "climate-friendly ratio": "implementing climate-friendly ratios",
-          "subtle substitution": "implementing subtle substitutions",
-          "tasty titles & descriptions": "implementing tasty titles and descriptions",
-          "prime placement": "implementing prime placement",
-          "other": "implementing other nudges",
+          "plant-based default": "implement plant-based defaults",
+          "climate-friendly ratio": "implement climate-friendly ratios",
+          "subtle substitution": "implement subtle substitutions",
+          "tasty titles & descriptions": "implement tasty titles and descriptions",
+          "prime placement": "implement prime placement",
+          "other": "implement other nudges",
         })[v],
     );
-    nudgeDescription = `proposed ${listFormatter.format(mapped)}`;
+    nudgeDescription = `pledged to ${listFormatter.format(mapped)}`;
   } else {
     throw new Error(`No nudges found for ${placeId}`);
   }
