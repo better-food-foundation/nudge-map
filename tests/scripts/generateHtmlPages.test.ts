@@ -2,8 +2,6 @@ import { readFile } from "fs/promises";
 
 import { expect, test } from "@playwright/test";
 
-test.fixme();
-
 // This test uses snapshot testing (https://jestjs.io/docs/snapshot-testing#updating-snapshots). If the tests fail and the changes
 // are valid, run `npm test -- --updateSnapshot`.
 
@@ -20,12 +18,8 @@ test("generate html page", async ({}, testInfo) => {
     expect(content).toMatchSnapshot(`${snapshotName}.html`);
   };
 
-  await assertPlace("Abilene_TX");
-  await assertPlace("Abbottstown_PA");
-  await assertPlace("Basalt_CO");
-  await assertPlace("Auburn_ME");
-  // Benefit district
-  await assertPlace("Pasadena_CA");
-  // Country, meaning no supplemental place information in the title
-  await assertPlace("Israel");
+  await assertPlace("north_vancouver_district");
+  await assertPlace("california_state_los_angeles");
+  await assertPlace("university_of_north_texas");
+  await assertPlace("hennepin_county_minnesota");
 });
