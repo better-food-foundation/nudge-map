@@ -42,8 +42,7 @@ export type ExtendedEntry = {
   other?: ExtendedNudge[];
 };
 
-export type RawCompleteNudge = RawNudge &
-  ExtendedNudge;
+export type RawCompleteNudge = RawNudge & ExtendedNudge;
 export interface RawCompleteEntry {
   place: RawPlace;
   default?: Array<RawCompleteNudge>;
@@ -54,8 +53,7 @@ export interface RawCompleteEntry {
   other?: Array<RawCompleteNudge>;
 }
 
-export type ProcessedCompleteNudge = ProcessedNudge &
-  ExtendedNudge;
+export type ProcessedCompleteNudge = ProcessedNudge & ExtendedNudge;
 export interface ProcessedCompleteEntry {
   place: ProcessedPlace;
   default?: Array<ProcessedCompleteNudge>;
@@ -86,21 +84,17 @@ function mergeRawNudges(
   placeId: PlaceId,
   nudgeKeyName: string,
 ): RawCompleteNudge[] {
-  return zipWith(
-    coreNudges,
-    extendedNudges,
-    (coreNudge, extendedNudge) => {
-      if (!coreNudge || !extendedNudge) {
-        throw new Error(
-          `Unequal number of '${nudgeKeyName}' entries for '${placeId}' between data/core.json and data/extended.json`,
-        );
-      }
-      return {
-        ...coreNudge,
-        ...extendedNudge,
-      };
-    },
-  );
+  return zipWith(coreNudges, extendedNudges, (coreNudge, extendedNudge) => {
+    if (!coreNudge || !extendedNudge) {
+      throw new Error(
+        `Unequal number of '${nudgeKeyName}' entries for '${placeId}' between data/core.json and data/extended.json`,
+      );
+    }
+    return {
+      ...coreNudge,
+      ...extendedNudge,
+    };
+  });
 }
 
 export async function readRawCompleteData(): Promise<
@@ -177,9 +171,7 @@ export async function readRawCompleteData(): Promise<
   );
 }
 
-function processCompleteNudge(
-  nudge: RawCompleteNudge,
-): ProcessedCompleteNudge {
+function processCompleteNudge(nudge: RawCompleteNudge): ProcessedCompleteNudge {
   return {
     ...nudge,
     date: Date.fromNullable(nudge.date),

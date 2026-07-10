@@ -23,9 +23,10 @@ export function generateSEO(placeId: PlaceId, entry: ProcessedCoreEntry): SEO {
             "plant-based default": "implemented plant-based defaults",
             "climate-friendly ratio": "implemented climate-friendly ratios",
             "subtle substitution": "implemented subtle substitutions",
-            "tasty titles & descriptions": "implemented tasty titles and descriptions",
+            "tasty titles & descriptions":
+              "implemented tasty titles and descriptions",
             "prime placement": "implemented prime placement",
-            "other": "implemented other nudges",
+            other: "implemented other nudges",
           })[v],
       ),
     );
@@ -36,9 +37,10 @@ export function generateSEO(placeId: PlaceId, entry: ProcessedCoreEntry): SEO {
           "plant-based default": "implement plant-based defaults",
           "climate-friendly ratio": "implement climate-friendly ratios",
           "subtle substitution": "implement subtle substitutions",
-          "tasty titles & descriptions": "implement tasty titles and descriptions",
+          "tasty titles & descriptions":
+            "implement tasty titles and descriptions",
           "prime placement": "implement prime placement",
-          "other": "implement other nudges",
+          other: "implement other nudges",
         })[v],
     );
     nudgeDescription = `pledged to ${listFormatter.format(mapped)}`;

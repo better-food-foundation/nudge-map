@@ -33,10 +33,7 @@ test.describe("generateSEO", () => {
         ...(entry.ratio ?? []),
         { status, org_credit: [], date: undefined },
       ],
-      sub: [
-        ...(entry.sub ?? []),
-        { status, org_credit: [], date: undefined },
-      ],
+      sub: [...(entry.sub ?? []), { status, org_credit: [], date: undefined }],
       titles: [
         ...(entry.titles ?? []),
         { status, org_credit: [], date: undefined },
@@ -48,7 +45,7 @@ test.describe("generateSEO", () => {
       other: [
         ...(entry.other ?? []),
         { status, org_credit: [], date: undefined },
-      ]
+      ],
     };
   }
 
@@ -66,7 +63,7 @@ test.describe("generateSEO", () => {
     const { title, description } = generateSEO(PLACE_ID, entry);
     expect(title).toEqual(EXPECTED_TITLE);
     expect(description).toEqual(
-      "Tucson pledged to implement plant-based defaults, implement climate-friendly ratios, implement subtle substitutions, implement tasty titles and descriptions, implement prime placement, and implement other nudges. View implementation details."
+      "Tucson pledged to implement plant-based defaults, implement climate-friendly ratios, implement subtle substitutions, implement tasty titles and descriptions, implement prime placement, and implement other nudges. View implementation details.",
     );
   });
 });
