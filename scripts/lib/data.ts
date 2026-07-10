@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 import fs from "fs/promises";
 
 import { zipWith } from "lodash-es";
@@ -10,11 +7,9 @@ import {
   RawCoreEntry,
   PlaceId,
   RawPlace,
-  RawCoreLandUsePolicy,
+  RawNudge,
   ProcessedPlace,
-  ProcessedCoreLandUsePolicy,
-  RawCoreBenefitDistrict,
-  ProcessedCoreBenefitDistrict,
+  ProcessedNudge,
 } from "../../src/js/model/types";
 import { processRawCoreEntry } from "../../src/js/model/data";
 
@@ -32,50 +27,41 @@ export interface Citation {
   screenshots: DirectusFile[];
 }
 
-export interface ExtendedBenefitDistrict {
+export interface ExtendedNudge {
   summary: string;
   reporter: string | null;
-  citations: Citation[];
-}
-
-export interface ExtendedLandUsePolicy {
-  summary: string;
-  reporter: string | null;
-  requirements: string[];
   citations: Citation[];
 }
 
 export type ExtendedEntry = {
-  benefit_district?: ExtendedBenefitDistrict[];
-  reduce_min?: ExtendedLandUsePolicy[];
-  rm_min?: ExtendedLandUsePolicy[];
-  add_max?: ExtendedLandUsePolicy[];
+  default?: ExtendedNudge[];
+  ratio?: ExtendedNudge[];
+  sub?: ExtendedNudge[];
+  titles?: ExtendedNudge[];
+  placement?: ExtendedNudge[];
+  other?: ExtendedNudge[];
 };
 
-export type RawCompleteBenefitDistrict = RawCoreBenefitDistrict &
-  ExtendedBenefitDistrict;
-export type RawCompleteLandUsePolicy = RawCoreLandUsePolicy &
-  ExtendedLandUsePolicy;
-
+export type RawCompleteNudge = RawNudge & ExtendedNudge;
 export interface RawCompleteEntry {
   place: RawPlace;
-  benefit_district?: Array<RawCompleteBenefitDistrict>;
-  reduce_min?: Array<RawCompleteLandUsePolicy>;
-  rm_min?: Array<RawCompleteLandUsePolicy>;
-  add_max?: Array<RawCompleteLandUsePolicy>;
+  default?: Array<RawCompleteNudge>;
+  ratio?: Array<RawCompleteNudge>;
+  sub?: Array<RawCompleteNudge>;
+  titles?: Array<RawCompleteNudge>;
+  placement?: Array<RawCompleteNudge>;
+  other?: Array<RawCompleteNudge>;
 }
 
-export type ProcessedCompleteBenefitDistrict = ProcessedCoreBenefitDistrict &
-  ExtendedBenefitDistrict;
-export type ProcessedCompleteLandUsePolicy = ProcessedCoreLandUsePolicy &
-  ExtendedLandUsePolicy;
-
+export type ProcessedCompleteNudge = ProcessedNudge & ExtendedNudge;
 export interface ProcessedCompleteEntry {
   place: ProcessedPlace;
-  benefit_district?: Array<ProcessedCompleteBenefitDistrict>;
-  reduce_min?: Array<ProcessedCompleteLandUsePolicy>;
-  rm_min?: Array<ProcessedCompleteLandUsePolicy>;
-  add_max?: Array<ProcessedCompleteLandUsePolicy>;
+  default?: Array<ProcessedCompleteNudge>;
+  ratio?: Array<ProcessedCompleteNudge>;
+  sub?: Array<ProcessedCompleteNudge>;
+  titles?: Array<ProcessedCompleteNudge>;
+  placement?: Array<ProcessedCompleteNudge>;
+  other?: Array<ProcessedCompleteNudge>;
 }
 
 export async function readRawCoreData(): Promise<
@@ -92,49 +78,23 @@ export async function readRawExtendedData(): Promise<
   return JSON.parse(raw);
 }
 
-function mergeRawLandUsePolicies(
-  corePolicies: RawCoreLandUsePolicy[],
-  extendedPolicies: ExtendedLandUsePolicy[],
+function mergeRawNudges(
+  coreNudges: RawNudge[],
+  extendedNudges: ExtendedNudge[],
   placeId: PlaceId,
-  policyKeyName: string,
-): RawCompleteLandUsePolicy[] {
-  return zipWith(
-    corePolicies,
-    extendedPolicies,
-    (corePolicy, extendedPolicy) => {
-      if (!corePolicy || !extendedPolicy) {
-        throw new Error(
-          `Unequal number of '${policyKeyName}' entries for '${placeId}' between data/core.json and data/extended.json`,
-        );
-      }
-      return {
-        ...corePolicy,
-        ...extendedPolicy,
-      };
-    },
-  );
-}
-
-function mergeRawBenefitDistrict(
-  corePolicies: RawCoreBenefitDistrict[],
-  extendedPolicies: ExtendedBenefitDistrict[],
-  placeId: PlaceId,
-): RawCompleteBenefitDistrict[] {
-  return zipWith(
-    corePolicies,
-    extendedPolicies,
-    (corePolicy, extendedPolicy) => {
-      if (!corePolicy || !extendedPolicy) {
-        throw new Error(
-          `Unequal number of 'benefit_district' entries for '${placeId}' between data/core.json and data/extended.json`,
-        );
-      }
-      return {
-        ...corePolicy,
-        ...extendedPolicy,
-      };
-    },
-  );
+  nudgeKeyName: string,
+): RawCompleteNudge[] {
+  return zipWith(coreNudges, extendedNudges, (coreNudge, extendedNudge) => {
+    if (!coreNudge || !extendedNudge) {
+      throw new Error(
+        `Unequal number of '${nudgeKeyName}' entries for '${placeId}' between data/core.json and data/extended.json`,
+      );
+    }
+    return {
+      ...coreNudge,
+      ...extendedNudge,
+    };
+  });
 }
 
 export async function readRawCompleteData(): Promise<
@@ -151,39 +111,58 @@ export async function readRawCompleteData(): Promise<
         placeId,
         {
           place: coreEntry.place,
-          ...(coreEntry.reduce_min &&
-            extendedEntry.reduce_min && {
-              reduce_min: mergeRawLandUsePolicies(
-                coreEntry.reduce_min,
-                extendedEntry.reduce_min,
+          ...(coreEntry.default &&
+            extendedEntry.default && {
+              default: mergeRawNudges(
+                coreEntry.default,
+                extendedEntry.default,
                 placeId,
-                "reduce_min",
+                "default",
               ),
             }),
-          ...(coreEntry.rm_min &&
-            extendedEntry.rm_min && {
-              rm_min: mergeRawLandUsePolicies(
-                coreEntry.rm_min,
-                extendedEntry.rm_min,
+          ...(coreEntry.ratio &&
+            extendedEntry.ratio && {
+              ratio: mergeRawNudges(
+                coreEntry.ratio,
+                extendedEntry.ratio,
                 placeId,
-                "rm_min",
+                "ratio",
               ),
             }),
-          ...(coreEntry.add_max &&
-            extendedEntry.add_max && {
-              add_max: mergeRawLandUsePolicies(
-                coreEntry.add_max,
-                extendedEntry.add_max,
+          ...(coreEntry.sub &&
+            extendedEntry.sub && {
+              sub: mergeRawNudges(
+                coreEntry.sub,
+                extendedEntry.sub,
                 placeId,
-                "add_max",
+                "sub",
               ),
             }),
-          ...(coreEntry.benefit_district &&
-            extendedEntry.benefit_district && {
-              benefit_district: mergeRawBenefitDistrict(
-                coreEntry.benefit_district,
-                extendedEntry.benefit_district,
+          ...(coreEntry.titles &&
+            extendedEntry.titles && {
+              titles: mergeRawNudges(
+                coreEntry.titles,
+                extendedEntry.titles,
                 placeId,
+                "titles",
+              ),
+            }),
+          ...(coreEntry.placement &&
+            extendedEntry.placement && {
+              placement: mergeRawNudges(
+                coreEntry.placement,
+                extendedEntry.placement,
+                placeId,
+                "placement",
+              ),
+            }),
+          ...(coreEntry.other &&
+            extendedEntry.other && {
+              other: mergeRawNudges(
+                coreEntry.other,
+                extendedEntry.other,
+                placeId,
+                "other",
               ),
             }),
         },
@@ -192,21 +171,10 @@ export async function readRawCompleteData(): Promise<
   );
 }
 
-function processCompleteBenefitDistrict(
-  record: RawCompleteBenefitDistrict,
-): ProcessedCompleteBenefitDistrict {
+function processCompleteNudge(nudge: RawCompleteNudge): ProcessedCompleteNudge {
   return {
-    ...record,
-    date: Date.fromNullable(record.date),
-  };
-}
-
-function processCompleteLandUsePolicy(
-  policy: RawCompleteLandUsePolicy,
-): ProcessedCompleteLandUsePolicy {
-  return {
-    ...policy,
-    date: Date.fromNullable(policy.date),
+    ...nudge,
+    date: Date.fromNullable(nudge.date),
   };
 }
 
@@ -220,19 +188,23 @@ export async function readProcessedCompleteData(): Promise<
       const result: ProcessedCompleteEntry = {
         place: processed.place,
       };
-      if (entry.add_max) {
-        result.add_max = entry.add_max.map(processCompleteLandUsePolicy);
+      if (entry.default) {
+        result.default = entry.default.map(processCompleteNudge);
       }
-      if (entry.reduce_min) {
-        result.reduce_min = entry.reduce_min.map(processCompleteLandUsePolicy);
+      if (entry.ratio) {
+        result.ratio = entry.ratio.map(processCompleteNudge);
       }
-      if (entry.rm_min) {
-        result.rm_min = entry.rm_min.map(processCompleteLandUsePolicy);
+      if (entry.sub) {
+        result.sub = entry.sub.map(processCompleteNudge);
       }
-      if (entry.benefit_district) {
-        result.benefit_district = entry.benefit_district.map(
-          processCompleteBenefitDistrict,
-        );
+      if (entry.titles) {
+        result.titles = entry.titles.map(processCompleteNudge);
+      }
+      if (entry.placement) {
+        result.placement = entry.placement.map(processCompleteNudge);
+      }
+      if (entry.other) {
+        result.other = entry.other.map(processCompleteNudge);
       }
       return [placeId, result];
     }),
@@ -241,13 +213,15 @@ export async function readProcessedCompleteData(): Promise<
 
 export function getCitations(entry: ExtendedEntry): Citation[] {
   const fromArray = (
-    policies: Array<{ citations: Citation[] }> | undefined,
-  ): Citation[] => policies?.flatMap((policy) => policy.citations) ?? [];
+    nudges: Array<{ citations: Citation[] }> | undefined,
+  ): Citation[] => nudges?.flatMap((nudge) => nudge.citations) ?? [];
 
   return [
-    ...fromArray(entry.benefit_district),
-    ...fromArray(entry.add_max),
-    ...fromArray(entry.rm_min),
-    ...fromArray(entry.reduce_min),
+    ...fromArray(entry.default),
+    ...fromArray(entry.ratio),
+    ...fromArray(entry.sub),
+    ...fromArray(entry.titles),
+    ...fromArray(entry.placement),
+    ...fromArray(entry.other),
   ];
 }

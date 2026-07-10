@@ -9,39 +9,48 @@ layout: layout.liquid
 <main>
   <header>
     {% if entry.place.supplemental -%}
-      <h1>Parking reforms in {{ entry.place.name }}<br/><span class="supplemental-place-info">{{ entry.place.supplemental }}</span></h1>
+      <h1>Plant-based nudges in {{ entry.place.name }}<br/><span class="supplemental-place-info">{{ entry.place.supplemental }}</span></h1>
     {%- else %}
-      <h1>Parking reforms in {{ entry.place.name }}</h1>
+      <h1>Plant-based nudges in {{ entry.place.name }}</h1>
     {%- endif %}
   </header>
   <ul class="place-details">
-    <li>{{ entry.population }} residents</li>
-    {% if entry.repeal -%}
-      <li>All parking minimums removed</li>
-    {%- endif %}
+    <li>{{ entry.consumer_base }} impacted</li>
   </ul>
-  {% if entry.benefitDistrict.size > 0 -%}
+  {% if entry.default.size > 0 -%}
     <section>
-      <h2>Parking benefit district{% if entry.rmMin.size > 1 %}s{% endif %}</h2>
-      {% render "benefit-district-array" array: entry.benefitDistrict %}
+      <h2>Plant-based default{% if entry.default.size > 1 %}s{% endif %}</h2>
+      {% render "nudge-array" array: entry.default %}
     </section>
   {%- endif %}
-  {% if entry.rmMin.size > 0 -%}
+  {% if entry.ratio.size > 0 -%}
     <section>
-      <h2>Parking minimum removal{% if entry.rmMin.size > 1 %}s{% endif %}</h2>
-      {% render "land-use-array" array: entry.rmMin %}
+      <h2>Climate-friendly ratio{% if entry.ratio.size > 1 %}s{% endif %}</h2>
+      {% render "nudge-array" array: entry.ratio %}
     </section>
   {%- endif %}
-  {% if entry.reduceMin.size > 0 -%}
+  {% if entry.sub.size > 0 -%}
     <section>
-      <h2>Parking minimum reduction{% if entry.addMax.size > 1 %}s{% endif %}</h2>
-      {% render "land-use-array" array: entry.reduceMin %}
+      <h2>Subtle substitution{% if entry.sub.size > 1 %}s{% endif %}</h2>
+      {% render "nudge-array" array: entry.sub %}
     </section>
   {%- endif %}
-  {% if entry.addMax.size > 0 -%}
+  {% if entry.titles.size > 0 -%}
     <section>
-      <h2>Parking maximum{% if entry.addMax.size > 1 %}s{% endif %}</h2>
-      {% render "land-use-array" array: entry.addMax %}
+      <h2>Tasty titles & descriptions</h2>
+      {% render "nudge-array" array: entry.titles %}
+    </section>
+  {%- endif %}
+  {% if entry.placement.size > 0 -%}
+    <section>
+      <h2>Prime placement{% if entry.placement.size > 1 %}s{% endif %}</h2>
+      {% render "nudge-array" array: entry.placement %}
+    </section>
+  {%- endif %}
+  {% if entry.other.size > 0 -%}
+    <section>
+      <h2>Other nudge{% if entry.other.size > 1 %}s{% endif %}</h2>
+      {% render "nudge-array" array: entry.other %}
     </section>
   {%- endif %}
 </main>

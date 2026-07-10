@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 /** Config for Eleventy to generate the details pages. */
 
 // @ts-ignore
@@ -10,21 +7,19 @@ import { capitalize } from "lodash-es";
 
 import {
   Citation,
-  ProcessedCompleteBenefitDistrict,
-  ProcessedCompleteLandUsePolicy,
+  ProcessedCompleteNudge,
   readProcessedCompleteData,
 } from "./scripts/lib/data.js";
 import { generateSEO } from "./scripts/lib/staticPages.js";
 import { determinesupplementalPlaceInfo } from "./src/js/model/placeId.js";
-import { ReformStatus } from "./src/js/model/types.js";
+import { NudgeStatus } from "./src/js/model/types.js";
 
-function dateLabel(status: ReformStatus): string {
+function dateLabel(status: NudgeStatus): string {
   return (
     {
       adopted: "Adoption date",
-      proposed: "Proposal date",
-      repealed: "Repeal date",
-    }[status] ?? "Reform date"
+      pledged: "Pledge date",
+    }[status] ?? "Nudge date"
   );
 }
 
@@ -35,23 +30,7 @@ function processCitations(citations: Citation[]): object[] {
   }));
 }
 
-function processLandUse(policy: ProcessedCompleteLandUsePolicy): object {
-  return {
-    summary: policy.summary,
-    dateLabel: dateLabel(policy.status),
-    date: policy.date?.format(),
-    status: capitalize(policy.status),
-    scope: policy.scope.map(capitalize),
-    landUse: policy.land.map(capitalize),
-    requirements: policy.requirements.map(capitalize),
-    reporter: policy.reporter,
-    citations: processCitations(policy.citations),
-  };
-}
-
-function processBenefitDistrict(
-  policy: ProcessedCompleteBenefitDistrict,
-): object {
+function processNudge(policy: ProcessedCompleteNudge): object {
   return {
     summary: policy.summary,
     dateLabel: dateLabel(policy.status),
@@ -85,12 +64,13 @@ export default async function (eleventyConfig: any) {
       name: entry.place.name,
       supplemental: determinesupplementalPlaceInfo(entry.place),
     },
-    population: entry.place.pop.toLocaleString("en-us"),
-    repeal: entry.place.repeal,
-    rmMin: entry.rm_min?.map(processLandUse) || [],
-    reduceMin: entry.reduce_min?.map(processLandUse) || [],
-    addMax: entry.add_max?.map(processLandUse) || [],
-    benefitDistrict: entry.benefit_district?.map(processBenefitDistrict),
+    consumer_base: entry.place.consumer_base.toLocaleString("en-us"),
+    default: entry.default?.map(processNudge) || [],
+    ratio: entry.ratio?.map(processNudge) || [],
+    sub: entry.sub?.map(processNudge) || [],
+    titles: entry.titles?.map(processNudge) || [],
+    placement: entry.placement?.map(processNudge) || [],
+    other: entry.other?.map(processNudge),
   }));
 
   eleventyConfig.addGlobalData("entries", entries);
