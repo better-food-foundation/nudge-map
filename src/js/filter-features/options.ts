@@ -16,12 +16,10 @@ import {
   generateCheckbox,
   updateAccordionUI,
 } from "../layout/accordion";
-
 import optionValuesData from "../../../data/option-values.json" with { type: "json" };
-
 import { ALL_NUDGE_STATUS, ALL_NUDGE_TYPE, NudgeStatus } from "../model/types";
-
 import { initConsumerBaseSlider } from "./consumerBaseSlider";
+import { createIcon } from "../layout/icons";
 
 /** These option values change depending on which dataset is loaded.
  *
@@ -422,9 +420,7 @@ function initOutermostContainers(
   const disabledDatasetDiv = document.createElement("div");
   disabledDatasetDiv.classList.add("filter-illegal-dataset-container");
   disabledDatasetDiv.hidden = true;
-  const warningIcon = document.createElement("i");
-  warningIcon.classList.add("fa-solid", "fa-triangle-exclamation");
-  warningIcon.ariaHidden = "true";
+  const warningIcon = createIcon("triangle-exclamation");
   const warningText = document.createElement("span");
   warningText.textContent =
     " This dataset has no entries. To fix, change either the 'nudge type' or 'status'.";

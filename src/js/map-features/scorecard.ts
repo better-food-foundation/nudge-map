@@ -6,6 +6,7 @@ import { PlaceFilterManager } from "../state/FilterState";
 import { ViewStateObservable } from "../layout/viewToggle";
 import type { MarkerWithPlaceId } from "./markers";
 import { determinesupplementalPlaceInfo } from "../model/placeId";
+import { iconHtml } from "../layout/icons";
 
 export function generateScorecard(entry: ProcessedCoreEntry): string {
   const supplementalPlace = determinesupplementalPlaceInfo(entry.place);
@@ -21,12 +22,12 @@ export function generateScorecard(entry: ProcessedCoreEntry): string {
         title="close the place details popup"
         aria-label="close the place details popup"
       >
-        <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+        ${iconHtml("circle-xmark")}
       </button>
     </header>
     <a class="external-link" target="_blank" href=${
       entry.place.url
-    }>Details and citations <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+    }>Details and citations ${iconHtml("arrow-right")}</a>
     `;
 }
 
