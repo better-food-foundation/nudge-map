@@ -1,4 +1,5 @@
 import { createIcon } from "./icons";
+
 export interface BaseAccordionElements {
   outerContainer: HTMLDivElement;
   accordionTitle: HTMLSpanElement;
