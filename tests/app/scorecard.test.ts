@@ -64,10 +64,10 @@ test("generateScorecard()", () => {
         title="close the place details popup"
         aria-label="close the place details popup"
       >
-        <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+        <svg aria-hidden="true" width="1em" height="1em"><use href="#icon-circle-xmark"></use></svg>
       </button>
     </header>
-    <a class="external-link" target="_blank" href=https://my-site.org>Details and citations <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+    <a class="external-link" target="_blank" href=https://my-site.org>Details and citations <svg aria-hidden="true" width="1em" height="1em"><use href="#icon-arrow-right"></use></svg></a>
     `,
   );
 });
