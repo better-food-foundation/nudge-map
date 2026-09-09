@@ -30,6 +30,7 @@ test.describe("determineHtml", () => {
     // The below values are ignored.
     country: new Set(),
     status: "adopted",
+    isVerified: true,
     placeType: new Set(),
     year: new Set(),
     consumerBaseSliderIndexes: [0, 0],

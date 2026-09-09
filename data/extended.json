@@ -395,6 +395,25 @@
       }
     ]
   },
+  "Brody Jewish Center (UVA), VA, United States": {
+    "default": [
+      {
+        "summary": "Plant-based defaults implemented at the campus Hillel, including a plant-based Shabbat celebration with the option to opt in for animal products.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 130,
+            "type": "Press release",
+            "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
+            "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Cafe Services Inc., NH, United States": {
     "ratio": [
       {
@@ -471,7 +490,7 @@
       }
     ]
   },
-  "Caribou Coffee Seasonal Menus, MN, United States": {
+  "Caribou Coffee, MN, United States": {
     "other": [
       {
         "summary": "Eliminated the surcharge for non-dairy (oat/almond) milk across all ~800 US locations (April 2023); ~20% of orders were already dairy-free.",
@@ -632,6 +651,15 @@
       }
     ]
   },
+  "DC Department of Youth Rehabilitation Services, DC, United States": {
+    "other": [
+      {
+        "summary": "Need more info",
+        "reporter": "Björn Ólafsson",
+        "citations": []
+      }
+    ]
+  },
   "DC Harvest, Washington, DC, DC, United States": {
     "sub": [
       {
@@ -689,7 +717,7 @@
       }
     ]
   },
-  "Edinburgh, Scotland, United Kingdom": {
+  "Edinburgh (municipal schools & council catering), United Kingdom": {
     "other": [
       {
         "summary": "City Council endorsed the Plant Based Treaty (Jan 2023) and adopted a PBT Action Plan (Jan 2024); measures include a daily vegetarian/vegan option in all schools and piloting plant-based snacks in youth library programs.",
@@ -1582,7 +1610,7 @@
       }
     ]
   },
-  "Ocean Beach People's Food Co-Op, CA, United States": {
+  "Ocean Beach People's Food Co-op, CA, United States": {
     "ratio": [
       {
         "summary": "Ocean Beach People's Food Co-Op is a vegan deli and plant-forward grocery store, with some dairy and eggs products available, but not sold in the deli.",
@@ -1981,45 +2009,7 @@
       }
     ]
   },
-  "San Diego, CA, United States": {
-    "other": [
-      {
-        "summary": "As part of its Climate Action Plan, the city committed to cutting meat- and dairy-related emissions and water footprint by ~20%; secured by a 20-group coalition led by BFF.",
-        "reporter": null,
-        "citations": [
-          {
-            "id": 101,
-            "type": "Press release",
-            "description": "Better Food Foundation – Cities",
-            "url": "https://www.betterfoodfoundation.org/join-us/cities/",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ]
-  },
-  "San Francisco Hospitals, CA, United States": {
-    "ratio": [
-      {
-        "summary": "In 2020, the San Francisco City Board of Supervisors passed a motion requiring San Francisco public hospitals to reduce purchases of animal products by 15% in 2023.",
-        "reporter": "Björn Ólafsson",
-        "citations": [
-          {
-            "id": 93,
-            "type": "Press release",
-            "description": "Eurogroup for Animals article",
-            "url": "https://www.eurogroupforanimals.org/news/san-francisco-reduce-meat-and-dairy-served-hospitals-and-jails",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ]
-  },
-  "San Francisco Jails, CA, United States": {
+  "San Francisco County Jails, CA, United States": {
     "ratio": [
       {
         "summary": "In 2020, the San Francisco City Board of Supervisors passed a motion requiring San Francisco jails to reduce purchases of animal products by 50 percent in 2024.",
@@ -2039,6 +2029,25 @@
             "type": "News article",
             "description": "Sentient Media article",
             "url": "https://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "San Francisco Department of Public Health (hospitals), CA, United States": {
+    "ratio": [
+      {
+        "summary": "In 2020, the San Francisco City Board of Supervisors passed a motion requiring San Francisco public hospitals to reduce purchases of animal products by 15% in 2023.",
+        "reporter": "Björn Ólafsson",
+        "citations": [
+          {
+            "id": 93,
+            "type": "Press release",
+            "description": "Eurogroup for Animals article",
+            "url": "https://www.eurogroupforanimals.org/news/san-francisco-reduce-meat-and-dairy-served-hospitals-and-jails",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -2199,7 +2208,7 @@
       }
     ]
   },
-  "Starbucks Seasonal Menus, WA, United States": {
+  "Starbucks, WA, United States": {
     "other": [
       {
         "summary": "Removed the non-dairy milk surcharge across US/Canada company-operated stores (Nov 2024) after multi-group advocacy incl. MFA; seasonal drinks available with plant milk.",
@@ -2218,7 +2227,7 @@
       }
     ]
   },
-  "Stumptown Roasters, OR, United States": {
+  "Stumptown Coffee Roasters, OR, United States": {
     "default": [
       {
         "summary": "Stumptown Roasters offers oat milk by default at all cafes.",
@@ -2313,7 +2322,7 @@
       }
     ]
   },
-  "Tony's, CA, United States": {
+  "Tony's Darts Away, CA, United States": {
     "default": [
       {
         "summary": "Tony's has a plant-based by default menu with dairy products available upon request.",
@@ -2754,6 +2763,25 @@
       }
     ]
   },
+  "University of San Diego, Aromas, CA, United States": {
+    "other": [
+      {
+        "summary": "As part of its Climate Action Plan, the city committed to cutting meat- and dairy-related emissions and water footprint by ~20%; secured by a 20-group coalition led by BFF.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 101,
+            "type": "Press release",
+            "description": "Better Food Foundation – Cities",
+            "url": "https://www.betterfoodfoundation.org/join-us/cities/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "University of Texas at Austin, TX, United States": {
     "ratio": [
       {
@@ -2811,25 +2839,6 @@
       }
     ]
   },
-  "University of Virginia, Brody Jewish Center (Hillel), VA, United States": {
-    "default": [
-      {
-        "summary": "Plant-based defaults implemented at the campus Hillel, including a plant-based Shabbat celebration with the option to opt in for animal products.",
-        "reporter": null,
-        "citations": [
-          {
-            "id": 130,
-            "type": "Press release",
-            "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
-            "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ]
-  },
   "University of Washington, WA, United States": {
     "ratio": [
       {
@@ -2849,7 +2858,7 @@
       }
     ]
   },
-  "Vermaat (caterer, Netherlands) — hybrid tuna salad, Netherlands": {
+  "Vermaat , Netherlands": {
     "sub": [
       {
         "summary": "Hybrid tuna salad: 60% of the tuna substituted with locally grown lupini beans.",
@@ -2877,7 +2886,7 @@
       }
     ]
   },
-  "Vitam (caterer, Netherlands) — plant-based cooking cream, Netherlands": {
+  "Vitam, Netherlands": {
     "sub": [
       {
         "summary": "Company-wide switch to plant-based cooking cream.",
@@ -2915,16 +2924,7 @@
       }
     ]
   },
-  "Washington, DC Department of Youth and Rehabilitation Services, DC, United States": {
-    "other": [
-      {
-        "summary": "Need more info",
-        "reporter": "Björn Ólafsson",
-        "citations": []
-      }
-    ]
-  },
-  "Washington, DC, DC, United States": {
+  "Washington, DC (public schools), DC, United States": {
     "other": [
       {
         "summary": "DC committed (FOE-led coalition) to a 25% cut in food-related emissions by 2030 and passed the Healthy Students Amendment Act requiring daily plant-forward school meal options and adopting the Good Food Purchasing Program.",

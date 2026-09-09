@@ -27,13 +27,27 @@ test("determineIsPrimary", () => {
   expect(
     determineIsPrimary({
       place,
-      default: [{ status: "adopted", date: undefined, org_credit: [] }],
+      default: [
+        {
+          status: "adopted",
+          date: undefined,
+          org_credit: [],
+          is_verified: false,
+        },
+      ],
     }),
   ).toEqual(true);
   expect(
     determineIsPrimary({
       place,
-      default: [{ status: "pledged", date: undefined, org_credit: [] }],
+      default: [
+        {
+          status: "pledged",
+          date: undefined,
+          org_credit: [],
+          is_verified: false,
+        },
+      ],
     }),
   ).toEqual(true);
 });

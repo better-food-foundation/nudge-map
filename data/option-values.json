@@ -9,7 +9,6 @@
       "Ind. Restaurant",
       "K-12",
       "Other",
-      "Prison",
       "Religious Center",
       "Stadium",
       "Transit Station",
@@ -57,7 +56,6 @@
       "Friends of the Earth",
       "Greener by Default",
       "Humane World for Animals",
-      "Mercy For Animals",
       "Mercy for Animals",
       "New Roots Institute",
       "Plant Based Treaty",
@@ -121,7 +119,7 @@
       "Friends of the Earth",
       "Greener by Default",
       "Humane World for Animals",
-      "Mercy For Animals",
+      "Mercy for Animals",
       "New Roots Institute",
       "Plant Based Treaty",
       "Practice Greenhealth",
@@ -138,7 +136,6 @@
       "Hospital",
       "K-12",
       "Other",
-      "Prison",
       "Transit Station",
       "University Dining Hall",
       "Workplace Cafeteria"
@@ -268,7 +265,6 @@
       "Hospital",
       "K-12",
       "Other",
-      "Prison",
       "Transit Station",
       "University Dining Hall",
       "Workplace Cafeteria"
@@ -366,7 +362,7 @@
     "orgCredit": [
       "Better Food Foundation",
       "Friends of the Earth",
-      "Mercy For Animals",
+      "Mercy for Animals",
       "New Roots Institute",
       "Plant Based Treaty",
       "World Resources Institute"

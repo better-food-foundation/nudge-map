@@ -329,6 +329,11 @@ function createCitations(
 ): Citation[] {
   return citationJunctionIds.map((junctionId, citationIdx) => {
     const citationRecord = citationsByJunctionId[junctionId];
+    if (!citationRecord.type) {
+      throw new Error(
+        `Missing citation type for citation junction ${junctionId}`,
+      );
+    }
     const { attachments, screenshots } = createAttachments(
       filesByAttachmentJunctionId,
       citationRecord.attachments!,
@@ -340,7 +345,7 @@ function createCitations(
     const url = citationRecord.broken_url === true ? null : citationRecord.url!;
     return {
       id: citationRecord.id!,
-      type: citationRecord.type!,
+      type: citationRecord.type,
       description: citationRecord.source_description!,
       url,
       notes: citationRecord.notes!,
@@ -422,6 +427,15 @@ function combineData(
               reporter: record.reporter!,
               org_credit: parseOrgCredit(record.org_credit),
               org_credit_expanded: record.org_credit_expanded! ?? undefined,
+              is_verified: record.citations!.some((junctionId) => {
+                const citation = citationsByNudgeJunctionId[junctionId];
+                if (!citation.type) {
+                  throw new Error(
+                    `Missing citation type for citation junction ${junctionId}`,
+                  );
+                }
+                return citation.type !== "Advocate report";
+              }),
               citations: createCitations(
                 record.citations!,
                 citationsByNudgeJunctionId,
@@ -486,6 +500,7 @@ async function saveCoreData(
     status: record.status,
     date: record.date,
     org_credit: record.org_credit,
+    is_verified: record.is_verified,
   });
 
   const pruned = Object.fromEntries(

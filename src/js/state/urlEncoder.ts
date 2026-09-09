@@ -16,6 +16,7 @@ export const MERGED_STRING_SET_OPTIONS = {
 export const DEFAULT_FILTER_STATE: FilterState = {
   searchInput: null,
   status: "adopted",
+  isVerified: true,
   ...MERGED_STRING_SET_OPTIONS,
   consumerBaseSliderIndexes: [0, POPULATION_MAX_INDEX],
 };
@@ -81,6 +82,7 @@ export const PLACE_TYPE_NAME = "inst";
 export const INCLUDED_NUDGE_NAME = "nudges";
 export const ORG_NAME = "org";
 export const CONSUMER_BASE_NAME = "cb";
+export const IS_VERIFIED_NAME = "verified";
 
 export const NUDGE_TYPE_MAP = BidirectionalMap.from([
   ["any nudge", "any"],
@@ -134,6 +136,10 @@ export function encodeFilterState(filterState: FilterState): URLSearchParams {
     result.append(COUNTRY_NAME, COUNTRY_MAP.encodeSet(filterState.country));
   }
 
+  if (filterState.isVerified !== DEFAULT_FILTER_STATE.isVerified) {
+    result.append(IS_VERIFIED_NAME, filterState.isVerified.toString());
+  }
+
   // TODO: add other filters to URL params (e.g. year, consumer base)
 
   result.sort();
@@ -173,6 +179,10 @@ export function decodeFilterState(queryString: string): FilterState {
     searchInput: DEFAULT_FILTER_STATE.searchInput,
     status:
       STATUS_MAP.decode(params.get(STATUS_NAME)) ?? DEFAULT_FILTER_STATE.status,
+    isVerified:
+      params.get(IS_VERIFIED_NAME) === null
+        ? DEFAULT_FILTER_STATE.isVerified
+        : params.get(IS_VERIFIED_NAME) === "true",
     includedNudges: NUDGE_TYPE_MAP.decodeSet(
       params.get(INCLUDED_NUDGE_NAME),
       DEFAULT_FILTER_STATE.includedNudges,

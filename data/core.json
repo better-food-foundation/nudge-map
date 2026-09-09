@@ -16,7 +16,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -37,7 +38,8 @@
       {
         "status": "pledged",
         "date": "2030",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -58,7 +60,8 @@
       {
         "status": "pledged",
         "date": "2022",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -79,7 +82,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -100,7 +104,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -121,14 +126,16 @@
       {
         "status": "pledged",
         "date": "2021",
-        "org_credit": ["Plant-Based Treaty"]
+        "org_credit": ["Plant-Based Treaty"],
+        "is_verified": true
       }
     ],
     "other": [
       {
         "status": "pledged",
         "date": "2021",
-        "org_credit": ["Plant-Based Treaty"]
+        "org_credit": ["Plant-Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -149,14 +156,16 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ],
     "ratio": [
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -177,7 +186,8 @@
       {
         "status": "adopted",
         "date": "2021",
-        "org_credit": ["World Resources Institute"]
+        "org_credit": ["World Resources Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -198,7 +208,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -219,7 +230,8 @@
       {
         "status": "pledged",
         "date": "2023",
-        "org_credit": ["Better Food Foundation", "Planted Society"]
+        "org_credit": ["Better Food Foundation", "Planted Society"],
+        "is_verified": true
       }
     ]
   },
@@ -240,7 +252,8 @@
       {
         "status": "adopted",
         "date": "2022",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
       }
     ]
   },
@@ -260,7 +273,8 @@
     "ratio": [
       {
         "status": "pledged",
-        "date": "2021"
+        "date": "2021",
+        "is_verified": true
       }
     ]
   },
@@ -280,7 +294,8 @@
     "ratio": [
       {
         "status": "pledged",
-        "date": "2021"
+        "date": "2021",
+        "is_verified": true
       }
     ]
   },
@@ -301,7 +316,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -322,7 +338,30 @@
       {
         "status": "pledged",
         "date": "2022",
-        "org_credit": ["Plant-Based Cities Movement", "Earthsave Canada"]
+        "org_credit": ["Plant-Based Cities Movement", "Earthsave Canada"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Brody Jewish Center (UVA), VA, United States": {
+    "place": {
+      "name": "Brody Jewish Center (UVA)",
+      "street": null,
+      "city": "Charlottesville",
+      "state": "VA",
+      "postal_code": null,
+      "country": "United States",
+      "type": "Religious Center",
+      "encoded": "brody-jewish-center-uva-va-united-states",
+      "consumer_base": 150,
+      "coord": [-78.4766781, 38.029306]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -343,7 +382,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -363,7 +403,8 @@
     "default": [
       {
         "status": "adopted",
-        "date": "2024"
+        "date": "2024",
+        "is_verified": true
       }
     ]
   },
@@ -384,7 +425,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -405,20 +447,21 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
-  "Caribou Coffee Seasonal Menus, MN, United States": {
+  "Caribou Coffee, MN, United States": {
     "place": {
-      "name": "Caribou Coffee Seasonal Menus",
+      "name": "Caribou Coffee",
       "street": null,
       "city": "Minneapolis",
       "state": "MN",
       "postal_code": null,
       "country": "United States",
       "type": "Chain Restaurant",
-      "encoded": "caribou-coffee-seasonal-menus-mn-united-states",
+      "encoded": "caribou-coffee-mn-united-states",
       "consumer_base": 100,
       "coord": [-93.2654692, 44.9772995]
     },
@@ -426,7 +469,8 @@
       {
         "status": "adopted",
         "date": "2023",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -447,7 +491,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Mercy for Animals"]
+        "org_credit": ["Mercy for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -468,7 +513,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": false
       }
     ]
   },
@@ -489,7 +535,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": false
       }
     ]
   },
@@ -509,7 +556,8 @@
     "other": [
       {
         "status": "adopted",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": false
       }
     ]
   },
@@ -530,7 +578,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Compass Group"]
+        "org_credit": ["Compass Group"],
+        "is_verified": true
       }
     ]
   },
@@ -551,7 +600,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["World Resources Institute", "Practice Greenhealth"]
+        "org_credit": ["World Resources Institute", "Practice Greenhealth"],
+        "is_verified": true
       }
     ]
   },
@@ -572,7 +622,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -593,7 +644,30 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
+  "DC Department of Youth Rehabilitation Services, DC, United States": {
+    "place": {
+      "name": "DC Department of Youth Rehabilitation Services",
+      "street": "1100 4th Street SW",
+      "city": "Washington",
+      "state": "DC",
+      "postal_code": "20024",
+      "country": "United States",
+      "type": "City/Government",
+      "encoded": "dc-department-of-youth-rehabilitation-services-dc-united-states",
+      "consumer_base": 100,
+      "coord": [-77.0172181, 38.8774173]
+    },
+    "other": [
+      {
+        "status": "pledged",
+        "date": "2024",
+        "org_credit": ["Greener by Default", "Better Food Foundation"],
+        "is_verified": false
       }
     ]
   },
@@ -613,7 +687,8 @@
     "sub": [
       {
         "status": "adopted",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -634,7 +709,8 @@
       {
         "status": "pledged",
         "date": "2021",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -654,20 +730,21 @@
     "default": [
       {
         "status": "adopted",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
-  "Edinburgh, Scotland, United Kingdom": {
+  "Edinburgh (municipal schools & council catering), United Kingdom": {
     "place": {
-      "name": "Edinburgh, Scotland",
+      "name": "Edinburgh (municipal schools & council catering)",
       "street": null,
       "city": "Edinburgh",
       "state": null,
       "postal_code": null,
       "country": "United Kingdom",
       "type": "City/Government",
-      "encoded": "edinburgh-scotland-united-kingdom",
+      "encoded": "edinburgh-municipal-schools-council-catering-united-kingdom",
       "consumer_base": 100,
       "coord": [-3.1904199, 55.9519018]
     },
@@ -675,7 +752,8 @@
       {
         "status": "adopted",
         "date": "2023",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -696,7 +774,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["ProVeg"]
+        "org_credit": ["ProVeg"],
+        "is_verified": true
       }
     ]
   },
@@ -717,7 +796,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -738,7 +818,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -759,7 +840,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -779,7 +861,8 @@
     "default": [
       {
         "status": "adopted",
-        "date": "2022"
+        "date": "2022",
+        "is_verified": true
       }
     ]
   },
@@ -800,7 +883,8 @@
       {
         "status": "adopted",
         "date": "2023",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -821,7 +905,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -842,7 +927,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -861,7 +947,8 @@
     },
     "default": [
       {
-        "status": "adopted"
+        "status": "adopted",
+        "is_verified": true
       }
     ]
   },
@@ -882,7 +969,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
       }
     ]
   },
@@ -901,12 +989,14 @@
     },
     "ratio": [
       {
-        "status": "adopted"
+        "status": "adopted",
+        "is_verified": true
       }
     ],
     "placement": [
       {
-        "status": "adopted"
+        "status": "adopted",
+        "is_verified": true
       }
     ]
   },
@@ -927,7 +1017,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -948,7 +1039,8 @@
       {
         "status": "pledged",
         "date": "2030",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -969,7 +1061,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -990,7 +1083,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1010,7 +1104,8 @@
     "other": [
       {
         "status": "adopted",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -1031,7 +1126,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1052,7 +1148,8 @@
       {
         "status": "pledged",
         "date": "2030",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -1072,7 +1169,8 @@
     "default": [
       {
         "status": "pledged",
-        "date": "2030"
+        "date": "2030",
+        "is_verified": true
       }
     ]
   },
@@ -1092,7 +1190,8 @@
     "default": [
       {
         "status": "adopted",
-        "date": "2023"
+        "date": "2023",
+        "is_verified": true
       }
     ]
   },
@@ -1112,7 +1211,8 @@
     "ratio": [
       {
         "status": "pledged",
-        "date": "2026"
+        "date": "2026",
+        "is_verified": true
       }
     ]
   },
@@ -1136,7 +1236,8 @@
         "org_credit": [
           "Wholesome Minnesota of Compassionate Action for Animals",
           "Civic Plate (a project of @MercyForAnimals)"
-        ]
+        ],
+        "is_verified": false
       }
     ]
   },
@@ -1157,7 +1258,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -1178,7 +1280,8 @@
       {
         "status": "pledged",
         "date": "2026",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1199,14 +1302,16 @@
       {
         "status": "pledged",
         "date": "2024",
-        "org_credit": ["Plant-Based Cities Movement"]
+        "org_credit": ["Plant-Based Cities Movement"],
+        "is_verified": false
       }
     ],
     "other": [
       {
         "status": "pledged",
         "date": "2024",
-        "org_credit": ["Plant-Based Cities Movement"]
+        "org_credit": ["Plant-Based Cities Movement"],
+        "is_verified": false
       }
     ]
   },
@@ -1227,7 +1332,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1248,7 +1354,8 @@
       {
         "status": "adopted",
         "date": "2022",
-        "org_credit": ["Better Food Foundation", "Greener by Default"]
+        "org_credit": ["Better Food Foundation", "Greener by Default"],
+        "is_verified": true
       }
     ]
   },
@@ -1269,7 +1376,8 @@
       {
         "status": "adopted",
         "date": "2019",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1290,7 +1398,8 @@
       {
         "status": "pledged",
         "date": "2024",
-        "org_credit": ["Mercy for Animals"]
+        "org_credit": ["Mercy for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1311,7 +1420,8 @@
       {
         "status": "adopted",
         "date": "2022",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -1332,7 +1442,8 @@
       {
         "status": "adopted",
         "date": "2021",
-        "org_credit": ["World Resources Institute"]
+        "org_credit": ["World Resources Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -1352,7 +1463,8 @@
     "other": [
       {
         "status": "pledged",
-        "date": "2019"
+        "date": "2019",
+        "is_verified": true
       }
     ]
   },
@@ -1373,7 +1485,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1394,7 +1507,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["World Resources Institute"]
+        "org_credit": ["World Resources Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -1415,7 +1529,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -1440,7 +1555,8 @@
           "Greener by Default",
           "Better Food Foundation",
           "Rachel Atcheson"
-        ]
+        ],
+        "is_verified": true
       }
     ]
   },
@@ -1461,7 +1577,8 @@
       {
         "status": "adopted",
         "date": "2021",
-        "org_credit": ["World Resources Institute"]
+        "org_credit": ["World Resources Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -1482,7 +1599,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -1503,7 +1621,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -1524,7 +1643,8 @@
       {
         "status": "pledged",
         "date": "2024",
-        "org_credit": ["Plant-Based Cities Movement"]
+        "org_credit": ["Plant-Based Cities Movement"],
+        "is_verified": true
       }
     ]
   },
@@ -1545,13 +1665,14 @@
       {
         "status": "pledged",
         "date": "2027",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
-  "Ocean Beach People's Food Co-Op, CA, United States": {
+  "Ocean Beach People's Food Co-op, CA, United States": {
     "place": {
-      "name": "Ocean Beach People's Food Co-Op",
+      "name": "Ocean Beach People's Food Co-op",
       "street": "4765 Voltaire St",
       "city": "San Diego",
       "state": "CA",
@@ -1564,7 +1685,8 @@
     },
     "ratio": [
       {
-        "status": "adopted"
+        "status": "adopted",
+        "is_verified": true
       }
     ]
   },
@@ -1585,7 +1707,8 @@
       {
         "status": "pledged",
         "date": "2027",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1606,7 +1729,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -1627,7 +1751,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -1648,7 +1773,8 @@
       {
         "status": "adopted",
         "date": "2020",
-        "org_credit": ["World Resources Institute"]
+        "org_credit": ["World Resources Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -1668,7 +1794,8 @@
     "default": [
       {
         "status": "adopted",
-        "date": "2024"
+        "date": "2024",
+        "is_verified": true
       }
     ]
   },
@@ -1689,7 +1816,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1710,7 +1838,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -1730,7 +1859,8 @@
     "default": [
       {
         "status": "adopted",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -1750,7 +1880,8 @@
     "other": [
       {
         "status": "pledged",
-        "date": "2025"
+        "date": "2025",
+        "is_verified": true
       }
     ]
   },
@@ -1770,7 +1901,8 @@
     "other": [
       {
         "status": "pledged",
-        "date": "2026"
+        "date": "2026",
+        "is_verified": true
       }
     ]
   },
@@ -1791,7 +1923,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1812,7 +1945,8 @@
       {
         "status": "adopted",
         "date": "2026",
-        "org_credit": ["ProVeg UK"]
+        "org_credit": ["ProVeg UK"],
+        "is_verified": false
       }
     ]
   },
@@ -1833,7 +1967,8 @@
       {
         "status": "adopted",
         "date": "2026",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1854,7 +1989,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1875,7 +2011,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -1896,7 +2033,8 @@
       {
         "status": "adopted",
         "date": "2021",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1917,7 +2055,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1938,7 +2077,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1959,7 +2099,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -1980,62 +2121,21 @@
       {
         "status": "adopted",
         "date": "2022",
-        "org_credit": ["Better Food Foundation", "Greener by Default"]
+        "org_credit": ["Better Food Foundation", "Greener by Default"],
+        "is_verified": true
       }
     ]
   },
-  "San Diego, CA, United States": {
+  "San Francisco County Jails, CA, United States": {
     "place": {
-      "name": "San Diego",
-      "street": null,
-      "city": "San Diego",
-      "state": "CA",
-      "postal_code": null,
-      "country": "United States",
-      "type": "City/Government",
-      "encoded": "san-diego-ca-united-states",
-      "consumer_base": 100,
-      "coord": [-117.162772, 32.7174202]
-    },
-    "other": [
-      {
-        "status": "pledged",
-        "date": "2022",
-        "org_credit": ["Better Food Foundation"]
-      }
-    ]
-  },
-  "San Francisco Hospitals, CA, United States": {
-    "place": {
-      "name": "San Francisco Hospitals",
-      "street": "1001 Potrero Ave",
-      "city": "San Francisco",
-      "state": "CA",
-      "postal_code": "94110",
-      "country": "United States",
-      "type": "Hospital",
-      "encoded": "san-francisco-hospitals-ca-united-states",
-      "consumer_base": 100,
-      "coord": [-122.4052532, 37.7568103]
-    },
-    "ratio": [
-      {
-        "status": "pledged",
-        "date": "2020",
-        "org_credit": ["Friends of the Earth", "Farm Forward"]
-      }
-    ]
-  },
-  "San Francisco Jails, CA, United States": {
-    "place": {
-      "name": "San Francisco Jails",
+      "name": "San Francisco County Jails",
       "street": "425 7th St",
       "city": "San Francisco",
       "state": "CA",
       "postal_code": "94103",
       "country": "United States",
-      "type": "Prison",
-      "encoded": "san-francisco-jails-ca-united-states",
+      "type": "Other",
+      "encoded": "san-francisco-county-jails-ca-united-states",
       "consumer_base": 100,
       "coord": [-122.4049148, 37.775226]
     },
@@ -2043,7 +2143,30 @@
       {
         "status": "pledged",
         "date": "2020",
-        "org_credit": ["Friends of the Earth", "Farm Forward"]
+        "org_credit": ["Friends of the Earth", "Farm Forward"],
+        "is_verified": true
+      }
+    ]
+  },
+  "San Francisco Department of Public Health (hospitals), CA, United States": {
+    "place": {
+      "name": "San Francisco Department of Public Health (hospitals)",
+      "street": "1001 Potrero Ave",
+      "city": "San Francisco",
+      "state": "CA",
+      "postal_code": "94110",
+      "country": "United States",
+      "type": "Hospital",
+      "encoded": "san-francisco-department-of-public-health-hospitals-ca-united-states",
+      "consumer_base": 100,
+      "coord": [-122.4052532, 37.7568103]
+    },
+    "ratio": [
+      {
+        "status": "pledged",
+        "date": "2020",
+        "org_credit": ["Friends of the Earth", "Farm Forward"],
+        "is_verified": true
       }
     ]
   },
@@ -2064,7 +2187,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -2085,7 +2209,8 @@
       {
         "status": "adopted",
         "date": "2017",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2106,7 +2231,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
       }
     ]
   },
@@ -2127,7 +2253,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -2148,7 +2275,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
       }
     ]
   },
@@ -2169,7 +2297,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2190,7 +2319,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -2210,20 +2340,21 @@
     "ratio": [
       {
         "status": "adopted",
-        "date": "2025"
+        "date": "2025",
+        "is_verified": true
       }
     ]
   },
-  "Starbucks Seasonal Menus, WA, United States": {
+  "Starbucks, WA, United States": {
     "place": {
-      "name": "Starbucks Seasonal Menus",
+      "name": "Starbucks",
       "street": null,
       "city": "Seattle",
       "state": "WA",
       "postal_code": null,
       "country": "United States",
       "type": "Chain Restaurant",
-      "encoded": "starbucks-seasonal-menus-wa-united-states",
+      "encoded": "starbucks-wa-united-states",
       "consumer_base": 100,
       "coord": [-122.330062, 47.6038321]
     },
@@ -2231,27 +2362,29 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Mercy For Animals"]
+        "org_credit": ["Mercy for Animals"],
+        "is_verified": true
       }
     ]
   },
-  "Stumptown Roasters, OR, United States": {
+  "Stumptown Coffee Roasters, OR, United States": {
     "place": {
-      "name": "Stumptown Roasters",
+      "name": "Stumptown Coffee Roasters",
       "street": "4525 SE DIVISION ST",
       "city": "PORTLAND",
       "state": "OR",
       "postal_code": "97206",
       "country": "United States",
       "type": "Chain Restaurant",
-      "encoded": "stumptown-roasters-or-united-states",
+      "encoded": "stumptown-coffee-roasters-or-united-states",
       "consumer_base": 100,
       "coord": [-122.6155605, 45.5054248]
     },
     "default": [
       {
         "status": "adopted",
-        "date": "2023"
+        "date": "2023",
+        "is_verified": true
       }
     ]
   },
@@ -2272,7 +2405,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Plant Based Treaty"]
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
       }
     ]
   },
@@ -2293,7 +2427,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -2313,7 +2448,8 @@
     "ratio": [
       {
         "status": "adopted",
-        "date": "2025"
+        "date": "2025",
+        "is_verified": true
       }
     ]
   },
@@ -2334,26 +2470,28 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
       }
     ]
   },
-  "Tony's, CA, United States": {
+  "Tony's Darts Away, CA, United States": {
     "place": {
-      "name": "Tony's",
+      "name": "Tony's Darts Away",
       "street": "1710 W Magnolia Blvd",
       "city": "Burbank",
       "state": "CA",
       "postal_code": "91506",
       "country": "United States",
       "type": "Ind. Restaurant",
-      "encoded": "tonys-ca-united-states",
+      "encoded": "tonys-darts-away-ca-united-states",
       "consumer_base": 100,
       "coord": [-118.3269699, 34.1743839]
     },
     "default": [
       {
-        "status": "adopted"
+        "status": "adopted",
+        "is_verified": true
       }
     ]
   },
@@ -2374,7 +2512,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
       }
     ]
   },
@@ -2395,7 +2534,8 @@
       {
         "status": "pledged",
         "date": "2027",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2416,7 +2556,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -2437,7 +2578,8 @@
       {
         "status": "pledged",
         "date": "2030",
-        "org_credit": ["World Resources Institute"]
+        "org_credit": ["World Resources Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -2458,7 +2600,8 @@
       {
         "status": "adopted",
         "date": "2022",
-        "org_credit": ["Greener by Default"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
       }
     ]
   },
@@ -2479,7 +2622,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2500,7 +2644,8 @@
       {
         "status": "pledged",
         "date": "2027",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2521,7 +2666,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation", "Humane World for Animals"]
+        "org_credit": ["Better Food Foundation", "Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2542,7 +2688,8 @@
       {
         "status": "pledged",
         "date": "2027",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2563,7 +2710,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -2584,7 +2732,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2605,7 +2754,8 @@
       {
         "status": "adopted",
         "date": "2021",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2626,7 +2776,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -2647,7 +2798,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2668,7 +2820,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -2689,7 +2842,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2710,7 +2864,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2730,7 +2885,8 @@
     "ratio": [
       {
         "status": "adopted",
-        "date": "2025"
+        "date": "2025",
+        "is_verified": true
       }
     ]
   },
@@ -2751,7 +2907,8 @@
       {
         "status": "pledged",
         "date": "2019",
-        "org_credit": ["World Resources Institute"]
+        "org_credit": ["World Resources Institute"],
+        "is_verified": true
       }
     ]
   },
@@ -2772,7 +2929,8 @@
       {
         "status": "adopted",
         "date": "2021",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2793,7 +2951,30 @@
       {
         "status": "adopted",
         "date": "2021",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"]
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
+      }
+    ]
+  },
+  "University of San Diego, Aromas, CA, United States": {
+    "place": {
+      "name": "University of San Diego, Aromas",
+      "street": null,
+      "city": "San Diego",
+      "state": "CA",
+      "postal_code": null,
+      "country": "United States",
+      "type": "City/Government",
+      "encoded": "university-of-san-diego-aromas-ca-united-states",
+      "consumer_base": 100,
+      "coord": [-117.162772, 32.7174202]
+    },
+    "other": [
+      {
+        "status": "pledged",
+        "date": "2022",
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
       }
     ]
   },
@@ -2814,7 +2995,8 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -2834,7 +3016,8 @@
     "ratio": [
       {
         "status": "pledged",
-        "date": "2025"
+        "date": "2025",
+        "is_verified": true
       }
     ]
   },
@@ -2855,28 +3038,8 @@
       {
         "status": "adopted",
         "date": "2021",
-        "org_credit": ["Greener by Default"]
-      }
-    ]
-  },
-  "University of Virginia, Brody Jewish Center (Hillel), VA, United States": {
-    "place": {
-      "name": "University of Virginia, Brody Jewish Center (Hillel)",
-      "street": null,
-      "city": "Charlottesville",
-      "state": "VA",
-      "postal_code": null,
-      "country": "United States",
-      "type": "Religious Center",
-      "encoded": "university-of-virginia-brody-jewish-center-hillel-va-united-states",
-      "consumer_base": 150,
-      "coord": [-78.4766781, 38.029306]
-    },
-    "default": [
-      {
-        "status": "adopted",
-        "date": "2025",
-        "org_credit": ["Better Food Foundation"]
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
       }
     ]
   },
@@ -2897,27 +3060,29 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
-  "Vermaat (caterer, Netherlands) — hybrid tuna salad, Netherlands": {
+  "Vermaat , Netherlands": {
     "place": {
-      "name": "Vermaat (caterer, Netherlands) — hybrid tuna salad",
+      "name": "Vermaat ",
       "street": null,
       "city": "IJsselstein",
       "state": null,
       "postal_code": null,
       "country": "Netherlands",
       "type": "Other",
-      "encoded": "vermaat-caterer-netherlands-hybrid-tuna-salad-netherlands",
+      "encoded": "vermaat-netherlands",
       "consumer_base": 100,
       "coord": [5.0286859, 52.0262053]
     },
     "sub": [
       {
         "status": "adopted",
-        "date": "2024"
+        "date": "2024",
+        "is_verified": true
       }
     ]
   },
@@ -2937,20 +3102,21 @@
     "sub": [
       {
         "status": "adopted",
-        "date": "2024"
+        "date": "2024",
+        "is_verified": false
       }
     ]
   },
-  "Vitam (caterer, Netherlands) — plant-based cooking cream, Netherlands": {
+  "Vitam, Netherlands": {
     "place": {
-      "name": "Vitam (caterer, Netherlands) — plant-based cooking cream",
+      "name": "Vitam",
       "street": null,
       "city": "Rosmalen",
       "state": null,
       "postal_code": null,
       "country": "Netherlands",
       "type": "Other",
-      "encoded": "vitam-caterer-netherlands-plant-based-cooking-cream-netherlands",
+      "encoded": "vitam-netherlands",
       "consumer_base": 100,
       "coord": [5.3629244, 51.71866]
     },
@@ -2958,7 +3124,8 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["ProVeg"]
+        "org_credit": ["ProVeg"],
+        "is_verified": true
       }
     ]
   },
@@ -2979,41 +3146,21 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
-  "Washington, DC Department of Youth and Rehabilitation Services, DC, United States": {
+  "Washington, DC (public schools), DC, United States": {
     "place": {
-      "name": "Washington, DC Department of Youth and Rehabilitation Services",
-      "street": "1100 4th Street SW",
-      "city": "Washington",
-      "state": "DC",
-      "postal_code": "20024",
-      "country": "United States",
-      "type": "City/Government",
-      "encoded": "washington-dc-department-of-youth-and-rehabilitation-services-dc-united-states",
-      "consumer_base": 100,
-      "coord": [-77.0172181, 38.8774173]
-    },
-    "other": [
-      {
-        "status": "pledged",
-        "date": "2024",
-        "org_credit": ["Greener by Default", "Better Food Foundation"]
-      }
-    ]
-  },
-  "Washington, DC, DC, United States": {
-    "place": {
-      "name": "Washington, DC",
+      "name": "Washington, DC (public schools)",
       "street": null,
       "city": "Washington",
       "state": "DC",
       "postal_code": null,
       "country": "United States",
       "type": "City/Government",
-      "encoded": "washington-dc-dc-united-states",
+      "encoded": "washington-dc-public-schools-dc-united-states",
       "consumer_base": 100,
       "coord": [-77.0402691, 38.8898398]
     },
@@ -3021,7 +3168,8 @@
       {
         "status": "adopted",
         "date": "2022",
-        "org_credit": ["Friends of the Earth"]
+        "org_credit": ["Friends of the Earth"],
+        "is_verified": true
       }
     ]
   },
@@ -3042,7 +3190,8 @@
       {
         "status": "pledged",
         "date": "2024",
-        "org_credit": ["Mercy for Animals"]
+        "org_credit": ["Mercy for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -3063,7 +3212,8 @@
       {
         "status": "pledged",
         "date": "2027",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -3084,7 +3234,8 @@
       {
         "status": "pledged",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   },
@@ -3105,7 +3256,8 @@
       {
         "status": "pledged",
         "date": "2024",
-        "org_credit": ["Humane World for Animals"]
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
       }
     ]
   }

@@ -408,6 +408,52 @@ function initStatusDropdown(
   dropdownContainer.append(container);
 }
 
+function initVerifiedFilter(
+  filterManager: PlaceFilterManager,
+  optionsContainer: HTMLDivElement,
+): void {
+  const baseElements = generateAccordion("verified");
+  const fieldSet = document.createElement("fieldset");
+  fieldSet.className = "filter-verified";
+  const [label, input] = generateCheckbox(
+    "filter-verified-option",
+    "verified",
+    filterManager.getState().isVerified,
+    "Verified nudges",
+  );
+  fieldSet.appendChild(label);
+  baseElements.contentContainer.appendChild(fieldSet);
+  optionsContainer.appendChild(baseElements.outerContainer);
+
+  const accordionState = new Observable<AccordionState>(
+    "filter accordion verified",
+    {
+      hidden: false,
+      expanded: false,
+      title: "Verified nudges",
+      supplementalTitle: filterManager.getState().isVerified ? " ✔" : "",
+    },
+  );
+  accordionState.subscribe((state) => updateAccordionUI(baseElements, state));
+  baseElements.accordionButton.addEventListener("click", () => {
+    const priorState = accordionState.getValue();
+    accordionState.setValue({ ...priorState, expanded: !priorState.expanded });
+  });
+  accordionState.initialize();
+
+  input.addEventListener("change", () => {
+    filterManager.update({ isVerified: input.checked });
+  });
+  filterManager.subscribe("possibly update verified filter UI", (state) => {
+    input.checked = state.isVerified;
+    const priorState = accordionState.getValue();
+    accordionState.setValue({
+      ...priorState,
+      supplementalTitle: state.isVerified ? " ✔" : "",
+    });
+  });
+}
+
 export function initFilterOptions(filterManager: PlaceFilterManager): void {
   // Note that the order of this function determines the order of the filter.
   const filterPopup = document.querySelector<HTMLFormElement>("#filter-popup");
@@ -420,6 +466,7 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
 
   // Top-level option
   initStatusDropdown(filterManager, datasetDiv);
+  initVerifiedFilter(filterManager, optionsDiv);
 
   // Options about the nudge
   initFilterGroup(filterManager, optionsDiv, {
