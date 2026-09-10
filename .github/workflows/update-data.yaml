@@ -1,0 +1,73 @@
+name: Update Data
+on:
+  schedule:
+    - cron: "0 8 * * *" # Runs every day at 12 midnight PST
+  workflow_dispatch:
+jobs:
+  update-data:
+    if: github.repository_owner == 'better-food-foundation'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v7
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 26
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run sync-directus
+        run: npm run sync-directus
+        env:
+          DIRECTUS_EMAIL: ${{ secrets.DIRECTUS_EMAIL }}
+          DIRECTUS_PASSWORD: ${{ secrets.DIRECTUS_PASSWORD }}
+      - name: Gen data set
+        run: npm run gen-data-set
+      - name: Gen HTML pages
+        run: npm run gen-html
+      - name: Format JSON
+        run: npm run fmt
+
+      - name: Check for changes
+        id: git_status
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Commit and push changes
+        if: steps.git_status.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B automated-data-update
+          git add -A
+          git commit -m "Update data"
+          git push --force origin automated-data-update
+
+      - name: Create or update Pull Request
+        if: steps.git_status.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.UPDATE_DATA_GITHUB_TOKEN }}
+        run: |
+          if [[ -n $(gh pr list --head automated-data-update --state open --json number --jq '.[0]') ]]; then
+            echo "PR already open for automated-data-update; push updated it."
+            exit 0
+          fi
+
+          body=$(printf '%s\n' \
+            '⚠️ Check if the PR deletes any places or renames place IDs' \
+            '(the keys).' \
+            '' \
+            'When a place is deleted, we also delete its details HTML page,' \
+            'meaning it will 404.' \
+            '' \
+            'When a place is renamed, you should update in `data/core.json`' \
+            'the `encoded` field to use the prior URL value. This allows us' \
+            'to reuse the prior HTML page.')
+          gh pr create \
+            --title "Update data" \
+            --head automated-data-update \
+            --body "$body"
