@@ -1,15 +1,15 @@
 {
-  "Alcorcón, Spain, Spain": {
+  "Alcorcón (council catering), Spain": {
     "place": {
-      "name": "Alcorcón, Spain",
+      "name": "Alcorcón (council catering)",
       "street": null,
       "city": "Alcorcón",
       "state": null,
       "postal_code": null,
       "country": "Spain",
       "type": "City/Government",
-      "encoded": "alcorcon-spain-spain",
-      "consumer_base": 100,
+      "encoded": "alcorcon-council-catering-spain",
+      "consumer_base": 400,
       "coord": [-3.8284295, 40.3492998]
     },
     "other": [
@@ -21,17 +21,17 @@
       }
     ]
   },
-  "Almere, Netherlands": {
+  "Almere (council catering), Netherlands": {
     "place": {
-      "name": "Almere",
+      "name": "Almere (council catering)",
       "street": null,
       "city": "Almere",
       "state": null,
       "postal_code": null,
       "country": "Netherlands",
       "type": "City/Government",
-      "encoded": "almere-netherlands",
-      "consumer_base": 100,
+      "encoded": "almere-council-catering-netherlands",
+      "consumer_base": 400,
       "coord": [5.3238309, 52.4064476]
     },
     "ratio": [
@@ -65,6 +65,28 @@
       }
     ]
   },
+  "American University (School of Public Health event), DC, United States": {
+    "place": {
+      "name": "American University (School of Public Health event)",
+      "street": "3544 Nebraska Ave NW",
+      "city": "Washington",
+      "state": "DC",
+      "postal_code": "20016",
+      "country": "United States",
+      "type": "University Event",
+      "encoded": "american-university-school-of-public-health-event-dc-united-states",
+      "consumer_base": 100,
+      "coord": [-77.0871074, 38.9366523]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
+      }
+    ]
+  },
   "American University, Davenport Coffee Lounge, DC, United States": {
     "place": {
       "name": "American University, Davenport Coffee Lounge",
@@ -87,69 +109,17 @@
       }
     ]
   },
-  "American University, School of Public Affairs event, DC, United States": {
+  "Amsterdam (municipal catering & institutions), Netherlands": {
     "place": {
-      "name": "American University, School of Public Affairs event",
-      "street": "3544 Nebraska Ave NW",
-      "city": "Washington",
-      "state": "DC",
-      "postal_code": "20016",
-      "country": "United States",
-      "type": "University Event",
-      "encoded": "american-university-school-of-public-affairs-event-dc-united-states",
-      "consumer_base": 100,
-      "coord": [-77.0871074, 38.9366523]
-    },
-    "ratio": [
-      {
-        "status": "adopted",
-        "date": "2025",
-        "org_credit": ["Better Food Foundation", "New Roots Institute"],
-        "is_verified": true
-      }
-    ]
-  },
-  "Amsterdam, Netherlands, Netherlands": {
-    "place": {
-      "name": "Amsterdam, Netherlands",
-      "street": "Amstel 1",
-      "city": "Amsterdam",
-      "state": null,
-      "postal_code": "1011 PN",
-      "country": "Netherlands",
-      "type": "City/Government",
-      "encoded": "amsterdam-netherlands-netherlands",
-      "consumer_base": 1200000,
-      "coord": [4.9002256, 52.3676842]
-    },
-    "ratio": [
-      {
-        "status": "pledged",
-        "date": "2021",
-        "org_credit": ["Plant-Based Treaty"],
-        "is_verified": true
-      }
-    ],
-    "other": [
-      {
-        "status": "pledged",
-        "date": "2021",
-        "org_credit": ["Plant-Based Treaty"],
-        "is_verified": true
-      }
-    ]
-  },
-  "Amsterdam, Netherlands": {
-    "place": {
-      "name": "Amsterdam",
+      "name": "Amsterdam (municipal catering & institutions)",
       "street": null,
       "city": "Amsterdam",
       "state": null,
       "postal_code": null,
       "country": "Netherlands",
       "type": "City/Government",
-      "encoded": "amsterdam-netherlands",
-      "consumer_base": 100,
+      "encoded": "amsterdam-municipal-catering-institutions-netherlands",
+      "consumer_base": 35000,
       "coord": [4.8924534, 52.3730796]
     },
     "default": [
@@ -169,16 +139,46 @@
       }
     ]
   },
-  "Aramark, PA, United States": {
+  "Amsterdam, Netherlands, Netherlands": {
     "place": {
-      "name": "Aramark",
+      "name": "Amsterdam, Netherlands",
+      "street": "Amstel 1",
+      "city": "Amsterdam",
+      "state": null,
+      "postal_code": "1011 PN",
+      "country": "Netherlands",
+      "type": "City/Government",
+      "encoded": "amsterdam-netherlands-netherlands",
+      "consumer_base": 35000,
+      "coord": [4.9002256, 52.3676842]
+    },
+    "ratio": [
+      {
+        "status": "pledged",
+        "date": "2021",
+        "org_credit": ["Plant-Based Treaty"],
+        "is_verified": true
+      }
+    ],
+    "other": [
+      {
+        "status": "pledged",
+        "date": "2021",
+        "org_credit": ["Plant-Based Treaty"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Aramark (US campuses), PA, United States": {
+    "place": {
+      "name": "Aramark (US campuses)",
       "street": null,
       "city": "Philadelphia",
       "state": "PA",
       "postal_code": null,
       "country": "United States",
       "type": "University Dining Hall",
-      "encoded": "aramark-pa-united-states",
+      "encoded": "aramark-us-campuses-pa-united-states",
       "consumer_base": 100,
       "coord": [-75.1585405, 39.9521552]
     },
@@ -191,17 +191,17 @@
       }
     ]
   },
-  "Arnhem, Netherlands": {
+  "Arnhem (council catering), Netherlands": {
     "place": {
-      "name": "Arnhem",
+      "name": "Arnhem (council catering)",
       "street": null,
       "city": "Arnhem",
       "state": null,
       "postal_code": null,
       "country": "Netherlands",
       "type": "City/Government",
-      "encoded": "arnhem-netherlands",
-      "consumer_base": 100,
+      "encoded": "arnhem-council-catering-netherlands",
+      "consumer_base": 400,
       "coord": [5.9011598, 51.9844332]
     },
     "default": [
@@ -235,16 +235,16 @@
       }
     ]
   },
-  "B Corp Champions Retreat 2022, PA, United States": {
+  "B Corp Champions Retreat, PA, United States": {
     "place": {
-      "name": "B Corp Champions Retreat 2022",
+      "name": "B Corp Champions Retreat",
       "street": null,
       "city": "Philadelphia",
       "state": "PA",
       "postal_code": null,
       "country": "United States",
       "type": "Event",
-      "encoded": "b-corp-champions-retreat-2022-pa-united-states",
+      "encoded": "b-corp-champions-retreat-pa-united-states",
       "consumer_base": 100,
       "coord": [-75.1635262, 39.9527237]
     },
@@ -299,17 +299,17 @@
       }
     ]
   },
-  "Brampton, Canada": {
+  "Brampton (council catering), Canada": {
     "place": {
-      "name": "Brampton",
+      "name": "Brampton (council catering)",
       "street": null,
       "city": "Brampton",
       "state": null,
       "postal_code": null,
       "country": "Canada",
       "type": "City/Government",
-      "encoded": "brampton-canada",
-      "consumer_base": 100,
+      "encoded": "brampton-council-catering-canada",
+      "consumer_base": 400,
       "coord": [-79.7700677, 43.6857541]
     },
     "titles": [
@@ -365,16 +365,16 @@
       }
     ]
   },
-  "Cafe Services Inc., NH, United States": {
+  "Café Services, NH, United States": {
     "place": {
-      "name": "Cafe Services Inc.",
+      "name": "Café Services",
       "street": null,
       "city": "Auburn",
       "state": "NH",
       "postal_code": null,
       "country": "United States",
       "type": "Workplace Cafeteria",
-      "encoded": "cafe-services-inc-nh-united-states",
+      "encoded": "cafe-services-nh-united-states",
       "consumer_base": 100,
       "coord": [-71.348398, 43.0045289]
     },
@@ -387,16 +387,16 @@
       }
     ]
   },
-  "Calderdale Council, United Kingdom": {
+  "Calderdale (council catering & schools), United Kingdom": {
     "place": {
-      "name": "Calderdale Council",
+      "name": "Calderdale (council catering & schools)",
       "street": null,
       "city": "Calderdale",
       "state": null,
       "postal_code": null,
       "country": "United Kingdom",
       "type": "City/Government",
-      "encoded": "calderdale-council-united-kingdom",
+      "encoded": "calderdale-council-catering-schools-united-kingdom",
       "consumer_base": 100,
       "coord": [-1.8633372, 53.6760345]
     },
@@ -430,17 +430,17 @@
       }
     ]
   },
-  "Campolide (Lisbon), Portugal, Portugal": {
+  "Campolide (Lisbon parish), Portugal": {
     "place": {
-      "name": "Campolide (Lisbon), Portugal",
+      "name": "Campolide (Lisbon parish)",
       "street": null,
       "city": "Campolide",
       "state": null,
       "postal_code": null,
       "country": "Portugal",
       "type": "City/Government",
-      "encoded": "campolide-lisbon-portugal-portugal",
-      "consumer_base": 100,
+      "encoded": "campolide-lisbon-parish-portugal",
+      "consumer_base": 400,
       "coord": [-9.1646135, 38.727895]
     },
     "other": [
@@ -462,7 +462,7 @@
       "country": "United States",
       "type": "Chain Restaurant",
       "encoded": "caribou-coffee-mn-united-states",
-      "consumer_base": 100,
+      "consumer_base": 235000,
       "coord": [-93.2654692, 44.9772995]
     },
     "other": [
@@ -496,16 +496,16 @@
       }
     ]
   },
-  "CleanMed / Health Care Without Harm event, MO, United States": {
+  "CleanMed, MO, United States": {
     "place": {
-      "name": "CleanMed / Health Care Without Harm event",
+      "name": "CleanMed",
       "street": null,
       "city": "Kansas City",
       "state": "MO",
       "postal_code": null,
       "country": "United States",
       "type": "Event",
-      "encoded": "cleanmed-health-care-without-harm-event-mo-united-states",
+      "encoded": "cleanmed-mo-united-states",
       "consumer_base": 100,
       "coord": [-94.5781416, 39.100105]
     },
@@ -518,16 +518,16 @@
       }
     ]
   },
-  "ClimateCAP Summit 2025 (UC Berkeley Haas), CA, United States": {
+  "ClimateCAP Summit, CA, United States": {
     "place": {
-      "name": "ClimateCAP Summit 2025 (UC Berkeley Haas)",
+      "name": "ClimateCAP Summit",
       "street": null,
       "city": "Berkeley",
       "state": "CA",
       "postal_code": null,
       "country": "United States",
       "type": "University Event",
-      "encoded": "climatecap-summit-2025-uc-berkeley-haas-ca-united-states",
+      "encoded": "climatecap-summit-ca-united-states",
       "consumer_base": 100,
       "coord": [-122.272863, 37.8708393]
     },
@@ -583,16 +583,16 @@
       }
     ]
   },
-  "Coolfood Pledge – US healthcare cohort, DC, United States": {
+  "Coolfood Pledge (US healthcare), DC, United States": {
     "place": {
-      "name": "Coolfood Pledge – US healthcare cohort",
+      "name": "Coolfood Pledge (US healthcare)",
       "street": "101 Independence Ave SE",
       "city": "Washington",
       "state": "DC",
       "postal_code": "20540",
       "country": "United States",
       "type": "Hospital",
-      "encoded": "coolfood-pledge-us-healthcare-cohort-dc-united-states",
+      "encoded": "coolfood-pledge-us-healthcare-dc-united-states",
       "consumer_base": 100,
       "coord": [-77.0047055, 38.8867409]
     },
@@ -745,7 +745,7 @@
       "country": "United Kingdom",
       "type": "City/Government",
       "encoded": "edinburgh-municipal-schools-council-catering-united-kingdom",
-      "consumer_base": 100,
+      "consumer_base": 26000,
       "coord": [-3.1904199, 55.9519018]
     },
     "other": [
@@ -779,17 +779,17 @@
       }
     ]
   },
-  "El Masnou, Spain, Spain": {
+  "El Masnou (council catering), Spain": {
     "place": {
-      "name": "El Masnou, Spain",
+      "name": "El Masnou (council catering)",
       "street": null,
       "city": "El Masnou",
       "state": null,
       "postal_code": null,
       "country": "Spain",
       "type": "City/Government",
-      "encoded": "el-masnou-spain-spain",
-      "consumer_base": 100,
+      "encoded": "el-masnou-council-catering-spain",
+      "consumer_base": 400,
       "coord": [2.3118347, 41.4796899]
     },
     "other": [
@@ -823,6 +823,28 @@
       }
     ]
   },
+  "Epicurean Feast, MA, United States": {
+    "place": {
+      "name": "Epicurean Feast",
+      "street": null,
+      "city": "Bolton",
+      "state": "MA",
+      "postal_code": null,
+      "country": "United States",
+      "type": "Workplace Cafeteria",
+      "encoded": "epicurean-feast-ma-united-states",
+      "consumer_base": 100,
+      "coord": [-71.6097744, 42.4342336]
+    },
+    "ratio": [
+      {
+        "status": "pledged",
+        "date": "2025",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
   "Erasmus University Rotterdam, Netherlands": {
     "place": {
       "name": "Erasmus University Rotterdam",
@@ -845,17 +867,17 @@
       }
     ]
   },
-  "Exeter City Council, United Kingdom": {
+  "Exeter (city council catering), United Kingdom": {
     "place": {
-      "name": "Exeter City Council",
+      "name": "Exeter (city council catering)",
       "street": null,
       "city": "Exeter",
       "state": null,
       "postal_code": null,
       "country": "United Kingdom",
       "type": "City/Government",
-      "encoded": "exeter-city-council-united-kingdom",
-      "consumer_base": 100,
+      "encoded": "exeter-city-council-catering-united-kingdom",
+      "consumer_base": 400,
       "coord": [-3.5269209, 50.7256138]
     },
     "default": [
@@ -866,17 +888,17 @@
       }
     ]
   },
-  "Exmouth, United Kingdom": {
+  "Exmouth (town council catering), United Kingdom": {
     "place": {
-      "name": "Exmouth",
+      "name": "Exmouth (town council catering)",
       "street": null,
       "city": "Exmouth",
       "state": null,
       "postal_code": null,
       "country": "United Kingdom",
       "type": "City/Government",
-      "encoded": "exmouth-united-kingdom",
-      "consumer_base": 100,
+      "encoded": "exmouth-town-council-catering-united-kingdom",
+      "consumer_base": 400,
       "coord": [-3.4149723, 50.6215885]
     },
     "default": [
@@ -942,7 +964,7 @@
       "country": "United States",
       "type": "Ind. Restaurant",
       "encoded": "galaxy-hut-va-united-states",
-      "consumer_base": 100,
+      "consumer_base": 300,
       "coord": [-77.091012, 38.8896232]
     },
     "default": [
@@ -1000,17 +1022,17 @@
       }
     ]
   },
-  "Grenoble, France, France": {
+  "Grenoble (municipal schools), France": {
     "place": {
-      "name": "Grenoble, France",
+      "name": "Grenoble (municipal schools)",
       "street": null,
       "city": "Grenoble",
       "state": null,
       "postal_code": null,
       "country": "France",
       "type": "City/Government",
-      "encoded": "grenoble-france-france",
-      "consumer_base": 100,
+      "encoded": "grenoble-municipal-schools-france",
+      "consumer_base": 11000,
       "coord": [5.7357819, 45.1875602]
     },
     "other": [
@@ -1022,17 +1044,17 @@
       }
     ]
   },
-  "Groningen, Netherlands": {
+  "Groningen (council catering), Netherlands": {
     "place": {
-      "name": "Groningen",
+      "name": "Groningen (council catering)",
       "street": null,
       "city": "Groningen",
       "state": null,
       "postal_code": null,
       "country": "Netherlands",
       "type": "City/Government",
-      "encoded": "groningen-netherlands",
-      "consumer_base": 100,
+      "encoded": "groningen-council-catering-netherlands",
+      "consumer_base": 400,
       "coord": [6.5680077, 53.2190652]
     },
     "ratio": [
@@ -1109,16 +1131,16 @@
       }
     ]
   },
-  "HHS, LLC., TX, United States": {
+  "HHS (Hospital Housekeeping Systems), TX, United States": {
     "place": {
-      "name": "HHS, LLC.",
+      "name": "HHS (Hospital Housekeeping Systems)",
       "street": null,
       "city": "Dripping Springs",
       "state": "TX",
       "postal_code": null,
       "country": "United States",
       "type": "Hospital",
-      "encoded": "hhs-llc-tx-united-states",
+      "encoded": "hhs-hospital-housekeeping-systems-tx-united-states",
       "consumer_base": 100,
       "coord": [-98.0866781, 30.1902067]
     },
@@ -1131,17 +1153,17 @@
       }
     ]
   },
-  "Haarlem, Netherlands": {
+  "Haarlem (council catering), Netherlands": {
     "place": {
-      "name": "Haarlem",
+      "name": "Haarlem (council catering)",
       "street": null,
       "city": "Haarlem",
       "state": null,
       "postal_code": null,
       "country": "Netherlands",
       "type": "City/Government",
-      "encoded": "haarlem-netherlands",
-      "consumer_base": 100,
+      "encoded": "haarlem-council-catering-netherlands",
+      "consumer_base": 400,
       "coord": [4.6435679, 52.3837281]
     },
     "ratio": [
@@ -1153,17 +1175,17 @@
       }
     ]
   },
-  "Hackney Council (London), United Kingdom": {
+  "Hackney (council events), United Kingdom": {
     "place": {
-      "name": "Hackney Council (London)",
+      "name": "Hackney (council events)",
       "street": null,
       "city": "London Borough of Hackney",
       "state": null,
       "postal_code": null,
       "country": "United Kingdom",
       "type": "City/Government",
-      "encoded": "hackney-council-london-united-kingdom",
-      "consumer_base": 100,
+      "encoded": "hackney-council-events-united-kingdom",
+      "consumer_base": 400,
       "coord": [-0.0546004, 51.5474009]
     },
     "default": [
@@ -1174,16 +1196,16 @@
       }
     ]
   },
-  "Harvard University (Office for Sustainability events), MA, United States": {
+  "Harvard University (dining), MA, United States": {
     "place": {
-      "name": "Harvard University (Office for Sustainability events)",
+      "name": "Harvard University (dining)",
       "street": null,
       "city": "Cambridge",
       "state": "MA",
       "postal_code": null,
       "country": "United States",
       "type": "University Event",
-      "encoded": "harvard-university-office-for-sustainability-events-ma-united-states",
+      "encoded": "harvard-university-dining-ma-united-states",
       "consumer_base": 100,
       "coord": [-71.1040018, 42.3656347]
     },
@@ -1241,16 +1263,16 @@
       }
     ]
   },
-  "Hunter College (CUNY), academic departments, NY, United States": {
+  "Hunter College, CUNY (event), NY, United States": {
     "place": {
-      "name": "Hunter College (CUNY), academic departments",
+      "name": "Hunter College, CUNY (event)",
       "street": null,
       "city": "New York",
       "state": "NY",
       "postal_code": null,
       "country": "United States",
       "type": "University Event",
-      "encoded": "hunter-college-cuny-academic-departments-ny-united-states",
+      "encoded": "hunter-college-cuny-event-ny-united-states",
       "consumer_base": 100,
       "coord": [-74.0060152, 40.7127281]
     },
@@ -1315,28 +1337,6 @@
       }
     ]
   },
-  "LPM & Affiliates dba Epicurean Feast Cafes, MA, United States": {
-    "place": {
-      "name": "LPM & Affiliates dba Epicurean Feast Cafes",
-      "street": null,
-      "city": "Bolton",
-      "state": "MA",
-      "postal_code": null,
-      "country": "United States",
-      "type": "Workplace Cafeteria",
-      "encoded": "lpm-affiliates-dba-epicurean-feast-cafes-ma-united-states",
-      "consumer_base": 100,
-      "coord": [-71.6097744, 42.4342336]
-    },
-    "ratio": [
-      {
-        "status": "pledged",
-        "date": "2025",
-        "org_credit": ["Humane World for Animals"],
-        "is_verified": true
-      }
-    ]
-  },
   "LinkedIn San Francisco Corporate Cafe, CA, United States": {
     "place": {
       "name": "LinkedIn San Francisco Corporate Cafe",
@@ -1381,6 +1381,28 @@
       }
     ]
   },
+  "Los Angeles (city government catering), CA, United States": {
+    "place": {
+      "name": "Los Angeles (city government catering)",
+      "street": null,
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": null,
+      "country": "United States",
+      "type": "City/Government",
+      "encoded": "los-angeles-city-government-catering-ca-united-states",
+      "consumer_base": 400,
+      "coord": [-118.242766, 34.0536909]
+    },
+    "other": [
+      {
+        "status": "adopted",
+        "date": "2022",
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
+      }
+    ]
+  },
   "Los Angeles County, CA, USA, CA, United States": {
     "place": {
       "name": "Los Angeles County, CA, USA",
@@ -1403,39 +1425,17 @@
       }
     ]
   },
-  "Los Angeles, California, CA, United States": {
+  "MAX Burgers, Sweden": {
     "place": {
-      "name": "Los Angeles, California",
-      "street": null,
-      "city": "Los Angeles",
-      "state": "CA",
-      "postal_code": null,
-      "country": "United States",
-      "type": "City/Government",
-      "encoded": "los-angeles-california-ca-united-states",
-      "consumer_base": 100,
-      "coord": [-118.242766, 34.0536909]
-    },
-    "other": [
-      {
-        "status": "adopted",
-        "date": "2022",
-        "org_credit": ["Plant Based Treaty"],
-        "is_verified": true
-      }
-    ]
-  },
-  "MAX Burgers (Sweden), Sweden": {
-    "place": {
-      "name": "MAX Burgers (Sweden)",
+      "name": "MAX Burgers",
       "street": null,
       "city": "Lulea",
       "state": null,
       "postal_code": null,
       "country": "Sweden",
       "type": "Chain Restaurant",
-      "encoded": "max-burgers-sweden-sweden",
-      "consumer_base": 100,
+      "encoded": "max-burgers-sweden",
+      "consumer_base": 100000,
       "coord": [22.1459535, 65.5831187]
     },
     "other": [
@@ -1560,16 +1560,16 @@
       }
     ]
   },
-  "Nestlé Professional USA, OH, United States": {
+  "Nestlé Professional (US), OH, United States": {
     "place": {
-      "name": "Nestlé Professional USA",
+      "name": "Nestlé Professional (US)",
       "street": null,
       "city": "Solon",
       "state": "OH",
       "postal_code": null,
       "country": "United States",
       "type": "Other",
-      "encoded": "nestle-professional-usa-oh-united-states",
+      "encoded": "nestle-professional-us-oh-united-states",
       "consumer_base": 100,
       "coord": [-81.4412259, 41.3897764]
     },
@@ -1604,17 +1604,17 @@
       }
     ]
   },
-  "Nijmegen, Netherlands": {
+  "Nijmegen (council catering), Netherlands": {
     "place": {
-      "name": "Nijmegen",
+      "name": "Nijmegen (council catering)",
       "street": null,
       "city": "Nijmegen",
       "state": null,
       "postal_code": null,
       "country": "Netherlands",
       "type": "City/Government",
-      "encoded": "nijmegen-netherlands",
-      "consumer_base": 100,
+      "encoded": "nijmegen-council-catering-netherlands",
+      "consumer_base": 400,
       "coord": [5.8389606, 51.8425749]
     },
     "placement": [
@@ -1680,7 +1680,7 @@
       "country": "United States",
       "type": "Ind. Restaurant",
       "encoded": "ocean-beach-peoples-food-co-op-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 300,
       "coord": [-117.242746, 32.749377]
     },
     "ratio": [
@@ -1734,16 +1734,16 @@
       }
     ]
   },
-  "Otis College of Art & Design, CA, United States": {
+  "Otis College of Art and Design (event), CA, United States": {
     "place": {
-      "name": "Otis College of Art & Design",
+      "name": "Otis College of Art and Design (event)",
       "street": "9045 Lincoln Blvd",
       "city": "Los Angeles",
       "state": "CA",
       "postal_code": "90045",
       "country": "United States",
       "type": "Event",
-      "encoded": "otis-college-of-art-design-ca-united-states",
+      "encoded": "otis-college-of-art-and-design-event-ca-united-states",
       "consumer_base": 100,
       "coord": [-118.4171761, 33.9575309]
     },
@@ -1766,7 +1766,7 @@
       "country": "United States",
       "type": "Chain Restaurant",
       "encoded": "panera-bread-mo-united-states",
-      "consumer_base": 100,
+      "consumer_base": 1080000,
       "coord": [-90.2026877, 38.6060635]
     },
     "other": [
@@ -1788,7 +1788,7 @@
       "country": "Canada",
       "type": "Cafe",
       "encoded": "paquebot-cafe-qc-canada",
-      "consumer_base": 100,
+      "consumer_base": 350,
       "coord": [-73.6011456, 45.5488035]
     },
     "default": [
@@ -1821,17 +1821,17 @@
       }
     ]
   },
-  "Parla, Spain, Spain": {
+  "Parla (council catering), Spain": {
     "place": {
-      "name": "Parla, Spain",
+      "name": "Parla (council catering)",
       "street": null,
       "city": "Parla",
       "state": null,
       "postal_code": null,
       "country": "Spain",
       "type": "City/Government",
-      "encoded": "parla-spain-spain",
-      "consumer_base": 100,
+      "encoded": "parla-council-catering-spain",
+      "consumer_base": 400,
       "coord": [-3.7718902, 40.2373952]
     },
     "other": [
@@ -1864,16 +1864,16 @@
       }
     ]
   },
-  "Poland — Hospitals (Ministry of Health), Poland": {
+  "Poland – Ministry of Health (hospital meals), Poland": {
     "place": {
-      "name": "Poland — Hospitals (Ministry of Health)",
+      "name": "Poland – Ministry of Health (hospital meals)",
       "street": "Miodowa 15, 00-248",
       "city": "Warszawa",
       "state": null,
       "postal_code": null,
       "country": "Poland",
       "type": "City/Government",
-      "encoded": "poland-hospitals-ministry-of-health-poland",
+      "encoded": "poland-ministry-of-health-hospital-meals-poland",
       "consumer_base": 100,
       "coord": [21.008278, 52.2469371]
     },
@@ -1885,16 +1885,16 @@
       }
     ]
   },
-  "Poland — Schools (Ministry of Health), Poland": {
+  "Poland – Ministry of Health (school meals), Poland": {
     "place": {
-      "name": "Poland — Schools (Ministry of Health)",
+      "name": "Poland – Ministry of Health (school meals)",
       "street": null,
       "city": "Warsaw",
       "state": null,
       "postal_code": null,
       "country": "Poland",
       "type": "City/Government",
-      "encoded": "poland-schools-ministry-of-health-poland",
+      "encoded": "poland-ministry-of-health-school-meals-poland",
       "consumer_base": 100,
       "coord": [21.0711489, 52.2333742]
     },
@@ -1938,7 +1938,7 @@
       "country": "United Kingdom",
       "type": "K-12",
       "encoded": "proveg-uk-school-plates-programme-united-kingdom",
-      "consumer_base": 100,
+      "consumer_base": 1000000,
       "coord": [-0.1277653, 51.5074456]
     },
     "titles": [
@@ -2136,7 +2136,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "san-francisco-county-jails-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 1200,
       "coord": [-122.4049148, 37.775226]
     },
     "ratio": [
@@ -2214,16 +2214,60 @@
       }
     ]
   },
-  "Sodexo & Nuffield Health first to show 22% reduction in food-related emissions with Greener by Default, United Kingdom": {
+  "Sodexo (US Campuses), MD, United States": {
     "place": {
-      "name": "Sodexo & Nuffield Health first to show 22% reduction in food-related emissions with Greener by Default",
+      "name": "Sodexo (US Campuses)",
+      "street": "9811 Washingtonian Blvd",
+      "city": "Gaithersburg",
+      "state": "MD",
+      "postal_code": "20878",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "sodexo-us-campuses-md-united-states",
+      "consumer_base": 1000000,
+      "coord": [-77.200177, 39.1165215]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Sodexo (US Hospitals), MD, United States": {
+    "place": {
+      "name": "Sodexo (US Hospitals)",
+      "street": "9801 Washingtonian Blvd",
+      "city": "Gaithersburg",
+      "state": "MD",
+      "postal_code": "20878",
+      "country": "United States",
+      "type": "Hospital",
+      "encoded": "sodexo-us-hospitals-md-united-states",
+      "consumer_base": 290000,
+      "coord": [-77.1929215, 39.1399187]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["Greener by Default"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Sodexo – Nuffield Health (UK), United Kingdom": {
+    "place": {
+      "name": "Sodexo – Nuffield Health (UK)",
       "street": null,
       "city": "Salford",
       "state": null,
       "postal_code": null,
       "country": "United Kingdom",
       "type": "Hospital",
-      "encoded": "sodexo-nuffield-health-first-to-show-22-reduction-in-food-related-emissions-with-greener-by-default-united-kingdom",
+      "encoded": "sodexo-nuffield-health-uk-united-kingdom",
       "consumer_base": 100,
       "coord": [-2.2891921, 53.4877463]
     },
@@ -2236,61 +2280,17 @@
       }
     ]
   },
-  "Sodexo DefaultVeg (US Campuses), MD, United States": {
+  "Southwest Foodservice Excellence (K-12), AZ, United States": {
     "place": {
-      "name": "Sodexo DefaultVeg (US Campuses)",
-      "street": "9811 Washingtonian Blvd",
-      "city": "Gaithersburg",
-      "state": "MD",
-      "postal_code": "20878",
-      "country": "United States",
-      "type": "University Dining Hall",
-      "encoded": "sodexo-defaultveg-us-campuses-md-united-states",
-      "consumer_base": 100,
-      "coord": [-77.200177, 39.1165215]
-    },
-    "default": [
-      {
-        "status": "adopted",
-        "date": "2024",
-        "org_credit": ["Better Food Foundation"],
-        "is_verified": true
-      }
-    ]
-  },
-  "Sodexo–Greener by Default (US Hospitals), MD, United States": {
-    "place": {
-      "name": "Sodexo–Greener by Default (US Hospitals)",
-      "street": "9801 Washingtonian Blvd",
-      "city": "Gaithersburg",
-      "state": "MD",
-      "postal_code": "20878",
-      "country": "United States",
-      "type": "Hospital",
-      "encoded": "sodexo-greener-by-default-us-hospitals-md-united-states",
-      "consumer_base": 100,
-      "coord": [-77.1929215, 39.1399187]
-    },
-    "default": [
-      {
-        "status": "adopted",
-        "date": "2025",
-        "org_credit": ["Greener by Default"],
-        "is_verified": true
-      }
-    ]
-  },
-  "Southwest Foodservice Excellence, AZ, United States": {
-    "place": {
-      "name": "Southwest Foodservice Excellence",
+      "name": "Southwest Foodservice Excellence (K-12)",
       "street": null,
       "city": "Scottsdale",
       "state": "AZ",
       "postal_code": null,
       "country": "United States",
       "type": "K-12",
-      "encoded": "southwest-foodservice-excellence-az-united-states",
-      "consumer_base": 100,
+      "encoded": "southwest-foodservice-excellence-k-12-az-united-states",
+      "consumer_base": 1600000,
       "coord": [-111.878835, 33.6204611]
     },
     "ratio": [
@@ -2355,7 +2355,7 @@
       "country": "United States",
       "type": "Chain Restaurant",
       "encoded": "starbucks-wa-united-states",
-      "consumer_base": 100,
+      "consumer_base": 8250000,
       "coord": [-122.330062, 47.6038321]
     },
     "other": [
@@ -2377,7 +2377,7 @@
       "country": "United States",
       "type": "Chain Restaurant",
       "encoded": "stumptown-coffee-roasters-or-united-states",
-      "consumer_base": 100,
+      "consumer_base": 5000,
       "coord": [-122.6155605, 45.5054248]
     },
     "default": [
@@ -2388,17 +2388,17 @@
       }
     ]
   },
-  "Tavira, Portugal": {
+  "Tavira (municipal catering), Portugal": {
     "place": {
-      "name": "Tavira",
+      "name": "Tavira (municipal catering)",
       "street": null,
       "city": "Tavira",
       "state": null,
       "postal_code": null,
       "country": "Portugal",
       "type": "City/Government",
-      "encoded": "tavira-portugal",
-      "consumer_base": 100,
+      "encoded": "tavira-municipal-catering-portugal",
+      "consumer_base": 400,
       "coord": [-7.6557321, 37.1209922]
     },
     "default": [
@@ -2410,16 +2410,16 @@
       }
     ]
   },
-  "Texas State University, Nutrition and Foods Dept events, TX, United States": {
+  "Texas State University (event), TX, United States": {
     "place": {
-      "name": "Texas State University, Nutrition and Foods Dept events",
+      "name": "Texas State University (event)",
       "street": null,
       "city": "San Marcos",
       "state": "TX",
       "postal_code": null,
       "country": "United States",
       "type": "University Event",
-      "encoded": "texas-state-university-nutrition-and-foods-dept-events-tx-united-states",
+      "encoded": "texas-state-university-event-tx-united-states",
       "consumer_base": 100,
       "coord": [-97.9405828, 29.8826436]
     },
@@ -2442,7 +2442,7 @@
       "country": "United States",
       "type": "Ind. Restaurant",
       "encoded": "the-briar-bar-mn-united-states",
-      "consumer_base": 100,
+      "consumer_base": 300,
       "coord": [-93.2573731, 45.0007576]
     },
     "ratio": [
@@ -2485,7 +2485,7 @@
       "country": "United States",
       "type": "Ind. Restaurant",
       "encoded": "tonys-darts-away-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 500,
       "coord": [-118.3269699, 34.1743839]
     },
     "default": [
@@ -2495,16 +2495,16 @@
       }
     ]
   },
-  "Trellis Group (events), CA, United States": {
+  "Trellis (events), CA, United States": {
     "place": {
-      "name": "Trellis Group (events)",
+      "name": "Trellis (events)",
       "street": null,
       "city": "Oakland",
       "state": "CA",
       "postal_code": null,
       "country": "United States",
       "type": "Event",
-      "encoded": "trellis-group-events-ca-united-states",
+      "encoded": "trellis-events-ca-united-states",
       "consumer_base": 100,
       "coord": [-122.271356, 37.8044557]
     },
@@ -2539,16 +2539,16 @@
       }
     ]
   },
-  "UCLA, Plant Futures Sustainable Food Futures event, CA, United States": {
+  "UCLA (Plant Futures Food Forum), CA, United States": {
     "place": {
-      "name": "UCLA, Plant Futures Sustainable Food Futures event",
+      "name": "UCLA (Plant Futures Food Forum)",
       "street": "580 Portola Plaza",
       "city": "Los Angeles",
       "state": "CA",
       "postal_code": "90095",
       "country": "United States",
       "type": "University Event",
-      "encoded": "ucla-plant-futures-sustainable-food-futures-event-ca-united-states",
+      "encoded": "ucla-plant-futures-food-forum-ca-united-states",
       "consumer_base": 100,
       "coord": [-118.443139, 34.069187]
     },
@@ -2693,16 +2693,16 @@
       }
     ]
   },
-  "University of California, San Diego (academic dept events), CA, United States": {
+  "University of California, San Diego, CA, United States": {
     "place": {
-      "name": "University of California, San Diego (academic dept events)",
+      "name": "University of California, San Diego",
       "street": "9500 Gilman Dr",
       "city": "La Jolla",
       "state": "CA",
       "postal_code": "92093",
       "country": "United States",
       "type": "University Event",
-      "encoded": "university-of-california-san-diego-academic-dept-events-ca-united-states",
+      "encoded": "university-of-california-san-diego-ca-united-states",
       "consumer_base": 100,
       "coord": [-117.2311247, 32.8792438]
     },
@@ -2759,16 +2759,16 @@
       }
     ]
   },
-  "University of Georgia, Honors College Lunch and Learn, GA, United States": {
+  "University of Georgia (Honors College event), GA, United States": {
     "place": {
-      "name": "University of Georgia, Honors College Lunch and Learn",
+      "name": "University of Georgia (Honors College event)",
       "street": null,
       "city": "Athens",
       "state": "GA",
       "postal_code": null,
       "country": "United States",
       "type": "University Event",
-      "encoded": "university-of-georgia-honors-college-lunch-and-learn-ga-united-states",
+      "encoded": "university-of-georgia-honors-college-event-ga-united-states",
       "consumer_base": 100,
       "coord": [-83.376398, 33.9597677]
     },
@@ -2966,7 +2966,7 @@
       "country": "United States",
       "type": "City/Government",
       "encoded": "university-of-san-diego-aromas-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 350,
       "coord": [-117.162772, 32.7174202]
     },
     "other": [
@@ -3161,7 +3161,7 @@
       "country": "United States",
       "type": "City/Government",
       "encoded": "washington-dc-public-schools-dc-united-states",
-      "consumer_base": 100,
+      "consumer_base": 49000,
       "coord": [-77.0402691, 38.8898398]
     },
     "other": [
