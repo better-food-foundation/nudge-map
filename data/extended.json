@@ -1,5 +1,5 @@
 {
-  "Alcorcón, Spain, Spain": {
+  "Alcorcón (council catering), Spain": {
     "other": [
       {
         "summary": "Formally declared support for the Plant Based Treaty on July 16, 2025.",
@@ -18,7 +18,7 @@
       }
     ]
   },
-  "Almere, Netherlands": {
+  "Almere (council catering), Netherlands": {
     "ratio": [
       {
         "summary": "Committed to a 60/40 plant-based protein consumption ratio by 2030. Endorsed PBT 7 Mar 2026.",
@@ -56,6 +56,25 @@
       }
     ]
   },
+  "American University (School of Public Health event), DC, United States": {
+    "ratio": [
+      {
+        "summary": "Piloted a 50% plant-based menu at a School of Public Affairs event and created a 'Green Event' catering category. 50/50 plant-to-animal ratio.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 130,
+            "type": "Press release",
+            "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
+            "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "American University, Davenport Coffee Lounge, DC, United States": {
     "default": [
       {
@@ -75,17 +94,34 @@
       }
     ]
   },
-  "American University, School of Public Affairs event, DC, United States": {
-    "ratio": [
+  "Amsterdam (municipal catering & institutions), Netherlands": {
+    "default": [
       {
-        "summary": "Piloted a 50% plant-based menu at a School of Public Affairs event and created a 'Green Event' catering category. 50/50 plant-to-animal ratio.",
+        "summary": "'Vegan Friday' adopted as the default across all public institutions' catering (opt-out). Part of a covenant signed April 2024 by 12 major Amsterdam institutions. Endorsed the Plant Based Treaty 30 Jan 2024.",
         "reporter": null,
         "citations": [
           {
-            "id": 130,
+            "id": 114,
             "type": "Press release",
-            "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
-            "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
+            "description": "Plant Based Treaty – Amsterdam",
+            "url": "https://plantbasedtreaty.org/cities/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "ratio": [
+      {
+        "summary": "City commitment to a 60% plant-based / 40% animal protein ratio (embedded in Amsterdam's food strategy; already applied in city-government catering, city-wide goal by 2030).",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 114,
+            "type": "Press release",
+            "description": "Plant Based Treaty – Amsterdam",
+            "url": "https://plantbasedtreaty.org/cities/",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -166,43 +202,7 @@
       }
     ]
   },
-  "Amsterdam, Netherlands": {
-    "default": [
-      {
-        "summary": "'Vegan Friday' adopted as the default across all public institutions' catering (opt-out). Part of a covenant signed April 2024 by 12 major Amsterdam institutions. Endorsed the Plant Based Treaty 30 Jan 2024.",
-        "reporter": null,
-        "citations": [
-          {
-            "id": 114,
-            "type": "Press release",
-            "description": "Plant Based Treaty – Amsterdam",
-            "url": "https://plantbasedtreaty.org/cities/",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ],
-    "ratio": [
-      {
-        "summary": "City commitment to a 60% plant-based / 40% animal protein ratio (embedded in Amsterdam's food strategy; already applied in city-government catering, city-wide goal by 2030).",
-        "reporter": null,
-        "citations": [
-          {
-            "id": 114,
-            "type": "Press release",
-            "description": "Plant Based Treaty – Amsterdam",
-            "url": "https://plantbasedtreaty.org/cities/",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ]
-  },
-  "Aramark, PA, United States": {
+  "Aramark (US campuses), PA, United States": {
     "other": [
       {
         "summary": "First foodservice provider to adopt WRI's Cool Food Meals badge (2021); piloted at 10 US universities, with WRI identifying 350+ residential-dining items meeting the low-carbon standard, labeled to nudge climate-friendly dining.",
@@ -221,7 +221,7 @@
       }
     ]
   },
-  "Arnhem, Netherlands": {
+  "Arnhem (council catering), Netherlands": {
     "default": [
       {
         "summary": "Plant-based food is the default at all municipal events; attendees who prefer meat or fish opt in beforehand. Municipal caterer also reducing animal proteins. Endorsed PBT 9 Dec 2025.",
@@ -259,7 +259,7 @@
       }
     ]
   },
-  "B Corp Champions Retreat 2022, PA, United States": {
+  "B Corp Champions Retreat, PA, United States": {
     "default": [
       {
         "summary": "GBD plant-based default via the RSVP form; 80% of attendees kept the plant-based meal.",
@@ -357,7 +357,7 @@
       }
     ]
   },
-  "Brampton, Canada": {
+  "Brampton (council catering), Canada": {
     "titles": [
       {
         "summary": "Plant-based options featured at council meetings/civic events with displayed climate, health and cost information about food/protein sources; catering & concession contracts to add criteria promoting plant-based options (CAO report 2025-539); open-space events to require >=50% of caterers offer plant-based catering. Endorsed PBT 20 Nov 2024.",
@@ -414,7 +414,7 @@
       }
     ]
   },
-  "Cafe Services Inc., NH, United States": {
+  "Café Services, NH, United States": {
     "ratio": [
       {
         "summary": "Committed to 33% of employee dining meals plant-based by 2025. Grade B.",
@@ -433,7 +433,7 @@
       }
     ]
   },
-  "Calderdale Council, United Kingdom": {
+  "Calderdale (council catering & schools), United Kingdom": {
     "default": [
       {
         "summary": "Cabinet adopted a Plant-Based Catering Policy on 3 June 2024: food at council-hosted meetings and events (including Mayor Making and Chief Officer recruitment panels) is 100% plant-based, with a preference for seasonal, whole, non-processed foods.",
@@ -471,7 +471,7 @@
       }
     ]
   },
-  "Campolide (Lisbon), Portugal, Portugal": {
+  "Campolide (Lisbon parish), Portugal": {
     "other": [
       {
         "summary": "Junta de Freguesia de Campolide (a parish of Lisbon) unanimously endorsed the Plant Based Treaty on 25 July 2025 — the 44th municipality worldwide to do so — committing to public education campaigns.",
@@ -528,7 +528,7 @@
       }
     ]
   },
-  "CleanMed / Health Care Without Harm event, MO, United States": {
+  "CleanMed, MO, United States": {
     "default": [
       {
         "summary": "GBD plant-based event default + tasty titles + placement, with Health Care Without Harm, Practice Greenhealth, and MeetGreen.",
@@ -547,7 +547,7 @@
       }
     ]
   },
-  "ClimateCAP Summit 2025 (UC Berkeley Haas), CA, United States": {
+  "ClimateCAP Summit, CA, United States": {
     "default": [
       {
         "summary": "GBD plant-based defaults + full nudge set at the ClimateCAP event hosted by UC Berkeley Haas; saved ~260 kg CO2e from protein.",
@@ -594,7 +594,7 @@
       }
     ]
   },
-  "Coolfood Pledge – US healthcare cohort, DC, United States": {
+  "Coolfood Pledge (US healthcare), DC, United States": {
     "ratio": [
       {
         "summary": "WRI Coolfood Pledge: 80+ hospitals committed to cut food-related emissions 25% by 2030. Across 23 US healthcare members, plant-based foods rose 27% on the average plate while beef/lamb fell 28% and all animal foods fell 16%. Program-level ratio commitment (cf. ProVeg School Plates row); individual signatories to be added separately.",
@@ -755,7 +755,7 @@
       }
     ]
   },
-  "El Masnou, Spain, Spain": {
+  "El Masnou (council catering), Spain": {
     "other": [
       {
         "summary": "City council endorsed the Plant Based Treaty on 19 June 2025 (17–2 vote); commitments include at least 50% plant-based catering at public events and engaging local schools to add plant-based meals (in line with Royal Decree 315/2025). Second Spanish city to endorse.",
@@ -793,6 +793,25 @@
       }
     ]
   },
+  "Epicurean Feast, MA, United States": {
+    "ratio": [
+      {
+        "summary": "Committed to 40% of meals plant-based by 2025 with a complementary animal protein reduction goal. Grade B+.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 147,
+            "type": "Other",
+            "description": "Humane World for Animals – Food Service Industry Protein Sustainability Scorecard 2025",
+            "url": "https://www.humaneworld.org/sites/default/files/docs/HumaneWorld_foodservicescorecard_2025.pdf",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Erasmus University Rotterdam, Netherlands": {
     "default": [
       {
@@ -812,7 +831,7 @@
       }
     ]
   },
-  "Exeter City Council, United Kingdom": {
+  "Exeter (city council catering), United Kingdom": {
     "default": [
       {
         "summary": "Motion passed in 2022 to serve fully plant-based food and drink at all catered council meetings and events, as a response to the climate crisis.",
@@ -831,7 +850,7 @@
       }
     ]
   },
-  "Exmouth, United Kingdom": {
+  "Exmouth (town council catering), United Kingdom": {
     "default": [
       {
         "summary": "Council transitioned to plant-based meal plans when catering for climate-related meetings and events (completed). Also required a minimum two vegan options plus environmental-impact labelling at the summer festival. Endorsed PBT 11 Dec 2023.",
@@ -998,7 +1017,7 @@
       }
     ]
   },
-  "Grenoble, France, France": {
+  "Grenoble (municipal schools), France": {
     "other": [
       {
         "summary": "Endorsed the Plant Based Treaty as part of the 2025 cohort of new European municipal endorsers.",
@@ -1017,7 +1036,7 @@
       }
     ]
   },
-  "Groningen, Netherlands": {
+  "Groningen (council catering), Netherlands": {
     "ratio": [
       {
         "summary": "Committed to a 60/40 plant-based protein consumption ratio by 2030. Endorsed PBT 9 Oct 2025.",
@@ -1093,7 +1112,7 @@
       }
     ]
   },
-  "HHS, LLC., TX, United States": {
+  "HHS (Hospital Housekeeping Systems), TX, United States": {
     "ratio": [
       {
         "summary": "Committed to 50% of retail dining meals plant-based by 2027 and a 25% animal protein purchase reduction by 2027; new patient menu items defaulting to plant-based center-of-plate. Grade A+.",
@@ -1112,7 +1131,7 @@
       }
     ]
   },
-  "Haarlem, Netherlands": {
+  "Haarlem (council catering), Netherlands": {
     "ratio": [
       {
         "summary": "Committed to a 60/40 plant-based protein consumption ratio, supported by public-health campaigns. Endorsed PBT 7 Feb 2026. (Year = ratio target, consistent with Dutch 2030 goal.)",
@@ -1131,7 +1150,7 @@
       }
     ]
   },
-  "Hackney Council (London), United Kingdom": {
+  "Hackney (council events), United Kingdom": {
     "default": [
       {
         "summary": "Hackney committed to 100% plant-based catering at council events by 2030 via a phased transition; food emissions from events already cut ~70%, with AGMs served fully plant-based. 92% of 400 staff at 2024 tasting events supported the shift.",
@@ -1150,7 +1169,7 @@
       }
     ]
   },
-  "Harvard University (Office for Sustainability events), MA, United States": {
+  "Harvard University (dining), MA, United States": {
     "default": [
       {
         "summary": "Harvard Office for Sustainability serves plant-based meals by default at its events and meetings (diners opt in for animal products); Harvard University Dining Services also cut beef (20,000 fewer beef burgers FY23 vs FY22).",
@@ -1206,7 +1225,7 @@
       }
     ]
   },
-  "Hunter College (CUNY), academic departments, NY, United States": {
+  "Hunter College, CUNY (event), NY, United States": {
     "default": [
       {
         "summary": "Three academic departments (Nutrition, Welfare Rights Institute, Asian American Studies) adopted all five recommended behavioral nudges (default, ratio, placement, tasty titles, subtle substitutions).",
@@ -1260,25 +1279,6 @@
       }
     ]
   },
-  "LPM & Affiliates dba Epicurean Feast Cafes, MA, United States": {
-    "ratio": [
-      {
-        "summary": "Committed to 40% of meals plant-based by 2025 with a complementary animal protein reduction goal. Grade B+.",
-        "reporter": null,
-        "citations": [
-          {
-            "id": 147,
-            "type": "Other",
-            "description": "Humane World for Animals – Food Service Industry Protein Sustainability Scorecard 2025",
-            "url": "https://www.humaneworld.org/sites/default/files/docs/HumaneWorld_foodservicescorecard_2025.pdf",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ]
-  },
   "LinkedIn San Francisco Corporate Cafe, CA, United States": {
     "default": [
       {
@@ -1309,6 +1309,25 @@
             "type": " Institutional website",
             "description": "LSE Catering – Sustainability progress tracker (45% veg/vegan; beef ban)",
             "url": "https://info.lse.ac.uk/staff/services/catering/assets/documents/sustainability-progress-tracker.pdf",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Los Angeles (city government catering), CA, United States": {
+    "other": [
+      {
+        "summary": "City Council unanimously endorsed the Plant Based Treaty on October 18, 2022, making Los Angeles the largest US city to do so at the time.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 122,
+            "type": "Press release",
+            "description": "Los Angeles City Council unanimously endorses the Plant Based Treaty in response to the climate emergency",
+            "url": "https://plantbasedtreaty.org/los-angeles-city-council-unanimously-endorses-the-plant-based-treaty/",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -1363,26 +1382,7 @@
       }
     ]
   },
-  "Los Angeles, California, CA, United States": {
-    "other": [
-      {
-        "summary": "City Council unanimously endorsed the Plant Based Treaty on October 18, 2022, making Los Angeles the largest US city to do so at the time.",
-        "reporter": null,
-        "citations": [
-          {
-            "id": 122,
-            "type": "Press release",
-            "description": "Los Angeles City Council unanimously endorses the Plant Based Treaty in response to the climate emergency",
-            "url": "https://plantbasedtreaty.org/los-angeles-city-council-unanimously-endorses-the-plant-based-treaty/",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ]
-  },
-  "MAX Burgers (Sweden), Sweden": {
+  "MAX Burgers, Sweden": {
     "other": [
       {
         "summary": "Swedish burger chain added WRI's Cool Food Meals badge to its menus in 2021, labeling lower-carbon items to nudge climate-friendly choices.",
@@ -1510,7 +1510,7 @@
       }
     ]
   },
-  "Nestlé Professional USA, OH, United States": {
+  "Nestlé Professional (US), OH, United States": {
     "other": [
       {
         "summary": "Adopted WRI's Cool Food menu certification in 2021, labeling qualifying lower-carbon dishes to help operators and diners choose climate-friendly meals.",
@@ -1548,7 +1548,7 @@
       }
     ]
   },
-  "Nijmegen, Netherlands": {
+  "Nijmegen (council catering), Netherlands": {
     "placement": [
       {
         "summary": "Municipal cafeterias promote the plant-based 'Nimma' sandwich as a signature dish (implemented Q4 2025) and added further plant-based options. Also banned meat advertising in public spaces (May 2025); second motion embeds PBT into procurement/catering (due Q3 2026). Endorsed PBT 20 Mar 2025.",
@@ -1667,7 +1667,7 @@
       }
     ]
   },
-  "Otis College of Art & Design, CA, United States": {
+  "Otis College of Art and Design (event), CA, United States": {
     "default": [
       {
         "summary": "For its October 2024 Partnership for Academic Leadership in Sustainability (PALS) Summit, Otis set plant-based food as the default in the event registration form, resulting in 100% plant-based catering at the event.",
@@ -1743,7 +1743,7 @@
       }
     ]
   },
-  "Parla, Spain, Spain": {
+  "Parla (council catering), Spain": {
     "other": [
       {
         "summary": "Endorsed the Plant Based Treaty in 2025 as part of the EU cohort (alongside El Masnou and Campolide).",
@@ -1781,7 +1781,7 @@
       }
     ]
   },
-  "Poland — Hospitals (Ministry of Health), Poland": {
+  "Poland – Ministry of Health (hospital meals), Poland": {
     "other": [
       {
         "summary": "Poland's Ministry of Health announced (Nov–Dec 2025) a commitment to guarantee access to plant-based meals in public healthcare facilities. Implementation details still under development; no signed hospital regulation yet.",
@@ -1800,7 +1800,7 @@
       }
     ]
   },
-  "Poland — Schools (Ministry of Health), Poland": {
+  "Poland – Ministry of Health (school meals), Poland": {
     "other": [
       {
         "summary": "Poland's Ministry of Health signed a regulation (Feb 2026, in force 2026-09-01) guaranteeing schoolchildren access to plant-based meals: every school must serve at least one fully plant-based dish per week and provide a plant alternative to animal proteins. Replaces the 2016 standard; affects ~6.8M children across ~36,000 schools.",
@@ -2094,26 +2094,7 @@
       }
     ]
   },
-  "Sodexo & Nuffield Health first to show 22% reduction in food-related emissions with Greener by Default, United Kingdom": {
-    "default": [
-      {
-        "summary": "First UK hospital caterer to apply plant-forward defaults for patient dining across 35 Nuffield Health hospitals (from early 2025): prime placement and appealing dish names shifted menus to 41% vegan; food-related emissions down 22%, meat per patient down ~14%, plant protein up ~50%.",
-        "reporter": null,
-        "citations": [
-          {
-            "id": 113,
-            "type": "Press release",
-            "description": "Sodexo UK – Partners with Greener by Default (22% reduction)",
-            "url": "https://uk.sodexo.com/newsroom/2026/sodexo-partners-with-greener-by-default",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ]
-  },
-  "Sodexo DefaultVeg (US Campuses), MD, United States": {
+  "Sodexo (US Campuses), MD, United States": {
     "default": [
       {
         "summary": "Sodexo embedded the DefaultVeg strategy in menu design at nearly 400 US college and university campuses; the main hot food station alternates daily with a plant-based entrée as the first option (schools may opt out). Sodexo committed to 50% plant-based meals on campuses by 2025.",
@@ -2132,7 +2113,7 @@
       }
     ]
   },
-  "Sodexo–Greener by Default (US Hospitals), MD, United States": {
+  "Sodexo (US Hospitals), MD, United States": {
     "default": [
       {
         "summary": "Greener by Default and Sodexo expanded their partnership to make plant-based patient meals the default across Sodexo-managed US hospitals; 131 hospitals live as of April 2025, targeting 400 by 2026. Builds on the NYC Health + Hospitals program that cut food-related emissions by over a third.",
@@ -2151,7 +2132,26 @@
       }
     ]
   },
-  "Southwest Foodservice Excellence, AZ, United States": {
+  "Sodexo – Nuffield Health (UK), United Kingdom": {
+    "default": [
+      {
+        "summary": "First UK hospital caterer to apply plant-forward defaults for patient dining across 35 Nuffield Health hospitals (from early 2025): prime placement and appealing dish names shifted menus to 41% vegan; food-related emissions down 22%, meat per patient down ~14%, plant protein up ~50%.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 113,
+            "type": "Press release",
+            "description": "Sodexo UK – Partners with Greener by Default (22% reduction)",
+            "url": "https://uk.sodexo.com/newsroom/2026/sodexo-partners-with-greener-by-default",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Southwest Foodservice Excellence (K-12), AZ, United States": {
     "ratio": [
       {
         "summary": "Committed to 33% of meals plant-based by 2027 plus an animal protein reduction goal by 2028 with a year-by-year glidepath. Grade B+.",
@@ -2246,7 +2246,7 @@
       }
     ]
   },
-  "Tavira, Portugal": {
+  "Tavira (municipal catering), Portugal": {
     "default": [
       {
         "summary": "Transitioned to plant-based meals at council events and meetings related to environment/climate (completed; repeated across 2024-2025 events). Municipal Climate Action Plan (PMAC) cites the PBT partnership. Endorsed PBT 10 Oct 2024.",
@@ -2265,7 +2265,7 @@
       }
     ]
   },
-  "Texas State University, Nutrition and Foods Dept events, TX, United States": {
+  "Texas State University (event), TX, United States": {
     "placement": [
       {
         "summary": "Worked with faculty to prioritize (prime placement of) plant-based options and implement nudges at Nutrition and Foods Department events.",
@@ -2341,7 +2341,7 @@
       }
     ]
   },
-  "Trellis Group (events), CA, United States": {
+  "Trellis (events), CA, United States": {
     "default": [
       {
         "summary": "GBD plant-based event default + tasty titles + subtle substitutions + placement + 50%+ ratios at Trellis events.",
@@ -2379,7 +2379,7 @@
       }
     ]
   },
-  "UCLA, Plant Futures Sustainable Food Futures event, CA, United States": {
+  "UCLA (Plant Futures Food Forum), CA, United States": {
     "default": [
       {
         "summary": "Plant-based default menu at Plant Futures UCLA's Sustainable Food Futures career/networking event; only ~4% of registrants opted for a meat option.",
@@ -2512,7 +2512,7 @@
       }
     ]
   },
-  "University of California, San Diego (academic dept events), CA, United States": {
+  "University of California, San Diego, CA, United States": {
     "default": [
       {
         "summary": "Piloted plant-based defaults at Sociology and Latin American Studies department events (e.g., 4 of 6 pizzas vegetarian at the Sociology Colloquium; vegan pizzas as the default at the LAS Burnout Prevention Dinner). LAS committed to continuing plant-based defaults.",
@@ -2569,7 +2569,7 @@
       }
     ]
   },
-  "University of Georgia, Honors College Lunch and Learn, GA, United States": {
+  "University of Georgia (Honors College event), GA, United States": {
     "placement": [
       {
         "summary": "Secured prime placement of plant-based options at the Honors College Lunch and Learn and passed a supporting Student Government bill.",
