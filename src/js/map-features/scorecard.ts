@@ -20,8 +20,8 @@ export function generateScorecard(entry: ProcessedCoreEntry): string {
   // If at least one nudge record is pledged, we mention
   // the NudgeStatus with every nudge type so that people don't incorrectly
   // think a record was adopted when it wasn't.
-  const needsStatusLabels = Object.values(nudgeToStatuses).some(
-    (statuses) => statuses.has("pledged"),
+  const needsStatusLabels = Object.values(nudgeToStatuses).some((statuses) =>
+    statuses.has("pledged"),
   );
 
   const nudges = Object.entries(nudgeToStatuses)
