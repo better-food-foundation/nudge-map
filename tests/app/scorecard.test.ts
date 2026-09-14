@@ -77,6 +77,10 @@ test("generateScorecard()", () => {
         <svg aria-hidden="true" width="1em" height="1em"><use href="#icon-circle-xmark"></use></svg>
       </button>
     </header>
+    <ul>
+      <li>245,132 consumers impacted</li>
+    </ul>
+    <div>Nudge types:</div><ul></ul>
     <a class="external-link" target="_blank" href=https://my-site.org>More info <svg aria-hidden="true" width="1em" height="1em"><use href="#icon-arrow-right"></use></svg></a>
     `,
   );
