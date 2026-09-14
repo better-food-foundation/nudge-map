@@ -1,9 +1,11 @@
 import type { FeatureGroup } from "leaflet";
+import { capitalize } from "lodash-es";
 
 import type { ProcessedCoreEntry, PlaceId } from "../model/types";
 import Observable from "../state/Observable";
 import { PlaceFilterManager } from "../state/FilterState";
 import { ViewStateObservable } from "../layout/viewToggle";
+import { determineNudgeTypeStatuses } from "../model/data";
 import type { MarkerWithPlace } from "./markers";
 import { determinesupplementalPlaceInfo } from "../model/placeId";
 import { iconHtml } from "../layout/icons";
@@ -13,6 +15,30 @@ export function generateScorecard(entry: ProcessedCoreEntry): string {
   const titleContents = supplementalPlace
     ? `${entry.place.name}<br/><span class="scorecard-supplemental-place-info">${supplementalPlace}</span>`
     : entry.place.name;
+
+  const nudgeToStatuses = determineNudgeTypeStatuses(entry);
+  // If at least one nudge record is pledged, we mention
+  // the NudgeStatus with every nudge type so that people don't incorrectly
+  // think a record was adopted when it wasn't.
+  const needsStatusLabels = Object.values(nudgeToStatuses).some((statuses) =>
+    statuses.has("pledged"),
+  );
+
+  const nudges = Object.entries(nudgeToStatuses)
+    .filter(([, statuses]) => statuses.size)
+    .map(([nudgeType, statusesSet]) => {
+      let suffix = "";
+      if (needsStatusLabels) {
+        const statuses = new Intl.ListFormat("en").format(
+          Array.from(statusesSet).sort(),
+        );
+        suffix = ` (${statuses})`;
+      }
+      const val = capitalize(`${nudgeType}${suffix}`);
+      return `<li>${val}</li>`;
+    })
+    .join("");
+  const nudgeTypesHtml = `<div>Nudge types:</div><ul>${nudges}</ul>`;
 
   return `
     <header class="scorecard-header">
@@ -25,6 +51,10 @@ export function generateScorecard(entry: ProcessedCoreEntry): string {
         ${iconHtml("circle-xmark")}
       </button>
     </header>
+    <ul>
+      <li>${entry.place.consumer_base.toLocaleString()} consumers impacted</li>
+    </ul>
+    ${nudgeTypesHtml}
     <a class="external-link" target="_blank" href=${
       entry.place.url
     }>More info ${iconHtml("arrow-right")}</a>
