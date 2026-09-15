@@ -21,6 +21,11 @@ import { Date, ProcessedNudge } from "./model/types";
 import { ViewStateObservable } from "./layout/viewToggle";
 import { determineAllNudgeTypes } from "./model/data";
 
+function formatBoolean(cell: CellComponent): string {
+  const v = cell.getValue() as boolean;
+  return v ? "✓" : "";
+}
+
 function formatDate(cell: CellComponent): string {
   const v = cell.getValue() as Date | null;
   return v ? v.format() : "";
@@ -84,6 +89,48 @@ const PLACE_COLUMNS: ColumnDefinition[] = [
     },
     width: 90,
   },
+  {
+    title: "Plant-based default",
+    field: "default",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Climate-friendly ratio",
+    field: "ratio",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Subtle substitution",
+    field: "sub",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Tasty titles & descriptions",
+    field: "titles",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Prime placement",
+    field: "placement",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Other",
+    field: "other",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
 ];
 
 const DATE_COLUMN: ColumnDefinition = {
@@ -96,19 +143,19 @@ const DATE_COLUMN: ColumnDefinition = {
 
 const SINGLE_NUDGE_COLUMNS: ColumnDefinition[] = [
   ...PLACE_COLUMNS,
-  DATE_COLUMN,
-  {
-    title: "Status",
-    field: "status",
-    width: 120,
-  },
-  {
-    title: "Org credit",
-    field: "org_credit",
-    width: 200,
-    formatter: formatStringArrays,
-    sorter: compareStringArrays,
-  },
+  // DATE_COLUMN,
+  // {
+  //   title: "Status",
+  //   field: "status",
+  //   width: 120,
+  // },
+  // {
+  //   title: "Org credit",
+  //   field: "org_credit",
+  //   width: 200,
+  //   formatter: formatStringArrays,
+  //   sorter: compareStringArrays,
+  // },
 ];
 
 export function tableDownloadFileName(status: NudgeStatusFilter): string {
@@ -220,9 +267,9 @@ export default function initTable(
   });
 
   const filterStateToConfig: Record<string, [ColumnDefinition[], any[]]> = {
-    adopted: [SINGLE_NUDGE_COLUMNS, dataDefault],
-    pledged: [SINGLE_NUDGE_COLUMNS, dataDefault],
-    "any status": [SINGLE_NUDGE_COLUMNS, dataDefault],
+    adopted: [SINGLE_NUDGE_COLUMNS, dataAnyAdopted],
+    pledged: [SINGLE_NUDGE_COLUMNS, dataAnyPledged],
+    "any status": [SINGLE_NUDGE_COLUMNS, dataAnyAll],
   };
 
   // We track what the filter is currently set to. When the filter changes,
