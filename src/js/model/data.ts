@@ -41,6 +41,7 @@ export const COUNTRY_MAPPING: Partial<Record<string, string>> = {
   KR: "Korea",
   MX: "Mexico",
   NL: "Netherlands",
+  NO: "Norway",
   NZ: "New Zealand",
   PL: "Poland",
   PT: "Portugal",
