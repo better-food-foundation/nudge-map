@@ -50,15 +50,6 @@ export function compareDates(
   return a.parsed.valueOf() - b.parsed.valueOf();
 }
 
-function compareStringArrays(a: string[], b: string[]): number {
-  return a.join(",").localeCompare(b.join(","));
-}
-
-function formatStringArrays(cell: CellComponent): string {
-  const v = cell.getValue() as string[] | null;
-  return v ? v.join("; ") : "";
-}
-
 const PLACE_COLUMNS: ColumnDefinition[] = [
   {
     title: "Place",
@@ -131,31 +122,6 @@ const PLACE_COLUMNS: ColumnDefinition[] = [
     formatter: formatBoolean,
     hozAlign: "center",
   },
-];
-
-const DATE_COLUMN: ColumnDefinition = {
-  title: "Date",
-  field: "date",
-  width: 110,
-  formatter: formatDate,
-  sorter: compareDates,
-};
-
-const SINGLE_NUDGE_COLUMNS: ColumnDefinition[] = [
-  ...PLACE_COLUMNS,
-  // DATE_COLUMN,
-  // {
-  //   title: "Status",
-  //   field: "status",
-  //   width: 120,
-  // },
-  // {
-  //   title: "Org credit",
-  //   field: "org_credit",
-  //   width: 200,
-  //   formatter: formatStringArrays,
-  //   sorter: compareStringArrays,
-  // },
 ];
 
 export function tableDownloadFileName(status: NudgeStatusFilter): string {
@@ -267,9 +233,9 @@ export default function initTable(
   });
 
   const filterStateToConfig: Record<string, [ColumnDefinition[], any[]]> = {
-    adopted: [SINGLE_NUDGE_COLUMNS, dataAnyAdopted],
-    pledged: [SINGLE_NUDGE_COLUMNS, dataAnyPledged],
-    "any status": [SINGLE_NUDGE_COLUMNS, dataAnyAll],
+    adopted: [PLACE_COLUMNS, dataAnyAdopted],
+    pledged: [PLACE_COLUMNS, dataAnyPledged],
+    "any status": [PLACE_COLUMNS, dataAnyAll],
   };
 
   // We track what the filter is currently set to. When the filter changes,
