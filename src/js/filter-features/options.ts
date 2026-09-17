@@ -412,44 +412,21 @@ function initVerifiedFilter(
   filterManager: PlaceFilterManager,
   optionsContainer: HTMLDivElement,
 ): void {
-  const baseElements = generateAccordion("verified");
-  const fieldSet = document.createElement("fieldset");
-  fieldSet.className = "filter-verified";
+  const outerContainer = document.createElement("div");
+
   const [label, input] = generateCheckbox(
     "filter-verified-option",
     "verified",
     filterManager.getState().isVerified,
     "Only nudges with public citations (vs internal reports)",
   );
-  fieldSet.appendChild(label);
-  baseElements.contentContainer.appendChild(fieldSet);
-  optionsContainer.appendChild(baseElements.outerContainer);
-
-  const accordionState = new Observable<AccordionState>(
-    "filter accordion verified",
-    {
-      hidden: false,
-      expanded: false,
-      title: "Verified nudges",
-      supplementalTitle: filterManager.getState().isVerified ? " ✔" : "",
-    },
-  );
-  accordionState.subscribe((state) => updateAccordionUI(baseElements, state));
-  baseElements.accordionButton.addEventListener("click", () => {
-    const priorState = accordionState.getValue();
-    accordionState.setValue({ ...priorState, expanded: !priorState.expanded });
-  });
-  accordionState.initialize();
+  label.id = "filter-verified-option-label";
+  outerContainer.append(label);
+  optionsContainer.append(outerContainer);
 
   input.addEventListener("change", () => {
-    filterManager.update({ isVerified: input.checked });
-  });
-  filterManager.subscribe("possibly update verified filter UI", (state) => {
-    input.checked = state.isVerified;
-    const priorState = accordionState.getValue();
-    accordionState.setValue({
-      ...priorState,
-      supplementalTitle: state.isVerified ? " ✔" : "",
+    filterManager.update({
+      isVerified: input.checked,
     });
   });
 }
