@@ -42,6 +42,12 @@ function generateSliders(
   controls.className = "population-slider-controls";
   container.append(controls);
 
+  const description = document.createElement("p");
+  description.className = "population-slider-description";
+  description.textContent =
+    "Consumer base estimates the number of consumers impacted by the nudge.";
+  container.append(description);
+
   const left = document.createElement("input");
   left.setAttribute("aria-labelledby", "population-slider-label");
   left.className = "population-slider-left";

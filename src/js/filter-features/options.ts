@@ -419,7 +419,7 @@ function initVerifiedFilter(
     "filter-verified-option",
     "verified",
     filterManager.getState().isVerified,
-    "Verified nudges",
+    "Only nudges with public citations (vs internal reports)",
   );
   fieldSet.appendChild(label);
   baseElements.contentContainer.appendChild(fieldSet);
