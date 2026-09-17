@@ -21,9 +21,9 @@ import { Date, ProcessedNudge } from "./model/types";
 import { ViewStateObservable } from "./layout/viewToggle";
 import { determineAllNudgeTypes } from "./model/data";
 
-function formatDate(cell: CellComponent): string {
-  const v = cell.getValue() as Date | null;
-  return v ? v.format() : "";
+function formatBoolean(cell: CellComponent): string {
+  const v = cell.getValue() as boolean;
+  return v ? "✓" : "";
 }
 
 export function compareDates(
@@ -43,15 +43,6 @@ export function compareDates(
     if (!b) return 1;
   }
   return a.parsed.valueOf() - b.parsed.valueOf();
-}
-
-function compareStringArrays(a: string[], b: string[]): number {
-  return a.join(",").localeCompare(b.join(","));
-}
-
-function formatStringArrays(cell: CellComponent): string {
-  const v = cell.getValue() as string[] | null;
-  return v ? v.join("; ") : "";
 }
 
 const PLACE_COLUMNS: ColumnDefinition[] = [
@@ -84,30 +75,47 @@ const PLACE_COLUMNS: ColumnDefinition[] = [
     },
     width: 90,
   },
-];
-
-const DATE_COLUMN: ColumnDefinition = {
-  title: "Date",
-  field: "date",
-  width: 110,
-  formatter: formatDate,
-  sorter: compareDates,
-};
-
-const SINGLE_NUDGE_COLUMNS: ColumnDefinition[] = [
-  ...PLACE_COLUMNS,
-  DATE_COLUMN,
   {
-    title: "Status",
-    field: "status",
-    width: 120,
+    title: "Plant-based default",
+    field: "default",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
   },
   {
-    title: "Org credit",
-    field: "org_credit",
-    width: 200,
-    formatter: formatStringArrays,
-    sorter: compareStringArrays,
+    title: "Climate-friendly ratio",
+    field: "ratio",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Subtle substitution",
+    field: "sub",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Tasty titles & descriptions",
+    field: "titles",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Prime placement",
+    field: "placement",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
+  },
+  {
+    title: "Other",
+    field: "other",
+    width: 100,
+    formatter: formatBoolean,
+    hozAlign: "center",
   },
 ];
 
@@ -220,9 +228,9 @@ export default function initTable(
   });
 
   const filterStateToConfig: Record<string, [ColumnDefinition[], any[]]> = {
-    adopted: [SINGLE_NUDGE_COLUMNS, dataDefault],
-    pledged: [SINGLE_NUDGE_COLUMNS, dataDefault],
-    "any status": [SINGLE_NUDGE_COLUMNS, dataDefault],
+    adopted: [PLACE_COLUMNS, dataAnyAdopted],
+    pledged: [PLACE_COLUMNS, dataAnyPledged],
+    "any status": [PLACE_COLUMNS, dataAnyAll],
   };
 
   // We track what the filter is currently set to. When the filter changes,
