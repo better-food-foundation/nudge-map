@@ -26,11 +26,6 @@ function formatBoolean(cell: CellComponent): string {
   return v ? "✓" : "";
 }
 
-function formatDate(cell: CellComponent): string {
-  const v = cell.getValue() as Date | null;
-  return v ? v.format() : "";
-}
-
 export function compareDates(
   a: Date | undefined,
   b: Date | undefined,
