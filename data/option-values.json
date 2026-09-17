@@ -20,15 +20,25 @@
     "country": [
       "United States",
       "Australia",
+      "Brazil",
       "Canada",
       "China",
+      "Denmark",
       "Finland",
       "France",
+      "Germany",
       "India",
       "Italy",
+      "Korea",
+      "Mexico",
       "Netherlands",
+      "Nigeria",
+      "Norway",
+      "Peru",
+      "Philippines",
       "Poland",
       "Portugal",
+      "Rwanda",
       "Spain",
       "Sweden",
       "United Kingdom"
@@ -45,10 +55,13 @@
       "2021",
       "2020",
       "2019",
-      "2017"
+      "2017",
+      "2016"
     ],
     "orgCredit": [
+      "Animal Wellness Action",
       "Better Food Foundation",
+      "C40 Good Food Cities",
       "Civic Plate (a project of @MercyForAnimals)",
       "Compass Group",
       "Earthsave Canada",
@@ -56,16 +69,25 @@
       "Friends of the Earth",
       "Greener by Default",
       "Humane World for Animals",
+      "Internal",
+      "Mercy For Animals",
       "Mercy for Animals",
       "New Roots Institute",
+      "PETA Deutschland",
+      "Paris 2024",
+      "Physicians Committee for Responsible Medicine",
       "Plant Based Treaty",
       "Plant-Based Cities Movement",
       "Plant-Based Treaty",
+      "Plant-Based Universities",
       "Planted Society",
       "Practice Greenhealth",
       "ProVeg",
       "ProVeg UK",
       "Rachel Atcheson",
+      "Raven Corps",
+      "Sodexo Live!",
+      "Switch4Good",
       "Unknown",
       "Wholesome Minnesota of Compassionate Action for Animals",
       "World Resources Institute"
@@ -91,12 +113,23 @@
     "country": [
       "United States",
       "Australia",
+      "Brazil",
       "Canada",
       "China",
+      "Denmark",
+      "Finland",
       "France",
+      "Germany",
       "Italy",
+      "Korea",
+      "Mexico",
       "Netherlands",
+      "Nigeria",
+      "Norway",
+      "Peru",
+      "Philippines",
       "Portugal",
+      "Rwanda",
       "Spain",
       "Sweden",
       "United Kingdom"
@@ -111,21 +144,32 @@
       "2021",
       "2020",
       "2019",
-      "2017"
+      "2017",
+      "2016"
     ],
     "orgCredit": [
       "Better Food Foundation",
+      "C40 Good Food Cities",
       "Compass Group",
       "Friends of the Earth",
       "Greener by Default",
       "Humane World for Animals",
+      "Internal",
+      "Mercy For Animals",
       "Mercy for Animals",
       "New Roots Institute",
+      "PETA Deutschland",
+      "Paris 2024",
+      "Physicians Committee for Responsible Medicine",
       "Plant Based Treaty",
+      "Plant-Based Universities",
+      "Planted Society",
       "Practice Greenhealth",
       "ProVeg",
       "ProVeg UK",
       "Rachel Atcheson",
+      "Raven Corps",
+      "Sodexo Live!",
       "Unknown",
       "World Resources Institute"
     ]
@@ -149,6 +193,7 @@
       "Netherlands",
       "Poland",
       "Spain",
+      "Sweden",
       "United Kingdom"
     ],
     "year": [
@@ -164,6 +209,7 @@
       "2019"
     ],
     "orgCredit": [
+      "Animal Wellness Action",
       "Better Food Foundation",
       "Civic Plate (a project of @MercyForAnimals)",
       "Earthsave Canada",
@@ -172,10 +218,12 @@
       "Greener by Default",
       "Humane World for Animals",
       "Mercy for Animals",
+      "New Roots Institute",
       "Plant Based Treaty",
       "Plant-Based Cities Movement",
       "Plant-Based Treaty",
       "Planted Society",
+      "Switch4Good",
       "Unknown",
       "Wholesome Minnesota of Compassionate Action for Animals",
       "World Resources Institute"
@@ -189,8 +237,10 @@
       "Event",
       "Hospital",
       "Ind. Restaurant",
+      "K-12",
       "Other",
       "Religious Center",
+      "Stadium",
       "University Cafe",
       "University Dining Hall",
       "University Event",
@@ -201,28 +251,33 @@
       "Australia",
       "Canada",
       "China",
+      "Germany",
+      "Korea",
       "Netherlands",
       "Portugal",
       "United Kingdom"
     ],
-    "year": ["unknown", "2025", "2024", "2023", "2022", "2021"],
+    "year": ["unknown", "2026", "2025", "2024", "2023", "2022", "2021", "2020"],
     "orgCredit": [
       "Better Food Foundation",
       "Greener by Default",
       "New Roots Institute",
       "Plant Based Treaty",
+      "Plant-Based Universities",
+      "ProVeg",
       "Rachel Atcheson",
       "Unknown"
     ]
   },
   "defaultPledged": {
-    "placeType": ["City/Government"],
-    "country": ["United States", "United Kingdom"],
+    "placeType": ["City/Government", "University Dining Hall"],
+    "country": ["United States", "Sweden", "United Kingdom"],
     "year": ["2030", "2025", "2024", "2023"],
     "orgCredit": [
       "Better Food Foundation",
       "Civic Plate (a project of @MercyForAnimals)",
       "Mercy for Animals",
+      "Plant Based Treaty",
       "Planted Society",
       "Unknown",
       "Wholesome Minnesota of Compassionate Action for Animals"
@@ -232,29 +287,65 @@
     "placeType": [
       "Chain Restaurant",
       "City/Government",
+      "Event",
       "Hospital",
       "Ind. Restaurant",
       "K-12",
       "Other",
+      "Stadium",
+      "University Cafe",
       "University Dining Hall",
       "University Event",
       "Workplace Cafeteria"
     ],
     "country": [
       "United States",
+      "Brazil",
       "Canada",
+      "Denmark",
+      "Finland",
+      "France",
+      "Germany",
       "Italy",
+      "Mexico",
       "Netherlands",
+      "Nigeria",
+      "Norway",
+      "Peru",
+      "Philippines",
+      "Rwanda",
       "United Kingdom"
     ],
-    "year": ["unknown", "2026", "2025", "2024", "2021", "2019", "2017"],
+    "year": [
+      "unknown",
+      "2026",
+      "2025",
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020",
+      "2019",
+      "2017",
+      "2016"
+    ],
     "orgCredit": [
       "Better Food Foundation",
+      "C40 Good Food Cities",
       "Compass Group",
+      "Friends of the Earth",
       "Humane World for Animals",
+      "Mercy For Animals",
       "New Roots Institute",
+      "PETA Deutschland",
+      "Paris 2024",
+      "Physicians Committee for Responsible Medicine",
       "Plant Based Treaty",
+      "Planted Society",
       "Practice Greenhealth",
+      "ProVeg",
+      "Raven Corps",
+      "Sodexo Live!",
       "Unknown",
       "World Resources Institute"
     ]
@@ -277,12 +368,24 @@
       "Netherlands",
       "Spain"
     ],
-    "year": ["2030", "2027", "2026", "2025", "2024", "2022", "2021", "2020"],
+    "year": [
+      "2030",
+      "2027",
+      "2026",
+      "2025",
+      "2024",
+      "2023",
+      "2022",
+      "2021",
+      "2020"
+    ],
     "orgCredit": [
+      "Better Food Foundation",
       "Earthsave Canada",
       "Farm Forward",
       "Friends of the Earth",
       "Humane World for Animals",
+      "New Roots Institute",
       "Plant Based Treaty",
       "Plant-Based Cities Movement",
       "Plant-Based Treaty",
@@ -298,8 +401,14 @@
       "University Dining Hall"
     ],
     "country": ["United States", "Canada", "Netherlands"],
-    "year": ["unknown", "2025", "2024"],
-    "orgCredit": ["Better Food Foundation", "ProVeg", "Unknown"]
+    "year": ["unknown", "2026", "2025", "2024"],
+    "orgCredit": [
+      "Better Food Foundation",
+      "Mercy For Animals",
+      "New Roots Institute",
+      "ProVeg",
+      "Unknown"
+    ]
   },
   "subPledged": {
     "placeType": [],
@@ -308,10 +417,16 @@
     "orgCredit": []
   },
   "titlesAdopted": {
-    "placeType": ["K-12", "University Dining Hall"],
-    "country": ["United States", "United Kingdom"],
+    "placeType": ["K-12", "Other", "University Dining Hall"],
+    "country": ["United States", "Portugal", "United Kingdom"],
     "year": ["2026", "2025"],
-    "orgCredit": ["Better Food Foundation", "ProVeg UK"]
+    "orgCredit": [
+      "Better Food Foundation",
+      "Mercy For Animals",
+      "New Roots Institute",
+      "ProVeg",
+      "ProVeg UK"
+    ]
   },
   "titlesPledged": {
     "placeType": ["City/Government"],
@@ -322,16 +437,20 @@
   "placementAdopted": {
     "placeType": [
       "City/Government",
+      "Ind. Restaurant",
       "University Dining Hall",
       "University Event",
       "Workplace Cafeteria"
     ],
-    "country": ["United States", "Netherlands"],
-    "year": ["unknown", "2025", "2024"],
+    "country": ["United States", "Mexico", "Netherlands"],
+    "year": ["unknown", "2026", "2025", "2024", "2017"],
     "orgCredit": [
       "Better Food Foundation",
+      "Internal",
+      "Mercy For Animals",
       "New Roots Institute",
       "Plant Based Treaty",
+      "Planted Society",
       "Unknown"
     ]
   },
@@ -346,6 +465,7 @@
       "Cafe",
       "Chain Restaurant",
       "City/Government",
+      "Ind. Restaurant",
       "Other",
       "University Cafe",
       "University Dining Hall"
@@ -353,23 +473,26 @@
     "country": [
       "United States",
       "France",
+      "Korea",
+      "Mexico",
       "Portugal",
       "Spain",
       "Sweden",
       "United Kingdom"
     ],
-    "year": ["unknown", "2025", "2024", "2023", "2022", "2021", "2020"],
+    "year": ["unknown", "2026", "2025", "2024", "2023", "2022", "2021", "2020"],
     "orgCredit": [
       "Better Food Foundation",
       "Friends of the Earth",
       "Mercy for Animals",
       "New Roots Institute",
       "Plant Based Treaty",
+      "Planted Society",
       "World Resources Institute"
     ]
   },
   "otherPledged": {
-    "placeType": ["City/Government", "University Dining Hall"],
+    "placeType": ["City/Government", "K-12", "University Dining Hall"],
     "country": [
       "United States",
       "Australia",
@@ -379,10 +502,12 @@
     ],
     "year": ["2026", "2025", "2024", "2022", "2021", "2019"],
     "orgCredit": [
+      "Animal Wellness Action",
       "Better Food Foundation",
       "Greener by Default",
       "Plant-Based Cities Movement",
       "Plant-Based Treaty",
+      "Switch4Good",
       "Unknown",
       "World Resources Institute"
     ]
