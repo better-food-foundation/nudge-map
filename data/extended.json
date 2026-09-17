@@ -1,4 +1,42 @@
 {
+  "ARTIS Zoo (Amsterdam) foodservice, Netherlands": {
+    "ratio": [
+      {
+        "summary": "All ARTIS zoo hospitality is vegetarian (~75% plant-based; only cheese and coffee milk remain animal-based): ratios + subtle substitutions + tasty titles + a plant-based price incentive.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 193,
+            "type": "Press release",
+            "description": "ARTIS – sustainability / Looopings",
+            "url": "https://www.artis.nl/nl/duurzaamheid/artis-vegetarisch",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Accent Catering (UK school catering), United Kingdom": {
+    "ratio": [
+      {
+        "summary": "6th in ProVeg UK's 2025/26 Contract Caterer Ranking (School Plates Bronze Award). 23% of main meal options are plant-based, with V/VE options featured at the top of the menu every day (default positioning); 20% of days offer a plant-based option in every meal category. Fully labelled V/VE options.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 212,
+            "type": "Advocate report",
+            "description": "ProVeg UK Contract Caterer Ranking 2025/26 (proveg.org); ProVeg School Plates Awards",
+            "url": "https://proveg.org/uk/news/contract-caterer-ranking-back-for-a-second-year/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Alcorcón (council catering), Spain": {
     "other": [
       {
@@ -18,6 +56,25 @@
       }
     ]
   },
+  "All Good (Thousand Oaks), CA, United States": {
+    "other": [
+      {
+        "summary": "All Good committed to adding a menu key that identifies which dishes are 100% plant-based.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 227,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/thousandoaks",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Almere (council catering), Netherlands": {
     "ratio": [
       {
@@ -29,6 +86,25 @@
             "type": "News article",
             "description": "Plant Based Treaty – Almere",
             "url": "https://www.almeredezeweek.nl/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Althea, MA, United States": {
+    "ratio": [
+      {
+        "summary": "Althea committed, through Eat for Impact, to keep a plant-based special on its regular menu, run plant-based specials on a recurring basis, remove the plant-based up-charge, and add a menu key identifying plant-based dishes.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 217,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/cambridge",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -63,8 +139,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -82,8 +158,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -240,6 +316,25 @@
       }
     ]
   },
+  "Arsenal FC – Emirates Stadium, United Kingdom": {
+    "default": [
+      {
+        "summary": "From the 2024/25 season the Emirates went meat-free by default across the general concourse and Club Level (cheeseburgers/hot dogs replaced by plant-based versions); meat retained only in premium executive boxes. First club in Europe's top-5 leagues to make general-admission catering meat-free.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 195,
+            "type": "News article",
+            "description": "She Wore A Yellow Ribbon – Arsenal stadium set to go vegan",
+            "url": "https://shewore.com/2024/04/01/arsenal-stadium-set-to-go-vegan/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Austin Office of Sustainability, TX, United States": {
     "default": [
       {
@@ -278,35 +373,17 @@
       }
     ]
   },
-  "Barcelona, Spain": {
+  "Base Crave, MA, United States": {
     "ratio": [
       {
-        "summary": "As part of its 2020 Climate Emergency Declaration, Barcelona is reducing consumption of animal proteins at public schools. Now, the presence of vegetable protein has increased on school menus, while red meat is served once a month.",
-        "reporter": "Björn Ólafsson",
+        "summary": "Base Crave committed, through Eat for Impact, to keep a plant-based special on its regular menu, run plant-based specials on a recurring basis, remove the plant-based up-charge, and add a menu key identifying plant-based dishes.",
+        "reporter": null,
         "citations": [
           {
-            "id": 72,
-            "type": "News article",
-            "description": "City of Barcelona official website",
-            "url": "https://www.barcelona.cat/infobarcelona/en/tema/city-council/no-pork-consumption-prohibition-by-the-city-council-in-nursery-schools_1607511.html",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          },
-          {
-            "id": 73,
-            "type": "News article",
-            "description": "Universitat Oberta de Catalunya (UOC) news article",
-            "url": "https://www.uoc.edu/en/news/2025/replace-animal-protein-to-reduce-environmental-impact-in-school-diets",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          },
-          {
-            "id": 74,
-            "type": "Press release",
-            "description": "City of Barcelona Climate Emergency Declaration (PDF)",
-            "url": "https://www.barcelona.cat/barcelona-pel-clima/sites/default/files/Climate_Emergency_Declaration_en.pdf",
+            "id": 217,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/cambridge",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -349,6 +426,61 @@
             "type": "News article",
             "description": "Sentient Media article",
             "url": "https://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Blue Star Parlor (NYC), NY, United States": {
+    "placement": [
+      {
+        "summary": "Blue Star Parlor committed to bringing back both plant-based specials on a regular basis.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Bolivian Llama Party (NYC), NY, United States": {
+    "ratio": [
+      {
+        "summary": "Bolivian Llama Party committed to keeping both plant-based specials on its regular menu.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "placement": [
+      {
+        "summary": "Bolivian Llama Party committed to bringing back both plant-based specials on a regular basis.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -402,8 +534,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -425,6 +557,25 @@
             "type": "Other",
             "description": "Humane World for Animals – Food Service Industry Protein Sustainability Scorecard 2025",
             "url": "https://www.humaneworld.org/sites/default/files/docs/HumaneWorld_foodservicescorecard_2025.pdf",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Calabasas High School, CA, United States": {
+    "ratio": [
+      {
+        "summary": "Fellow mentored high school students to get plant-based options added to every meal at their high school",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 220,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.peta2.com/culture/sos-calabasas-vegan-options/",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -461,8 +612,27 @@
           {
             "id": 54,
             "type": "News article",
-            "description": "Better Food Foundation article",
+            "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Camden Council (London), United Kingdom": {
+    "default": [
+      {
+        "summary": "Camden's Culture and Environment Scrutiny Committee backed (July 2025) a transition to 100% plant-based catering for all internal council-run events and meetings — the third London borough to do so after Lewisham and Hackney.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 183,
+            "type": "News article",
+            "description": "Plant Based Councils – Camden Council's Climate Leadership Backs 100% Plant-Based Food",
+            "url": "https://www.plantbasedcouncils.org/post/camden-council-plant-based-leadership",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -501,6 +671,25 @@
             "type": "Press release",
             "description": "Caribou Coffee – No Added Charge for Non-Dairy Milk Options",
             "url": "https://www.cariboucoffee.com/2023/04/caribou-coffee-announces-no-added-charge-for-non-dairy-milk-options/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Caterlink (UK school catering), United Kingdom": {
+    "ratio": [
+      {
+        "summary": "Ranked #1 in ProVeg UK's 2025/26 Contract Caterer Ranking. Over half of Caterlink's main meal options are plant-based, with vegetarian/plant-based options positioned at the TOP of the menu daily (default placement nudge); 11 of 15 menu days offer a vegan main, side and dessert. Runs meat-free \"planet-friendly days\" and an \"Added Plant Protein\" project (≥1 meat dish/week has 50% of its protein from plants, ~48% less GHG). Holds Silver School Plates Awards (Islington, Camden, Central).",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 212,
+            "type": "Advocate report",
+            "description": "ProVeg UK Contract Caterer Ranking 2025/26 (proveg.org); ProVeg School Plates Awards",
+            "url": "https://proveg.org/uk/news/contract-caterer-ranking-back-for-a-second-year/",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -575,6 +764,25 @@
       }
     ]
   },
+  "Columbia University, NY, United States": {
+    "ratio": [
+      {
+        "summary": "Oatmilk dispensing machines added to two dining halls at Columbia University.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 222,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://bwog.com/2024/09/why-has-every-dining-hall-changed-updates-to-columbia-dining-for-the-2024-2025-school-year/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Compass Group (UK & Ireland), England, United Kingdom": {
     "ratio": [
       {
@@ -586,6 +794,25 @@
             "type": "Press release",
             "description": "Compass Group – Plant Forward Meals",
             "url": "https://www.compass-group.com/en/sustainability/planet/plant-forward-meals.html",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Concordia University (Montreal), Canada": {
+    "ratio": [
+      {
+        "summary": "Committed to cut purchases of meat, dairy and eggs by 30% by 2025 across food services.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 197,
+            "type": "News article",
+            "description": "CBC – Canadian universities boost plant-based options",
+            "url": "https://www.cbc.ca/news/canada/universities-plant-based-menus-1.7055714",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -651,6 +878,25 @@
       }
     ]
   },
+  "CreatureKind – DefaultVeg for faith communities, OR, United States": {
+    "default": [
+      {
+        "summary": "CreatureKind's DefaultVeg program helps Christian congregations switch the default at shared meals/events to plant-based (opt in for animal products), framed around creation-care; part of the wider DefaultVeg movement.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 200,
+            "type": "Other",
+            "description": "CreatureKind – DefaultVeg",
+            "url": "https://becreaturekind.org/take-action/defaultveg/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "DC Department of Youth Rehabilitation Services, DC, United States": {
     "other": [
       {
@@ -690,6 +936,25 @@
             "type": "Press release",
             "description": "Davidson – Partnership Aims to Increase Plant-Based Meal Options",
             "url": "https://www.davidson.edu/news/2021/04/21/partnership-aims-increase-plant-based-meal-options-curb-environmental-impact",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Dolce Schools Catering (UK), United Kingdom": {
+    "ratio": [
+      {
+        "summary": "3rd in ProVeg UK's 2025/26 Contract Caterer Ranking. 55% of the menu is plant-based, with V/VE options placed at the top of the menu daily (default positioning) and two plant-rich days per week (\"Tasty Tuesday\", \"Try it Thursday\"). Holds two School Plates Silver Awards (primary and secondary menus); plant-based options available every day.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 212,
+            "type": "Advocate report",
+            "description": "ProVeg UK Contract Caterer Ranking 2025/26 (proveg.org); ProVeg School Plates Awards",
+            "url": "https://proveg.org/uk/news/contract-caterer-ranking-back-for-a-second-year/",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -755,6 +1020,59 @@
       }
     ]
   },
+  "El Hipopótamo Azul (Metepec), Mexico": {
+    "ratio": [
+      {
+        "summary": "El Hipopótamo Azul committed to keeping one plant-based special as a regularly-occurring special and to adding multiple new plant-based items to its regular menu.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 226,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/metepec",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "placement": [
+      {
+        "summary": "El Hipopótamo Azul introduced a new plant-based special and committed to running it as a regularly-occurring special.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 226,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/metepec",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "other": [
+      {
+        "summary": "El Hipopótamo Azul committed to adding a menu key that identifies which dishes are 100% plant-based.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 226,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/metepec",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "El Masnou (council catering), Spain": {
     "other": [
       {
@@ -785,6 +1103,44 @@
             "type": "Other",
             "description": "Humane World for Animals – Food Service Industry Protein Sustainability Scorecard 2025",
             "url": "https://www.humaneworld.org/sites/default/files/docs/HumaneWorld_foodservicescorecard_2025.pdf",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Emory University (cafes), GA, United States": {
+    "other": [
+      {
+        "summary": "Emory verbally commits to remove all non-dairy upcharges at 8 cafes",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Emory University (student government), GA, United States": {
+    "ratio": [
+      {
+        "summary": "Emory's student government passed a bill creating a $10,000 fund for plant-based food at club events.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -869,6 +1225,63 @@
       }
     ]
   },
+  "Finnish Defence Forces (garrison canteens), Finland": {
+    "ratio": [
+      {
+        "summary": "Finland's armed forces committed garrison canteens nationwide to serve at least two fully meat-free meals per week, on environmental grounds.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 196,
+            "type": "News article",
+            "description": "Meat Free Monday – Finnish army on the meat-free march",
+            "url": "https://meatfreemondays.com/finnish-army-meat-free-march/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Foothill College, CA, United States": {
+    "other": [
+      {
+        "summary": "Foothill student council approves Green Mondays",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "France – EGalim / Climate & Resilience law (public canteens), France": {
+    "ratio": [
+      {
+        "summary": "National law: since Nov 2019 all schools (public & private, K-12) must offer a weekly vegetarian menu; the 2021 Climate & Resilience law added a mandatory daily vegetarian option in state canteens from 2023 and larger local-authority/university/hospital canteens. ~74% of schoolchildren now get a weekly veg meal. Availability mandate at national scale.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 194,
+            "type": "Policy",
+            "description": "EGalim Law and Collective Catering – Eternity Systems",
+            "url": "https://www.eternity-systems.com/en/loi-egalim-restauration-collective/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Franklin & Marshall College, PA, United States": {
     "placement": [
       {
@@ -880,6 +1293,25 @@
             "type": "Press release",
             "description": "Better Food Foundation – These 7 Colleges Are Making Plant-Based Dining the New Norm",
             "url": "https://www.betterfoodfoundation.org/news/these-7-colleges-are-making-plant-based-dining-the-new-norm-this-fall/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Fremont Union High School District, CA, United States": {
+    "ratio": [
+      {
+        "summary": "All school meals in the Fremont Union High School District include plant-based options, with expanded plant-based options at Cupertino High School.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 223,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.newrootsinstitute.org/articles/livia-secures-plant-based-meals-at-fremont-union-schools",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -926,6 +1358,25 @@
       }
     ]
   },
+  "George Washington University, DC, United States": {
+    "default": [
+      {
+        "summary": "Plant-based defaults at events hosted by George Washington University Office of Sustainability",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 224,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://sustainability.gwu.edu/green-event-guide",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Good Eating Company (US), NC, United States": {
     "default": [
       {
@@ -937,6 +1388,42 @@
             "type": "News article",
             "description": "Good Eating Company Slashes Emissions, Offering Oat Milk by Default at Many Foodservice Locations (vegconomist)",
             "url": "https://vegconomist.com/gastronomy-food-service/food-service/good-eating-company-slashes-emissions-offering-oat-milk-default/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Goodwin's (Chicago), IL, United States": {
+    "ratio": [
+      {
+        "summary": "Goodwin's committed to keeping at least one plant-based special on the menu as a regular item and to adding a menu key that identifies which dishes are 100% plant-based.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "placement": [
+      {
+        "summary": "Goodwin's introduced a new plant-based special and committed to running it as a regularly-occurring special.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -1188,6 +1675,25 @@
       }
     ]
   },
+  "Heidelberg University, Germany": {
+    "default": [
+      {
+        "summary": "Heidelberg University verbally commits to switch one of its 3 canteens to be fully vegetarian",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 225,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://plantbaseduniversities.org/press/universitat-heidelberg-ab-2026-vegan",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Helsinki, Finland, Finland": {
     "ratio": [
       {
@@ -1225,6 +1731,61 @@
       }
     ]
   },
+  "Hoja Verde (Metepec), Mexico": {
+    "ratio": [
+      {
+        "summary": "Hoja Verde committed to keeping one plant-based special on its regular menu and to adding one new plant-based item to the regular menu.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 226,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/metepec",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "placement": [
+      {
+        "summary": "Hoja Verde committed to keeping one plant-based special as a regularly-occurring special.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 226,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/metepec",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Honey and Herb (Thousand Oaks), CA, United States": {
+    "placement": [
+      {
+        "summary": "Honey and Herb committed to keeping both plant-based specials as regularly-occurring specials.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 227,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/thousandoaks",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Hunter College, CUNY (event), NY, United States": {
     "default": [
       {
@@ -1232,10 +1793,67 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "ISS Education (UK school catering), United Kingdom": {
+    "ratio": [
+      {
+        "summary": "2nd in ProVeg UK's 2025/26 Contract Caterer Ranking. 27% of the menu is plant-based, with V/VE options at the top of the menu daily (default positioning) and a named plant-rich day (\"Plates for our Planet\"). First primary-school contract caterer to pledge the Food Foundation/Veg Power \"Bang in Some Beans\" campaign (+20% bean procurement); pursuing School Plates Award certification.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 212,
+            "type": "Advocate report",
+            "description": "ProVeg UK Contract Caterer Ranking 2025/26 (proveg.org); ProVeg School Plates Awards",
+            "url": "https://proveg.org/uk/news/contract-caterer-ranking-back-for-a-second-year/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Ingram Micro, CA, United States": {
+    "default": [
+      {
+        "summary": "Workshop at Ingram Micro for event planners, exectuive assistants, led to instituting a pre-check of sustainability criteria before event including adding plant-based foods",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Issaquah School District, WA, United States": {
+    "ratio": [
+      {
+        "summary": "Veggie chili and curry have been added as menu items to all schools in the district",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -1263,6 +1881,44 @@
       }
     ]
   },
+  "Khmai (Chicago), IL, United States": {
+    "ratio": [
+      {
+        "summary": "Khmai committed to keeping at least one plant-based special on the menu as a regular item.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Kigali Independent University, Rwanda": {
+    "ratio": [
+      {
+        "summary": "Weekly additional plant-based menu with 8 items, leading to a 20% increase in plant-based options",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Kingston, Ontario, ON, Canada": {
     "placement": [
       {
@@ -1276,6 +1932,63 @@
         "summary": "In 2024, Kingston City Council passed a motion for the city to promote plant-based foods by prioritizing them in its procurement process and placing them in higher-profile locations at city events.",
         "reporter": "Björn Ólafsson",
         "citations": []
+      }
+    ]
+  },
+  "La Tromperia (Metepec), Mexico": {
+    "ratio": [
+      {
+        "summary": "La Tromperia committed to keeping both plant-based specials on its regular menu.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Le Macaron, MA, United States": {
+    "ratio": [
+      {
+        "summary": "Le Macaron committed, through Eat for Impact, to keep a plant-based special on its regular menu, run plant-based specials on a recurring basis, remove the plant-based up-charge, and add a menu key identifying plant-based dishes.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 217,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.eatforimpact.org/cambridge",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Lewisham Council (London), United Kingdom": {
+    "default": [
+      {
+        "summary": "As part of its Climate Emergency Action Plan (carbon-neutral by 2030), Lewisham switched to 100% plant-based (vegan) catering at all council corporate events — among the first UK councils to do so.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 184,
+            "type": "News article",
+            "description": "Local Government Association – Lewisham Council: Vegan catering, a local approach to global emissions",
+            "url": "https://www.local.gov.uk/case-studies/lewisham-council-vegan-catering-local-approach-global-emissions",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
       }
     ]
   },
@@ -1343,15 +2056,6 @@
         "reporter": "Björn Ólafsson",
         "citations": [
           {
-            "id": 87,
-            "type": "News article",
-            "description": "Sentient Media article",
-            "url": "https://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          },
-          {
             "id": 88,
             "type": "Other",
             "description": "LA Climate Week event page",
@@ -1382,6 +2086,25 @@
       }
     ]
   },
+  "Los Angeles Unified School District, CA, United States": {
+    "ratio": [
+      {
+        "summary": "Los Angeles Unified School District runs Vegan Fridays, adding plant-based options to school menus on a designated day each week.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 229,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.pcrm.org/news/news-releases/los-angeles-unified-school-district-launches-vegan-pilot-program",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "MAX Burgers, Sweden": {
     "other": [
       {
@@ -1393,6 +2116,44 @@
             "type": "Press release",
             "description": "Cool Food Meals Badge Coming to Aramark, MAX Burgers and Nestlé Professional Menus (WRI)",
             "url": "https://www.wri.org/news/release-cool-food-meals-badge-coming-aramark-max-burgers-and-nestle-professional-menus-helping",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "MISS READ, Germany": {
+    "default": [
+      {
+        "summary": "MISS READ Fair go fully meatless • MISS READ Pre-Fair go fully plant-based",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Mamiche (Metepec), Mexico": {
+    "ratio": [
+      {
+        "summary": "Mamiche committed to keeping one plant-based special on its regular menu and to adding one new plant-based item to the regular menu.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -1458,6 +2219,25 @@
       }
     ]
   },
+  "Milpitas High School, CA, United States": {
+    "ratio": [
+      {
+        "summary": "Was able to add new plant-based entrees to school cafeteria menu at Milpitas High School",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 230,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://foe.org/blog/school-district-combat-climate-change/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Monash University, Wholefoods Restaurant, Australia": {
     "default": [
       {
@@ -1465,8 +2245,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -1567,6 +2347,44 @@
       }
     ]
   },
+  "Non-Dairy Milk in U.S. School Cafeterias (federal bill), DC, United States": {
+    "other": [
+      {
+        "summary": "Federal bill to allow non-dairy (plant-based) milk to be served in US school lunches; passed by the US House of Representatives.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 191,
+            "type": "News article",
+            "description": "VegNews / Green Queen – plant-based milk in schools",
+            "url": "https://vegnews.com/plant-based-milk-in-schools",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "North Carolina State University (NC State Dining), NC, United States": {
+    "ratio": [
+      {
+        "summary": "NC State Dining (self-operated) averages 36–40% plant-based meals across its residential dining halls, earning a \"B\" rating and 18th of 31 in the 2025 Humane World for Animals College & University Protein Sustainability Survey. Action stations default to customizable plant-based bowls (Asian/Latin grain bowls) with meat as an optional add-on; runs semesterly \"Plant-Powered Days\" and partners with MCURC on plant-forward menu development.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 210,
+            "type": "Institutional website",
+            "description": "NC State Campus Enterprises – \"NC State Dining Makes Strides on Protein Sustainability\" (Feb 2025); HWA CU Protein Sustainability Survey 2025",
+            "url": "https://campusenterprises.ncsu.edu/2025/02/11/nc-state-dining-makes-strides-on-protein-sustainability/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "North Vancouver District, BC, Canada": {
     "ratio": [
       {
@@ -1602,6 +2420,62 @@
             "type": "Press release",
             "description": "Humane World – Northshore School District sets a new standard in Washington state",
             "url": "https://www.humanesociety.org/news/northshore-school-district-sets-new-standard-washington-state-ambitious-plant-based-pledge",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Northwell Health, NY, United States": {
+    "default": [
+      {
+        "summary": "Northwell's patient tray-service menu (available to all patients) is almost entirely plant-based by default across its New York hospital network.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 199,
+            "type": "Other",
+            "description": "Coolfood/Practice Greenhealth signatory; press coverage",
+            "url": "https://practicegreenhealth.org/topics/food/coolfood-pledge-health-care-signatories",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Nursery Schools, Barcelona, Spain": {
+    "ratio": [
+      {
+        "summary": "As part of its 2020 Climate Emergency Declaration, Barcelona is reducing consumption of animal proteins at public schools. Now, the presence of vegetable protein has increased on school menus, while red meat is served once a month.",
+        "reporter": "Björn Ólafsson",
+        "citations": [
+          {
+            "id": 72,
+            "type": "News article",
+            "description": "City of Barcelona official website",
+            "url": "https://www.barcelona.cat/infobarcelona/en/tema/city-council/no-pork-consumption-prohibition-by-the-city-council-in-nursery-schools_1607511.html",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          },
+          {
+            "id": 73,
+            "type": "News article",
+            "description": "Universitat Oberta de Catalunya (UOC) news article",
+            "url": "https://www.uoc.edu/en/news/2025/replace-animal-protein-to-reduce-environmental-impact-in-school-diets",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          },
+          {
+            "id": 74,
+            "type": "Press release",
+            "description": "City of Barcelona Climate Emergency Declaration (PDF)",
+            "url": "https://www.barcelona.cat/barcelona-pel-clima/sites/default/files/Climate_Emergency_Declaration_en.pdf",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -1648,6 +2522,25 @@
       }
     ]
   },
+  "Oslo (municipal canteens & institutions), Norway": {
+    "ratio": [
+      {
+        "summary": "Under its 2023 food action plan (and the C40 Good Food Cities Declaration), the City of Oslo committed to halve meat consumption across municipal canteens and institutions by end of 2023, increase plant-based food, always offer a satisfactory vegan option, and require new suppliers to deliver more sustainable plant-based/seasonal foods (food waste to be halved by 2030).",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 209,
+            "type": "Institutional website",
+            "description": "City of Oslo – 2023 food action plan (halve meat in municipal canteens); C40 Good Food Cities Declaration",
+            "url": "https://www.c40.org/news/good-food-cities/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Otis College of Art & Design (campus cafes), CA, United States": {
     "default": [
       {
@@ -1655,8 +2548,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -1678,6 +2571,82 @@
             "type": "Press release",
             "description": "Better Food Foundation – These 7 Colleges Are Making Plant-Based Dining the New Norm",
             "url": "https://www.betterfoodfoundation.org/news/these-7-colleges-are-making-plant-based-dining-the-new-norm-this-fall/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Oxfordshire County Council (council meetings & events), United Kingdom": {
+    "default": [
+      {
+        "summary": "Motion passed in 2021 to serve fully plant-based food and drink at all catered council meetings and events; seven full-council meetings a year now serve plant-based lunches by default.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 185,
+            "type": "Policy",
+            "description": "Oxfordshire County Council – Plant-based food will be served to councillors",
+            "url": "https://news.oxfordshire.gov.uk/plant-based-food/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Pachamama Coffee Cooperative, CA, United States": {
+    "default": [
+      {
+        "summary": "Shifted to oat milk as the default in cafes, increasing oat milk sales by ~7%.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 190,
+            "type": "Press release",
+            "description": "Better Food Foundation – Oat Milk by Default guide",
+            "url": "https://www.betterfoodfoundation.org/join-us/coffee-shops/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Paderborn University, Mensa Academica, Germany": {
+    "ratio": [
+      {
+        "summary": "At the Mensa Academica, 43% of the main courses sold are vegan. The daily rotating menu defaults to two vegan main courses plus a vegan/vegetarian stew alongside one vegetarian and one meat/fish dish, with a daily vegan dessert and vegan salad dressings. Repeatedly recognized by PETA Deutschland as one of Germany's most vegan-friendly canteens (3 stars 2023/2024; 4 of 5 stars 2025).",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 211,
+            "type": "Institutional website",
+            "description": "Studierendenwerk Paderborn – \"Mensa Academica erneut als veganfreundliche Mensa ausgezeichnet\"; PETA Deutschland vegan-friendly Mensa awards",
+            "url": "https://www.studierendenwerk-pb.de/wir-ueber-uns/das-studierendenwerk/news/archiv/details/mensa-academica-erneut-als-veganfreundliche-mensa-ausgezeichnet/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Palo Alto High School, CA, United States": {
+    "ratio": [
+      {
+        "summary": "Palo Alto High School adds a plant-based option to lunch once a week.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 231,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://foe.org/blog/advocacy-steps-school-food/",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -1716,6 +2685,25 @@
             "type": "Social media",
             "description": "Instagram Reel",
             "url": "https://www.instagram.com/reel/DE5FhScx4iw/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Paris 2024 Olympic & Paralympic Games (catering), France": {
+    "ratio": [
+      {
+        "summary": "The Paris 2024 'Food Vision' aimed to halve the catering carbon footprint vs prior Games by doubling the share of plant-based food. At least 60% of meals sold at public concessions were meat-free; ~40% of dishes in the Athletes' Village restaurant (Sodexo Live!, 500 recipes, ~40k meals/day) were vegetarian, and the Concorde live site was catered 100% vegetarian.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 215,
+            "type": "Press release",
+            "description": "Sodexo Live! newsroom (500 recipes, Athletes' Village); Paris 2024 Food Vision; FoodService Director",
+            "url": "https://www.sodexo.com/news/newsroom/2024/500-recipes-athletes-village",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -1819,6 +2807,44 @@
       }
     ]
   },
+  "Polytechnic University of the Philippines, Philippines": {
+    "ratio": [
+      {
+        "summary": "Plant-based and vegan capacity-building for chefs, concessionaires, faculty, staff, and students + Transition pathways toward more plant-based canteens",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Pomona College, CA, United States": {
+    "ratio": [
+      {
+        "summary": "Pomona College commits to the Food Forward Pledge",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 221,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://www.pomona.edu/administration/sustainability/on-campus/food",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Pomptonian Food Service, NJ, United States": {
     "ratio": [
       {
@@ -1830,6 +2856,25 @@
             "type": "Other",
             "description": "Humane World for Animals – Food Service Industry Protein Sustainability Scorecard 2025",
             "url": "https://www.humaneworld.org/sites/default/files/docs/HumaneWorld_foodservicescorecard_2025.pdf",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "ProVeg Portugal — public institution catering, Portugal": {
+    "titles": [
+      {
+        "summary": "ProVeg Portugal menu redesigns, plant-based default advocacy, and tasty titles in public institutions (schools, hospitals, universities). Portugal mandates a 100% plant-based meal on request in public institutions.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 192,
+            "type": "Internal document",
+            "description": "ProVeg Portugal (submission materials)",
+            "url": "https://drive.google.com/file/d/1rrPpiFEYPFGG_FyHFBZ6c0carbtvbQeX/view",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -1876,6 +2921,51 @@
       }
     ]
   },
+  "Purple Pig (Chicago), IL, United States": {
+    "ratio": [
+      {
+        "summary": "The Purple Pig committed to creating multiple new plant-based menu items and to keeping at least one plant-based special on the menu as a regular item.",
+        "reporter": null,
+        "citations": []
+      }
+    ],
+    "other": [
+      {
+        "summary": "The Purple Pig committed to removing the up-charge on plant-based menu modifications.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Queen's University (Ontario), Canada": {
+    "ratio": [
+      {
+        "summary": "Residence dining halls at ~40% fully plant-based recipes plus 15% vegetarian as of Dec 2023.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 197,
+            "type": "News article",
+            "description": "CBC – Canadian universities boost plant-based options",
+            "url": "https://www.cbc.ca/news/canada/universities-plant-based-menus-1.7055714",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Quest Food Management Services, IL, United States": {
     "ratio": [
       {
@@ -1902,8 +2992,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -1944,6 +3034,25 @@
             "type": "Press release",
             "description": "Humane World – RIT becomes first NY university to achieve 50% plant-based menu goal",
             "url": "https://www.humaneworld.org/en/news/rochester-institute-technology-meets-plant-based-menu-goal",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Rutgers University, NJ, United States": {
+    "ratio": [
+      {
+        "summary": "Ranked #8 on HWA's 2025 scorecard; committed to 50% of meals offered being plant-based or low-carbon by 2024.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 144,
+            "type": "Press release",
+            "description": "Humane World for Animals – New report grades U.S. colleges on plant-based dining and sustainability initiatives",
+            "url": "https://www.humaneworld.org/en/news/new-report-grades-us-colleges-plant",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -2009,6 +3118,25 @@
       }
     ]
   },
+  "Salvador municipal schools (Brazil), Brazil": {
+    "ratio": [
+      {
+        "summary": "Since 2020, Salvador's school system (170,000+ students) shifted ~20% of meals to plant-based via the National School Feeding Program, with Humane World + Mercy For Animals; together several Brazilian systems served ~40 million additional plant-based meals. Meals introduced by taste, not 'vegetarian' label; monthly acceptability testing.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 166,
+            "type": "News article",
+            "description": "Humane World – How HWA is shifting menus toward plants",
+            "url": "https://www.humaneworld.org/en/all-animals/global-plant-based-menus",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "San Francisco County Jails, CA, United States": {
     "ratio": [
       {
@@ -2025,7 +3153,7 @@
             "screenshots": []
           },
           {
-            "id": 92,
+            "id": 86,
             "type": "News article",
             "description": "Sentient Media article",
             "url": "https://sentientmedia.org/how-one-small-city-in-california-is-going-plant-based/",
@@ -2044,7 +3172,7 @@
         "reporter": "Björn Ólafsson",
         "citations": [
           {
-            "id": 93,
+            "id": 91,
             "type": "Press release",
             "description": "Eurogroup for Animals article",
             "url": "https://www.eurogroupforanimals.org/news/san-francisco-reduce-meat-and-dairy-served-hospitals-and-jails",
@@ -2063,10 +3191,29 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Simon Fraser University, Canada": {
+    "ratio": [
+      {
+        "summary": "SFU Dining signed the Forward Food pledge (Nov 2023) to make menus ≥20% more plant-based within two years, and its Strategic Sustainability Plan sets a 'plant-forward' goal to increase the number of plant-based menu items by 50% by the end of 2025.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 203,
+            "type": "Institutional website",
+            "description": "SFU Food – Sustainability (Plant-Forward Eating: +50% plant-based menu items by end 2025)",
+            "url": "https://www.sfu.ca/food/programs/sustainability.html",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -2177,8 +3324,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -2200,6 +3347,25 @@
             "type": "News article",
             "description": "Stanford Daily article",
             "url": "https://stanforddaily.com/2025/11/10/all-you-can-eat-stanford-dining-pushes-for-plant-based/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Staples High School, CT, United States": {
+    "ratio": [
+      {
+        "summary": "Added tofu to the cafeteria salad bar",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -2246,6 +3412,44 @@
       }
     ]
   },
+  "Swansea University, United Kingdom": {
+    "ratio": [
+      {
+        "summary": "Swansea University reports that ~50% of meal options in campus outlets are meat-free and is expanding plant-based variety; its campus catering earned a top-tier sustainability rating (2026) partly for expanded plant-based options.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 208,
+            "type": "Institutional website",
+            "description": "Swansea University – Sustainable Healthy Food Policy / Eat Well On Campus (50% meat-free)",
+            "url": "https://www.swansea.ac.uk/media/sustainable-healthy-food-policy.pdf",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Tastia Restaurant, Nigeria": {
+    "ratio": [
+      {
+        "summary": "Tastia Restaurant kept the plant-based options introduced during Eat for Impact on its menu permanently.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Tavira (municipal catering), Portugal": {
     "default": [
       {
@@ -2265,6 +3469,25 @@
       }
     ]
   },
+  "Tetra Pak (Aarhus site canteen), Denmark": {
+    "ratio": [
+      {
+        "summary": "At Tetra Pak's site in Aarhus, Denmark, 41% of all meals served are plant-rich. Achieved by reducing meat in dishes with plant-based substitutes, enhancing flavour with spices and herbs, and improving presentation with restaurant-style plating and color-coded environmental-messaging labels (a presentation/promotion nudge).",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 214,
+            "type": "Advocate report",
+            "description": "Coolfood Pledge: 2024 Collective Member Progress Report (WRI) — Member Spotlight: Tetra Pak",
+            "url": "https://coolfood.org/resources/coolfood-pledge-2024-collective-member-progress-report/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Texas State University (event), TX, United States": {
     "placement": [
       {
@@ -2272,8 +3495,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -2341,6 +3564,25 @@
       }
     ]
   },
+  "Top7 Orlando, Nigeria": {
+    "ratio": [
+      {
+        "summary": "Top7 Orlando kept the plant-based options introduced during Eat for Impact on its menu permanently.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Trellis (events), CA, United States": {
     "default": [
       {
@@ -2386,8 +3628,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -2417,6 +3659,25 @@
       }
     ]
   },
+  "Universidad de Lima, Peru": {
+    "ratio": [
+      {
+        "summary": "Additional plant-based options in school cafeteria at Universidad de Lima",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "University College London (Students' Union - four cafes), United Kingdom": {
     "default": [
       {
@@ -2436,6 +3697,25 @@
       }
     ]
   },
+  "University of Amsterdam, De Nieuwe Mensa, Netherlands": {
+    "default": [
+      {
+        "summary": "'De Nieuwe Mensa', a student–Facility Services collaboration at UvA's Roeterseiland campus, serves affordable vegan food by default ('by students, for students'), making plant-based the norm in the canteen.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 188,
+            "type": "News article",
+            "description": "University of Amsterdam – 'De Nieuwe Mensa' is up and running",
+            "url": "https://student.uva.nl/en/articles/2025-de-nieuwe-mensa-is-up-and-running",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "University of Arizona, AZ, United States": {
     "ratio": [
       {
@@ -2447,6 +3727,25 @@
             "type": " Institutional website",
             "description": "Arizona Student Unions (official) – UofA Ranks Top 5 for Sustainable Dining",
             "url": "https://union.arizona.edu/news/uofa-ranks-top-5-sustainable-dining",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "University of British Columbia (dining), Canada": {
+    "ratio": [
+      {
+        "summary": "UBC dining halls are ~55% plant-based and target 80% by 2025; UBC Food Services hosted Canada's first Forward Food Conference. Campus-wide ratio commitment.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 197,
+            "type": "News article",
+            "description": "CBC – Canadian universities boost plant-based options",
+            "url": "https://www.cbc.ca/news/canada/universities-plant-based-menus-1.7055714",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -2512,6 +3811,25 @@
       }
     ]
   },
+  "University of California, San Diego (campus dining), CA, United States": {
+    "ratio": [
+      {
+        "summary": "One of four UC campuses (with Berkeley, Los Angeles and Riverside) that pledged to make 50% of meal offerings plant-based by 2027 — together around 67,000 daily meals — via the Forward Food Collaborative (Humane World for Animals / Better Food Foundation).",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 166,
+            "type": "News article",
+            "description": "Humane World – How HWA is shifting menus toward plants",
+            "url": "https://www.humaneworld.org/en/all-animals/global-plant-based-menus",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "University of California, San Diego, CA, United States": {
     "default": [
       {
@@ -2523,6 +3841,25 @@
             "type": "News article",
             "description": "Better Food Foundation – How DefaultVeg Interns Are Reshaping Global Food Systems",
             "url": "https://ucsdguardian.org/2026/01/05/plant-based-defaults-are-the-food-system-reform-ucsd-needs/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "University of Cambridge, United Kingdom": {
+    "ratio": [
+      {
+        "summary": "The University Catering Service's 2016 sustainable food policy removed beef and lamb from all UCS outlets and repositioned vegetarian/vegan dishes ahead of meat on menus. An independent evaluation found a 33% cut in carbon emissions and 28% cut in land use per kg of food purchased, with footfall and gross profit maintained.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 205,
+            "type": "Institutional website",
+            "description": "University of Cambridge – Removing beef and lamb from menu dramatically reduces food-related carbon emissions",
+            "url": "https://www.cam.ac.uk/news/removing-beef-and-lamb-from-menu-dramatically-reduces-food-related-carbon-emissions-at-cambridge",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -2576,8 +3913,8 @@
         "reporter": null,
         "citations": [
           {
-            "id": 130,
-            "type": "Press release",
+            "id": 54,
+            "type": "News article",
             "description": "How DefaultVeg Interns Are Reshaping Food Systems (Better Food Foundation)",
             "url": "https://www.betterfoodfoundation.org/news/how-defaultveg-interns-are-reshaping-food-systems/",
             "notes": null,
@@ -2706,6 +4043,25 @@
       }
     ]
   },
+  "University of Oxford, United Kingdom": {
+    "ratio": [
+      {
+        "summary": "Across university catering (Compass), ~50% of most café menus are meat-free (50/50 vegetarian/vegan vs meat) and 68% of the hospitality brochure is meat-free; the University has proposed halving meat consumption by 2025 and colleges reposition vegetarian dishes first (one college reported ~1/3 fewer meat dishes).",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 206,
+            "type": "Institutional website",
+            "description": "University of Oxford – Sustainable catering (Estates Services)",
+            "url": "https://estates.admin.ox.ac.uk/sustainable-catering",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "University of Pittsburgh, PA, United States": {
     "other": [
       {
@@ -2782,6 +4138,114 @@
       }
     ]
   },
+  "University of South Carolina, SC, United States": {
+    "default": [
+      {
+        "summary": "University of South Carolina's Office of Sustainability agreed to adopt Greener by Default",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 233,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://sc.edu/about/offices_and_divisions/sustainability/sustainability_on_campus/food/index.php",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "University of Southern California, CA, United States": {
+    "ratio": [
+      {
+        "summary": "USC Hospitality offers varied plant-based breakfast proteins, at least one vegan option on lunch and dinner menus, at least one vegan option at the food station, and vegan on-request items incorporated into the main buffet.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 235,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://vegnews.com/usc-gets-new-hogwarts-vegan-dining-station",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "sub": [
+      {
+        "summary": "Vegan Mayo Replacement • Vegan Butter Replacement",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 234,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://hospitality.usc.edu/sustainability/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "titles": [
+      {
+        "summary": "Reduction of plant-based and vegan labeling on menu",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 235,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://vegnews.com/usc-gets-new-hogwarts-vegan-dining-station",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "placement": [
+      {
+        "summary": "USC Hospitality moved plant proteins to the top of the menu.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 235,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": "https://vegnews.com/usc-gets-new-hogwarts-vegan-dining-station",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "University of St Andrews, United Kingdom": {
+    "ratio": [
+      {
+        "summary": "Under its 2019 sustainable food policy (a Forward Food participant), St Andrews aims to provide 70% plant-based food choices (at least as many plant-based options as meat) and estimates its actions have cut meat procurement by >20%; catering management estimates ~90% of on-offer food is plant-based.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 207,
+            "type": "Institutional website",
+            "description": "University of St Andrews – Sustainability: Food (70% plant-based aim)",
+            "url": "https://www.st-andrews.ac.uk/sustainability/food/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "University of Texas at Austin, TX, United States": {
     "ratio": [
       {
@@ -2793,6 +4257,63 @@
             "type": "Press release",
             "description": "The University of Texas reaches major milestone with half of all meals served being plant based",
             "url": "https://www.forwardfood.org/news/the-university-of-texas-reaches-major-milestone-with-half-of-all-meals-served-being-plant-based/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "University of Toronto (dining), Canada": {
+    "ratio": [
+      {
+        "summary": "As of 2024, plant-based options are ~61% of U of T food-services offerings (up from under half); U of T Food Services pledged via Forward Food to convert a further 20% of menus to plant-based.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 202,
+            "type": "News article",
+            "description": "University of Toronto – U of T chefs bring more sustainable, plant-based food to campus menus",
+            "url": "https://www.utoronto.ca/news/u-t-chefs-bring-more-sustainable-plant-based-food-campus-menus",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "University of Utah Asia Campus (cafes), Korea": {
+    "other": [
+      {
+        "summary": "Add plant based default labels to 2 cafes and main cafeteria on campus.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "University of Utah Asia Campus (events), Korea": {
+    "default": [
+      {
+        "summary": "Plant-Based Event sponsored by local plant based org • University of Utah Asia Campus plans to increase plant based options for the next semester and public health club committed to make all events plant-based.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -2858,6 +4379,63 @@
       }
     ]
   },
+  "University of Winchester, United Kingdom": {
+    "ratio": [
+      {
+        "summary": "As an HSI/UK Forward Food institution and Eating Better alliance member, Winchester follows a 'less and better' meat-and-dairy policy: it cut food-related carbon ~39% by reducing meat/dairy procurement and is working toward a 55% reduction in meat and dairy across campus, with a dedicated plant-based cafe.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 204,
+            "type": "News article",
+            "description": "Public Sector Catering – Forward Food Case Study: University of Winchester",
+            "url": "https://www.publicsectorcatering.co.uk/in-depth/forward-food-case-study-university-winchester",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Université de Montréal, Canada": {
+    "ratio": [
+      {
+        "summary": "Daily menus balanced 33% vegan / 33% vegetarian / 33% meat-poultry-fish; expanding vegan offerings (breads, wraps, poke bowls, dressings, salads) and an app promoting vegan menus.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 162,
+            "type": "Other",
+            "description": "Greener by Default at UVic – Canadian Universities",
+            "url": "https://onlineacademiccommunity.uvic.ca/defaultveg/canadian-universities/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Uppsala University, Sweden": {
+    "default": [
+      {
+        "summary": "Uppsala University Student Union voted (2 April 2025) with a 90% majority to endorse a transition to 100% plant-based catering at the institution — the first university in Scandinavia to do so — via the Plant-Based Universities campaign.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 187,
+            "type": "Press release",
+            "description": "Plant-Based Universities – Uppsala Student Union votes for 100% plant-based catering",
+            "url": "https://plantbaseduniversities.org/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
   "Vermaat , Netherlands": {
     "sub": [
       {
@@ -2897,6 +4475,99 @@
             "type": "Other",
             "description": "Vitam Jaarverslag 2024 (p.14)",
             "url": "https://issuu.com/vitamnl/docs/vitam_jaarverslag_2024",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Wagner College (dining hall), NY, United States": {
+    "ratio": [
+      {
+        "summary": "Added vegetarian sausage to dining hall menu (entire plant-based section)",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ],
+    "other": [
+      {
+        "summary": "Added oatmilk with no upcharge to dining hall menu and new lavender oatmilk latte to the campus Starbucks menu",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Wagner College (events), NY, United States": {
+    "default": [
+      {
+        "summary": "International Planning Conference will be 100% plant-based • Food policy career networking event will be 100% plant-based • Wagner graduation party event will be 100% plant-based",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Wake Forest University (Harvest Table Culinary Group), NC, United States": {
+    "placement": [
+      {
+        "summary": "Dining halls and catering use a 'plants first' structure as the default: plant-based foods are placed at the beginning of the line, followed by complex carbohydrates, with animal-based foods in a supporting role in smaller portions at the end ('less meat – better meat'). Run by Harvest Table Culinary Group with the Office of Sustainability.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 189,
+            "type": "Press release",
+            "description": "Wake Forest University Office of Sustainability – Dining & Food Systems",
+            "url": "https://sustainability.wfu.edu/operations/dining-food-systems/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Waltham Forest Catering (43 London state schools), United Kingdom": {
+    "default": [
+      {
+        "summary": "First-ever Gold in the ProVeg UK School Plates Awards. Across its 43 state schools, Waltham Forest Catering offers a plant-based meal every day to all children plus TWO fully meat-free days per week, and uses menu language/layout changes to nudge plant-based choices (Gold criteria). Also runs \"Save The Planet Days\" (child taste-tested). Serves London borough schools alongside the Mayor of London Free School Meals rollout.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 213,
+            "type": "Advocate report",
+            "description": "ProVeg UK — School Plates Awards (first Gold, June 2023); Waltham Forest Catering",
+            "url": "https://proveg.org/uk/news/proveg-uk-announces-first-gold-awards-in-school-plates-awards-scheme/",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -2973,6 +4644,44 @@
             "type": "News article",
             "description": "Vegconomist article",
             "url": "https://vegconomist.com/society/western-oregon-university-commits-to-50-plant-based-meals-by-2027/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Western University (Ontario), Canada": {
+    "ratio": [
+      {
+        "summary": "Pledged 40% plant-based dining-hall menus by Jan 2024; reached 43% by Sep 2023; targeting 50% in 2025.",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 197,
+            "type": "News article",
+            "description": "CBC – Canadian universities boost plant-based options",
+            "url": "https://www.cbc.ca/news/canada/universities-plant-based-menus-1.7055714",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          }
+        ]
+      }
+    ]
+  },
+  "Western Washington University, WA, United States": {
+    "default": [
+      {
+        "summary": "Western Washington University's Huxley College of the Environment adopts DefaultVeg",
+        "reporter": null,
+        "citations": [
+          {
+            "id": 216,
+            "type": "Advocate report",
+            "description": "New Roots Institute – Plant-Based Nudge Dataset (partner share, 2026)",
+            "url": null,
             "notes": null,
             "attachments": [],
             "screenshots": []

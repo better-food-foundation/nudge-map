@@ -1,4 +1,48 @@
 {
+  "ARTIS Zoo (Amsterdam) foodservice, Netherlands": {
+    "place": {
+      "name": "ARTIS Zoo (Amsterdam) foodservice",
+      "street": "Plantage Kerklaan 38-40",
+      "city": "Amsterdam",
+      "state": null,
+      "postal_code": "1018",
+      "country": "Netherlands",
+      "type": "Stadium",
+      "encoded": "artis-zoo-amsterdam-foodservice-netherlands",
+      "consumer_base": 3500,
+      "coord": [4.9165461, 52.3662382]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["ProVeg"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Accent Catering (UK school catering), United Kingdom": {
+    "place": {
+      "name": "Accent Catering (UK school catering)",
+      "street": "Hertfordshire",
+      "city": "England",
+      "state": null,
+      "postal_code": null,
+      "country": "United Kingdom",
+      "type": "K-12",
+      "encoded": "accent-catering-uk-school-catering-united-kingdom",
+      "consumer_base": 100,
+      "coord": [-0.0978552, 51.8400523]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["ProVeg"],
+        "is_verified": false
+      }
+    ]
+  },
   "Alcorcón (council catering), Spain": {
     "place": {
       "name": "Alcorcón (council catering)",
@@ -21,6 +65,28 @@
       }
     ]
   },
+  "All Good (Thousand Oaks), CA, United States": {
+    "place": {
+      "name": "All Good (Thousand Oaks)",
+      "street": "593 N Moorpark Rd",
+      "city": "Thousand Oaks",
+      "state": "CA",
+      "postal_code": "91360",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "all-good-thousand-oaks-ca-united-states",
+      "consumer_base": 300,
+      "coord": [-118.8747869, 34.1863201]
+    },
+    "other": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
   "Almere (council catering), Netherlands": {
     "place": {
       "name": "Almere (council catering)",
@@ -40,6 +106,28 @@
         "date": "2030",
         "org_credit": ["Plant Based Treaty"],
         "is_verified": true
+      }
+    ]
+  },
+  "Althea, MA, United States": {
+    "place": {
+      "name": "Althea",
+      "street": "907 Main St",
+      "city": "Cambridge",
+      "state": "MA",
+      "postal_code": "02139",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "althea-ma-united-states",
+      "consumer_base": 300,
+      "coord": [-71.0995542, 42.3637133]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
       }
     ]
   },
@@ -213,6 +301,28 @@
       }
     ]
   },
+  "Arsenal FC – Emirates Stadium, United Kingdom": {
+    "place": {
+      "name": "Arsenal FC – Emirates Stadium",
+      "street": "Emirates Stadium, 75 Drayton Park",
+      "city": "London",
+      "state": null,
+      "postal_code": "N5 1BU",
+      "country": "United Kingdom",
+      "type": "Stadium",
+      "encoded": "arsenal-fc-emirates-stadium-united-kingdom",
+      "consumer_base": 60704,
+      "coord": [-0.1083997, 51.5550404]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["Unknown"],
+        "is_verified": true
+      }
+    ]
+  },
   "Austin Office of Sustainability, TX, United States": {
     "place": {
       "name": "Austin Office of Sustainability",
@@ -257,24 +367,25 @@
       }
     ]
   },
-  "Barcelona, Spain": {
+  "Base Crave, MA, United States": {
     "place": {
-      "name": "Barcelona",
-      "street": "Pl. Sant Jaume, 1",
-      "city": "Barcelona",
-      "state": null,
-      "postal_code": "8002",
-      "country": "Spain",
-      "type": "City/Government",
-      "encoded": "barcelona-spain",
-      "consumer_base": 5750000,
-      "coord": [2.1772738, 41.3823178]
+      "name": "Base Crave",
+      "street": "344 Huron Ave",
+      "city": "Cambridge",
+      "state": "MA",
+      "postal_code": "02138",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "base-crave-ma-united-states",
+      "consumer_base": 300,
+      "coord": [-71.1377642, 42.3811888]
     },
     "ratio": [
       {
-        "status": "pledged",
-        "date": "2021",
-        "is_verified": true
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
       }
     ]
   },
@@ -296,6 +407,58 @@
         "status": "pledged",
         "date": "2021",
         "is_verified": true
+      }
+    ]
+  },
+  "Blue Star Parlor (NYC), NY, United States": {
+    "place": {
+      "name": "Blue Star Parlor (NYC)",
+      "street": "1112 Cortelyou Rd",
+      "city": "Brooklyn",
+      "state": "NY",
+      "postal_code": "11218",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "blue-star-parlor-nyc-ny-united-states",
+      "consumer_base": 300,
+      "coord": [-73.9674191, 40.6396937]
+    },
+    "placement": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Bolivian Llama Party (NYC), NY, United States": {
+    "place": {
+      "name": "Bolivian Llama Party (NYC)",
+      "street": "44-14 48th Ave",
+      "city": "Woodside",
+      "state": "NY",
+      "postal_code": "11377",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "bolivian-llama-party-nyc-ny-united-states",
+      "consumer_base": 300,
+      "coord": [-73.8933518, 40.7382985]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ],
+    "placement": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
       }
     ]
   },
@@ -387,6 +550,28 @@
       }
     ]
   },
+  "Calabasas High School, CA, United States": {
+    "place": {
+      "name": "Calabasas High School",
+      "street": "22855 Mulholland Hwy",
+      "city": "Calabasas",
+      "state": "CA",
+      "postal_code": "91302",
+      "country": "United States",
+      "type": "K-12",
+      "encoded": "calabasas-high-school-ca-united-states",
+      "consumer_base": 1786,
+      "coord": [-118.6272229, 34.1385504]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["New Roots Institute"],
+        "is_verified": false
+      }
+    ]
+  },
   "Calderdale (council catering & schools), United Kingdom": {
     "place": {
       "name": "Calderdale (council catering & schools)",
@@ -426,6 +611,27 @@
         "status": "adopted",
         "date": "2025",
         "org_credit": ["Better Food Foundation"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Camden Council (London), United Kingdom": {
+    "place": {
+      "name": "Camden Council (London)",
+      "street": "5 Pancras Square",
+      "city": "London",
+      "state": null,
+      "postal_code": "N1C 4AG",
+      "country": "United Kingdom",
+      "type": "City/Government",
+      "encoded": "camden-council-london-united-kingdom",
+      "consumer_base": 50,
+      "coord": [-0.1266573, 51.5338565]
+    },
+    "default": [
+      {
+        "status": "pledged",
+        "date": "2025",
         "is_verified": true
       }
     ]
@@ -471,6 +677,28 @@
         "date": "2023",
         "org_credit": ["Better Food Foundation"],
         "is_verified": true
+      }
+    ]
+  },
+  "Caterlink (UK school catering), United Kingdom": {
+    "place": {
+      "name": "Caterlink (UK school catering)",
+      "street": null,
+      "city": "England",
+      "state": null,
+      "postal_code": null,
+      "country": "United Kingdom",
+      "type": "K-12",
+      "encoded": "caterlink-uk-school-catering-united-kingdom",
+      "consumer_base": 185000,
+      "coord": [-1.2649062, 52.5310214]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["ProVeg"],
+        "is_verified": false
       }
     ]
   },
@@ -561,6 +789,28 @@
       }
     ]
   },
+  "Columbia University, NY, United States": {
+    "place": {
+      "name": "Columbia University",
+      "street": "116th St & Broadway",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10027",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "columbia-university-ny-united-states",
+      "consumer_base": 35173,
+      "coord": [-73.9638473, 40.8077772]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["New Roots Institute", "Better Food Foundation"],
+        "is_verified": false
+      }
+    ]
+  },
   "Compass Group (UK & Ireland), England, United Kingdom": {
     "place": {
       "name": "Compass Group (UK & Ireland)",
@@ -579,6 +829,28 @@
         "status": "adopted",
         "date": "2025",
         "org_credit": ["Compass Group"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Concordia University (Montreal), Canada": {
+    "place": {
+      "name": "Concordia University (Montreal)",
+      "street": "1455 De Maisonneuve Blvd West, Montreal",
+      "city": "Quebec",
+      "state": null,
+      "postal_code": "H3G 1M8",
+      "country": "Canada",
+      "type": "University Dining Hall",
+      "encoded": "concordia-university-montreal-canada",
+      "consumer_base": 50000,
+      "coord": [-73.6393547, 45.4582595]
+    },
+    "ratio": [
+      {
+        "status": "pledged",
+        "date": "2025",
+        "org_credit": ["Unknown"],
         "is_verified": true
       }
     ]
@@ -649,6 +921,28 @@
       }
     ]
   },
+  "CreatureKind – DefaultVeg for faith communities, OR, United States": {
+    "place": {
+      "name": "CreatureKind – DefaultVeg for faith communities",
+      "street": null,
+      "city": "Salem",
+      "state": "OR",
+      "postal_code": null,
+      "country": "United States",
+      "type": "Religious Center",
+      "encoded": "creaturekind-defaultveg-for-faith-communities-or-united-states",
+      "consumer_base": 100,
+      "coord": [-89.9656538, 37.1875524]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
+      }
+    ]
+  },
   "DC Department of Youth Rehabilitation Services, DC, United States": {
     "place": {
       "name": "DC Department of Youth Rehabilitation Services",
@@ -711,6 +1005,28 @@
         "date": "2021",
         "org_credit": ["Humane World for Animals"],
         "is_verified": true
+      }
+    ]
+  },
+  "Dolce Schools Catering (UK), United Kingdom": {
+    "place": {
+      "name": "Dolce Schools Catering (UK)",
+      "street": null,
+      "city": "England/Wales",
+      "state": null,
+      "postal_code": null,
+      "country": "United Kingdom",
+      "type": "K-12",
+      "encoded": "dolce-schools-catering-uk-united-kingdom",
+      "consumer_base": 100,
+      "coord": [-0.0881557, 51.5163683]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["ProVeg"],
+        "is_verified": false
       }
     ]
   },
@@ -779,6 +1095,44 @@
       }
     ]
   },
+  "El Hipopótamo Azul (Metepec), Mexico": {
+    "place": {
+      "name": "El Hipopótamo Azul (Metepec)",
+      "street": "Heriberto Enríquez 309, Col. Universidad, 50130 Toluca",
+      "city": "Estado de México",
+      "state": null,
+      "postal_code": null,
+      "country": "Mexico",
+      "type": "Ind. Restaurant",
+      "encoded": "el-hipopotamo-azul-metepec-mexico",
+      "consumer_base": 300,
+      "coord": [-99.6899716, 19.4839446]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ],
+    "placement": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ],
+    "other": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
   "El Masnou (council catering), Spain": {
     "place": {
       "name": "El Masnou (council catering)",
@@ -820,6 +1174,50 @@
         "date": "2025",
         "org_credit": ["Humane World for Animals"],
         "is_verified": true
+      }
+    ]
+  },
+  "Emory University (cafes), GA, United States": {
+    "place": {
+      "name": "Emory University (cafes)",
+      "street": "201 Dowman Dr",
+      "city": "Atlanta",
+      "state": "GA",
+      "postal_code": "30322",
+      "country": "United States",
+      "type": "University Cafe",
+      "encoded": "emory-university-cafes-ga-united-states",
+      "consumer_base": 2800,
+      "coord": [-84.3237147, 33.7969409]
+    },
+    "other": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Better Food Foundation"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Emory University (student government), GA, United States": {
+    "place": {
+      "name": "Emory University (student government)",
+      "street": "550 Asbury Cir",
+      "city": "Atlanta",
+      "state": "GA",
+      "postal_code": "30322",
+      "country": "United States",
+      "type": "University Event",
+      "encoded": "emory-university-student-government-ga-united-states",
+      "consumer_base": 100,
+      "coord": [-84.3235429, 33.7913339]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Better Food Foundation"],
+        "is_verified": false
       }
     ]
   },
@@ -910,6 +1308,72 @@
       }
     ]
   },
+  "Finnish Defence Forces (garrison canteens), Finland": {
+    "place": {
+      "name": "Finnish Defence Forces (garrison canteens)",
+      "street": null,
+      "city": "Helsinki",
+      "state": null,
+      "postal_code": null,
+      "country": "Finland",
+      "type": "Workplace Cafeteria",
+      "encoded": "finnish-defence-forces-garrison-canteens-finland",
+      "consumer_base": 20000,
+      "coord": [24.9435408, 60.1666204]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["Unknown"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Foothill College, CA, United States": {
+    "place": {
+      "name": "Foothill College",
+      "street": "12345 El Monte Rd",
+      "city": "Los Altos Hills",
+      "state": "CA",
+      "postal_code": "94022",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "foothill-college-ca-united-states",
+      "consumer_base": 14135,
+      "coord": [-122.1283018, 37.3617195]
+    },
+    "other": [
+      {
+        "status": "adopted",
+        "date": "2021",
+        "org_credit": ["New Roots Institute"],
+        "is_verified": false
+      }
+    ]
+  },
+  "France – EGalim / Climate & Resilience law (public canteens), France": {
+    "place": {
+      "name": "France – EGalim / Climate & Resilience law (public canteens)",
+      "street": null,
+      "city": "Paris",
+      "state": null,
+      "postal_code": null,
+      "country": "France",
+      "type": "City/Government",
+      "encoded": "france-egalim-climate-resilience-law-public-canteens-france",
+      "consumer_base": 6000000,
+      "coord": [2.320041, 48.8588897]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2023",
+        "org_credit": ["Unknown"],
+        "is_verified": true
+      }
+    ]
+  },
   "Franklin & Marshall College, PA, United States": {
     "place": {
       "name": "Franklin & Marshall College",
@@ -929,6 +1393,28 @@
         "date": "2024",
         "org_credit": ["Better Food Foundation", "New Roots Institute"],
         "is_verified": true
+      }
+    ]
+  },
+  "Fremont Union High School District, CA, United States": {
+    "place": {
+      "name": "Fremont Union High School District",
+      "street": "589 W Fremont Ave",
+      "city": "Sunnyvale",
+      "state": "CA",
+      "postal_code": "94087",
+      "country": "United States",
+      "type": "K-12",
+      "encoded": "fremont-union-high-school-district-ca-united-states",
+      "consumer_base": 9971,
+      "coord": [-122.037712, 37.3533875]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["New Roots Institute", "Friends of the Earth"],
+        "is_verified": false
       }
     ]
   },
@@ -974,6 +1460,28 @@
       }
     ]
   },
+  "George Washington University, DC, United States": {
+    "place": {
+      "name": "George Washington University",
+      "street": "1918 F St NW",
+      "city": "Washington",
+      "state": "DC",
+      "postal_code": "20052",
+      "country": "United States",
+      "type": "University Event",
+      "encoded": "george-washington-university-dc-united-states",
+      "consumer_base": 200,
+      "coord": [-77.0482005, 38.8994972]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2023",
+        "org_credit": ["New Roots Institute", "Greener by Default"],
+        "is_verified": false
+      }
+    ]
+  },
   "Good Eating Company (US), NC, United States": {
     "place": {
       "name": "Good Eating Company (US)",
@@ -993,6 +1501,36 @@
         "date": "2024",
         "org_credit": ["Greener by Default"],
         "is_verified": true
+      }
+    ]
+  },
+  "Goodwin's (Chicago), IL, United States": {
+    "place": {
+      "name": "Goodwin's (Chicago)",
+      "street": "333 W Wacker Dr",
+      "city": "Chicago",
+      "state": "IL",
+      "postal_code": "60606",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "goodwins-chicago-il-united-states",
+      "consumer_base": 300,
+      "coord": [-87.6360264, 41.8858838]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ],
+    "placement": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
       }
     ]
   },
@@ -1217,6 +1755,28 @@
       }
     ]
   },
+  "Heidelberg University, Germany": {
+    "place": {
+      "name": "Heidelberg University",
+      "street": "Grabengasse 1",
+      "city": "Heidelberg",
+      "state": null,
+      "postal_code": "69117",
+      "country": "Germany",
+      "type": "University Dining Hall",
+      "encoded": "heidelberg-university-germany",
+      "consumer_base": 32178,
+      "coord": [8.706201, 49.4113102]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Plant-Based Universities"],
+        "is_verified": false
+      }
+    ]
+  },
   "Helsinki, Finland, Finland": {
     "place": {
       "name": "Helsinki, Finland",
@@ -1263,6 +1823,58 @@
       }
     ]
   },
+  "Hoja Verde (Metepec), Mexico": {
+    "place": {
+      "name": "Hoja Verde (Metepec)",
+      "street": "Av. Ignacio Comonfort 1100, Metepec",
+      "city": "Estado de México",
+      "state": null,
+      "postal_code": null,
+      "country": "Mexico",
+      "type": "Ind. Restaurant",
+      "encoded": "hoja-verde-metepec-mexico",
+      "consumer_base": 300,
+      "coord": [-99.6083408, 19.2547299]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ],
+    "placement": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Honey and Herb (Thousand Oaks), CA, United States": {
+    "place": {
+      "name": "Honey and Herb (Thousand Oaks)",
+      "street": "765 N Wendy Dr",
+      "city": "Newbury Park (Thousand Oaks)",
+      "state": "CA",
+      "postal_code": "91320",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "honey-and-herb-thousand-oaks-ca-united-states",
+      "consumer_base": 300,
+      "coord": [-118.941516, 34.1884928]
+    },
+    "placement": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
   "Hunter College, CUNY (event), NY, United States": {
     "place": {
       "name": "Hunter College, CUNY (event)",
@@ -1285,6 +1897,75 @@
       }
     ]
   },
+  "ISS Education (UK school catering), United Kingdom": {
+    "place": {
+      "name": "ISS Education (UK school catering)",
+      "street": "Velocity, 1 Brooklands Dr",
+      "city": "Weybridge",
+      "state": null,
+      "postal_code": "KT13 0SL",
+      "country": "United Kingdom",
+      "type": "K-12",
+      "encoded": "iss-education-uk-school-catering-united-kingdom",
+      "consumer_base": 100,
+      "coord": [-0.4549297, 51.3727175]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["ProVeg"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Ingram Micro, CA, United States": {
+    "place": {
+      "name": "Ingram Micro",
+      "street": "3351 Michelson Drive",
+      "city": "Irvine",
+      "state": "CA",
+      "postal_code": null,
+      "country": "United States",
+      "type": "Workplace Cafeteria",
+      "encoded": "ingram-micro-ca-united-states",
+      "consumer_base": 50,
+      "coord": [-117.8403113, 33.672895]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["New Roots Institute", "Greener by Default"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Issaquah School District, WA, United States": {
+    "place": {
+      "name": "Issaquah School District",
+      "street": "5150 220th Ave SE",
+      "city": "Issaquah",
+      "state": "WA",
+      "postal_code": "98029",
+      "country": "United States",
+      "type": "K-12",
+      "encoded": "issaquah-school-district-wa-united-states",
+      "consumer_base": 19258,
+      "coord": [-122.0473276, 47.5545876]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": [
+          "New Roots Institute",
+          "Physicians Committee for Responsible Medicine"
+        ],
+        "is_verified": false
+      }
+    ]
+  },
   "Kent State University, OH, United States": {
     "place": {
       "name": "Kent State University",
@@ -1304,6 +1985,50 @@
         "date": "2026",
         "org_credit": ["Humane World for Animals"],
         "is_verified": true
+      }
+    ]
+  },
+  "Khmai (Chicago), IL, United States": {
+    "place": {
+      "name": "Khmai (Chicago)",
+      "street": "6580 N Sheridan Rd",
+      "city": "Chicago",
+      "state": "IL",
+      "postal_code": "60626",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "khmai-chicago-il-united-states",
+      "consumer_base": 300,
+      "coord": [-87.6610302, 42.0024237]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Kigali Independent University, Rwanda": {
+    "place": {
+      "name": "Kigali Independent University",
+      "street": "Gisozi Sector, Gasabo District",
+      "city": "Kigali",
+      "state": null,
+      "postal_code": null,
+      "country": "Rwanda",
+      "type": "University Dining Hall",
+      "encoded": "kigali-independent-university-rwanda",
+      "consumer_base": 9380,
+      "coord": [30.0714257, -1.9234831]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["New Roots Institute", "Better Food Foundation"],
+        "is_verified": false
       }
     ]
   },
@@ -1334,6 +2059,71 @@
         "date": "2024",
         "org_credit": ["Plant-Based Cities Movement"],
         "is_verified": false
+      }
+    ]
+  },
+  "La Tromperia (Metepec), Mexico": {
+    "place": {
+      "name": "La Tromperia (Metepec)",
+      "street": "C. Leona Vicario 396, Coaxustenco, 52150 Metepec",
+      "city": "Estado de México",
+      "state": null,
+      "postal_code": null,
+      "country": "Mexico",
+      "type": "Ind. Restaurant",
+      "encoded": "la-tromperia-metepec-mexico",
+      "consumer_base": 300,
+      "coord": [-99.6113562, 19.2617213]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Le Macaron, MA, United States": {
+    "place": {
+      "name": "Le Macaron",
+      "street": "1374 Massachusetts Ave",
+      "city": "Cambridge",
+      "state": "MA",
+      "postal_code": "02138",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "le-macaron-ma-united-states",
+      "consumer_base": 300,
+      "coord": [-71.1190377, 42.3732999]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Lewisham Council (London), United Kingdom": {
+    "place": {
+      "name": "Lewisham Council (London)",
+      "street": "Laurence House, 1 Catford Road",
+      "city": "London",
+      "state": null,
+      "postal_code": "SE6 4RU",
+      "country": "United Kingdom",
+      "type": "City/Government",
+      "encoded": "lewisham-council-london-united-kingdom",
+      "consumer_base": 50,
+      "coord": [-0.0666387, 51.4309027]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2020",
+        "is_verified": true
       }
     ]
   },
@@ -1425,6 +2215,28 @@
       }
     ]
   },
+  "Los Angeles Unified School District, CA, United States": {
+    "place": {
+      "name": "Los Angeles Unified School District",
+      "street": "333 S Beaudry Ave",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90017",
+      "country": "United States",
+      "type": "K-12",
+      "encoded": "los-angeles-unified-school-district-ca-united-states",
+      "consumer_base": 516685,
+      "coord": [-118.2569801, 34.0562412]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2022",
+        "org_credit": ["New Roots Institute", "Raven Corps"],
+        "is_verified": false
+      }
+    ]
+  },
   "MAX Burgers, Sweden": {
     "place": {
       "name": "MAX Burgers",
@@ -1444,6 +2256,50 @@
         "date": "2021",
         "org_credit": ["World Resources Institute"],
         "is_verified": true
+      }
+    ]
+  },
+  "MISS READ, Germany": {
+    "place": {
+      "name": "MISS READ",
+      "street": "silent green Kulturquartier, Gerichtstraße 35",
+      "city": "Berlin",
+      "state": null,
+      "postal_code": "13347",
+      "country": "Germany",
+      "type": "Event",
+      "encoded": "miss-read-germany",
+      "consumer_base": 750,
+      "coord": [13.36649, 52.5456853]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Mamiche (Metepec), Mexico": {
+    "place": {
+      "name": "Mamiche (Metepec)",
+      "street": "Av. de los Castanos 801, Metepec",
+      "city": "Estado de Mexico",
+      "state": null,
+      "postal_code": null,
+      "country": "Mexico",
+      "type": "Ind. Restaurant",
+      "encoded": "mamiche-metepec-mexico",
+      "consumer_base": 300,
+      "coord": [-99.5662534, 19.2640394]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
       }
     ]
   },
@@ -1509,6 +2365,28 @@
         "date": "2024",
         "org_credit": ["World Resources Institute"],
         "is_verified": true
+      }
+    ]
+  },
+  "Milpitas High School, CA, United States": {
+    "place": {
+      "name": "Milpitas High School",
+      "street": "1285 Escuela Parkway",
+      "city": "Milpitas",
+      "state": "CA",
+      "postal_code": "95035",
+      "country": "United States",
+      "type": "K-12",
+      "encoded": "milpitas-high-school-ca-united-states",
+      "consumer_base": 2895,
+      "coord": [-121.9021803, 37.4505958]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2022",
+        "org_credit": ["New Roots Institute", "Friends of the Earth"],
+        "is_verified": false
       }
     ]
   },
@@ -1626,6 +2504,50 @@
       }
     ]
   },
+  "Non-Dairy Milk in U.S. School Cafeterias (federal bill), DC, United States": {
+    "place": {
+      "name": "Non-Dairy Milk in U.S. School Cafeterias (federal bill)",
+      "street": "First Street SE",
+      "city": "Washington",
+      "state": "DC",
+      "postal_code": "20004",
+      "country": "United States",
+      "type": "K-12",
+      "encoded": "non-dairy-milk-in-u-s-school-cafeterias-federal-bill-dc-united-states",
+      "consumer_base": 30000000,
+      "coord": [-77.0057659, 38.8716043]
+    },
+    "other": [
+      {
+        "status": "pledged",
+        "date": "2025",
+        "org_credit": ["Switch4Good", "Animal Wellness Action"],
+        "is_verified": true
+      }
+    ]
+  },
+  "North Carolina State University (NC State Dining), NC, United States": {
+    "place": {
+      "name": "North Carolina State University (NC State Dining)",
+      "street": "Talley Student Union, 2610 Cates Avenue",
+      "city": "Raleigh",
+      "state": "NC",
+      "postal_code": "27695",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "north-carolina-state-university-nc-state-dining-nc-united-states",
+      "consumer_base": 37000,
+      "coord": [-78.6709189, 35.7839675]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
   "North Vancouver District, BC, Canada": {
     "place": {
       "name": "North Vancouver District",
@@ -1670,6 +2592,49 @@
       }
     ]
   },
+  "Northwell Health, NY, United States": {
+    "place": {
+      "name": "Northwell Health",
+      "street": "2000 Marcus Avenue",
+      "city": "New Hyde Park",
+      "state": "NY",
+      "postal_code": "11042",
+      "country": "United States",
+      "type": "Hospital",
+      "encoded": "northwell-health-ny-united-states",
+      "consumer_base": 4290,
+      "coord": [-73.6990013, 40.759315]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["Unknown"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Nursery Schools, Barcelona, Spain": {
+    "place": {
+      "name": "Nursery Schools, Barcelona",
+      "street": "Pl. Sant Jaume, 1",
+      "city": "Barcelona",
+      "state": null,
+      "postal_code": "8002",
+      "country": "Spain",
+      "type": "K-12",
+      "encoded": "nursery-schools-barcelona-spain",
+      "consumer_base": 8845,
+      "coord": [2.1772738, 41.3823178]
+    },
+    "ratio": [
+      {
+        "status": "pledged",
+        "date": "2021",
+        "is_verified": true
+      }
+    ]
+  },
   "Ocean Beach People's Food Co-op, CA, United States": {
     "place": {
       "name": "Ocean Beach People's Food Co-op",
@@ -1708,6 +2673,28 @@
         "status": "pledged",
         "date": "2027",
         "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Oslo (municipal canteens & institutions), Norway": {
+    "place": {
+      "name": "Oslo (municipal canteens & institutions)",
+      "street": "Oslo City Hall, Radhusplassen 1",
+      "city": "Oslo",
+      "state": null,
+      "postal_code": "0037",
+      "country": "Norway",
+      "type": "City/Government",
+      "encoded": "oslo-municipal-canteens-institutions-norway",
+      "consumer_base": 52000,
+      "coord": [10.7389701, 59.9133301]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2023",
+        "org_credit": ["C40 Good Food Cities"],
         "is_verified": true
       }
     ]
@@ -1756,6 +2743,93 @@
       }
     ]
   },
+  "Oxfordshire County Council (council meetings & events), United Kingdom": {
+    "place": {
+      "name": "Oxfordshire County Council (council meetings & events)",
+      "street": "County Hall, New Road",
+      "city": "Oxford",
+      "state": null,
+      "postal_code": "OX1 1ND",
+      "country": "United Kingdom",
+      "type": "City/Government",
+      "encoded": "oxfordshire-county-council-council-meetings-events-united-kingdom",
+      "consumer_base": 50,
+      "coord": [-1.2613906, 51.7515226]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2021",
+        "is_verified": true
+      }
+    ]
+  },
+  "Pachamama Coffee Cooperative, CA, United States": {
+    "place": {
+      "name": "Pachamama Coffee Cooperative",
+      "street": "919 20th St",
+      "city": "Sacramento",
+      "state": "CA",
+      "postal_code": null,
+      "country": "United States",
+      "type": "Cafe",
+      "encoded": "pachamama-coffee-cooperative-ca-united-states",
+      "consumer_base": 350,
+      "coord": [-121.479612, 38.577098]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["Better Food Foundation"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Paderborn University, Mensa Academica, Germany": {
+    "place": {
+      "name": "Paderborn University, Mensa Academica",
+      "street": "Mensa Academica, Warburger Strasse 100",
+      "city": "Paderborn",
+      "state": null,
+      "postal_code": "33098",
+      "country": "Germany",
+      "type": "University Dining Hall",
+      "encoded": "paderborn-university-mensa-academica-germany",
+      "consumer_base": 16900,
+      "coord": [8.752653, 51.7177044]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["PETA Deutschland"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Palo Alto High School, CA, United States": {
+    "place": {
+      "name": "Palo Alto High School",
+      "street": "50 Embarcadero Rd",
+      "city": "Palo Alto",
+      "state": "CA",
+      "postal_code": "94301",
+      "country": "United States",
+      "type": "K-12",
+      "encoded": "palo-alto-high-school-ca-united-states",
+      "consumer_base": 1828,
+      "coord": [-122.1553327, 37.4358242]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2022",
+        "org_credit": ["New Roots Institute", "Friends of the Earth"],
+        "is_verified": false
+      }
+    ]
+  },
   "Panera Bread, MO, United States": {
     "place": {
       "name": "Panera Bread",
@@ -1795,6 +2869,28 @@
       {
         "status": "adopted",
         "date": "2024",
+        "is_verified": true
+      }
+    ]
+  },
+  "Paris 2024 Olympic & Paralympic Games (catering), France": {
+    "place": {
+      "name": "Paris 2024 Olympic & Paralympic Games (catering)",
+      "street": "33 Quai du Châtelier",
+      "city": "L'Île-Saint-Denis",
+      "state": null,
+      "postal_code": "93450",
+      "country": "France",
+      "type": "Event",
+      "encoded": "paris-2024-olympic-paralympic-games-catering-france",
+      "consumer_base": 40000,
+      "coord": [2.3309333, 48.9218372]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["Sodexo Live!", "Paris 2024"],
         "is_verified": true
       }
     ]
@@ -1906,6 +3002,50 @@
       }
     ]
   },
+  "Polytechnic University of the Philippines, Philippines": {
+    "place": {
+      "name": "Polytechnic University of the Philippines",
+      "street": "A. Mabini Campus, Anonas Street, Sta. Mesa, Manila 1016",
+      "city": "Metro Manila",
+      "state": null,
+      "postal_code": null,
+      "country": "Philippines",
+      "type": "University Dining Hall",
+      "encoded": "polytechnic-university-of-the-philippines-philippines",
+      "consumer_base": 50000,
+      "coord": [121.0109304, 14.5979593]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Pomona College, CA, United States": {
+    "place": {
+      "name": "Pomona College",
+      "street": "450 N College Way",
+      "city": "Claremont",
+      "state": "CA",
+      "postal_code": "91711",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "pomona-college-ca-united-states",
+      "consumer_base": 1700,
+      "coord": [-117.7124929, 34.0982037]
+    },
+    "ratio": [
+      {
+        "status": "pledged",
+        "date": "2030",
+        "org_credit": ["New Roots Institute", "Humane World for Animals"],
+        "is_verified": false
+      }
+    ]
+  },
   "Pomptonian Food Service, NJ, United States": {
     "place": {
       "name": "Pomptonian Food Service",
@@ -1924,6 +3064,28 @@
         "status": "pledged",
         "date": "2025",
         "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
+  "ProVeg Portugal — public institution catering, Portugal": {
+    "place": {
+      "name": "ProVeg Portugal — public institution catering",
+      "street": null,
+      "city": "Lisbon",
+      "state": null,
+      "postal_code": null,
+      "country": "Portugal",
+      "type": "Other",
+      "encoded": "proveg-portugal-public-institution-catering-portugal",
+      "consumer_base": 100,
+      "coord": [-9.1365919, 38.7077507]
+    },
+    "titles": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["ProVeg"],
         "is_verified": true
       }
     ]
@@ -1968,6 +3130,58 @@
         "status": "adopted",
         "date": "2026",
         "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Purple Pig (Chicago), IL, United States": {
+    "place": {
+      "name": "Purple Pig (Chicago)",
+      "street": "444 N Michigan Ave",
+      "city": "Chicago",
+      "state": "IL",
+      "postal_code": "60611",
+      "country": "United States",
+      "type": "Ind. Restaurant",
+      "encoded": "purple-pig-chicago-il-united-states",
+      "consumer_base": 300,
+      "coord": [-87.624603, 41.8907486]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ],
+    "other": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Queen's University (Ontario), Canada": {
+    "place": {
+      "name": "Queen's University (Ontario)",
+      "street": "99 University Avenue, Kingston",
+      "city": "Ontario",
+      "state": null,
+      "postal_code": "K7L 3N6",
+      "country": "Canada",
+      "type": "University Dining Hall",
+      "encoded": "queens-university-ontario-canada",
+      "consumer_base": 28000,
+      "coord": [-76.4952227, 44.2287958]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2023",
+        "org_credit": ["Unknown"],
         "is_verified": true
       }
     ]
@@ -2060,6 +3274,28 @@
       }
     ]
   },
+  "Rutgers University, NJ, United States": {
+    "place": {
+      "name": "Rutgers University",
+      "street": "4 Jones Ave",
+      "city": "New Brunswick",
+      "state": "NJ",
+      "postal_code": "08933",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "rutgers-university-nj-united-states",
+      "consumer_base": 50000,
+      "coord": [-74.4386011, 40.4858301]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
   "SLA Management, FL, United States": {
     "place": {
       "name": "SLA Management",
@@ -2126,6 +3362,28 @@
       }
     ]
   },
+  "Salvador municipal schools (Brazil), Brazil": {
+    "place": {
+      "name": "Salvador municipal schools (Brazil)",
+      "street": null,
+      "city": "Salvador",
+      "state": null,
+      "postal_code": null,
+      "country": "Brazil",
+      "type": "K-12",
+      "encoded": "salvador-municipal-schools-brazil-brazil",
+      "consumer_base": 121000,
+      "coord": [-38.4812772, -12.9822499]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["Humane World for Animals", "Mercy For Animals"],
+        "is_verified": true
+      }
+    ]
+  },
   "San Francisco County Jails, CA, United States": {
     "place": {
       "name": "San Francisco County Jails",
@@ -2188,6 +3446,28 @@
         "status": "adopted",
         "date": "2025",
         "org_credit": ["Better Food Foundation"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Simon Fraser University, Canada": {
+    "place": {
+      "name": "Simon Fraser University",
+      "street": "8888 University Drive, Burnaby",
+      "city": "British Columbia",
+      "state": null,
+      "postal_code": "V5A 1S6",
+      "country": "Canada",
+      "type": "University Dining Hall",
+      "encoded": "simon-fraser-university-canada",
+      "consumer_base": 37000,
+      "coord": [-122.9156806, 49.2799979]
+    },
+    "ratio": [
+      {
+        "status": "pledged",
+        "date": "2023",
+        "org_credit": ["Humane World for Animals"],
         "is_verified": true
       }
     ]
@@ -2345,6 +3625,31 @@
       }
     ]
   },
+  "Staples High School, CT, United States": {
+    "place": {
+      "name": "Staples High School",
+      "street": "70 North Ave",
+      "city": "Westport",
+      "state": "CT",
+      "postal_code": "06880",
+      "country": "United States",
+      "type": "K-12",
+      "encoded": "staples-high-school-ct-united-states",
+      "consumer_base": 1629,
+      "coord": [-73.3275132, 41.1547686]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": [
+          "New Roots Institute",
+          "Physicians Committee for Responsible Medicine"
+        ],
+        "is_verified": false
+      }
+    ]
+  },
   "Starbucks, WA, United States": {
     "place": {
       "name": "Starbucks",
@@ -2388,6 +3693,50 @@
       }
     ]
   },
+  "Swansea University, United Kingdom": {
+    "place": {
+      "name": "Swansea University",
+      "street": "Singleton Park",
+      "city": "Swansea",
+      "state": null,
+      "postal_code": "SA2 8PP",
+      "country": "United Kingdom",
+      "type": "University Dining Hall",
+      "encoded": "swansea-university-united-kingdom",
+      "consumer_base": 20000,
+      "coord": [-3.9810759, 51.6098732]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Tastia Restaurant, Nigeria": {
+    "place": {
+      "name": "Tastia Restaurant",
+      "street": "No 19, 6th Avenue, Gwarinpa",
+      "city": "Abuja",
+      "state": null,
+      "postal_code": null,
+      "country": "Nigeria",
+      "type": "Ind. Restaurant",
+      "encoded": "tastia-restaurant-nigeria",
+      "consumer_base": 300,
+      "coord": [7.3784961, 9.1182635]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
+      }
+    ]
+  },
   "Tavira (municipal catering), Portugal": {
     "place": {
       "name": "Tavira (municipal catering)",
@@ -2407,6 +3756,28 @@
         "date": "2024",
         "org_credit": ["Plant Based Treaty"],
         "is_verified": true
+      }
+    ]
+  },
+  "Tetra Pak (Aarhus site canteen), Denmark": {
+    "place": {
+      "name": "Tetra Pak (Aarhus site canteen)",
+      "street": "Søren Nymarks Vej 13",
+      "city": "8270 Aarhus",
+      "state": null,
+      "postal_code": "8270",
+      "country": "Denmark",
+      "type": "Workplace Cafeteria",
+      "encoded": "tetra-pak-aarhus-site-canteen-denmark",
+      "consumer_base": 200,
+      "coord": [10.1907461, 56.1119142]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["World Resources Institute"],
+        "is_verified": false
       }
     ]
   },
@@ -2492,6 +3863,28 @@
       {
         "status": "adopted",
         "is_verified": true
+      }
+    ]
+  },
+  "Top7 Orlando, Nigeria": {
+    "place": {
+      "name": "Top7 Orlando",
+      "street": "7 Massenya Street, Zone 6",
+      "city": "Abuja",
+      "state": null,
+      "postal_code": null,
+      "country": "Nigeria",
+      "type": "Ind. Restaurant",
+      "encoded": "top7-orlando-nigeria",
+      "consumer_base": 300,
+      "coord": [7.4892974, 9.0643305]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["New Roots Institute", "Planted Society"],
+        "is_verified": false
       }
     ]
   },
@@ -2583,6 +3976,28 @@
       }
     ]
   },
+  "Universidad de Lima, Peru": {
+    "place": {
+      "name": "Universidad de Lima",
+      "street": "Av. Javier Prado Este cuadra 46 s/n, Urb. Monterrico, Santiago de Surco",
+      "city": "Lima",
+      "state": null,
+      "postal_code": "15023",
+      "country": "Peru",
+      "type": "University Cafe",
+      "encoded": "universidad-de-lima-peru",
+      "consumer_base": 350,
+      "coord": [-76.9707007, -12.0855294]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2023",
+        "org_credit": ["New Roots Institute"],
+        "is_verified": false
+      }
+    ]
+  },
   "University College London (Students' Union - four cafes), United Kingdom": {
     "place": {
       "name": "University College London (Students' Union - four cafes)",
@@ -2605,6 +4020,27 @@
       }
     ]
   },
+  "University of Amsterdam, De Nieuwe Mensa, Netherlands": {
+    "place": {
+      "name": "University of Amsterdam, De Nieuwe Mensa",
+      "street": "Roetersstraat 11",
+      "city": "Amsterdam",
+      "state": null,
+      "postal_code": "1018",
+      "country": "Netherlands",
+      "type": "University Cafe",
+      "encoded": "university-of-amsterdam-de-nieuwe-mensa-netherlands",
+      "consumer_base": 350,
+      "coord": [4.9112789, 52.3638465]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "is_verified": true
+      }
+    ]
+  },
   "University of Arizona, AZ, United States": {
     "place": {
       "name": "University of Arizona",
@@ -2622,6 +4058,28 @@
       {
         "status": "adopted",
         "date": "2025",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
+  "University of British Columbia (dining), Canada": {
+    "place": {
+      "name": "University of British Columbia (dining)",
+      "street": "2329 West Mall, Vancouver",
+      "city": "British Columbia",
+      "state": null,
+      "postal_code": "V6T 1Z4",
+      "country": "Canada",
+      "type": "University Dining Hall",
+      "encoded": "university-of-british-columbia-dining-canada",
+      "consumer_base": 60000,
+      "coord": [-123.2537798, 49.2613442]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
         "org_credit": ["Humane World for Animals"],
         "is_verified": true
       }
@@ -2693,6 +4151,28 @@
       }
     ]
   },
+  "University of California, San Diego (campus dining), CA, United States": {
+    "place": {
+      "name": "University of California, San Diego (campus dining)",
+      "street": "9510 Gilman Drive",
+      "city": "La Jolla",
+      "state": "CA",
+      "postal_code": "92093",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "university-of-california-san-diego-campus-dining-ca-united-states",
+      "consumer_base": 42000,
+      "coord": [-117.2386314, 32.8749083]
+    },
+    "ratio": [
+      {
+        "status": "pledged",
+        "date": "2027",
+        "org_credit": ["Better Food Foundation", "Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
   "University of California, San Diego, CA, United States": {
     "place": {
       "name": "University of California, San Diego",
@@ -2711,6 +4191,28 @@
         "status": "adopted",
         "date": "2025",
         "org_credit": ["Better Food Foundation", "New Roots Institute"],
+        "is_verified": true
+      }
+    ]
+  },
+  "University of Cambridge, United Kingdom": {
+    "place": {
+      "name": "University of Cambridge",
+      "street": "The Old Schools, Trinity Lane",
+      "city": "Cambridge",
+      "state": null,
+      "postal_code": "CB2 1TN",
+      "country": "United Kingdom",
+      "type": "University Dining Hall",
+      "encoded": "university-of-cambridge-united-kingdom",
+      "consumer_base": 24000,
+      "coord": [0.11692, 52.2053306]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2016",
+        "org_credit": ["Humane World for Animals"],
         "is_verified": true
       }
     ]
@@ -2890,6 +4392,28 @@
       }
     ]
   },
+  "University of Oxford, United Kingdom": {
+    "place": {
+      "name": "University of Oxford",
+      "street": "University Offices, Wellington Square",
+      "city": "Oxford",
+      "state": null,
+      "postal_code": "OX1 2JD",
+      "country": "United Kingdom",
+      "type": "University Dining Hall",
+      "encoded": "university-of-oxford-united-kingdom",
+      "consumer_base": 26000,
+      "coord": [-1.2620138, 51.7582441]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2020",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
   "University of Pittsburgh, PA, United States": {
     "place": {
       "name": "University of Pittsburgh",
@@ -2978,6 +4502,96 @@
       }
     ]
   },
+  "University of South Carolina, SC, United States": {
+    "place": {
+      "name": "University of South Carolina",
+      "street": "University of South Carolina",
+      "city": "Columbia",
+      "state": "SC",
+      "postal_code": "29208",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "university-of-south-carolina-sc-united-states",
+      "consumer_base": 38532,
+      "coord": [-81.0268676, 33.9928841]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2022",
+        "org_credit": ["New Roots Institute", "Better Food Foundation"],
+        "is_verified": false
+      }
+    ]
+  },
+  "University of Southern California, CA, United States": {
+    "place": {
+      "name": "University of Southern California",
+      "street": "University Park Campus",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postal_code": "90089",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "university-of-southern-california-ca-united-states",
+      "consumer_base": 46566,
+      "coord": [-118.2858579, 34.021869]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Mercy For Animals"],
+        "is_verified": false
+      }
+    ],
+    "sub": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Mercy For Animals"],
+        "is_verified": false
+      }
+    ],
+    "titles": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Mercy For Animals"],
+        "is_verified": false
+      }
+    ],
+    "placement": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute", "Mercy For Animals"],
+        "is_verified": false
+      }
+    ]
+  },
+  "University of St Andrews, United Kingdom": {
+    "place": {
+      "name": "University of St Andrews",
+      "street": "College Gate, North Street, St Andrews",
+      "city": "Fife",
+      "state": null,
+      "postal_code": "KY16 9AJ",
+      "country": "United Kingdom",
+      "type": "University Dining Hall",
+      "encoded": "university-of-st-andrews-united-kingdom",
+      "consumer_base": 11000,
+      "coord": [-2.7933143, 56.3412293]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2019",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
   "University of Texas at Austin, TX, United States": {
     "place": {
       "name": "University of Texas at Austin",
@@ -2997,6 +4611,72 @@
         "date": "2025",
         "org_credit": ["Humane World for Animals"],
         "is_verified": true
+      }
+    ]
+  },
+  "University of Toronto (dining), Canada": {
+    "place": {
+      "name": "University of Toronto (dining)",
+      "street": "27 King's College Circle, Toronto",
+      "city": "Ontario",
+      "state": null,
+      "postal_code": "M5S 1A1",
+      "country": "Canada",
+      "type": "University Dining Hall",
+      "encoded": "university-of-toronto-dining-canada",
+      "consumer_base": 97000,
+      "coord": [-79.39592, 43.6607231]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
+  "University of Utah Asia Campus (cafes), Korea": {
+    "place": {
+      "name": "University of Utah Asia Campus (cafes)",
+      "street": "119 Songdo-dong",
+      "city": "Incheon",
+      "state": null,
+      "postal_code": null,
+      "country": "Korea",
+      "type": "University Cafe",
+      "encoded": "university-of-utah-asia-campus-cafes-korea",
+      "consumer_base": 1050,
+      "coord": [126.6457433, 37.3851499]
+    },
+    "other": [
+      {
+        "status": "adopted",
+        "date": "2023",
+        "org_credit": ["New Roots Institute", "Better Food Foundation"],
+        "is_verified": false
+      }
+    ]
+  },
+  "University of Utah Asia Campus (events), Korea": {
+    "place": {
+      "name": "University of Utah Asia Campus (events)",
+      "street": "180 Techno park-ro",
+      "city": "Incheon",
+      "state": null,
+      "postal_code": null,
+      "country": "Korea",
+      "type": "University Event",
+      "encoded": "university-of-utah-asia-campus-events-korea",
+      "consumer_base": 50,
+      "coord": [126.6387523, 37.3908505]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["New Roots Institute"],
+        "is_verified": false
       }
     ]
   },
@@ -3065,6 +4745,72 @@
       }
     ]
   },
+  "University of Winchester, United Kingdom": {
+    "place": {
+      "name": "University of Winchester",
+      "street": "Sparkford Road, Winchester",
+      "city": "Hampshire",
+      "state": null,
+      "postal_code": "SO22 4NR",
+      "country": "United Kingdom",
+      "type": "University Dining Hall",
+      "encoded": "university-of-winchester-united-kingdom",
+      "consumer_base": 7000,
+      "coord": [-1.332889, 51.0626897]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2020",
+        "org_credit": ["Humane World for Animals"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Université de Montréal, Canada": {
+    "place": {
+      "name": "Université de Montréal",
+      "street": "2900 boulevard Edouard-Montpetit, Montreal",
+      "city": "Quebec",
+      "state": null,
+      "postal_code": null,
+      "country": "Canada",
+      "type": "University Dining Hall",
+      "encoded": "universite-de-montreal-canada",
+      "consumer_base": 45000,
+      "coord": [-73.6145418, 45.5047577]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2022",
+        "org_credit": ["Unknown"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Uppsala University, Sweden": {
+    "place": {
+      "name": "Uppsala University",
+      "street": "Segerstedt Building, Dag Hammarskjolds vag 7",
+      "city": "Uppsala",
+      "state": null,
+      "postal_code": "752 37",
+      "country": "Sweden",
+      "type": "University Dining Hall",
+      "encoded": "uppsala-university-sweden",
+      "consumer_base": 50000,
+      "coord": [17.6294616, 59.8576363]
+    },
+    "default": [
+      {
+        "status": "pledged",
+        "date": "2025",
+        "org_credit": ["Plant Based Treaty"],
+        "is_verified": true
+      }
+    ]
+  },
   "Vermaat , Netherlands": {
     "place": {
       "name": "Vermaat ",
@@ -3126,6 +4872,102 @@
         "date": "2024",
         "org_credit": ["ProVeg"],
         "is_verified": true
+      }
+    ]
+  },
+  "Wagner College (dining hall), NY, United States": {
+    "place": {
+      "name": "Wagner College (dining hall)",
+      "street": "631 Howard Ave",
+      "city": "Staten Island",
+      "state": "NY",
+      "postal_code": "10301",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "wagner-college-dining-hall-ny-united-states",
+      "consumer_base": 2001,
+      "coord": [-74.0941953, 40.6166427]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["New Roots Institute", "Better Food Foundation"],
+        "is_verified": false
+      }
+    ],
+    "other": [
+      {
+        "status": "adopted",
+        "date": "2024",
+        "org_credit": ["New Roots Institute", "Better Food Foundation"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Wagner College (events), NY, United States": {
+    "place": {
+      "name": "Wagner College (events)",
+      "street": "One Campus Road",
+      "city": "Staten Island",
+      "state": "NY",
+      "postal_code": "10301",
+      "country": "United States",
+      "type": "University Event",
+      "encoded": "wagner-college-events-ny-united-states",
+      "consumer_base": 200,
+      "coord": [-74.0952576, 40.6135845]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2026",
+        "org_credit": ["New Roots Institute"],
+        "is_verified": false
+      }
+    ]
+  },
+  "Wake Forest University (Harvest Table Culinary Group), NC, United States": {
+    "place": {
+      "name": "Wake Forest University (Harvest Table Culinary Group)",
+      "street": "1834 Wake Forest Road",
+      "city": "Winston-Salem",
+      "state": "NC",
+      "postal_code": "27109",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "wake-forest-university-harvest-table-culinary-group-nc-united-states",
+      "consumer_base": 9000,
+      "coord": [-80.2755578, 36.133893]
+    },
+    "placement": [
+      {
+        "status": "adopted",
+        "date": "2017",
+        "org_credit": ["Internal"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Waltham Forest Catering (43 London state schools), United Kingdom": {
+    "place": {
+      "name": "Waltham Forest Catering (43 London state schools)",
+      "street": "Waltham Forest",
+      "city": "London",
+      "state": null,
+      "postal_code": null,
+      "country": "United Kingdom",
+      "type": "K-12",
+      "encoded": "waltham-forest-catering-43-london-state-schools-united-kingdom",
+      "consumer_base": 12900,
+      "coord": [-0.0169784, 51.6150658]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2023",
+        "org_credit": ["ProVeg"],
+        "is_verified": false
       }
     ]
   },
@@ -3214,6 +5056,50 @@
         "date": "2027",
         "org_credit": ["Humane World for Animals"],
         "is_verified": true
+      }
+    ]
+  },
+  "Western University (Ontario), Canada": {
+    "place": {
+      "name": "Western University (Ontario)",
+      "street": "1151 Richmond Street, London",
+      "city": "Ontario",
+      "state": null,
+      "postal_code": "N6A 3K7",
+      "country": "Canada",
+      "type": "University Dining Hall",
+      "encoded": "western-university-ontario-canada",
+      "consumer_base": 38000,
+      "coord": [-81.2618335, 43.00937]
+    },
+    "ratio": [
+      {
+        "status": "adopted",
+        "date": "2025",
+        "org_credit": ["Unknown"],
+        "is_verified": true
+      }
+    ]
+  },
+  "Western Washington University, WA, United States": {
+    "place": {
+      "name": "Western Washington University",
+      "street": "516 High Street",
+      "city": "Bellingham",
+      "state": "WA",
+      "postal_code": "98225",
+      "country": "United States",
+      "type": "University Dining Hall",
+      "encoded": "western-washington-university-wa-united-states",
+      "consumer_base": 14710,
+      "coord": [-122.4876007, 48.7337847]
+    },
+    "default": [
+      {
+        "status": "adopted",
+        "date": "2020",
+        "org_credit": ["New Roots Institute"],
+        "is_verified": false
       }
     ]
   },
