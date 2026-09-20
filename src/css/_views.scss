@@ -5,6 +5,10 @@
   position: relative;
 }
 
+#map:focus {
+  outline: none;
+}
+
 .leaflet-grab {
   cursor: unset;
 }
