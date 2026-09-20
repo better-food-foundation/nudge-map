@@ -34,6 +34,14 @@ $thumbsize: icons.$icon-size-md;
   align-items: center;
 }
 
+.population-slider-description {
+  width: 100%;
+  margin: 0;
+  color: colors.$gray;
+  font-size: typography.$font-size-sm;
+  line-height: 1.3;
+}
+
 .population-slider-controls > input {
   cursor: pointer;
   position: absolute;
