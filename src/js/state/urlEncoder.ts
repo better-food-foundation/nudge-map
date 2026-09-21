@@ -116,7 +116,6 @@ export const CONSUMER_BASE_NAME = "cb";
 export const IS_VERIFIED_NAME = "verified";
 
 export const NUDGE_TYPE_MAP = BidirectionalMap.from([
-  ["any nudge", "any"],
   ["plant-based default", "pbd"],
   ["climate-friendly ratio", "cpr"],
   ["subtle substitution", "ss"],
@@ -140,7 +139,6 @@ export const PLACE_TYPE_MAP = BidirectionalMap.from([
   ["Cafe", "cfe"],
   ["Stadium", "std"],
   ["Event", "evt"],
-  ["Hotel", "htl"],
   ["Transit Station", "ts"],
   ["Hospital", "hsp"],
   ["Religious Center", "rc"],

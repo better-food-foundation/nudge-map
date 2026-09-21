@@ -19,7 +19,8 @@ import {
   STATUS_MAP,
   ORG_CREDIT_MAP,
 } from "../../src/js/state/urlEncoder";
-import { FilterState } from "../../src/js/state/FilterState";
+import { ALL_NUDGE_STATUS_FILTER, FilterState } from "../../src/js/state/FilterState";
+import { ALL_NUDGE_STATUS } from "../../src/js/model/types";
 
 test.describe("encodeFilterState", () => {
   test("default state", () => {
@@ -153,6 +154,6 @@ test.describe("mappers are fully comprehensive", () => {
     expect(ORG_CREDIT_MAP.keys()).toEqual(MERGED_STRING_SET_OPTIONS.orgCredit);
   });
   test("status", () => {
-    expect(STATUS_MAP.keys()).toEqual(new Set(["adopted", "pledged"]));
+    expect(STATUS_MAP.keys()).toEqual(new Set(ALL_NUDGE_STATUS_FILTER));
   });
 });
