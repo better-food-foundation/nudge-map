@@ -22,6 +22,37 @@ export const DEFAULT_FILTER_STATE: FilterState = {
 };
 
 const ARRAY_DELIMITER = ".";
+const BOOL_TRUE = "y";
+const BOOL_FALSE = "n";
+
+function abbreviate(name: string): string {
+  const letters = name
+    .split(/[^\p{L}\p{N}]+/u) // split on spaces, hyphens, punctuation, etc.
+    .filter(Boolean)
+    .map((word) => word[0].toLowerCase())
+    .join("");
+  return letters || "org"; // fallback for names with no letters/digits
+}
+
+function buildAbbreviationEntries(
+  names: Iterable<string>,
+): Array<[string, string]> {
+  const used = new Set<string>();
+  return Array.from(names)
+    .sort() // deterministic regardless of source order
+    .map<[string, string]>((name) => {
+      const base = abbreviate(name);
+      let code = base;
+      let n = 1;
+      while (used.has(code)) {
+        n += 1;
+        code = `${base}${n}`;
+      }
+      used.add(code);
+      return [name, code];
+    });
+}
+
 
 class BidirectionalMap<K extends string, V extends string> {
   private constructor(
@@ -96,6 +127,7 @@ export const NUDGE_TYPE_MAP = BidirectionalMap.from([
 export const STATUS_MAP = BidirectionalMap.from([
   ["adopted", "a"],
   ["pledged", "p"],
+  ["any status", "as"],
 ]);
 export const PLACE_TYPE_MAP = BidirectionalMap.from([
   ["University Dining Hall", "ud"],
@@ -126,21 +158,57 @@ export const YEAR_MAP = BidirectionalMap.from(
 );
 
 export const ORG_CREDIT_MAP = BidirectionalMap.from(
-  Array.from(MERGED_STRING_SET_OPTIONS.orgCredit).map((org) => [org, org]),
+  buildAbbreviationEntries(MERGED_STRING_SET_OPTIONS.orgCredit),
 );
 
 export function encodeFilterState(filterState: FilterState): URLSearchParams {
   const result = new URLSearchParams();
 
+  if (filterState.status !== DEFAULT_FILTER_STATE.status) {
+    result.append(STATUS_NAME, STATUS_MAP.encode(filterState.status));
+  }
+
   if (!isEqual(filterState.country, DEFAULT_FILTER_STATE.country)) {
     result.append(COUNTRY_NAME, COUNTRY_MAP.encodeSet(filterState.country));
   }
 
-  if (filterState.isVerified !== DEFAULT_FILTER_STATE.isVerified) {
-    result.append(IS_VERIFIED_NAME, filterState.isVerified.toString());
+  if (!isEqual(filterState.placeType, DEFAULT_FILTER_STATE.placeType)) {
+    result.append(
+      PLACE_TYPE_NAME,
+      PLACE_TYPE_MAP.encodeSet(filterState.placeType),
+    );
   }
 
-  // TODO: add other filters to URL params (e.g. year, consumer base)
+  if (!isEqual(filterState.includedNudges, DEFAULT_FILTER_STATE.includedNudges)) {
+    result.append(
+      INCLUDED_NUDGE_NAME,
+      NUDGE_TYPE_MAP.encodeSet(filterState.includedNudges),
+    );
+  }
+
+  if (!isEqual(filterState.year, DEFAULT_FILTER_STATE.year)) {
+    result.append(YEAR_NAME, YEAR_MAP.encodeSet(filterState.year));
+  }
+
+  if (!isEqual(filterState.orgCredit, DEFAULT_FILTER_STATE.orgCredit)) {
+    result.append(ORG_NAME, ORG_CREDIT_MAP.encodeSet(filterState.orgCredit));
+  }
+
+  if (filterState.isVerified !== DEFAULT_FILTER_STATE.isVerified) {
+    result.append(IS_VERIFIED_NAME, filterState.isVerified ? BOOL_TRUE : BOOL_FALSE);
+  }
+
+  if (
+    !isEqual(
+      filterState.consumerBaseSliderIndexes,
+      DEFAULT_FILTER_STATE.consumerBaseSliderIndexes,
+    )
+  ) {
+    result.append(
+      CONSUMER_BASE_NAME,
+      filterState.consumerBaseSliderIndexes.join(ARRAY_DELIMITER),
+    );
+  }
 
   result.sort();
   return result;
@@ -166,6 +234,12 @@ export function decodeConsumerBase(str: string | null): [number, number] {
     : DEFAULT_FILTER_STATE.consumerBaseSliderIndexes;
 }
 
+export function decodeIsVerified(v: string | null): boolean {
+  if (v === BOOL_TRUE) return true;
+  if (v === BOOL_FALSE) return false;
+  return DEFAULT_FILTER_STATE.isVerified;
+}
+
 export function queryStringToParams(queryString: string): URLSearchParams {
   const cleanQuery = queryString.startsWith("?")
     ? queryString.slice(1)
@@ -179,10 +253,7 @@ export function decodeFilterState(queryString: string): FilterState {
     searchInput: DEFAULT_FILTER_STATE.searchInput,
     status:
       STATUS_MAP.decode(params.get(STATUS_NAME)) ?? DEFAULT_FILTER_STATE.status,
-    isVerified:
-      params.get(IS_VERIFIED_NAME) === null
-        ? DEFAULT_FILTER_STATE.isVerified
-        : params.get(IS_VERIFIED_NAME) === "true",
+    isVerified: decodeIsVerified(params.get(IS_VERIFIED_NAME)),
     includedNudges: NUDGE_TYPE_MAP.decodeSet(
       params.get(INCLUDED_NUDGE_NAME),
       DEFAULT_FILTER_STATE.includedNudges,
