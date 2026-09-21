@@ -53,7 +53,6 @@ function buildAbbreviationEntries(
     });
 }
 
-
 class BidirectionalMap<K extends string, V extends string> {
   private constructor(
     private encodeMap: Record<K, V>,
@@ -177,7 +176,9 @@ export function encodeFilterState(filterState: FilterState): URLSearchParams {
     );
   }
 
-  if (!isEqual(filterState.includedNudges, DEFAULT_FILTER_STATE.includedNudges)) {
+  if (
+    !isEqual(filterState.includedNudges, DEFAULT_FILTER_STATE.includedNudges)
+  ) {
     result.append(
       INCLUDED_NUDGE_NAME,
       NUDGE_TYPE_MAP.encodeSet(filterState.includedNudges),
@@ -193,7 +194,10 @@ export function encodeFilterState(filterState: FilterState): URLSearchParams {
   }
 
   if (filterState.isVerified !== DEFAULT_FILTER_STATE.isVerified) {
-    result.append(IS_VERIFIED_NAME, filterState.isVerified ? BOOL_TRUE : BOOL_FALSE);
+    result.append(
+      IS_VERIFIED_NAME,
+      filterState.isVerified ? BOOL_TRUE : BOOL_FALSE,
+    );
   }
 
   if (

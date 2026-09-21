@@ -19,8 +19,10 @@ import {
   STATUS_MAP,
   ORG_CREDIT_MAP,
 } from "../../src/js/state/urlEncoder";
-import { ALL_NUDGE_STATUS_FILTER, FilterState } from "../../src/js/state/FilterState";
-import { ALL_NUDGE_STATUS } from "../../src/js/model/types";
+import {
+  ALL_NUDGE_STATUS_FILTER,
+  FilterState,
+} from "../../src/js/state/FilterState";
 
 test.describe("encodeFilterState", () => {
   test("default state", () => {
@@ -87,7 +89,8 @@ test.describe("decodeFilterState", () => {
       "status=p",
       "verified=n",
       "yr=2017",
-      "cntry=mx.br"].join("&");
+      "cntry=mx.br",
+    ].join("&");
     assertDecode(
       url,
       {
@@ -113,14 +116,22 @@ test.describe("decodeFilterState", () => {
       ORG_NAME,
       IS_VERIFIED_NAME,
       STATUS_NAME,
-      COUNTRY_NAME].map((x) => `${x}=foo`).join("&");
+      COUNTRY_NAME,
+    ]
+      .map((x) => `${x}=foo`)
+      .join("&");
     assertDecode(url, DEFAULT_FILTER_STATE, {
       checkRoundTrip: false,
     });
   });
 
   test("some illegal array elements", () => {
-    const url = ["nudges=foo.pbd", "inst=foo.cfe", "yr=1.2024", "cntry=foo.mx"].join("&");
+    const url = [
+      "nudges=foo.pbd",
+      "inst=foo.cfe",
+      "yr=1.2024",
+      "cntry=foo.mx",
+    ].join("&");
     assertDecode(
       url,
       {
@@ -148,7 +159,9 @@ test.describe("mappers are fully comprehensive", () => {
     expect(PLACE_TYPE_MAP.keys()).toEqual(MERGED_STRING_SET_OPTIONS.placeType);
   });
   test("nudge type", () => {
-    expect(NUDGE_TYPE_MAP.keys()).toEqual(MERGED_STRING_SET_OPTIONS.includedNudges);
+    expect(NUDGE_TYPE_MAP.keys()).toEqual(
+      MERGED_STRING_SET_OPTIONS.includedNudges,
+    );
   });
   test("org credit", () => {
     expect(ORG_CREDIT_MAP.keys()).toEqual(MERGED_STRING_SET_OPTIONS.orgCredit);
