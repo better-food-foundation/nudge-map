@@ -20,12 +20,8 @@ export const COUNTRIES_PREFIXED_BY_THE = new Set([
 
 export const COUNTRY_MAPPING: Partial<Record<string, string>> = {
   AU: "Australia",
-  AT: "Austria",
   BR: "Brazil",
-  BT: "Bhutan",
   CA: "Canada",
-  CH: "Switzerland",
-  CK: "Cook Islands",
   CN: "China",
   DE: "Germany",
   DK: "Denmark",
@@ -33,10 +29,7 @@ export const COUNTRY_MAPPING: Partial<Record<string, string>> = {
   FI: "Finland",
   FR: "France",
   GB: "United Kingdom",
-  IE: "Ireland",
   IN: "India",
-  IL: "Israel",
-  IS: "Iceland",
   IT: "Italy",
   KR: "Korea",
   MX: "Mexico",
@@ -50,10 +43,8 @@ export const COUNTRY_MAPPING: Partial<Record<string, string>> = {
   PT: "Portugal",
   RW: "Rwanda",
   SE: "Sweden",
-  SG: "Singapore",
   UK: "United Kingdom",
   US: "United States",
-  ZA: "South Africa",
 };
 
 export function processPlace(raw: RawPlace): ProcessedPlace {
