@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -13,10 +10,10 @@ import Papa from "papaparse";
 
 import {
   ProcessedCompleteEntry,
-  ProcessedCompleteLandUsePolicy,
+  ProcessedCompleteNudge,
   readProcessedCompleteData,
 } from "./lib/data";
-import { ReformStatus } from "../src/js/model/types";
+import { NudgeStatus } from "../src/js/model/types";
 
 const DELIMITER = "; ";
 
@@ -24,91 +21,90 @@ function toBoolean(condition: boolean | undefined): string {
   return condition ? "TRUE" : "FALSE";
 }
 
-interface AnyPolicySet {
-  hasReforms: boolean;
+interface AnyNudgeSet {
+  hasNudges: boolean;
   csvValues: {
-    minimums_removal: string;
-    minimums_reduction: string;
-    maximums: string;
-    benefit_districts: string;
+    default: string;
+    ratio: string;
+    sub: string;
+    titles: string;
+    placement: string;
+    other: string;
   };
 }
 
-function determineAnyPolicySet(
+function determineAnyNudgeSet(
   entry: ProcessedCompleteEntry,
-  status: ReformStatus,
-): AnyPolicySet {
-  const hasRm =
-    entry.rm_min?.some((policy) => policy.status === status) ?? false;
-  const hasReduce =
-    entry.reduce_min?.some((policy) => policy.status === status) ?? false;
-  const hasMax =
-    entry.add_max?.some((policy) => policy.status === status) ?? false;
-  const hasBenefitDistrict =
-    entry.benefit_district?.some((record) => record.status === status) ?? false;
+  status: NudgeStatus,
+): AnyNudgeSet {
+  const hasDefault =
+    entry.default?.some((nudge) => nudge.status === status) ?? false;
+  const hasRatio =
+    entry.ratio?.some((nudge) => nudge.status === status) ?? false;
+  const hasSubstitution =
+    entry.sub?.some((nudge) => nudge.status === status) ?? false;
+  const hasTitles =
+    entry.titles?.some((nudge) => nudge.status === status) ?? false;
+  const hasPlacement =
+    entry.placement?.some((nudge) => nudge.status === status) ?? false;
+  const hasOther =
+    entry.other?.some((nudge) => nudge.status === status) ?? false; 
   return {
-    hasReforms: hasRm || hasReduce || hasMax || hasBenefitDistrict,
+      hasNudges: hasDefault || hasRatio || hasSubstitution || hasTitles || hasPlacement || hasOther,
     csvValues: {
-      minimums_removal: toBoolean(hasRm),
-      minimums_reduction: toBoolean(hasReduce),
-      maximums: toBoolean(hasMax),
-      benefit_districts: toBoolean(hasBenefitDistrict),
+      default: toBoolean(hasDefault),
+      ratio: toBoolean(hasRatio),
+      sub: toBoolean(hasSubstitution),
+      titles: toBoolean(hasTitles),
+      placement: toBoolean(hasPlacement),
+      other: toBoolean(hasOther),
     },
   };
 }
 
-export function createAnyPolicyCsvs(data: ProcessedCompleteEntry[]): {
+export function createAnyNudgeCsvs(data: ProcessedCompleteEntry[]): {
   adopted: string;
-  proposed: string;
-  repealed: string;
+  pledged: string;
 } {
   const adopted: any[] = [];
-  const proposed: any[] = [];
-  const repealed: any[] = [];
+  const pledged: any[] = [];
   data.forEach((entry) => {
     const initialValues = {
       place: entry.place.name,
+      street: entry.place.street,
+      city: entry.place.city,
+      postal_code: entry.place.postal_code,
       state: entry.place.state,
       country: entry.place.country,
       place_type: entry.place.type,
-      population: entry.place.pop,
+      consumer_base: entry.place.consumer_base,
       lat: entry.place.coord[1],
       long: entry.place.coord[0],
     };
-    const prnUrl = { prn_url: entry.place.url };
+    const bffUrl = { bff_url: entry.place.url };
 
-    const adoptedPolicySet = determineAnyPolicySet(entry, "adopted");
-    const proposedPolicySet = determineAnyPolicySet(entry, "proposed");
-    const repealedPolicySet = determineAnyPolicySet(entry, "repealed");
+    const adoptedNudgeSet = determineAnyNudgeSet(entry, "adopted");
+    const pledgedNudgeSet = determineAnyNudgeSet(entry, "pledged");
 
-    if (adoptedPolicySet.hasReforms) {
+    if (adoptedNudgeSet.hasNudges) {
       adopted.push({
         ...initialValues,
-        all_minimums_removed: toBoolean(entry.place.repeal),
-        ...adoptedPolicySet.csvValues,
-        ...prnUrl,
+        ...adoptedNudgeSet.csvValues,
+        ...bffUrl,
       });
     }
-    if (proposedPolicySet.hasReforms) {
-      proposed.push({
+    if (pledgedNudgeSet.hasNudges) {
+      pledged.push({
         ...initialValues,
-        ...proposedPolicySet.csvValues,
-        ...prnUrl,
-      });
-    }
-    if (repealedPolicySet.hasReforms) {
-      repealed.push({
-        ...initialValues,
-        ...repealedPolicySet.csvValues,
-        ...prnUrl,
+        ...pledgedNudgeSet.csvValues,
+        ...bffUrl,
       });
     }
   });
 
   return {
     adopted: Papa.unparse(adopted),
-    proposed: Papa.unparse(proposed),
-    repealed: Papa.unparse(repealed),
+    pledged: Papa.unparse(pledged),
   };
 }
 
@@ -124,64 +120,38 @@ function validateNumEntries(
   }
 }
 
-export function createLandUseCsv(
+export function createNudgeCsv(
   data: ProcessedCompleteEntry[],
   getter: (
     entry: ProcessedCompleteEntry,
-  ) => ProcessedCompleteLandUsePolicy[] | undefined,
+  ) => ProcessedCompleteNudge[] | undefined,
 ): string {
   const entries = data.flatMap((entry) => {
-    const policies = getter(entry);
-    if (!policies) return [];
-    return policies.map((policy) => ({
+    const nudges = getter(entry);
+    if (!nudges) return [];
+    return nudges.map((nudge) => ({
       place: entry.place.name,
+      street: entry.place.street,
+      city: entry.place.city,
+      postal_code: entry.place.postal_code,
       state: entry.place.state,
       country: entry.place.country,
-      population: entry.place.pop,
+      consumer_base: entry.place.consumer_base,
       place_type: entry.place.type,
       lat: entry.place.coord[1],
       long: entry.place.coord[0],
-      all_minimums_removed: toBoolean(entry.place.repeal),
-      status: policy.status,
-      reform_date: policy.date?.raw,
-      scope: policy.scope.join(DELIMITER),
-      land_uses: policy.land.join(DELIMITER),
-      requirements: policy.requirements.join(DELIMITER),
-      summary: policy.summary,
-      num_citations: policy.citations.length,
-      reporter: policy.reporter,
-      prn_url: entry.place.url,
+      status: nudge.status,
+      nudge_date: nudge.date?.raw,
+      org_credit: nudge.org_credit?.join(DELIMITER),
+      is_verified: nudge.is_verified,
+      summary: nudge.summary,
+      num_citations: nudge.citations.length,
+      reporter: nudge.reporter,
+      bff_url: entry.place.url,
     }));
   });
   const csv = Papa.unparse(entries);
   validateNumEntries(csv, data, getter);
-  return csv;
-}
-
-export function createBenefitDistrictCsv(
-  data: ProcessedCompleteEntry[],
-): string {
-  const entries = data.flatMap((entry) => {
-    const records = entry.benefit_district;
-    if (!records) return [];
-    return records.map((record) => ({
-      place: entry.place.name,
-      state: entry.place.state,
-      country: entry.place.country,
-      population: entry.place.pop,
-      place_type: entry.place.type,
-      lat: entry.place.coord[1],
-      long: entry.place.coord[0],
-      status: record.status,
-      reform_date: record.date?.raw,
-      summary: record.summary,
-      num_citations: record.citations.length,
-      reporter: record.reporter,
-      prn_url: entry.place.url,
-    }));
-  });
-  const csv = Papa.unparse(entries);
-  validateNumEntries(csv, data, (entry) => entry.benefit_district);
   return csv;
 }
 
@@ -204,26 +174,31 @@ async function main(): Promise<void> {
 
   await writeJson(completeData, "data/generated/complete-data.json");
 
-  const { adopted, proposed, repealed } = createAnyPolicyCsvs(data);
+  const { adopted, pledged } = createAnyNudgeCsvs(data);
   await writeCsv(adopted, "data/generated/overview_adopted.csv");
-  await writeCsv(proposed, "data/generated/overview_proposed.csv");
-  await writeCsv(repealed, "data/generated/overview_repealed.csv");
+  await writeCsv(pledged, "data/generated/overview_pledged.csv");
 
-  const addMax = createLandUseCsv(data, (entry) => entry.add_max);
-  await writeCsv(addMax, "data/generated/add_maximums.csv");
+  const defaultNudges = createNudgeCsv(data, (entry) => entry.default);
+  await writeCsv(defaultNudges, "data/generated/plant_based_defaults.csv");
 
-  const reduceMin = createLandUseCsv(data, (entry) => entry.reduce_min);
-  await writeCsv(reduceMin, "data/generated/reduce_minimums.csv");
+  const ratio = createNudgeCsv(data, (entry) => entry.ratio);
+  await writeCsv(ratio, "data/generated/climate_friendly_ratios.csv");
 
-  const rmMin = createLandUseCsv(data, (entry) => entry.rm_min);
-  await writeCsv(rmMin, "data/generated/remove_minimums.csv");
+  const sub = createNudgeCsv(data, (entry) => entry.sub);
+  await writeCsv(sub, "data/generated/subtle_substitutions.csv");
 
-  const benefitDistrict = createBenefitDistrictCsv(data);
-  await writeCsv(benefitDistrict, "data/generated/benefit_districts.csv");
+  const titles = createNudgeCsv(data, (entry) => entry.titles);
+  await writeCsv(titles, "data/generated/tasty_titles.csv");
+  
+  const placement = createNudgeCsv(data, (entry) => entry.placement);
+  await writeCsv(placement, "data/generated/prime_placement.csv");
+
+  const other = createNudgeCsv(data, (entry) => entry.other);
+  await writeCsv(other, "data/generated/other.csv");
 
   const files = await glob("data/generated/*");
-  await $`zip -j data/generated/mandates-map-data.zip ${files}`;
-  console.log("Generated zip at data/generated/mandates-map-data.zip");
+  await $`zip -j data/generated/nudge-map-data.zip ${files}`;
+  console.log("Generated zip at data/generated/nudge-map-data.zip");
 }
 
 if (process.env.NODE_ENV !== "test") {
