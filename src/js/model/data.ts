@@ -21,6 +21,7 @@ export const COUNTRIES_PREFIXED_BY_THE = new Set([
 export const COUNTRY_MAPPING: Partial<Record<string, string>> = {
   AU: "Australia",
   BR: "Brazil",
+  BT: "Bhutan",
   CA: "Canada",
   CN: "China",
   DE: "Germany",

@@ -149,22 +149,34 @@ test.describe("decodeFilterState", () => {
 });
 
 test.describe("mappers are fully comprehensive", () => {
+  // Ensure that the mappers contain all the necessary keys for the app.
+  // It's fine if there are additional keys in the mappers (e.g. due to Pilot nudges).
   test("country", () => {
-    expect(COUNTRY_MAP.keys()).toEqual(MERGED_STRING_SET_OPTIONS.country);
+    expect(Array.from(COUNTRY_MAP.keys())).toEqual(
+      expect.arrayContaining(Array.from(MERGED_STRING_SET_OPTIONS.country)),
+    );
   });
   test("year", () => {
-    expect(YEAR_MAP.keys()).toEqual(MERGED_STRING_SET_OPTIONS.year);
+    expect(Array.from(YEAR_MAP.keys())).toEqual(
+      expect.arrayContaining(Array.from(MERGED_STRING_SET_OPTIONS.year)),
+    );
   });
   test("place type", () => {
-    expect(PLACE_TYPE_MAP.keys()).toEqual(MERGED_STRING_SET_OPTIONS.placeType);
+    expect(Array.from(PLACE_TYPE_MAP.keys())).toEqual(
+      expect.arrayContaining(Array.from(MERGED_STRING_SET_OPTIONS.placeType)),
+    );
   });
   test("nudge type", () => {
-    expect(NUDGE_TYPE_MAP.keys()).toEqual(
-      MERGED_STRING_SET_OPTIONS.includedNudges,
+    expect(Array.from(NUDGE_TYPE_MAP.keys())).toEqual(
+      expect.arrayContaining(
+        Array.from(MERGED_STRING_SET_OPTIONS.includedNudges),
+      ),
     );
   });
   test("org credit", () => {
-    expect(ORG_CREDIT_MAP.keys()).toEqual(MERGED_STRING_SET_OPTIONS.orgCredit);
+    expect(Array.from(ORG_CREDIT_MAP.keys())).toEqual(
+      expect.arrayContaining(Array.from(MERGED_STRING_SET_OPTIONS.orgCredit)),
+    );
   });
   test("status", () => {
     expect(STATUS_MAP.keys()).toEqual(new Set(ALL_NUDGE_STATUS_FILTER));
