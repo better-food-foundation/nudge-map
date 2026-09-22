@@ -48,9 +48,15 @@ function determineAnyNudgeSet(
   const hasPlacement =
     entry.placement?.some((nudge) => nudge.status === status) ?? false;
   const hasOther =
-    entry.other?.some((nudge) => nudge.status === status) ?? false; 
+    entry.other?.some((nudge) => nudge.status === status) ?? false;
   return {
-      hasNudges: hasDefault || hasRatio || hasSubstitution || hasTitles || hasPlacement || hasOther,
+    hasNudges:
+      hasDefault ||
+      hasRatio ||
+      hasSubstitution ||
+      hasTitles ||
+      hasPlacement ||
+      hasOther,
     csvValues: {
       default: toBoolean(hasDefault),
       ratio: toBoolean(hasRatio),
@@ -189,7 +195,7 @@ async function main(): Promise<void> {
 
   const titles = createNudgeCsv(data, (entry) => entry.titles);
   await writeCsv(titles, "data/generated/tasty_titles.csv");
-  
+
   const placement = createNudgeCsv(data, (entry) => entry.placement);
   await writeCsv(placement, "data/generated/prime_placement.csv");
 
