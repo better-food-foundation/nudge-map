@@ -1,0 +1,3 @@
+place,street,city,postal_code,state,country,consumer_base,place_type,lat,long,status,nudge_date,org_credit,is_verified,summary,num_citations,reporter,bff_url
+My Cafe,123 Main St,My City,12345,NY,United States,24104,Cafe,14.23,44.23,adopted,2022-02-13,Better Food Foundation,true,Default summary #1,2,Stephen Black,https:///better-food-foundation.github.io/nudge-map/place-detail/my-cafe-details.html
+My Cafe,123 Main St,My City,12345,NY,United States,24104,Cafe,14.23,44.23,pledged,,,false,Default summary #2,1,Stephen Black,https:///better-food-foundation.github.io/nudge-map/place-detail/my-cafe-details.html

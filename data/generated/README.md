@@ -1,18 +1,20 @@
-# Parking Reform Map data set
+# Better Food Foundation Nudge Map data set
 
-This folder contains the data used for https://parkingreform.org/resources/mandates-map/, which records places/governments that have implemented parking reform.
+This folder contains the data used for https://better-food-foundation.github.io/nudge-map/, which records places that have implemented or pledged plant-based nudges.
 
 ## CSV files
 
 There are seven CSV files. These CSVs only summarize the data; use the JSON file for the complete dataset.
 
-- `overview_adopted.csv`: an overview of all places that have adopted reforms
-- `overview_proposed.csv`: an overview of all places that have proposed new reforms, but not yet passed them
-- `overview_repealed.csv`: an overview of all places that have repealed prior reforms
-- `add_maximums.csv`: parking maximum policies
-- `reduce_minimums.csv`: parking minimum reductions
-- `remove_minimums.csv`: parking minimum removals
-- `benefit_districts.csv`: parking benefit districts
+- `overview_adopted.csv`: an overview of all places that have adopted nudges
+- `overview_pledged.csv`: an overview of all places that have pledged new reforms
+- `plant_based_defaults.csv`: plant-based defaults
+- `climate_friendly_ratios.csv`: climate-friendly ratios
+- `subtle_substitutions.csv`: subtle substitutions
+- `tasty_titles.csv`: tasty titles & descriptions
+- `prime_placement.csv`: prime placement
+- `other.csv`: other nudges
+
 
 ## JSON
 
@@ -22,4 +24,4 @@ For working with JSON data, we recommend using [`jq`](https://jqlang.github.io/j
 
 ## Attribution
 
-Please attribute to "Parking Reform Network" with a link to https://parkingreform.org/resources/mandates-map/ and include the date of the data download.
+Please attribute to "Better Food Foundation" with a link to https://better-food-foundation.github.io/nudge-map/ and include the date of the data download.

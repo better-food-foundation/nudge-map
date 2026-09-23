@@ -1,0 +1,2 @@
+place,street,city,postal_code,state,country,place_type,consumer_base,lat,long,default,ratio,sub,titles,placement,other,bff_url
+My Cafe,123 Main St,My City,12345,NY,United States,Cafe,24104,14.23,44.23,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,https:///better-food-foundation.github.io/nudge-map/place-detail/my-cafe-details.html
