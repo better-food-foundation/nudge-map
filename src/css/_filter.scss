@@ -77,6 +77,13 @@ $filter-inner-width: calc(
   border-top: borders.$component-inner-divider;
 }
 
+.filter-description {
+  margin: spacing.$element-gap spacing.$container-edge-spacing;
+  color: colors.$gray;
+  font-size: typography.$font-size-sm;
+  line-height: 1.3;
+}
+
 .filter-checkbox {
   cursor: pointer;
   font-size: typography.$font-size-base;

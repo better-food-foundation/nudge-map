@@ -441,7 +441,7 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
       };
       return mapping[status];
     },
-    description: "Select the years when nudges were adopted or pledged.",
+    description: "Future years indicate the start date of pledged nudges.",
     useTwoColumns: true,
   });
   initFilterGroup(filterManager, optionsDiv, {
