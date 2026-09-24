@@ -1,6 +1,7 @@
 import {
   AccordionState,
   generateAccordion,
+  generateFilterDescription,
   updateAccordionUI,
 } from "../layout/accordion";
 import { PlaceFilterManager, POPULATION_INTERVALS } from "../state/FilterState";
@@ -42,11 +43,11 @@ function generateSliders(
   controls.className = "population-slider-controls";
   container.append(controls);
 
-  const description = document.createElement("p");
-  description.className = "population-slider-description";
-  description.textContent =
-    "Consumer base estimates the number of consumers impacted by the nudge.";
-  container.append(description);
+  container.append(
+    generateFilterDescription(
+      "Consumer base estimates the number of consumers impacted by the nudge.",
+    ),
+  );
 
   const left = document.createElement("input");
   left.setAttribute("aria-labelledby", "population-slider-label");
