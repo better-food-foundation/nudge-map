@@ -78,7 +78,7 @@ $filter-inner-width: calc(
 }
 
 .filter-description {
-  margin: spacing.$element-gap spacing.$container-edge-spacing;
+  margin: spacing.$element-gap spacing.$container-edge-spacing 0 spacing.$container-edge-spacing;
   color: colors.$gray;
   font-size: typography.$font-size-sm;
   line-height: 1.3;
