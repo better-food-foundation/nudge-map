@@ -143,6 +143,8 @@ export const PLACE_TYPE_MAP = BidirectionalMap.from([
   ["Religious Center", "rc"],
   ["City/Government", "gf"],
   ["Other", "othp"],
+  ["Retail", "ret"],
+  ["Hospitality", "hspy"],
 ]);
 export const COUNTRY_MAP = BidirectionalMap.from(
   Object.entries(COUNTRY_MAPPING).map(([code, country]) => [
