@@ -48,6 +48,8 @@ export const ALL_PLACE_TYPES = [
   "Religious Center",
   "City/Government",
   "Other",
+  "Retail",
+  "Hospitality",
 ] as const;
 export type PlaceType = (typeof ALL_PLACE_TYPES)[number];
 
