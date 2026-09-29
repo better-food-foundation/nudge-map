@@ -68,6 +68,13 @@ export function generateCheckbox(
   return [label, input];
 }
 
+export function generateFilterDescription(text: string): HTMLParagraphElement {
+  const description = document.createElement("p");
+  description.className = "filter-description";
+  description.textContent = text;
+  return description;
+}
+
 /** Generate the base of an accordion.
  *
  * The contentContainer is empty and needs to be filled in by callers. An Observable

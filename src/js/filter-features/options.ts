@@ -12,6 +12,7 @@ import {
   AccordionState,
   generateAccordion,
   generateCheckbox,
+  generateFilterDescription,
   updateAccordionUI,
 } from "../layout/accordion";
 import optionValuesData from "../../../data/option-values.json" with {
@@ -125,6 +126,7 @@ type FilterGroupParams = {
   /// only impacts the UI and not the underlying data.
   preserveCapitalization?: boolean;
   useTwoColumns?: boolean;
+  description?: string;
   hide?: (state: FilterState) => boolean;
 };
 
@@ -137,6 +139,10 @@ function generateAccordionForFilterGroup(
   const fieldSet = document.createElement("fieldset");
   fieldSet.className = `filter-${params.htmlName}`;
   baseElements.contentContainer.appendChild(fieldSet);
+
+  if (params.description) {
+    fieldSet.appendChild(generateFilterDescription(params.description));
+  }
 
   const groupSelectorButtons = document.createElement("div");
   groupSelectorButtons.className = "filter-group-selectors-container";
@@ -435,6 +441,8 @@ export function initFilterOptions(filterManager: PlaceFilterManager): void {
       };
       return mapping[status];
     },
+    description:
+      "Years can represent the historical start or the anticipated start date of nudges.",
     useTwoColumns: true,
   });
   initFilterGroup(filterManager, optionsDiv, {
