@@ -31,7 +31,7 @@
       "country": "United Kingdom",
       "type": "K-12",
       "encoded": "accent-catering-uk-school-catering-united-kingdom",
-      "consumer_base": 100,
+      "consumer_base": 15000,
       "coord": [-0.0978552, 51.8400523]
     },
     "ratio": [
@@ -244,7 +244,7 @@
       {
         "status": "pledged",
         "date": "2021",
-        "org_credit": ["Plant-Based Treaty"],
+        "org_credit": ["Plant Based Treaty"],
         "is_verified": true
       }
     ],
@@ -252,7 +252,7 @@
       {
         "status": "pledged",
         "date": "2021",
-        "org_credit": ["Plant-Based Treaty"],
+        "org_credit": ["Plant Based Treaty"],
         "is_verified": true
       }
     ]
@@ -267,7 +267,7 @@
       "country": "United States",
       "type": "University Dining Hall",
       "encoded": "aramark-us-campuses-pa-united-states",
-      "consumer_base": 100,
+      "consumer_base": 1000000,
       "coord": [-75.1585405, 39.9521552]
     },
     "other": [
@@ -538,7 +538,7 @@
       "country": "United States",
       "type": "Workplace Cafeteria",
       "encoded": "cafe-services-nh-united-states",
-      "consumer_base": 100,
+      "consumer_base": 20000,
       "coord": [-71.348398, 43.0045289]
     },
     "ratio": [
@@ -582,7 +582,7 @@
       "country": "United Kingdom",
       "type": "City/Government",
       "encoded": "calderdale-council-catering-schools-united-kingdom",
-      "consumer_base": 100,
+      "consumer_base": 12000,
       "coord": [-1.8633372, 53.6760345]
     },
     "default": [
@@ -734,7 +734,7 @@
       "country": "United States",
       "type": "Event",
       "encoded": "cleanmed-mo-united-states",
-      "consumer_base": 100,
+      "consumer_base": 800,
       "coord": [-94.5781416, 39.100105]
     },
     "default": [
@@ -756,7 +756,7 @@
       "country": "United States",
       "type": "University Event",
       "encoded": "climatecap-summit-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 500,
       "coord": [-122.272863, 37.8708393]
     },
     "default": [
@@ -821,7 +821,7 @@
       "country": "United Kingdom",
       "type": "Chain Restaurant",
       "encoded": "compass-group-uk-ireland-england-united-kingdom",
-      "consumer_base": 100,
+      "consumer_base": 3000000,
       "coord": [-0.5038294, 51.392296]
     },
     "ratio": [
@@ -865,7 +865,7 @@
       "country": "United States",
       "type": "Hospital",
       "encoded": "coolfood-pledge-us-healthcare-dc-united-states",
-      "consumer_base": 100,
+      "consumer_base": 85000,
       "coord": [-77.0047055, 38.8867409]
     },
     "ratio": [
@@ -909,7 +909,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "creative-dining-services-mi-united-states",
-      "consumer_base": 100,
+      "consumer_base": 75000,
       "coord": [-86.0165267, 42.8123375]
     },
     "ratio": [
@@ -931,7 +931,7 @@
       "country": "United States",
       "type": "Religious Center",
       "encoded": "creaturekind-defaultveg-for-faith-communities-or-united-states",
-      "consumer_base": 100,
+      "consumer_base": 400,
       "coord": [-89.9656538, 37.1875524]
     },
     "default": [
@@ -953,7 +953,7 @@
       "country": "United States",
       "type": "City/Government",
       "encoded": "dc-department-of-youth-rehabilitation-services-dc-united-states",
-      "consumer_base": 100,
+      "consumer_base": 400,
       "coord": [-77.0172181, 38.8774173]
     },
     "other": [
@@ -1018,7 +1018,7 @@
       "country": "United Kingdom",
       "type": "K-12",
       "encoded": "dolce-schools-catering-uk-united-kingdom",
-      "consumer_base": 100,
+      "consumer_base": 150000,
       "coord": [-0.0881557, 51.5163683]
     },
     "ratio": [
@@ -1165,7 +1165,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "elior-north-america-nc-united-states",
-      "consumer_base": 100,
+      "consumer_base": 1000000,
       "coord": [-80.8428524, 35.2278153]
     },
     "ratio": [
@@ -1231,7 +1231,7 @@
       "country": "United States",
       "type": "Workplace Cafeteria",
       "encoded": "epicurean-feast-ma-united-states",
-      "consumer_base": 100,
+      "consumer_base": 6000,
       "coord": [-71.6097744, 42.4342336]
     },
     "ratio": [
@@ -1428,7 +1428,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "fresh-ideas-food-service-management-mo-united-states",
-      "consumer_base": 100,
+      "consumer_base": 60000,
       "coord": [-92.3337366, 38.951883]
     },
     "ratio": [
@@ -1492,7 +1492,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "good-eating-company-us-nc-united-states",
-      "consumer_base": 100,
+      "consumer_base": 12000,
       "coord": [-80.8430827, 35.2272086]
     },
     "default": [
@@ -1614,7 +1614,7 @@
       "country": "United States",
       "type": "Workplace Cafeteria",
       "encoded": "guckenheimer-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 211000,
       "coord": [-122.232523, 37.4863239]
     },
     "ratio": [
@@ -1636,7 +1636,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "guest-services-inc-va-united-states",
-      "consumer_base": 100,
+      "consumer_base": 96000,
       "coord": [-77.3063733, 38.8462236]
     },
     "ratio": [
@@ -1679,7 +1679,7 @@
       "country": "United States",
       "type": "Hospital",
       "encoded": "hhs-hospital-housekeeping-systems-tx-united-states",
-      "consumer_base": 100,
+      "consumer_base": 100000,
       "coord": [-98.0866781, 30.1902067]
     },
     "ratio": [
@@ -1907,7 +1907,7 @@
       "country": "United Kingdom",
       "type": "K-12",
       "encoded": "iss-education-uk-school-catering-united-kingdom",
-      "consumer_base": 100,
+      "consumer_base": 100000,
       "coord": [-0.4549297, 51.3727175]
     },
     "ratio": [
@@ -2137,7 +2137,7 @@
       "country": "United States",
       "type": "Workplace Cafeteria",
       "encoded": "linkedin-san-francisco-corporate-cafe-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 600,
       "coord": [-122.4075201, 37.7879363]
     },
     "default": [
@@ -2334,7 +2334,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "metz-culinary-management-pa-united-states",
-      "consumer_base": 100,
+      "consumer_base": 66700,
       "coord": [-75.9632636, 41.33617]
     },
     "ratio": [
@@ -2356,7 +2356,7 @@
       "country": "Italy",
       "type": "City/Government",
       "encoded": "milan-municipal-schools-italy",
-      "consumer_base": 100,
+      "consumer_base": 83000,
       "coord": [9.1896346, 45.4641943]
     },
     "ratio": [
@@ -2905,7 +2905,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "parkhurst-dining-pa-united-states",
-      "consumer_base": 100,
+      "consumer_base": 50000,
       "coord": [-79.9119948, 40.4059025]
     },
     "ratio": [
@@ -2970,7 +2970,7 @@
       "country": "Poland",
       "type": "City/Government",
       "encoded": "poland-ministry-of-health-hospital-meals-poland",
-      "consumer_base": 100,
+      "consumer_base": 150000,
       "coord": [21.008278, 52.2469371]
     },
     "other": [
@@ -2991,7 +2991,7 @@
       "country": "Poland",
       "type": "City/Government",
       "encoded": "poland-ministry-of-health-school-meals-poland",
-      "consumer_base": 100,
+      "consumer_base": 6800000,
       "coord": [21.0711489, 52.2333742]
     },
     "other": [
@@ -3056,7 +3056,7 @@
       "country": "United States",
       "type": "K-12",
       "encoded": "pomptonian-food-service-nj-united-states",
-      "consumer_base": 100,
+      "consumer_base": 150000,
       "coord": [-74.3068718, 40.8837238]
     },
     "ratio": [
@@ -3196,7 +3196,7 @@
       "country": "United States",
       "type": "Other",
       "encoded": "quest-food-management-services-il-united-states",
-      "consumer_base": 100,
+      "consumer_base": 138900,
       "coord": [-88.0201536, 41.8864687]
     },
     "ratio": [
@@ -3306,7 +3306,7 @@
       "country": "United States",
       "type": "K-12",
       "encoded": "sla-management-fl-united-states",
-      "consumer_base": 100,
+      "consumer_base": 136100,
       "coord": [-81.3656419, 28.6275253]
     },
     "ratio": [
@@ -3328,7 +3328,7 @@
       "country": "United States",
       "type": "Transit Station",
       "encoded": "ssp-america-va-united-states",
-      "consumer_base": 100,
+      "consumer_base": 150000,
       "coord": [-77.4744148, 39.029784]
     },
     "ratio": [
@@ -3416,7 +3416,7 @@
       "country": "United States",
       "type": "Hospital",
       "encoded": "san-francisco-department-of-public-health-hospitals-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 5000,
       "coord": [-122.4052532, 37.7568103]
     },
     "ratio": [
@@ -3548,7 +3548,7 @@
       "country": "United Kingdom",
       "type": "Hospital",
       "encoded": "sodexo-nuffield-health-uk-united-kingdom",
-      "consumer_base": 100,
+      "consumer_base": 25000,
       "coord": [-2.2891921, 53.4877463]
     },
     "default": [
@@ -3898,7 +3898,7 @@
       "country": "United States",
       "type": "Event",
       "encoded": "trellis-events-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 3000,
       "coord": [-122.271356, 37.8044557]
     },
     "default": [
@@ -3942,7 +3942,7 @@
       "country": "United States",
       "type": "University Event",
       "encoded": "ucla-plant-futures-food-forum-ca-united-states",
-      "consumer_base": 100,
+      "consumer_base": 95,
       "coord": [-118.443139, 34.069187]
     },
     "default": [
@@ -4863,7 +4863,7 @@
       "country": "Netherlands",
       "type": "Other",
       "encoded": "vitam-netherlands",
-      "consumer_base": 100,
+      "consumer_base": 30000,
       "coord": [5.3629244, 51.71866]
     },
     "sub": [
@@ -5113,7 +5113,7 @@
       "country": "United States",
       "type": "K-12",
       "encoded": "whitsons-culinary-group-ny-united-states",
-      "consumer_base": 100,
+      "consumer_base": 690000,
       "coord": [-73.1690019, 40.8042649]
     },
     "ratio": [
