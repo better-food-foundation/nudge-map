@@ -186,17 +186,8 @@ test("sortCountries", () => {
 
 test("sortYears", () => {
   const withUnknown = new Set(["2021", "unknown", "2022", "2023"]);
-  expect(sortYears(withUnknown)).toEqual([
-    "2023",
-    "2022",
-    "2021",
-    "unknown",
-  ]);
+  expect(sortYears(withUnknown)).toEqual(["2023", "2022", "2021", "unknown"]);
 
   const withoutUnknown = new Set(["2021", "2022", "2023"]);
-  expect(sortYears(withoutUnknown)).toEqual([
-    "2023",
-    "2022",
-    "2021",
-  ]);
+  expect(sortYears(withoutUnknown)).toEqual(["2023", "2022", "2021"]);
 });
