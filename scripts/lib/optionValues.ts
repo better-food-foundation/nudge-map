@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 
-import { sortBy, without } from "lodash-es";
+import { orderBy, sortBy, without } from "lodash-es";
 
 import {
   UNKNOWN_YEAR,
@@ -55,7 +55,7 @@ class OptionValues {
     return {
       placeType: Array.from(this.placeType).sort(),
       country: sortCountries(this.country),
-      year: Array.from(this.year).sort().reverse(),
+      year: sortYears(this.year),
       orgCredit: Array.from(this.orgCredit).sort(),
     };
   }
@@ -167,6 +167,18 @@ export function sortCountries(countries: Set<string>): string[] {
   return countries.has("United States")
     ? ["United States", ...sortedWithoutUS]
     : sortedWithoutUS;
+}
+
+// Sort years in descending order, but ensure "unknown" is at the end.
+export function sortYears(years: Set<string>): string[] {
+  const sortedWithoutUnknown = orderBy(
+    without(Array.from(years), UNKNOWN_YEAR),
+    [(year) => Number(year)],
+    ["desc"],
+  );
+  return years.has(UNKNOWN_YEAR)
+    ? [...sortedWithoutUnknown, UNKNOWN_YEAR]
+    : sortedWithoutUnknown;
 }
 
 export async function saveOptionValues(entries: RawCoreEntry[]): Promise<void> {
