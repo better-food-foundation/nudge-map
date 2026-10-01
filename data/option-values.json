@@ -44,7 +44,6 @@
       "United Kingdom"
     ],
     "year": [
-      "unknown",
       "2030",
       "2027",
       "2026",
@@ -56,7 +55,8 @@
       "2020",
       "2019",
       "2017",
-      "2016"
+      "2016",
+      "unknown"
     ],
     "orgCredit": [
       "Animal Wellness Action",
@@ -133,7 +133,6 @@
       "United Kingdom"
     ],
     "year": [
-      "unknown",
       "2026",
       "2025",
       "2024",
@@ -143,7 +142,8 @@
       "2020",
       "2019",
       "2017",
-      "2016"
+      "2016",
+      "unknown"
     ],
     "orgCredit": [
       "Better Food Foundation",
@@ -253,7 +253,7 @@
       "Portugal",
       "United Kingdom"
     ],
-    "year": ["unknown", "2026", "2025", "2024", "2023", "2022", "2021", "2020"],
+    "year": ["2026", "2025", "2024", "2023", "2022", "2021", "2020", "unknown"],
     "orgCredit": [
       "Better Food Foundation",
       "Greener by Default",
@@ -313,7 +313,6 @@
       "United Kingdom"
     ],
     "year": [
-      "unknown",
       "2026",
       "2025",
       "2024",
@@ -323,7 +322,8 @@
       "2020",
       "2019",
       "2017",
-      "2016"
+      "2016",
+      "unknown"
     ],
     "orgCredit": [
       "Better Food Foundation",
@@ -396,7 +396,7 @@
       "University Dining Hall"
     ],
     "country": ["United States", "Canada", "Netherlands"],
-    "year": ["unknown", "2026", "2025", "2024"],
+    "year": ["2026", "2025", "2024", "unknown"],
     "orgCredit": [
       "Better Food Foundation",
       "Mercy For Animals",
@@ -438,7 +438,7 @@
       "Workplace Cafeteria"
     ],
     "country": ["United States", "Mexico", "Netherlands"],
-    "year": ["unknown", "2026", "2025", "2024", "2017"],
+    "year": ["2026", "2025", "2024", "2017", "unknown"],
     "orgCredit": [
       "Better Food Foundation",
       "Internal",
@@ -475,7 +475,7 @@
       "Sweden",
       "United Kingdom"
     ],
-    "year": ["unknown", "2026", "2025", "2024", "2023", "2022", "2021", "2020"],
+    "year": ["2026", "2025", "2024", "2023", "2022", "2021", "2020", "unknown"],
     "orgCredit": [
       "Better Food Foundation",
       "Friends of the Earth",

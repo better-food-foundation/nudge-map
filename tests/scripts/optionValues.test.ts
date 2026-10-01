@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 
 import {
   sortCountries,
+  sortYears,
   determineOptionValues,
 } from "../../scripts/lib/optionValues";
 import {
@@ -79,13 +80,13 @@ test("determineOptionValues()", () => {
     merged: {
       placeType: ["Cafe", "Hotel"],
       country: ["United States", "Brazil"],
-      year: [UNKNOWN_YEAR, "2025", "2022", "1997"],
+      year: ["2025", "2022", "1997", UNKNOWN_YEAR],
       orgCredit: [UNKNOWN_ORG, "org1", "org2", "org3"],
     },
     anyAdopted: {
       placeType: ["Cafe", "Hotel"],
       country: ["United States", "Brazil"],
-      year: [UNKNOWN_YEAR, "1997"],
+      year: ["1997", UNKNOWN_YEAR],
       orgCredit: [UNKNOWN_ORG, "org3"],
     },
     anyPledged: {
@@ -181,4 +182,12 @@ test("sortCountries", () => {
 
   const withoutUS = new Set(["Canada", "Brazil", "Argentina"]);
   expect(sortCountries(withoutUS)).toEqual(["Argentina", "Brazil", "Canada"]);
+});
+
+test("sortYears", () => {
+  const withUnknown = new Set(["2021", "unknown", "2022", "2023"]);
+  expect(sortYears(withUnknown)).toEqual(["2023", "2022", "2021", "unknown"]);
+
+  const withoutUnknown = new Set(["2021", "2022", "2023"]);
+  expect(sortYears(withoutUnknown)).toEqual(["2023", "2022", "2021"]);
 });
