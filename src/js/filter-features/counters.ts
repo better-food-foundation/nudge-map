@@ -26,7 +26,7 @@ export function determinePlaceDescription(
 }
 
 export const SEARCH_RESET_HTML = `<button class="counter-search-reset" role="button" aria-label="reset search">reset search</button>`;
-export const TABLE_DOWNLOAD_HTML = `<button class="counter-table-download" role="button" aria-label="download table as CSV">download as CSV</button>`;
+export const TABLE_DOWNLOAD_HTML = `<button class="counter-table-download" role="button" aria-label="download table as CSV">download the current table as CSV</button> or <a href="./data/generated/nudge-map-data.zip" download>download the complete dataset</a>`;
 
 const getStatusLabel = (status: NudgeStatusFilter): string =>
   status === "any status" ? "adopted or pledged" : status;
