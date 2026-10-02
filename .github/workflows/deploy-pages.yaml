@@ -31,6 +31,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Generate downloadable data archive
+        run: npm run gen-data-set
+
       - name: Build app for production
         run: npm run build
 
