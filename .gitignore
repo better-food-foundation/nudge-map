@@ -4,7 +4,6 @@
 /data/data.csv
 /data/generated/*.csv
 /data/generated/*.json
-/data/generated/*.zip
 /place-detail/*.html
 
 /node_modules
