@@ -16,7 +16,8 @@ jobs:
           npm ci
           sudo apt-get update
           npx playwright install --with-deps
-
+      - name: Generate downloadable data archive
+        run: npm run gen-data-set
       - name: Typecheck
         run: npm run check
       - name: Lint
