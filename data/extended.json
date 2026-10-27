@@ -878,25 +878,6 @@
       }
     ]
   },
-  "CreatureKind – DefaultVeg for faith communities, OR, United States": {
-    "default": [
-      {
-        "summary": "CreatureKind's DefaultVeg program helps Christian congregations switch the default at shared meals/events to plant-based (opt in for animal products), framed around creation-care; part of the wider DefaultVeg movement.",
-        "reporter": null,
-        "citations": [
-          {
-            "id": 200,
-            "type": "Other",
-            "description": "CreatureKind – DefaultVeg",
-            "url": "https://becreaturekind.org/take-action/defaultveg/",
-            "notes": null,
-            "attachments": [],
-            "screenshots": []
-          }
-        ]
-      }
-    ]
-  },
   "DC Department of Youth Rehabilitation Services, DC, United States": {
     "other": [
       {
@@ -2487,7 +2468,7 @@
   "Ocean Beach People's Food Co-op, CA, United States": {
     "ratio": [
       {
-        "summary": "Ocean Beach People's Food Co-Op is a vegan deli and plant-forward grocery store, with some dairy and eggs products available, but not sold in the deli.",
+        "summary": "Ocean Beach People's Food Co-Op is a vegan deli and plant-forward grocery store, with some dairy and eggs products available, but not sold in the deli. In the grocery store, plant-based foods are heavily increased to incentivize their purchases.",
         "reporter": "Björn Ólafsson",
         "citations": [
           {
@@ -2609,6 +2590,15 @@
             "type": "Press release",
             "description": "Better Food Foundation – Oat Milk by Default guide",
             "url": "https://www.betterfoodfoundation.org/join-us/coffee-shops/",
+            "notes": null,
+            "attachments": [],
+            "screenshots": []
+          },
+          {
+            "id": 237,
+            "type": "Social media",
+            "description": "Pachamama Blog",
+            "url": "https://pachamamacoffee.com/blogs/blog/oat-milk-is-making-a-splash-as-the-new-standard-at-pachamama-coffee?_pos=2&_sid=a87c8f04e&_ss=r",
             "notes": null,
             "attachments": [],
             "screenshots": []
@@ -3738,7 +3728,7 @@
   "University of British Columbia (dining), Canada": {
     "ratio": [
       {
-        "summary": "UBC dining halls are ~55% plant-based and target 80% by 2025; UBC Food Services hosted Canada's first Forward Food Conference. Campus-wide ratio commitment.",
+        "summary": "UBC dining halls are currently 55% plant-based and target 80% by 2025; UBC Food Services hosted Canada's first Forward Food Conference. Campus-wide ratio commitment.",
         "reporter": null,
         "citations": [
           {

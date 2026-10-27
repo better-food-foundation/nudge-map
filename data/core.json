@@ -603,7 +603,7 @@
       "country": "United States",
       "type": "University Event",
       "encoded": "california-state-los-angeles-ca-united-states",
-      "consumer_base": 21708,
+      "consumer_base": 200,
       "coord": [-118.1671415, 34.0664949]
     },
     "default": [
@@ -887,7 +887,7 @@
       "country": "United States",
       "type": "University Cafe",
       "encoded": "cornell-university-ny-united-states",
-      "consumer_base": 350,
+      "consumer_base": 18000,
       "coord": [-76.4800635, 42.452916]
     },
     "default": [
@@ -917,28 +917,6 @@
         "status": "pledged",
         "date": "2025",
         "org_credit": ["Humane World for Animals"],
-        "is_verified": true
-      }
-    ]
-  },
-  "CreatureKind – DefaultVeg for faith communities, OR, United States": {
-    "place": {
-      "name": "CreatureKind – DefaultVeg for faith communities",
-      "street": null,
-      "city": "Salem",
-      "state": "OR",
-      "postal_code": null,
-      "country": "United States",
-      "type": "Religious Center",
-      "encoded": "creaturekind-defaultveg-for-faith-communities-or-united-states",
-      "consumer_base": 400,
-      "coord": [-89.9656538, 37.1875524]
-    },
-    "default": [
-      {
-        "status": "adopted",
-        "date": "2024",
-        "org_credit": ["Better Food Foundation"],
         "is_verified": true
       }
     ]
@@ -1325,7 +1303,7 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Unknown"],
+        "org_credit": ["Meat Free Mondays"],
         "is_verified": true
       }
     ]
@@ -2363,7 +2341,7 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["World Resources Institute"],
+        "org_credit": ["World Resources Institute", "C40 Good Food Cities"],
         "is_verified": true
       }
     ]
@@ -3511,7 +3489,11 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Better Food Foundation"],
+        "org_credit": [
+          "Better Food Foundation",
+          "Greener by Default",
+          "Food for Climate League"
+        ],
         "is_verified": true
       }
     ]
@@ -3667,7 +3649,7 @@
       {
         "status": "adopted",
         "date": "2024",
-        "org_credit": ["Mercy For Animals"],
+        "org_credit": ["Mercy For Animals", "PETA"],
         "is_verified": true
       }
     ]
@@ -4784,7 +4766,7 @@
       {
         "status": "adopted",
         "date": "2022",
-        "org_credit": ["Unknown"],
+        "org_credit": ["Greener by Default"],
         "is_verified": true
       }
     ]
@@ -4988,7 +4970,7 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Humane World for Animals"],
+        "org_credit": ["Humane World for Animals", "Forward Food Pledge"],
         "is_verified": true
       }
     ]
@@ -5032,7 +5014,7 @@
       {
         "status": "pledged",
         "date": "2024",
-        "org_credit": ["Mercy For Animals"],
+        "org_credit": ["Mercy For Animals", "Plant Based Treaty"],
         "is_verified": true
       }
     ]
