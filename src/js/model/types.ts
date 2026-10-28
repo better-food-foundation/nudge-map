@@ -50,6 +50,7 @@ export const ALL_PLACE_TYPES = [
   "Other",
   "Retail",
   "Hospitality",
+  "Food Service/Caterer",
 ] as const;
 export type PlaceType = (typeof ALL_PLACE_TYPES)[number];
 
