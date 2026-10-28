@@ -25,6 +25,13 @@ function dateLabel(status: NudgeStatus): string {
   );
 }
 
+function formatOrgCredit(orgCredit?: string[] | null): string {
+  return new Intl.ListFormat("en", {
+    style: "long",
+    type: "conjunction",
+  }).format(orgCredit ?? []);
+}
+
 function processCitations(citations: Citation[]): object[] {
   return citations.map((citation) => ({
     urlDomain: citation.url ? new URL(citation.url).hostname : null,
@@ -40,6 +47,7 @@ function processNudge(policy: ProcessedCompleteNudge): object {
     status: capitalize(policy.status),
     reporter: policy.reporter,
     citations: processCitations(policy.citations),
+    org_credit: formatOrgCredit(policy.org_credit),
   };
 }
 
