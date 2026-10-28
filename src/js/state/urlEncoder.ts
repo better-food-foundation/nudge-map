@@ -145,6 +145,7 @@ export const PLACE_TYPE_MAP = BidirectionalMap.from([
   ["Other", "othp"],
   ["Retail", "ret"],
   ["Hospitality", "hspy"],
+  ["Food Service/Caterer", "fsc"],
 ]);
 export const COUNTRY_MAP = BidirectionalMap.from(
   Object.entries(COUNTRY_MAPPING).map(([code, country]) => [
