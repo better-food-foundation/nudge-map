@@ -610,7 +610,7 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"],
+        "org_credit": ["Better Food Foundation", "New Roots"],
         "is_verified": true
       }
     ]
@@ -3476,7 +3476,7 @@
       "state": "MD",
       "postal_code": "20878",
       "country": "United States",
-      "type": "University Dining Hall",
+      "type": "Food Service/Caterer",
       "encoded": "sodexo-us-campuses-md-united-states",
       "consumer_base": 1000000,
       "coord": [-77.200177, 39.1165215]
@@ -3502,7 +3502,7 @@
       "state": "MD",
       "postal_code": "20878",
       "country": "United States",
-      "type": "Hospital",
+      "type": "Food Service/Caterer",
       "encoded": "sodexo-us-hospitals-md-united-states",
       "consumer_base": 290000,
       "coord": [-77.1929215, 39.1399187]
@@ -3524,7 +3524,7 @@
       "state": null,
       "postal_code": null,
       "country": "United Kingdom",
-      "type": "Hospital",
+      "type": "Food Service/Caterer",
       "encoded": "sodexo-nuffield-health-uk-united-kingdom",
       "consumer_base": 25000,
       "coord": [-2.2891921, 53.4877463]
@@ -4300,7 +4300,6 @@
       {
         "status": "adopted",
         "date": "2025",
-        "org_credit": ["Better Food Foundation"],
         "is_verified": true
       }
     ]
